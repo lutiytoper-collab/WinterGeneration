@@ -1,0 +1,275 @@
+Starting org.bukkit.craftbukkit.Main
+[16:05:08 INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.9+10-LTS; Eclipse Adoptium Temurin-21.0.9+10) on Linux 6.18.57 (amd64)
+[16:05:08 INFO]: [bootstrap] Loading Paper 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) for Minecraft 1.21.11
+[16:05:08 INFO]: [PluginInitializerManager] Initializing plugins...
+[16:05:10 INFO]: [PluginInitializerManager] Initialized 2 plugins
+[16:05:10 INFO]: [PluginInitializerManager] Paper plugins (1):
+ - MidgardWinterWorld (0.6.0)
+[16:05:10 INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - WinterProbe (0.6.0)
+[16:05:27 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[16:05:27 INFO]: [MidgardWinterWorld] FANTASY_PACK_DISCOVERED MidgardWinterWorld/fantasy
+[16:05:27 INFO]: [MidgardWinterWorld] FANTASY_TERRAIN_ENABLED false; profile=/fantasy-pack; new worlds only
+[16:05:31 INFO]: Loaded 1470 recipes
+[16:05:31 INFO]: Loaded 1584 advancements
+[16:05:31 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[16:05:32 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 1,099.8ms
+[31;1m[16:05:32 ERROR]: Failed to request yggdrasil public key
+com.mojang.authlib.exceptions.MinecraftClientException: Failed to read from https://api.minecraftservices.com/publickeys due to Connection refused
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:111) ~[authlib-7.0.61.jar:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:56) ~[authlib-7.0.61.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.fetch(YggdrasilServicesKeyInfo.java:114) ~[authlib-7.0.61.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo$1.run(YggdrasilServicesKeyInfo.java:89) ~[authlib-7.0.61.jar:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1302) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1143) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1705) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1629) ~[?:?]
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307) ~[?:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:82) ~[authlib-7.0.61.jar:?]
+	... 9 more
+[m[16:05:33 INFO]: Starting minecraft server version 1.21.11
+[16:05:33 INFO]: Loading properties
+[16:05:33 INFO]: This server is running Paper version 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[16:05:33 INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[16:05:33 INFO]: Using 4 threads for Netty based IO
+[16:05:33 INFO]: Server Ping Player Sample Count: 12
+[16:05:34 INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[16:05:34 INFO]: Default game type: SURVIVAL
+[16:05:34 INFO]: Generating keypair
+[16:05:34 INFO]: Starting Minecraft server on 127.0.0.1:25580
+> 
+  
+[16:05:34 INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+> 
+  
+[16:05:34 INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+> 
+  
+[16:05:35 INFO]: [MidgardWinterWorld] Loading server plugin MidgardWinterWorld v0.6.0
+> 
+  
+[16:05:35 INFO]: [WinterProbe] Loading server plugin WinterProbe v0.6.0
+> 
+  
+[16:05:35 INFO]: Server permissions file permissions.yml is empty, ignoring it
+> 
+  
+[16:05:35 INFO]: [MidgardWinterWorld] Enabling MidgardWinterWorld v0.6.0
+> 
+  
+[16:05:35 INFO]: [MidgardWinterWorld] Fantasy build 0.6.0; embedded native pack; protected late decoration; no retrogen.
+> 
+  
+[16:05:35 INFO]: Preparing level "winter_test"
+> 
+  
+[16:05:36 INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
+> 
+  
+[16:05:36 INFO]: Preparing spawn area: 100%
+> 
+  
+[16:05:36 INFO]: Prepared spawn area in 7 ms
+> 
+  
+[16:05:36 INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+> 
+  
+[16:05:36 INFO]: Prepared spawn area in 0 ms
+> 
+  
+[16:05:36 INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+> 
+  
+[16:05:36 INFO]: Prepared spawn area in 0 ms
+> 
+  
+[16:05:36 INFO]: Done preparing level "winter_test" (1.106s)
+> 
+  
+[16:05:36 INFO]: [WinterProbe] Enabling WinterProbe v0.6.0
+> 
+  
+[16:05:37 INFO]: [spark] Starting background profiler...
+> 
+  
+[16:05:37 INFO]: Running delayed init tasks
+> 
+  
+[16:05:37 INFO]: Done (31.804s)! For help, type "help"
+> > > 
+  
+[16:05:38 INFO]: The game is frozen
+> 
+  
+[33;1m[16:05:39 WARN]: *************************************************************************************
+[m> 
+  
+[33;1m[16:05:39 WARN]: You are running the latest build for your Minecraft version (1.21.11)
+[m> 
+  
+[33;1m[16:05:39 WARN]: However, you are 6 release(s) behind the latest stable release (26.3)!
+[m> 
+  
+[33;1m[16:05:39 WARN]: It is recommended that you update as soon as possible
+[m> 
+  
+[33;1m[16:05:39 WARN]: https://papermc.io/downloads/paper
+[m> 
+  
+[33;1m[16:05:39 WARN]: *************************************************************************************
+[m> 
+  
+[16:05:42 INFO]: [WinterProbe] WINTERPROBE_DONE chunks=4
+> > > > > 
+  
+[16:05:43 INFO]: MidgardWinterWorld 0.6.0 DEVELOPMENT; enabled=true; worlds=[winter_test, world]; processed=11 decorated=1 skipped=0 boundary-restored=0 pending=10; leased-chunks=0; features={drift-blocks=197}; WorldGuard=absent; LunaAirDrop=UNVERIFIED
+> 
+  
+[16:05:43 INFO]: Реальные callback-наблюдения: n=1 samples=1 avg-ms=63.411564 median-ms=63.411564 p95-ms=63.411564 max-ms=63.411564 writes=197; полная генерация/vanilla baseline NOT MEASURED
+> 
+  
+[16:05:43 INFO]: Saving the game (this may take a moment!)
+> 
+  
+[16:05:44 INFO]: ThreadedAnvilChunkStorage (winter_test): All chunks are saved
+> 
+  
+[16:05:44 INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+> 
+  
+[16:05:44 INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+> 
+  
+[16:05:44 INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+> 
+  
+[16:05:44 INFO]: Saved the game
+> 
+  
+[16:05:44 INFO]: Stopping the server
+> 
+  
+[16:05:44 INFO]: Stopping server
+> 
+  
+[16:05:44 INFO]: [WinterProbe] Disabling WinterProbe v0.6.0
+> 
+  
+[16:05:44 INFO]: [MidgardWinterWorld] Disabling MidgardWinterWorld v0.6.0
+> 
+  
+[16:05:44 INFO]: Saving players
+> 
+  
+[16:05:44 INFO]: Saving worlds
+> 
+  
+[16:05:44 INFO]: Saving chunks for level 'ServerLevel[winter_test]'/minecraft:overworld
+> 
+  
+[16:05:44 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'winter_test'
+> 
+  
+[16:05:44 INFO]: [ChunkHolderManager] Halted chunk system for world 'winter_test'
+> 
+  
+[16:05:44 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'winter_test'
+> 
+  
+[16:05:45 INFO]: [ChunkHolderManager] Saved 722 block chunks, 2 entity chunks, 0 poi chunks in world 'winter_test' in 1.17s
+> 
+  
+[16:05:45 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'winter_test'
+> 
+  
+[16:05:45 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'winter_test'
+> 
+  
+[16:05:45 INFO]: Saving chunks for level 'ServerLevel[winter_test_nether]'/minecraft:the_nether
+> 
+  
+[16:05:45 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'winter_test_nether'
+> 
+  
+[16:05:45 INFO]: [ChunkHolderManager] Halted chunk system for world 'winter_test_nether'
+> 
+  
+[16:05:45 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'winter_test_nether'
+> 
+  
+[16:05:45 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'winter_test_nether' in 0.00s
+> 
+  
+[16:05:45 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'winter_test_nether'
+> 
+  
+[16:05:45 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'winter_test_nether'
+> 
+  
+[16:05:45 INFO]: Saving chunks for level 'ServerLevel[winter_test_the_end]'/minecraft:the_end
+> 
+  
+[16:05:45 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'winter_test_the_end'
+> 
+  
+[16:05:45 INFO]: [ChunkHolderManager] Halted chunk system for world 'winter_test_the_end'
+> 
+  
+[16:05:45 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'winter_test_the_end'
+> 
+  
+[16:05:45 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'winter_test_the_end' in 0.00s
+> 
+  
+[16:05:45 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'winter_test_the_end'
+> 
+  
+[16:05:45 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'winter_test_the_end'
+> 
+  
+[16:05:45 INFO]: ThreadedAnvilChunkStorage (winter_test): All chunks are saved
+> 
+  
+[16:05:45 INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+> 
+  
+[16:05:45 INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+> 
+  
+[16:05:45 INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+> 
+  
+[16:05:45 INFO]: Waiting for all RegionFile I/O tasks to complete...
+> 
+  
+[16:05:45 INFO]: All RegionFile I/O tasks to complete
+> 
+  
+[16:05:45 INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+> 
+  
+[16:05:45 INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
+> 

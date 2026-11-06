@@ -28,6 +28,7 @@ public final class WorldgenProbe extends JavaPlugin implements CommandExecutor {
             try{switch(args[0]){case "natural"->new NaturalLunaAudit(this).start();case "natural-teleport"->NaturalLunaAudit.teleport();case "natural-end"->NaturalLunaAudit.current.verifyEnd();default->throw new IllegalArgumentException();}}
             catch(Exception ex){getLogger().log(java.util.logging.Level.SEVERE,"NATURALLUNA_FAILED",ex);}return true;
         }
+        if(sender instanceof org.bukkit.command.ConsoleCommandSender&&args.length==1&&args[0].equals("terrain-audit")){new TerrainAudit(this).start();return true;}
         if(sender instanceof org.bukkit.command.ConsoleCommandSender&&args.length==1&&args[0].equals("fixtures")){
             new RuntimeAudit(this).startFixtures();return true;
         }

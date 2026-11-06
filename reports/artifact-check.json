@@ -5,26 +5,32 @@
   "artifacts": [
     {
       "name": "MidgardWinterWorld.jar",
-      "bytes": 163528,
-      "sha256": "09e924340ef4a5b05eb67dbd1a457a2cb3577ef99a684959b4e5baac73060ae9",
+      "bytes": 224870,
+      "sha256": "1144a989f62f1e722a6ec32bd7686050c8318d6c623872d493d7e46a1e1c3b18",
       "zip_crc": "PASS"
     },
     {
       "name": "WinterProbe.jar",
-      "bytes": 35047,
-      "sha256": "55ba1eade8740f68af9a222155c25237969516bbbeb54f4cdb670f48df0835e6",
+      "bytes": 43123,
+      "sha256": "3c621caf0e63b9abd14bd7d96b448323681917744b9d9e13a22f9972c0d58002",
       "zip_crc": "PASS"
     },
     {
       "name": "winter-datapack.zip",
       "bytes": 25439,
-      "sha256": "32fa10e14bb05571968a4a48cd0139af46adab53dcbb46dc38e9d177f959e586",
+      "sha256": "935c74fa9e289760723a1ba86d14ec95a0da48d70f9848c2c52ef54a42626f1f",
       "zip_crc": "PASS"
     },
     {
       "name": "storybook-datapack.zip",
       "bytes": 43776,
-      "sha256": "8b7c25e1e80d2270da05c592ad766edb1df125e1f51ffa420b6babeeb0c48a8f",
+      "sha256": "16f94e9c3b713689e4932cb6ff1cc6dd5e68198cfeada9f32d1a571a14b6c9cb",
+      "zip_crc": "PASS"
+    },
+    {
+      "name": "fantasy-terrain-datapack.zip",
+      "bytes": 11341,
+      "sha256": "31368787a83f5094a2390b356faa8a90b8c1b157a94326b0db4b93df78a0620b",
       "zip_crc": "PASS"
     }
   ],

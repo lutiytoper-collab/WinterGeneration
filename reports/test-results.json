@@ -1,16 +1,40 @@
 {
-  "version": "0.5.0 Anarchy Fantasy",
+  "version": "0.6.0 Fantasy Terrain",
   "project_status": "TEST VERIFIED (scoped); not RELEASE CANDIDATE",
   "counts": {
-    "PASS": 301,
-    "FAIL": 1,
+    "PASS": 336,
+    "FAIL": 2,
     "BLOCKED": 0,
-    "NOT RUN": 11
+    "NOT RUN": 13
   },
-  "counting": "177 Java +23 Python. Current final JAR Paper integrations, Purpur enabled→disabled restart, 64ROI per variant matrix, non-OP protocol grief client, native F2. Vanilla baseline reused. Earlier audit05 palette evidence is historical. Raw variable-window diagnostic retained.",
+  "counting": "182 Java +32 Python. Two current Paper WG/Luna stacks with default 5x5 safety footprint, Purpur global disable restart, classic terrain-off profile, seed42 4ROI restart, 64ROI per variant native terrain matrix, 2 actual village door/foundation scans, 4 further native structure metadata checks, 3 cave-biome locates, real non-OP client and 5 native F2 PNG. Original vanilla baseline reused; old material mismatch diagnostics remain FAIL.",
   "checks": [
     {
       "id": "ru.midgard.winter.BootstrapSettingsTest.globalDisableAlsoDisablesNativeRegistryChanges()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.BootstrapSettingsTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.BootstrapSettingsTest.newInstallEnablesTerrain()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.BootstrapSettingsTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.BootstrapSettingsTest.malformedTerrainFlagFailsBeforeRegistryLoad()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.BootstrapSettingsTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.BootstrapSettingsTest.terrainCanBeDisabledWithoutDisablingDecor()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.BootstrapSettingsTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.BootstrapSettingsTest.globalAndNativeSwitchesAlsoDisableTerrain()",
       "status": "PASS",
       "group": "Java unit/contract",
       "evidence": "junit/TEST-ru.midgard.winter.BootstrapSettingsTest.xml"
@@ -65,6 +89,12 @@
     },
     {
       "id": "ru.midgard.winter.ResourcesTest.paperBootstrapAndOptionalBridgesAreDeclared()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.ResourcesTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.ResourcesTest.terrainProfileAndDecorOnlyProfileAreSeparate()",
       "status": "PASS",
       "group": "Java unit/contract",
       "evidence": "junit/TEST-ru.midgard.winter.ResourcesTest.xml"
@@ -1210,513 +1240,747 @@
       "evidence": "logs/schematic-tests.log"
     },
     {
+      "id": "python.test_cave_aquifer_ore_biome_and_surface_inputs_kept",
+      "status": "PASS",
+      "group": "Python unit",
+      "evidence": "logs/terrain-tests.log"
+    },
+    {
+      "id": "python.test_changing_ore_veins_is_rejected",
+      "status": "PASS",
+      "group": "Python unit",
+      "evidence": "logs/terrain-tests.log"
+    },
+    {
+      "id": "python.test_custom_depth_fades_only_above_48",
+      "status": "PASS",
+      "group": "Python unit",
+      "evidence": "logs/terrain-tests.log"
+    },
+    {
+      "id": "python.test_dangerous_resource_injection_is_rejected",
+      "status": "PASS",
+      "group": "Python unit",
+      "evidence": "logs/terrain-tests.log"
+    },
+    {
+      "id": "python.test_no_nether_end_dimension_carver_ore_structure_or_biome_override",
+      "status": "PASS",
+      "group": "Python unit",
+      "evidence": "logs/terrain-tests.log"
+    },
+    {
+      "id": "python.test_only_final_density_router_branch_changes",
+      "status": "PASS",
+      "group": "Python unit",
+      "evidence": "logs/terrain-tests.log"
+    },
+    {
+      "id": "python.test_source_tampering_is_rejected",
+      "status": "PASS",
+      "group": "Python unit",
+      "evidence": "logs/terrain-tests.log"
+    },
+    {
+      "id": "python.test_terrain_disabling_does_not_modify_base_forest_pack",
+      "status": "PASS",
+      "group": "Python unit",
+      "evidence": "logs/terrain-tests.log"
+    },
+    {
+      "id": "python.test_valid_native_density_graph",
+      "status": "PASS",
+      "group": "Python unit",
+      "evidence": "logs/terrain-tests.log"
+    },
+    {
       "id": "worldedit.safe_stone_platform",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.reject_WATER",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.reject_LAVA",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.reject_POWDER_SNOW",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.reject_PACKED_ICE",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.cavity_under_surface",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.obstruction_SPRUCE_LOG",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.obstruction_PACKED_ICE",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.obstruction_SPRUCE_PLANKS",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.obstruction_SNOW",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.thin_snow_preserved",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.active_reservation_blocks_second_drop",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.release_reservation_restores_safety",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.native_moon_gate_7",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.native_moon_gate_9",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.native_frost_shrine",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.native_woodland_shrine",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.native_stone_ruin",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.native_timber_ruin",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.sticky_retract_invalidates_source_and_destination",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.orphan_pending_marker_finalized",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.live_pending_marker_retained",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.real_WorldGuard_region_rejected",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.WorldGuard_region_removal_restores_safety",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.real_Luna_unsafe_start_cancelled",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.real_Luna_start",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.real_Luna_unlock",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.real_Luna_end",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-worldedit-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.real_luna_block_appears",
       "status": "PASS",
       "group": "real protocol client",
-      "evidence": "anarchy05-worldedit-client-smoke.json"
+      "evidence": "terrain06-worldedit-client-smoke.json"
     },
     {
       "id": "worldedit.real_client_opens_luna_inventory",
       "status": "PASS",
       "group": "real protocol client",
-      "evidence": "anarchy05-worldedit-client-smoke.json"
+      "evidence": "terrain06-worldedit-client-smoke.json"
     },
     {
       "id": "worldedit.real_luna_cleanup",
       "status": "PASS",
       "group": "real protocol client",
-      "evidence": "anarchy05-worldedit-client-smoke.json"
+      "evidence": "terrain06-worldedit-client-smoke.json"
     },
     {
-      "id": "worldedit.snow_start",
+      "id": "worldedit.default_5x5_natural_snow",
       "status": "PASS",
       "group": "natural Luna",
-      "evidence": "anarchy05-worldedit-natural-luna.json"
+      "evidence": "terrain06-worldedit-natural-luna.json"
     },
     {
       "id": "worldedit.End_cleanup",
       "status": "PASS",
       "group": "natural Luna",
-      "evidence": "anarchy05-worldedit-natural-luna.json"
+      "evidence": "terrain06-worldedit-natural-luna.json"
     },
     {
       "id": "worldedit.chunky",
       "status": "PASS",
       "group": "lifecycle",
-      "evidence": "logs/anarchy05-worldedit-integration-console.log"
+      "evidence": "logs/terrain06-worldedit-integration-console.log"
     },
     {
       "id": "worldedit.stop",
       "status": "PASS",
       "group": "lifecycle",
-      "evidence": "logs/anarchy05-worldedit-integration-console.log"
+      "evidence": "logs/terrain06-worldedit-integration-console.log"
     },
     {
-      "id": "worldedit.builtin_pack",
+      "id": "worldedit.one_native_pack",
       "status": "PASS",
       "group": "lifecycle",
-      "evidence": "logs/anarchy05-worldedit-integration-console.log"
+      "evidence": "logs/terrain06-worldedit-integration-console.log"
+    },
+    {
+      "id": "worldedit.terrain_profile",
+      "status": "PASS",
+      "group": "lifecycle",
+      "evidence": "logs/terrain06-worldedit-integration-console.log"
     },
     {
       "id": "fawe.safe_stone_platform",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.reject_WATER",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.reject_LAVA",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.reject_POWDER_SNOW",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.reject_PACKED_ICE",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.cavity_under_surface",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.obstruction_SPRUCE_LOG",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.obstruction_PACKED_ICE",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.obstruction_SPRUCE_PLANKS",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.obstruction_SNOW",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.thin_snow_preserved",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.active_reservation_blocks_second_drop",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.release_reservation_restores_safety",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.native_moon_gate_7",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.native_moon_gate_9",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.native_frost_shrine",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.native_woodland_shrine",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.native_stone_ruin",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.native_timber_ruin",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.sticky_retract_invalidates_source_and_destination",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.orphan_pending_marker_finalized",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.live_pending_marker_retained",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.real_WorldGuard_region_rejected",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.WorldGuard_region_removal_restores_safety",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.real_Luna_unsafe_start_cancelled",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.real_Luna_start",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.real_Luna_unlock",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.real_Luna_end",
       "status": "PASS",
-      "group": "real integration fixtures",
-      "evidence": "anarchy05-fawe-runtime-audit.json"
+      "group": "real WG/Luna fixtures",
+      "evidence": "terrain06-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.real_luna_block_appears",
       "status": "PASS",
       "group": "real protocol client",
-      "evidence": "anarchy05-fawe-client-smoke.json"
+      "evidence": "terrain06-fawe-client-smoke.json"
     },
     {
       "id": "fawe.real_client_opens_luna_inventory",
       "status": "PASS",
       "group": "real protocol client",
-      "evidence": "anarchy05-fawe-client-smoke.json"
+      "evidence": "terrain06-fawe-client-smoke.json"
     },
     {
       "id": "fawe.real_luna_cleanup",
       "status": "PASS",
       "group": "real protocol client",
-      "evidence": "anarchy05-fawe-client-smoke.json"
+      "evidence": "terrain06-fawe-client-smoke.json"
     },
     {
-      "id": "fawe.snow_start",
+      "id": "fawe.default_5x5_natural_snow",
       "status": "PASS",
       "group": "natural Luna",
-      "evidence": "anarchy05-fawe-natural-luna.json"
+      "evidence": "terrain06-fawe-natural-luna.json"
     },
     {
       "id": "fawe.End_cleanup",
       "status": "PASS",
       "group": "natural Luna",
-      "evidence": "anarchy05-fawe-natural-luna.json"
+      "evidence": "terrain06-fawe-natural-luna.json"
     },
     {
       "id": "fawe.chunky",
       "status": "PASS",
       "group": "lifecycle",
-      "evidence": "logs/anarchy05-fawe-integration-console.log"
+      "evidence": "logs/terrain06-fawe-integration-console.log"
     },
     {
       "id": "fawe.stop",
       "status": "PASS",
       "group": "lifecycle",
-      "evidence": "logs/anarchy05-fawe-integration-console.log"
+      "evidence": "logs/terrain06-fawe-integration-console.log"
     },
     {
-      "id": "fawe.builtin_pack",
+      "id": "fawe.one_native_pack",
       "status": "PASS",
       "group": "lifecycle",
-      "evidence": "logs/anarchy05-fawe-integration-console.log"
+      "evidence": "logs/terrain06-fawe-integration-console.log"
     },
     {
-      "id": "purpur.one_jar",
+      "id": "fawe.terrain_profile",
       "status": "PASS",
-      "group": "one-JAR bootstrap",
-      "evidence": "anarchy05-disable-summary.json"
+      "group": "lifecycle",
+      "evidence": "logs/terrain06-fawe-integration-console.log"
     },
     {
-      "id": "purpur.global_disable_on_restart",
+      "id": "purpur_global_disable.one_jar",
       "status": "PASS",
-      "group": "restart persistence",
-      "evidence": "anarchy05-disable-summary.json"
+      "group": "bootstrap/restart",
+      "evidence": "terrain06-final-disable-summary.json"
     },
     {
-      "id": "same_current_jar_in_all5_servers",
+      "id": "purpur_global_disable.restart_persistence",
+      "status": "PASS",
+      "group": "bootstrap/restart",
+      "evidence": "terrain06-final-disable-summary.json"
+    },
+    {
+      "id": "purpur_global_disable.global_disable",
+      "status": "PASS",
+      "group": "bootstrap/restart",
+      "evidence": "terrain06-final-disable-summary.json"
+    },
+    {
+      "id": "paper_classic_profile.one_jar",
+      "status": "PASS",
+      "group": "bootstrap/restart",
+      "evidence": "terrain06-classic-summary.json"
+    },
+    {
+      "id": "paper_classic_profile.restart_persistence",
+      "status": "PASS",
+      "group": "bootstrap/restart",
+      "evidence": "terrain06-classic-summary.json"
+    },
+    {
+      "id": "paper_classic_profile.independent_terrain_off",
+      "status": "PASS",
+      "group": "bootstrap/restart",
+      "evidence": "terrain06-classic-summary.json"
+    },
+    {
+      "id": "paper_second_seed.one_jar",
+      "status": "PASS",
+      "group": "bootstrap/restart",
+      "evidence": "terrain06-seed42-summary.json"
+    },
+    {
+      "id": "paper_second_seed.restart_persistence",
+      "status": "PASS",
+      "group": "bootstrap/restart",
+      "evidence": "terrain06-seed42-summary.json"
+    },
+    {
+      "id": "paper_second_seed.seed42",
+      "status": "PASS",
+      "group": "bootstrap/restart",
+      "evidence": "terrain06-seed42-summary.json"
+    },
+    {
+      "id": "native_village_plains_retained",
+      "status": "PASS",
+      "group": "native structures/cave biomes",
+      "evidence": "terrain06-structures-audit.json",
+      "detail": "Native structure start and pieces at generated FULL chunk; village blocks scanned separately"
+    },
+    {
+      "id": "village_plains_door_floors",
+      "status": "PASS",
+      "group": "native structures/cave biomes",
+      "evidence": "terrain06-structures-audit.json",
+      "detail": "Actual bottom-half doors and solid floor immediately below; doors=10, unsupported=0"
+    },
+    {
+      "id": "village_plains_foundation_gap",
+      "status": "PASS",
+      "group": "native structures/cave biomes",
+      "evidence": "terrain06-structures-audit.json",
+      "detail": "Sampled structure base at piece minY, maximum consecutive air gap <=8; samples=376, max=1. Not an all-building traversal proof."
+    },
+    {
+      "id": "native_village_desert_retained",
+      "status": "PASS",
+      "group": "native structures/cave biomes",
+      "evidence": "terrain06-structures-audit.json",
+      "detail": "Native structure start and pieces at generated FULL chunk; village blocks scanned separately"
+    },
+    {
+      "id": "village_desert_door_floors",
+      "status": "PASS",
+      "group": "native structures/cave biomes",
+      "evidence": "terrain06-structures-audit.json",
+      "detail": "Actual bottom-half doors and solid floor immediately below; doors=8, unsupported=0"
+    },
+    {
+      "id": "village_desert_foundation_gap",
+      "status": "PASS",
+      "group": "native structures/cave biomes",
+      "evidence": "terrain06-structures-audit.json",
+      "detail": "Sampled structure base at piece minY, maximum consecutive air gap <=8; samples=1339, max=5. Not an all-building traversal proof."
+    },
+    {
+      "id": "desert_climate_kept",
+      "status": "PASS",
+      "group": "native structures/cave biomes",
+      "evidence": "terrain06-structures-audit.json",
+      "detail": "Warm native temperature at actual generated village terrain"
+    },
+    {
+      "id": "native_stronghold_retained",
+      "status": "PASS",
+      "group": "native structures/cave biomes",
+      "evidence": "terrain06-structures-audit.json",
+      "detail": "Native structure start and pieces at generated FULL chunk; village blocks scanned separately"
+    },
+    {
+      "id": "native_mineshaft_retained",
+      "status": "PASS",
+      "group": "native structures/cave biomes",
+      "evidence": "terrain06-structures-audit.json",
+      "detail": "Native structure start and pieces at generated FULL chunk; village blocks scanned separately"
+    },
+    {
+      "id": "native_ancient_city_retained",
+      "status": "PASS",
+      "group": "native structures/cave biomes",
+      "evidence": "terrain06-structures-audit.json",
+      "detail": "Native structure start and pieces at generated FULL chunk; village blocks scanned separately"
+    },
+    {
+      "id": "native_trial_chambers_retained",
+      "status": "PASS",
+      "group": "native structures/cave biomes",
+      "evidence": "terrain06-structures-audit.json",
+      "detail": "Native structure start and pieces at generated FULL chunk; village blocks scanned separately"
+    },
+    {
+      "id": "cave_biome_dripstone_caves",
+      "status": "PASS",
+      "group": "native structures/cave biomes",
+      "evidence": "terrain06-structures-audit.json",
+      "detail": "Bounded native 3D biome locate; exact cave void geometry checked independently in saved regions"
+    },
+    {
+      "id": "cave_biome_lush_caves",
+      "status": "PASS",
+      "group": "native structures/cave biomes",
+      "evidence": "terrain06-structures-audit.json",
+      "detail": "Bounded native 3D biome locate; exact cave void geometry checked independently in saved regions"
+    },
+    {
+      "id": "cave_biome_deep_dark",
+      "status": "PASS",
+      "group": "native structures/cave biomes",
+      "evidence": "terrain06-structures-audit.json",
+      "detail": "Bounded native 3D biome locate; exact cave void geometry checked independently in saved regions"
+    },
+    {
+      "id": "identical_current_main_jar",
       "status": "PASS",
       "group": "artifacts",
-      "evidence": "anarchy05-artifact-identity.json"
+      "evidence": "terrain06-artifact-identity.json"
     },
     {
-      "id": "no_external_datapack_in_all5_servers",
+      "id": "no_external_datapack_zip",
       "status": "PASS",
-      "group": "one-JAR bootstrap",
-      "evidence": "anarchy05-artifact-identity.json"
+      "group": "artifacts",
+      "evidence": "terrain06-artifact-identity.json"
     },
     {
-      "id": "825180311.common_raw_underground_equal",
+      "id": "cave_wall_and_fluid_classes_equal_through31",
       "status": "PASS",
-      "group": "same-coordinate worldgen",
-      "evidence": "anarchy05-matrix-coordinate-invariants.json",
+      "group": "terrain/cave geometry",
+      "evidence": "terrain06-final-matrix-terrain-invariants.json",
       "detail": {
-        "roi": 64,
-        "coordinates": 1572785
+        "columns": 16384,
+        "cave_geometry_coordinates_through31": 1572864,
+        "raw_material_differences_through_y0": 16912,
+        "ore_differences_through31": 6235
       }
     },
     {
-      "id": "825180311.all_height_ores_equal",
-      "status": "PASS",
-      "group": "same-coordinate worldgen",
-      "evidence": "anarchy05-matrix-coordinate-invariants.json",
-      "detail": {
-        "roi": 64,
-        "coordinates": 1572785
-      }
-    },
-    {
-      "id": "825180311.structure_boxes_equal",
-      "status": "PASS",
-      "group": "same-coordinate worldgen",
-      "evidence": "anarchy05-matrix-coordinate-invariants.json",
-      "detail": {
-        "roi": 64,
-        "coordinates": 1572785
-      }
-    },
-    {
-      "id": "825180311.block_entities_equal",
-      "status": "PASS",
-      "group": "same-coordinate worldgen",
-      "evidence": "anarchy05-matrix-coordinate-invariants.json",
-      "detail": {
-        "roi": 64,
-        "coordinates": 1572785
-      }
-    },
-    {
-      "id": "825180311.original_variable_window_probe",
+      "id": "deep_raw_states_y_minus64_through_0_equal",
       "status": "FAIL",
-      "group": "raw variable-window diagnostic",
-      "evidence": "server-matrix-anarchy05-matrix.json",
-      "detail": "Original height-selected fingerprints retained; independent identical-coordinate result is separate."
+      "group": "raw material diagnostic",
+      "evidence": "terrain06-final-matrix-terrain-invariants.json",
+      "detail": {
+        "columns": 16384,
+        "cave_geometry_coordinates_through31": 1572864,
+        "raw_material_differences_through_y0": 16912,
+        "ore_differences_through31": 6235
+      }
     },
     {
-      "id": "vanilla.restart",
+      "id": "deep_ores_y_minus64_through_0_equal",
+      "status": "FAIL",
+      "group": "raw material diagnostic",
+      "evidence": "terrain06-final-matrix-terrain-invariants.json",
+      "detail": {
+        "columns": 16384,
+        "cave_geometry_coordinates_through31": 1572864,
+        "raw_material_differences_through_y0": 16912,
+        "ore_differences_through31": 6235
+      }
+    },
+    {
+      "id": "terrain_changed_at_least_half_sampled_columns",
       "status": "PASS",
-      "group": "restart persistence",
-      "evidence": "runtime/v0.5.0/825180311/vanilla/measurement-restart.json",
+      "group": "terrain/cave geometry",
+      "evidence": "terrain06-final-matrix-terrain-invariants.json",
+      "detail": {
+        "columns": 16384,
+        "cave_geometry_coordinates_through31": 1572864,
+        "raw_material_differences_through_y0": 16912,
+        "ore_differences_through31": 6235
+      }
+    },
+    {
+      "id": "substantial_mean_absolute_height_change",
+      "status": "PASS",
+      "group": "terrain/cave geometry",
+      "evidence": "terrain06-final-matrix-terrain-invariants.json",
+      "detail": {
+        "columns": 16384,
+        "cave_geometry_coordinates_through31": 1572864,
+        "raw_material_differences_through_y0": 16912,
+        "ore_differences_through31": 6235
+      }
+    },
+    {
+      "id": "wide_same_xz_sparse_map",
+      "status": "PASS",
+      "group": "terrain/cave geometry",
+      "evidence": "terrain06-sparse-map-comparison.json",
+      "detail": {
+        "points": 4356,
+        "baseline": "saved anarchy05-world, same seed and XZ, prior native forests but no custom terrain",
+        "current": "terrain06-world, initial 1089-chunk pass before new camera loading",
+        "sampling": "4 natural-ground columns per chunk; not a full 512x512-column survey",
+        "meanAbsoluteHeightChange": 35.342745638200185,
+        "maxAbsoluteHeightChange": 145,
+        "changedByAtLeast8Blocks": 3029
+      }
+    },
+    {
+      "id": "vanilla.saved_blocks_restart",
+      "status": "PASS",
+      "group": "bootstrap/restart",
+      "evidence": "runtime/v0.6.0/825180311/vanilla/measurement-restart.json",
       "detail": {
         "rawUndergroundBlockStateHash": [],
         "belowSurfaceGeometry": [],
@@ -1726,10 +1990,10 @@
       }
     },
     {
-      "id": "winter.restart",
+      "id": "winter.saved_blocks_restart",
       "status": "PASS",
-      "group": "restart persistence",
-      "evidence": "runtime/v0.5.0/825180311/winter/measurement-restart.json",
+      "group": "bootstrap/restart",
+      "evidence": "runtime/v0.6.0/825180311/winter/measurement-restart.json",
       "detail": {
         "rawUndergroundBlockStateHash": [],
         "belowSurfaceGeometry": [],
@@ -1739,16 +2003,16 @@
       }
     },
     {
-      "id": "paper.initial.builtin_pack",
+      "id": "paper_matrix.initial.pack",
       "status": "PASS",
-      "group": "one-JAR bootstrap",
-      "evidence": "runtime/v0.5.0/825180311/winter/measurement-initial.json"
+      "group": "bootstrap/restart",
+      "evidence": "runtime/v0.6.0/825180311/winter/measurement-initial.json"
     },
     {
-      "id": "paper.restart.builtin_pack",
+      "id": "paper_matrix.restart.pack",
       "status": "PASS",
-      "group": "one-JAR bootstrap",
-      "evidence": "runtime/v0.5.0/825180311/winter/measurement-restart.json"
+      "group": "bootstrap/restart",
+      "evidence": "runtime/v0.6.0/825180311/winter/measurement-restart.json"
     },
     {
       "id": "artifact-check.json",
@@ -1763,94 +2027,82 @@
       "evidence": "storybook-static-validation.json"
     },
     {
+      "id": "terrain-static-validation.json",
+      "status": "PASS",
+      "group": "artifacts",
+      "evidence": "terrain-static-validation.json"
+    },
+    {
       "id": "schematic-validation.json",
       "status": "PASS",
       "group": "artifacts",
       "evidence": "schematic-validation.json"
     },
     {
-      "id": "anarchy.survival_mode",
+      "id": "non_op.survival_mode",
       "status": "PASS",
-      "group": "non-OP grief client",
-      "evidence": "anarchy05-grief-client.json"
+      "group": "actual grief/build/TNT",
+      "evidence": "terrain06-grief-client.json"
     },
     {
-      "id": "anarchy.natural_decor_present",
+      "id": "non_op.natural_decor_present",
       "status": "PASS",
-      "group": "non-OP grief client",
-      "evidence": "anarchy05-grief-client.json"
+      "group": "actual grief/build/TNT",
+      "evidence": "terrain06-grief-client.json"
     },
     {
-      "id": "anarchy.natural_decor_breakable",
+      "id": "non_op.natural_decor_breakable",
       "status": "PASS",
-      "group": "non-OP grief client",
-      "evidence": "anarchy05-grief-client.json"
+      "group": "actual grief/build/TNT",
+      "evidence": "terrain06-grief-client.json"
     },
     {
-      "id": "anarchy.player_build_allowed",
+      "id": "non_op.player_build_allowed",
       "status": "PASS",
-      "group": "non-OP grief client",
-      "evidence": "anarchy05-grief-client.json"
+      "group": "actual grief/build/TNT",
+      "evidence": "terrain06-grief-client.json"
     },
     {
-      "id": "anarchy.explosion_changes_decoration",
+      "id": "non_op.explosion_changes_decoration",
       "status": "PASS",
-      "group": "non-OP grief client",
-      "evidence": "anarchy05-grief-client.json"
+      "group": "actual grief/build/TNT",
+      "evidence": "terrain06-grief-client.json"
     },
     {
-      "id": "anarchy.non_operator_verified",
+      "id": "non_op.non_operator_verified",
       "status": "PASS",
-      "group": "non-OP grief client",
-      "evidence": "anarchy05-grief-client.json"
+      "group": "actual grief/build/TNT",
+      "evidence": "terrain06-grief-client.json"
     },
     {
-      "id": "natural.moon-mushrooms-objects",
+      "id": "native_F2.03-terrain-f3.png",
       "status": "PASS",
-      "group": "natural fantasy objects",
-      "evidence": "anarchy05-visual-metrics.json"
+      "group": "native game samples",
+      "evidence": "screenshots-terrain06/provenance.json"
     },
     {
-      "id": "natural.moonstones-objects",
+      "id": "native_F2.04-high-ridges.png",
       "status": "PASS",
-      "group": "natural fantasy objects",
-      "evidence": "anarchy05-visual-metrics.json"
+      "group": "native game samples",
+      "evidence": "screenshots-terrain06/provenance.json"
     },
     {
-      "id": "natural.lantern-willows-objects",
+      "id": "native_F2.05-ravine-panorama.png",
       "status": "PASS",
-      "group": "natural fantasy objects",
-      "evidence": "anarchy05-visual-metrics.json"
+      "group": "native game samples",
+      "evidence": "screenshots-terrain06/provenance.json"
     },
     {
-      "id": "natural.new_landmarks",
+      "id": "native_F2.06-plains-village.png",
       "status": "PASS",
-      "group": "natural fantasy objects",
-      "evidence": "anarchy05-visual-metrics.json"
+      "group": "native game samples",
+      "evidence": "screenshots-terrain06/provenance.json"
     },
     {
-      "id": "native_F2.01-moon-gate.png",
+      "id": "native_F2.07-warm-desert-village.png",
       "status": "PASS",
-      "group": "real graphical samples",
-      "evidence": "screenshots-anarchy05/provenance.json"
-    },
-    {
-      "id": "native_F2.04-moon-gate-front.png",
-      "status": "PASS",
-      "group": "real graphical samples",
-      "evidence": "screenshots-anarchy05/provenance.json"
-    },
-    {
-      "id": "native_F2.05-woodland-sanctuary.png",
-      "status": "PASS",
-      "group": "real graphical samples",
-      "evidence": "screenshots-anarchy05/provenance.json"
-    },
-    {
-      "id": "native_F2.08-f3-proof.png",
-      "status": "PASS",
-      "group": "real graphical samples",
-      "evidence": "screenshots-anarchy05/provenance.json"
+      "group": "native game samples",
+      "evidence": "screenshots-terrain06/provenance.json"
     },
     {
       "id": "50_to_100_player_soak",
@@ -1914,6 +2166,18 @@
     },
     {
       "id": "external_legacy_pack_priority_combinations",
+      "status": "NOT RUN",
+      "group": "remaining scope",
+      "evidence": "KNOWN_ISSUES.md"
+    },
+    {
+      "id": "all_village_roads_walkthrough",
+      "status": "NOT RUN",
+      "group": "remaining scope",
+      "evidence": "KNOWN_ISSUES.md"
+    },
+    {
+      "id": "all_seeds_cave_geometry_equivalence",
       "status": "NOT RUN",
       "group": "remaining scope",
       "evidence": "KNOWN_ISSUES.md"

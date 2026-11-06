@@ -1,0 +1,49 @@
+Starting org.bukkit.craftbukkit.Main
+[15:48:18 INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.9+10-LTS; Eclipse Adoptium Temurin-21.0.9+10) on Linux 6.18.57 (amd64)
+[15:48:18 INFO]: [bootstrap] Loading Purpur 1.21.11-2568-HEAD@f57bd86 (2026-04-04T22:25:54Z) for Minecraft 1.21.11
+[15:48:18 INFO]: [PluginInitializerManager] Initializing plugins...
+[15:48:20 INFO]: [ReobfServer] Remapping server...
+[15:48:29 INFO]: [ReobfServer] Done remapping server in 8731ms.
+[15:48:29 INFO]: [PluginRemapper] Remapping plugin 'plugins/WinterProbe.jar'...
+[15:48:29 INFO]: [PluginRemapper] Done remapping plugin 'plugins/WinterProbe.jar' in 163ms.
+[15:48:30 INFO]: [PluginInitializerManager] Initialized 2 plugins
+[15:48:30 INFO]: [PluginInitializerManager] Paper plugins (1):
+ - MidgardWinterWorld (0.6.0)
+[15:48:30 INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - WinterProbe (0.6.0)
+[15:48:38 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[15:48:38 INFO]: [MidgardWinterWorld] FANTASY_PACK_DISCOVERED MidgardWinterWorld/fantasy
+[15:48:38 INFO]: [MidgardWinterWorld] TERRAIN_PACK_DISCOVERED MidgardWinterWorld/terrain; new worlds only; all Overworld terrain, warm climate preserved
+[33;1m[15:48:38 WARN]: Failed to load datapacks, can't proceed with server load. You can either fix your datapacks or reset to vanilla with --safeMode
+java.util.concurrent.ExecutionException: java.lang.NullPointerException: Cannot invoke "net.minecraft.core.RegistryAccess.createSerializationContext(com.mojang.serialization.DynamicOps)" because the return value of "org.bukkit.craftbukkit.CraftRegistry.getMinecraftRegistry()" is null
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073) ~[?:?]
+	at net.minecraft.server.Main.main(Main.java:290) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at org.bukkit.craftbukkit.Main.main(Main.java:212) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.NullPointerException: Cannot invoke "net.minecraft.core.RegistryAccess.createSerializationContext(com.mojang.serialization.DynamicOps)" because the return value of "org.bukkit.craftbukkit.CraftRegistry.getMinecraftRegistry()" is null
+	at io.papermc.paper.adventure.PaperAdventure.lambda$static$1(PaperAdventure.java:137) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at com.google.common.base.Suppliers$NonSerializableMemoizingSupplier.get(Suppliers.java:201) ~[guava-33.5.0-jre.jar:?]
+	at io.papermc.paper.adventure.WrapperAwareSerializer.serialize(WrapperAwareSerializer.java:36) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at io.papermc.paper.adventure.WrapperAwareSerializer.serialize(WrapperAwareSerializer.java:13) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at io.papermc.paper.adventure.AdventureComponent.deepConverted(AdventureComponent.java:26) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at io.papermc.paper.adventure.AdventureComponent.equals(AdventureComponent.java:86) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at java.base/java.util.Objects.equals(Objects.java:64) ~[?:?]
+	at net.minecraft.server.packs.PackLocationInfo.equals(PackLocationInfo.java:12) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at net.minecraft.server.packs.repository.Pack.equals(Pack.java:127) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at java.base/java.util.ArrayList.indexOfRange(ArrayList.java:299) ~[?:?]
+	at java.base/java.util.ArrayList.indexOf(ArrayList.java:286) ~[?:?]
+	at java.base/java.util.ArrayList.contains(ArrayList.java:275) ~[?:?]
+	at net.minecraft.server.packs.repository.PackRepository.rebuildSelected(PackRepository.java:102) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at net.minecraft.server.packs.repository.PackRepository.reload(PackRepository.java:45) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at net.minecraft.server.MinecraftServer.configurePackRepository(MinecraftServer.java:2385) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at net.minecraft.server.WorldLoader$PackConfig.createResourceManager(WorldLoader.java:93) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at net.minecraft.server.WorldLoader.load(WorldLoader.java:37) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at net.minecraft.server.Main.lambda$main$1(Main.java:266) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at net.minecraft.util.Util.blockUntilDone(Util.java:1057) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at net.minecraft.util.Util.blockUntilDone(Util.java:1052) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at net.minecraft.server.Main.main(Main.java:265) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	... 4 more
+[m

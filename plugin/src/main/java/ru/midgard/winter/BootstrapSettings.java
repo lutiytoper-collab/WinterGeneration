@@ -11,4 +11,13 @@ final class BootstrapSettings {
         for(String key:new String[]{"enabled","fantasy-pack-enabled"})if(yaml.contains(key)&&!yaml.isBoolean(key))throw new IllegalStateException(key+" must be boolean");
         return yaml.getBoolean("enabled",true)&&yaml.getBoolean("fantasy-pack-enabled",true);
     }
+    static boolean terrainPackEnabled(Path path){
+        if(!nativePackEnabled(path))return false;
+        if(!Files.exists(path))return true;
+        var yaml=new YamlConfiguration();
+        try{yaml.load(path.toFile());}catch(Exception e){throw new IllegalStateException("Cannot read Fantasy terrain config",e);}
+        String key="fantasy-terrain-enabled";
+        if(yaml.contains(key)&&!yaml.isBoolean(key))throw new IllegalStateException(key+" must be boolean");
+        return yaml.getBoolean(key,true);
+    }
 }

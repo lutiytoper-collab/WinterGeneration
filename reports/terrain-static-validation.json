@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "minecraft": "1.21.11",
+  "noise_settings_override": "minecraft:overworld",
+  "changed_router_inputs": [
+    "final_density"
+  ],
+  "native_caves_aquifers_ore_veins_preliminary_surface_kept": true,
+  "biome_router_inputs_kept": true,
+  "surface_rules_kept": true,
+  "no_ore_carver_or_structure_definition_overrides": true,
+  "deep_offset_contribution_zero_through_y": 48,
+  "resources": 16,
+  "runtime_geometry_deep_cave_structure_acceptance": "Separate real server tests required; static comparison does not prove equal generated blocks."
+}

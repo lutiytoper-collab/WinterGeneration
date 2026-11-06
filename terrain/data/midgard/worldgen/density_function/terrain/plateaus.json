@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:cache_2d",
+  "argument": {
+    "type": "minecraft:spline",
+    "spline": {
+      "coordinate": "midgard:terrain/terraces",
+      "points": [
+        {
+          "location": -1,
+          "value": -0.1,
+          "derivative": 0.0
+        },
+        {
+          "location": -0.45,
+          "value": -0.1,
+          "derivative": 0.0
+        },
+        {
+          "location": -0.34,
+          "value": 0.08,
+          "derivative": 0.0
+        },
+        {
+          "location": -0.05,
+          "value": 0.08,
+          "derivative": 0.0
+        },
+        {
+          "location": 0.06,
+          "value": 0.34,
+          "derivative": 0.0
+        },
+        {
+          "location": 0.34,
+          "value": 0.34,
+          "derivative": 0.0
+        },
+        {
+          "location": 0.44,
+          "value": 0.66,
+          "derivative": 0.0
+        },
+        {
+          "location": 1,
+          "value": 0.66,
+          "derivative": 0.0
+        }
+      ]
+    }
+  }
+}

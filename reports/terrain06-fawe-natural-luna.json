@@ -1,0 +1,20 @@
+{
+  "platformRadius": 2,
+  "generator": "jdk.proxy4.$Proxy97",
+  "mode": "public Generator adapter: bounded random coordinates and async preparation over natural winter_test; real Luna lifecycle",
+  "status": "PASS",
+  "elapsedSeconds": 130.709314773,
+  "world": "winter_test",
+  "x": -12,
+  "y": 145,
+  "z": -288,
+  "biome": "minecraft:old_growth_spruce_taiga",
+  "belowBefore": "minecraft:snow[layers\u003d1]",
+  "belowAfter": "minecraft:snow[layers\u003d1]",
+  "ticketCountAfterEnd": 0,
+  "surfacePreservedAfterEnd": true,
+  "blockAfterEnd": "AIR",
+  "ticketCoordinates": "[]",
+  "activeAfterEnd": 0,
+  "preparationsAfterEnd": 0
+}

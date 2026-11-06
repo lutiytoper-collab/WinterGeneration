@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/workspace/WinterGeneration/scripts/embedded-smoke.py", line 25, in wait
+    try:line=q.get(timeout=1)
+             ^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/queue.py", line 179, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/WinterGeneration/scripts/embedded-smoke.py", line 33, in <module>
+    wait('Done (');proc.stdin.write('tick freeze\nwinterprobe run 2 10 8\n');proc.stdin.flush();wait('WINTERPROBE_DONE',600)
+    ^^^^^^^^^^^^^^
+  File "/workspace/WinterGeneration/scripts/embedded-smoke.py", line 27, in wait
+    if proc.poll() is not None:raise RuntimeError(f'Server exited{proc.returncode}')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Server exited0

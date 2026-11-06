@@ -1,0 +1,181 @@
+{
+  "version": "1.21.11",
+  "client": "mineflayer",
+  "scope": "isolated loopback QA server with offline authentication",
+  "checks": [
+    {
+      "name": "real_luna_block_appears",
+      "status": "PASS",
+      "detail": "ender_chest"
+    },
+    {
+      "name": "real_client_opens_luna_inventory",
+      "status": "PASS",
+      "detail": "type=minecraft:generic_9x6, loot slots=54"
+    },
+    {
+      "name": "real_luna_cleanup",
+      "status": "PASS",
+      "detail": "air"
+    }
+  ],
+  "started": true,
+  "lootItems": [
+    {
+      "name": "blaze_spawn_egg",
+      "count": 2
+    },
+    {
+      "name": "cooked_beef",
+      "count": 64
+    },
+    {
+      "name": "diamond_leggings",
+      "count": 1
+    },
+    {
+      "name": "diamond_axe",
+      "count": 1
+    },
+    {
+      "name": "diamond_hoe",
+      "count": 1
+    },
+    {
+      "name": "diamond_shovel",
+      "count": 1
+    },
+    {
+      "name": "pig_spawn_egg",
+      "count": 3
+    },
+    {
+      "name": "diamond_sword",
+      "count": 1
+    },
+    {
+      "name": "blaze_spawn_egg",
+      "count": 1
+    },
+    {
+      "name": "soul_lantern",
+      "count": 2
+    },
+    {
+      "name": "enchanted_golden_apple",
+      "count": 2
+    },
+    {
+      "name": "netherite_leggings",
+      "count": 1
+    },
+    {
+      "name": "emerald",
+      "count": 32
+    },
+    {
+      "name": "tnt",
+      "count": 16
+    },
+    {
+      "name": "netherite_scrap",
+      "count": 4
+    },
+    {
+      "name": "netherite_helmet",
+      "count": 1
+    },
+    {
+      "name": "enchanted_book",
+      "count": 1
+    },
+    {
+      "name": "pig_spawn_egg",
+      "count": 1
+    },
+    {
+      "name": "pig_spawn_egg",
+      "count": 2
+    },
+    {
+      "name": "firework_rocket",
+      "count": 64
+    },
+    {
+      "name": "netherite_chestplate",
+      "count": 1
+    },
+    {
+      "name": "experience_bottle",
+      "count": 16
+    },
+    {
+      "name": "wither_skeleton_skull",
+      "count": 1
+    },
+    {
+      "name": "shield",
+      "count": 1
+    },
+    {
+      "name": "netherite_shovel",
+      "count": 1
+    },
+    {
+      "name": "enchanted_book",
+      "count": 1
+    },
+    {
+      "name": "enchanted_book",
+      "count": 1
+    },
+    {
+      "name": "soul_lantern",
+      "count": 1
+    },
+    {
+      "name": "dragon_head",
+      "count": 1
+    },
+    {
+      "name": "enchanted_book",
+      "count": 1
+    },
+    {
+      "name": "diamond",
+      "count": 16
+    },
+    {
+      "name": "obsidian",
+      "count": 32
+    },
+    {
+      "name": "zombie_villager_spawn_egg",
+      "count": 1
+    },
+    {
+      "name": "netherite_sword",
+      "count": 1
+    },
+    {
+      "name": "diamond_boots",
+      "count": 1
+    },
+    {
+      "name": "enchanted_book",
+      "count": 1
+    },
+    {
+      "name": "diamond_chestplate",
+      "count": 1
+    },
+    {
+      "name": "arrow",
+      "count": 64
+    },
+    {
+      "name": "totem_of_undying",
+      "count": 1
+    }
+  ]
+}

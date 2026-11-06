@@ -71,7 +71,7 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
             event.registrar().register("winterworld","Управление зимней генерацией",(io.papermc.paper.command.brigadier.BasicCommand)(source,args)->onCommand(source.getSender(),null,"winterworld",args)));
         Bukkit.getServicesManager().register(AirDropCompatibilityManager.class,airDrop,this,
             org.bukkit.plugin.ServicePriority.Normal);
-        getLogger().info("Fantasy build 0.5.0; embedded native pack; protected late decoration; no retrogen.");
+        getLogger().info("Fantasy build 0.6.0; embedded native pack; protected late decoration; no retrogen.");
     }
     @Override public void onDisable() {
         if(pendingTask!=null)pendingTask.cancel();pending.clear();loading.clear();for(Object item:decorationLeases.clear()){ChunkKey key=(ChunkKey)item;Chunk ch=leasedChunks.remove(key);if(ch!=null)ch.removePluginChunkTicket(this);}if(lunaBridge!=null)lunaBridge.close();
@@ -472,7 +472,7 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
                 catch(RuntimeException ex) { runtime=previous; sender.sendMessage("Отклонено; прежние настройки сохранены: "+ex.getMessage()); }
             }
             case "debug" -> { debug=!debug; sender.sendMessage("Debug="+debug); }
-            case "status", "info" -> sender.sendMessage("MidgardWinterWorld 0.5.0 DEVELOPMENT; enabled="+runtime.enabled+
+            case "status", "info" -> sender.sendMessage("MidgardWinterWorld 0.6.0 DEVELOPMENT; enabled="+runtime.enabled+
                 "; worlds="+runtime.worlds+"; processed="+seen+" decorated="+decorated+" skipped="+skipped+" boundary-restored="+boundaryRestorations+" pending="+(pending.size()+loading.size())+
                 "; leased-chunks="+decorationLeases.size()+"; features="+features+"; WorldGuard="+(worldGuardPresent()?"public API bridge, fail closed on query failure":"absent")+"; LunaAirDrop=UNVERIFIED");
             case "inspect" -> {

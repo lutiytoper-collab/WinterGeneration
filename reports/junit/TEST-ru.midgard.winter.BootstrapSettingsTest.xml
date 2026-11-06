@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.midgard.winter.BootstrapSettingsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-06T08:46:37.588Z" hostname="0f051bf75645" time="0.069">
+<testsuite name="ru.midgard.winter.BootstrapSettingsTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-11-06T15:50:51.982Z" hostname="0f051bf75645" time="0.078">
   <properties/>
-  <testcase name="globalDisableAlsoDisablesNativeRegistryChanges()" classname="ru.midgard.winter.BootstrapSettingsTest" time="0.053"/>
-  <testcase name="malformedSwitchFailsBeforeWorldLoad()" classname="ru.midgard.winter.BootstrapSettingsTest" time="0.006"/>
+  <testcase name="globalDisableAlsoDisablesNativeRegistryChanges()" classname="ru.midgard.winter.BootstrapSettingsTest" time="0.051"/>
+  <testcase name="newInstallEnablesTerrain()" classname="ru.midgard.winter.BootstrapSettingsTest" time="0.001"/>
+  <testcase name="malformedTerrainFlagFailsBeforeRegistryLoad()" classname="ru.midgard.winter.BootstrapSettingsTest" time="0.005"/>
+  <testcase name="terrainCanBeDisabledWithoutDisablingDecor()" classname="ru.midgard.winter.BootstrapSettingsTest" time="0.003"/>
+  <testcase name="globalAndNativeSwitchesAlsoDisableTerrain()" classname="ru.midgard.winter.BootstrapSettingsTest" time="0.003"/>
+  <testcase name="malformedSwitchFailsBeforeWorldLoad()" classname="ru.midgard.winter.BootstrapSettingsTest" time="0.002"/>
   <testcase name="nativeSwitchStillWorksIndependently()" classname="ru.midgard.winter.BootstrapSettingsTest" time="0.002"/>
   <testcase name="emptyNewInstallEnablesNativePack()" classname="ru.midgard.winter.BootstrapSettingsTest" time="0.001"/>
   <testcase name="existingConfigWithoutNewKeyKeepsCompatibility()" classname="ru.midgard.winter.BootstrapSettingsTest" time="0.002"/>

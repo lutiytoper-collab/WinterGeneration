@@ -8,7 +8,7 @@ const delay=ms=>new Promise(r=>setTimeout(r,ms));
 const result={minecraft:'1.21.11',scope:'Non-OP survival player; naturally generated decoration in isolated loopback world. Console supplies stone, teleport and TNT only.',target,checks:[]};let completed=false,started=false;
 function check(name,ok,detail){result.checks.push({name,status:ok?'PASS':'FAIL',detail});if(!ok)throw Error(name+': '+detail);}
 const timeout=setTimeout(()=>finish(Error('Grief timeout')),90000);
-function finish(error){if(completed)return;completed=true;clearTimeout(timeout);if(error)result.error=String(error.stack||error);fs.writeFileSync(path.join(root,'reports/anarchy05-grief-client.json'),JSON.stringify(result,null,2)+'\n');console.log(error?'GRIEF_FAILED '+error:'GRIEF_DONE');bot.quit();setTimeout(()=>process.exit(error?1:0),250);}
+function finish(error){if(completed)return;completed=true;clearTimeout(timeout);if(error)result.error=String(error.stack||error);fs.writeFileSync(path.join(root,'reports',process.env.QA_GRIEF_REPORT||'anarchy05-grief-client.json'),JSON.stringify(result,null,2)+'\n');console.log(error?'GRIEF_FAILED '+error:'GRIEF_DONE');bot.quit();setTimeout(()=>process.exit(error?1:0),250);}
 bot.on('error',finish);bot.on('kicked',r=>finish(Error(JSON.stringify(r))));bot.once('spawn',()=>console.log('GRIEF_READY'));
 bot.on('messagestr',async message=>{
  if(!message.includes('GRIEF_GO')||started||completed)return;started=true;

@@ -28,3 +28,7 @@ tasks.test {
 
 // Native worldgen is part of the one-file distribution.
 tasks.processResources { from(rootProject.file("storybook")) { into("fantasy-pack") } }
+tasks.processResources {
+    from(rootProject.file("storybook")) { into("fantasy-terrain-pack") }
+    from(rootProject.file("terrain")) { exclude("pack.mcmeta"); into("fantasy-terrain-pack") }
+}

@@ -1,0 +1,14 @@
+test_cave_aquifer_ore_biome_and_surface_inputs_kept (__main__.TerrainTests.test_cave_aquifer_ore_biome_and_surface_inputs_kept) ... ok
+test_changing_ore_veins_is_rejected (__main__.TerrainTests.test_changing_ore_veins_is_rejected) ... ok
+test_custom_depth_fades_only_above_48 (__main__.TerrainTests.test_custom_depth_fades_only_above_48) ... ok
+test_dangerous_resource_injection_is_rejected (__main__.TerrainTests.test_dangerous_resource_injection_is_rejected) ... ok
+test_no_nether_end_dimension_carver_ore_structure_or_biome_override (__main__.TerrainTests.test_no_nether_end_dimension_carver_ore_structure_or_biome_override) ... ok
+test_only_final_density_router_branch_changes (__main__.TerrainTests.test_only_final_density_router_branch_changes) ... ok
+test_source_tampering_is_rejected (__main__.TerrainTests.test_source_tampering_is_rejected) ... ok
+test_terrain_disabling_does_not_modify_base_forest_pack (__main__.TerrainTests.test_terrain_disabling_does_not_modify_base_forest_pack) ... ok
+test_valid_native_density_graph (__main__.TerrainTests.test_valid_native_density_graph) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.037s
+
+OK

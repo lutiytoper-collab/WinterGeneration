@@ -27,11 +27,18 @@ class ResourcesTest {
     }
     @Test void nativePackIsEmbeddedWithExactVersion() throws Exception {
         try(var in=Objects.requireNonNull(getClass().getResourceAsStream("/fantasy-pack/pack.mcmeta"))){
-            String meta=new String(in.readAllBytes(),java.nio.charset.StandardCharsets.UTF_8);assertTrue(meta.contains("0.5.0"));assertTrue(meta.contains("94"));
+            String meta=new String(in.readAllBytes(),java.nio.charset.StandardCharsets.UTF_8);assertTrue(meta.contains("0.6.0"));assertTrue(meta.contains("94"));
         }
         assertNotNull(getClass().getResource("/fantasy-pack/data/midgard/worldgen/configured_feature/winter_blossom.json"));
     }
     @Test void newInstallUsesEmbeddedFantasyAndWondersByDefault() throws Exception {
         var c=load("config.yml");assertTrue(c.getBoolean("fantasy-pack-enabled"));assertTrue(c.getBoolean("modules.wonders"));assertFalse(c.getBoolean("modules.forests"));assertTrue(c.getStringList("allowed-worlds").containsAll(List.of("world","winter_test")));
+    }
+    @Test void terrainProfileAndDecorOnlyProfileAreSeparate()throws Exception{
+        assertTrue(load("config.yml").getBoolean("fantasy-terrain-enabled"));
+        String path="data/minecraft/worldgen/noise_settings/overworld.json";
+        assertNull(getClass().getResource("/fantasy-pack/"+path));
+        assertNotNull(getClass().getResource("/fantasy-terrain-pack/"+path));
+        assertNotNull(getClass().getResource("/fantasy-terrain-pack/data/midgard/structure/moon_gate_9.nbt"));
     }
 }

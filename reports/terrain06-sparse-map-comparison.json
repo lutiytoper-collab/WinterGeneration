@@ -1,0 +1,9 @@
+{
+  "points": 4356,
+  "baseline": "saved anarchy05-world, same seed and XZ, prior native forests but no custom terrain",
+  "current": "terrain06-world, initial 1089-chunk pass before new camera loading",
+  "sampling": "4 natural-ground columns per chunk; not a full 512x512-column survey",
+  "meanAbsoluteHeightChange": 35.342745638200185,
+  "maxAbsoluteHeightChange": 145,
+  "changedByAtLeast8Blocks": 3029
+}

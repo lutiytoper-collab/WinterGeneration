@@ -1,6 +1,9 @@
 # Fantasy0.5 anarchy: native forest pack is embedded and registered before world generation.
 fantasy-pack-enabled: true
-# MidgardWinterWorld 0.5.0. Только НОВЫЙ тестовый мир, не основной сервер.
+# Native terrain for ALL Overworld biomes; warm biome climate stays vanilla.
+# Requires a full restart and a NEW world; disabling does not undo generated terrain.
+fantasy-terrain-enabled: true
+# MidgardWinterWorld 0.6.0. Только НОВЫЙ тестовый мир, не основной сервер.
 enabled: true
 preset: FAIRYTALE
 allowed-worlds: [world, winter_test]

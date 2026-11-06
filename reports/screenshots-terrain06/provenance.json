@@ -1,0 +1,108 @@
+{
+  "minecraft": "1.21.11",
+  "plugin_sha256": "1144a989f62f1e722a6ec32bd7686050c8318d6c623872d493d7e46a1e1c3b18",
+  "official_client_sha1": "ba2df812c2d12e0219c489c4cd9a5e1f0760f5bd",
+  "world": "winter_test",
+  "runtime": "terrain06-world",
+  "seed": 825180311,
+  "profile": "Default 0.6.0 native terrain; fantasy-terrain-enabled:true. Warm biome climates unchanged.",
+  "capture": "Minecraft native F2, 1600x900; byte-identical originals; every PNG chunk CRC verified; no image editing, shaders or resource pack. Vanilla custom graphics preset, renderDistance14, clouds off, FOV70, gamma0.6.",
+  "scene_changes": "Spectator camera teleport, time9000, clear weather. No manually constructed terrain or buildings. Separate non-OP survival/TNT test at a natural ruin was outside the selected scenes or after their capture.",
+  "screenshots": [
+    {
+      "file": "03-terrain-f3.png",
+      "native_F2_file": "2026-11-06_16.11.54.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "e5b3377dcdbf21b69102a72b9a900cd06791e3cb911fde7b0f5029415866df07",
+      "captured_utc": "2026-11-06T16:11:54.565781+00:00",
+      "camera_xyz_yaw_pitch": [
+        128.5,
+        235.0,
+        150.5,
+        12.0,
+        54.0
+      ],
+      "note": "Native F3 diagnostic after terrain chunks finished loading; graphics details are visible. Original PNG retained.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "04-high-ridges.png",
+      "native_F2_file": "2026-11-06_16.13.56.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "fd4d455aae7529bc78672dcda777f1ddd0ff50c0225d673933ce83331131fcef",
+      "captured_utc": "2026-11-06T16:13:57.080181+00:00",
+      "camera_xyz_yaw_pitch": [
+        128.5,
+        235.0,
+        150.5,
+        180.0,
+        3.0
+      ],
+      "note": "Fully loaded native high ridges and snow forest, default terrain profile. Ordinary blocks; no manual terrain edits.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "05-ravine-panorama.png",
+      "native_F2_file": "2026-11-06_16.14.02.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "fae1cb78f5b36b5b70441a8b51d79a2e3026b216091da8a8654745ddabc7df58",
+      "captured_utc": "2026-11-06T16:14:02.996303+00:00",
+      "camera_xyz_yaw_pitch": [
+        128.5,
+        235.0,
+        150.5,
+        12.0,
+        54.0
+      ],
+      "note": "Fully loaded caldera/ravine and native aquifer lake. Same camera as F3 diagnostic, debug HUD hidden; no image editing.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "06-plains-village.png",
+      "native_F2_file": "2026-11-06_16.16.31.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "7d57bc6da58217b4afa79c98cac0b7b53398de3db8690df21a23524451adcdd4",
+      "captured_utc": "2026-11-06T16:16:32.175212+00:00",
+      "camera_xyz_yaw_pitch": [
+        850.5,
+        180.0,
+        -39.5,
+        -5.0,
+        35.0
+      ],
+      "note": "Naturally generated plains village on the new terrain, after native Chunky generation. Separate structure audit verified 10 supported doors and sampled foundation gaps <=1. No manual construction.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "07-warm-desert-village.png",
+      "native_F2_file": "2026-11-06_16.20.22.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "324af671f6a5222becc701679eee96c72923300db4b7e679ba1131a242b427a0",
+      "captured_utc": "2026-11-06T16:20:23.223793+00:00",
+      "camera_xyz_yaw_pitch": [
+        -3680.5,
+        205.0,
+        -1450.5,
+        25.0,
+        38.0
+      ],
+      "note": "Native desert village on the new terrain. Desert climate remains warm; no winter biome override. Structure audit: 8 supported doors, sampled foundation air gap <=5. No manual construction.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    }
+  ]
+}

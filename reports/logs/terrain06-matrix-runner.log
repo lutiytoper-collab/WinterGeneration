@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "/workspace/WinterGeneration/scripts/server-matrix.py", line 29, in waitfor
+    try:line=lines.get(timeout=1)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/queue.py", line 179, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/WinterGeneration/scripts/server-matrix.py", line 75, in <module>
+    initial=run(folder,'initial');restart=run(folder,'restart')
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/WinterGeneration/scripts/server-matrix.py", line 37, in run
+    waitfor('Done (',240);proc.stdin.write('tick freeze\n');proc.stdin.flush();proc.stdin.write(f'winterprobe run {a.side} 128 128\n');proc.stdin.flush();waitfor('WINTERPROBE_DONE',1200)
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/WinterGeneration/scripts/server-matrix.py", line 31, in waitfor
+    if proc.poll() is not None:raise RuntimeError(f'Server exited {proc.returncode}: {logfile}')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Server exited 0: /workspace/WinterGeneration/.runtime/terrain06-matrix/825180311/winter/console-initial.log

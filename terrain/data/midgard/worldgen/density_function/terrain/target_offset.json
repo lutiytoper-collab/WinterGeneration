@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:cache_2d",
+  "argument": {
+    "type": "minecraft:add",
+    "argument1": -0.4,
+    "argument2": {
+      "type": "minecraft:add",
+      "argument1": {
+        "type": "minecraft:mul",
+        "argument1": 1.05,
+        "argument2": "midgard:terrain/ridge_shape"
+      },
+      "argument2": {
+        "type": "minecraft:add",
+        "argument1": {
+          "type": "minecraft:mul",
+          "argument1": 0.65,
+          "argument2": "midgard:terrain/plateaus"
+        },
+        "argument2": {
+          "type": "minecraft:mul",
+          "argument1": -0.43,
+          "argument2": "midgard:terrain/gorge"
+        }
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@
 from pathlib import Path
 import hashlib,json,zipfile,struct
 root=Path(__file__).resolve().parents[1];dist=root/'dist';result={'status':'PASS','minecraft':'1.21.11','java_class_major':65,'artifacts':[]}
-for name in ['MidgardWinterWorld.jar','WinterProbe.jar','winter-datapack.zip','storybook-datapack.zip']:
+for name in ['MidgardWinterWorld.jar','WinterProbe.jar','winter-datapack.zip','storybook-datapack.zip','fantasy-terrain-datapack.zip']:
  p=dist/name
  with zipfile.ZipFile(p) as z:
   assert z.testzip() is None,name
@@ -14,11 +14,13 @@ for name in ['MidgardWinterWorld.jar','WinterProbe.jar','winter-datapack.zip','s
    for n in classes:
     data=z.read(n);assert data[:4]==b'\xca\xfe\xba\xbe' and struct.unpack('>H',data[6:8])[0]==65
     assert b'net/minecraft/' not in data and b'org/bukkit/craftbukkit/' not in data, 'Production NMS/CraftBukkit reference'
-   assert 'version: 0.5.0' in z.read('plugin.yml').decode() or "version: '0.5.0'" in z.read('plugin.yml').decode()
+   assert 'version: 0.6.0' in z.read('plugin.yml').decode() or "version: '0.6.0'" in z.read('plugin.yml').decode()
    if name=='MidgardWinterWorld.jar':
     assert 'bootstrapper: ru.midgard.winter.WinterBootstrap' in z.read('paper-plugin.yml').decode()
     assert 'fantasy-pack/pack.mcmeta' in names
     assert len([n for n in names if n.startswith('fantasy-pack/data/minecraft/worldgen/biome/') and n.endswith('.json')])==23
+    assert 'fantasy-terrain-pack/data/minecraft/worldgen/noise_settings/overworld.json' in names
+    assert not any(n.startswith('fantasy-pack/data/minecraft/worldgen/noise_settings/') for n in names)
     templates=['moon-gate-7','moon-gate-9','frost-shrine','woodland-shrine','stone-ruin','timber-ruin']
     palette=set()
     for template in templates:
@@ -31,6 +33,9 @@ for name in ['MidgardWinterWorld.jar','WinterProbe.jar','winter-datapack.zip','s
     assert not palette&forbidden
     assert z.read('licenses/greaby-circles-CC0.txt')==(root/'vendor/schematics/greaby-circles/LICENSE').read_bytes()
     result['landmark_palette']=sorted(palette);result['landmark_templates']=templates
+  elif name=='fantasy-terrain-datapack.zip':
+   assert 'data/minecraft/worldgen/noise_settings/overworld.json' in names
+   assert len([n for n in names if n.startswith('data/minecraft/')])==1
   else:
    assert len([n for n in names if '/worldgen/biome/' in n and n.endswith('.json')])==23
    assert not any('/dimension/' in n or '/noise_settings/' in n or '/worldgen/structure/' in n for n in names)

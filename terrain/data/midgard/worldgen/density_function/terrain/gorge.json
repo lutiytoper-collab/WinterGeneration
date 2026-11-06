@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:cache_2d",
+  "argument": {
+    "type": "minecraft:square",
+    "argument": {
+      "type": "minecraft:clamp",
+      "input": {
+        "type": "minecraft:add",
+        "argument1": 1,
+        "argument2": {
+          "type": "minecraft:mul",
+          "argument1": -10,
+          "argument2": {
+            "type": "minecraft:abs",
+            "argument": "midgard:terrain/ravines"
+          }
+        }
+      },
+      "min": 0,
+      "max": 1
+    }
+  }
+}

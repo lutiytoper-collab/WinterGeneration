@@ -1,0 +1,14 @@
+{
+  "minecraft": "1.21.11",
+  "official_inner_sha256": "ec47239a8de246335e1d54f6ac319bd35641778eb4b6a6da06372840d02fcebc",
+  "sources": [
+    {
+      "file": "vendor/terrain/noise_settings/overworld.json",
+      "sha256": "f525ae55efa6da365eade5ce8d4be9cd22a161117af7c56ce82d27e6d237824e"
+    },
+    {
+      "file": "vendor/terrain/density_function/overworld/sloped_cheese.json",
+      "sha256": "bb6a95a164bb8cd4384e31c116516e1964ae2f232ed4fb18b7daa9ddf7c77154"
+    }
+  ]
+}

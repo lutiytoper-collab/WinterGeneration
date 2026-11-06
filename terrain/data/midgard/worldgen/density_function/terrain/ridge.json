@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:cache_2d",
+  "argument": {
+    "type": "minecraft:clamp",
+    "input": {
+      "type": "minecraft:add",
+      "argument1": 1,
+      "argument2": {
+        "type": "minecraft:mul",
+        "argument1": -1.6,
+        "argument2": {
+          "type": "minecraft:abs",
+          "argument": "midgard:terrain/massifs"
+        }
+      }
+    },
+    "min": 0,
+    "max": 1
+  }
+}

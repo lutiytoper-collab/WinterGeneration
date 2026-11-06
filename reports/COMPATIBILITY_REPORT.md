@@ -1,9 +1,11 @@
-# Совместимость 0.5.0
+# Совместимость 0.6.0
 
-Java 21, официальный Paper API 1.21.11, Paper 132, Purpur 2568. Текущий финальный JAR одинаков на пяти QA-площадках, без внешних datapack ZIP; подробности anarchy05-artifact-identity.json.
+Java 21, официальный Paper API 1.21.11, Paper 132 и Purpur 2568. Текущий основной JAR одинаков на 8 конечных QA-площадках, без внешних datapack ZIP;хеши — terrain06-artifact-identity.json. Production NMS/CraftBukkit нет.
 
-Paper: предоставленные LunaAirDrop 1.0.3 MidgardFix и WorldGuardRU, отдельно WorldEdit 7.3.19 и FAWE 2.16.2, Chunky 1.4.40. По 28 runtime fixtures, настоящий protocol-клиент Luna, естественный снег, cleanup, Chunky и stop PASS. Для шаблонов WorldEdit не нужен.
+Оба Paper стека:предоставленные WorldGuardRU и LunaAirDrop 1.0.3 MidgardFix, отдельно WorldEdit 7.3.19 и FAWE 2.16.2, Chunky 1.4.40. По 28 fixtures,3 настоящие проверки открытия/лут-инвентаря/cleanup, природный снег, площадка 5×5, End cleanup0 tickets, Chunky и чистый stop. QA generator max-y 280;без этого установленная Luna может искать только низкие земли. Конфиг чужого плагина автоматически не меняется.
 
-Purpur: standalone bootstrap и enabled→disabled restart, 4 ROI; полного WG/Luna stack на Purpur нет. NMS/CraftBukkit в production нет. Pack discovery через публичный Paper lifecycle; требуются точная версия сервера и полный restart при смене bootstrap-переключателей.
+Purpur:standalone native bootstrap и enabled→disabled restart4 ROI. Paper:classic terrain-off профиль с 4 ROI initial/restart и seed 42 smoke/restart4 ROI. Полный Purpur WG/Luna стек не проверен. Полная основная матрица — один seed 825180311,64 ROI на вариант с restart, старый vanilla baseline повторно использован.
 
-Правила разрешений сторонних плагинов не переопределяются. Survival grief/build/TNT проверены не-OP клиентом в отдельном локальном visual QA-мире. Пользовательские/серверные JAR не распространяются.
+Single pack bootstrap устраняет обнаруженный Paper 132 Adventure/title serialization сбой при двух одновременно обнаруживаемых plugin packs. Оба законченных профиля входят в один JAR;меняется выбранная resource directory, а не число packs.
+
+Генератор не создаёт приватов и не отменяет grief/build/TNT. Это подтверждено actual non-OP survival-клиентом текущей версии. Правила WorldGuard/Luna и других плагинов не переопределяются. Большие здания/мосты/сеть дорог не реализованы. Пользовательские/серверные JAR не распространяются.

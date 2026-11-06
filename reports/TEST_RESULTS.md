@@ -1,29 +1,34 @@
-# Проверки Anarchy Fantasy 0.5.0
+# Проверки Fantasy Terrain 0.6.0
 
-**PASS 301, FAIL 1, BLOCKED 0, NOT RUN 11. TEST VERIFIED в указанном объёме.**
+**PASS 336, FAIL 2, BLOCKED 0, NOT RUN 13. TEST VERIFIED в указанном объёме, не RC.**
 
-177 Java +23 Python без skipped. Текущий конечный JAR; предварительные audit05-прогоны до смены палитры не засчитаны как текущие.
+182 Java + 32 Python без skipped. Полный машинный каталог — test-results.json.
 
 | Группа | PASS | FAIL | NOT RUN |
 |---|---:|---:|---:|
-| Java unit/contract | 177 | 0 | 0 |
-| Python unit | 23 | 0 | 0 |
-| artifacts | 4 | 0 | 0 |
-| lifecycle | 6 | 0 | 0 |
+| Java unit/contract | 182 | 0 | 0 |
+| Python unit | 32 | 0 | 0 |
+| actual grief/build/TNT | 6 | 0 | 0 |
+| artifacts | 6 | 0 | 0 |
+| bootstrap/restart | 13 | 0 | 0 |
+| lifecycle | 8 | 0 | 0 |
+| native game samples | 5 | 0 | 0 |
+| native structures/cave biomes | 14 | 0 | 0 |
 | natural Luna | 4 | 0 | 0 |
-| natural fantasy objects | 4 | 0 | 0 |
-| non-OP grief client | 6 | 0 | 0 |
-| one-JAR bootstrap | 4 | 0 | 0 |
-| raw variable-window diagnostic | 0 | 1 | 0 |
-| real graphical samples | 4 | 0 | 0 |
-| real integration fixtures | 56 | 0 | 0 |
+| raw material diagnostic | 0 | 2 | 0 |
+| real WG/Luna fixtures | 56 | 0 | 0 |
 | real protocol client | 6 | 0 | 0 |
-| remaining scope | 0 | 0 | 11 |
-| restart persistence | 3 | 0 | 0 |
-| same-coordinate worldgen | 4 | 0 | 0 |
+| remaining scope | 0 | 0 | 13 |
+| terrain/cave geometry | 4 | 0 | 0 |
 
-Исходный variable-window fingerprint сохранён отдельно. Полные raw states сравниваются на одинаковых координатах пересечения окон −64..min(31,baselineHeight−8,winterHeight−8); руды — на всей сохранённой высоте. См. anarchy05-matrix-coordinate-invariants.json. Это один seed и 64 ROI на вариант, vanilla-контроль повторно использован.
+Два FAIL оставлены у исходных строгих сравнений материалов/руд под землёй. Меняется геометрия поверхности, а фактические размещения жил/пород/пещерной растительности местами отличаются. Настройки ore features и cave/structure definitions не меняются. Эти результаты не переименованы в PASS.
 
-Каждый Paper WG/Luna+WE/FAWE стек: 28 fixtures, три клиентские проверки Luna, природный снег, End cleanup, Chunky и stop. Поршень проверен публичным синтетическим событием, не физическим redstone. Все шесть NBT загружены StructureManager. Purpur проверяет enabled→disabled restart, а не включённый pack на обоих запусках.
+Отдельная сверка класса полостей/жидкостей на 1 572 864 одинаковых координатах Y −64..31 прошла: открытое пространство, вода и лава совпали. Неплотные cave vines и сухой glow lichen отнесены к открытому пространству, waterlogged lichen — к воде; исходные raw block states сохранены. Это не утверждение полного поблочного совпадения мира или всех пещер на всех высотах/seed.
 
-Отдельный не-OP клиент проверяет ломание/строительство/взрыв в локальном QA-мире; это не обещание обойти правила сторонних плагинов на другом сервере. F2 кадры сняты vanilla-клиентом без обработки и ручной постройки сцены.
+Основная матрица — seed 825180311, 64 ROI на вариант с restart, vanilla baseline повторно использован. Второй seed 42 — отдельный Paper smoke 4 ROI с restart, без независимой полной сверки пещер. Широкая sparse map:4356 одинаковых XZ, четыре колонки на чанк, не сплошной heightmap.
+
+Две деревни:10+ 8 дверей с полом, sampled foundation max air gap1/5. Проверяется опора, не прохождение всех дорог. Stronghold/mineshaft/ancient_city/trial_chambers подтверждены нативными starts/pieces на FULL chunks; полные interiors не сканировались. Три cave biome найдены native locate.
+
+Luna на обоих стеках прошла с radius2(5×5), снег сохранён, End cleanup0 tickets. QA generator max-y поднят до 280; конфиг установленной отдельно Luna автоматически не меняется. Протокол открытия 54-слотового лута реальный. Поршневой regression — синтетическое публичное событие, не физическая redstone-схема.
+
+Все выбранные PNG — native F2, без обработки/ручной постройки сцен. Полные источники, камеры, хеши и ограничения — screenshots-terrain06/provenance.json.
