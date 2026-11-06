@@ -77,23 +77,26 @@ def content():
  'young_fir':tree('spruce',straight(11,5,2),spruce(uniform(2,4),uniform(2,3)),'spruce_log',False),
  'silver_birch':tree('fancy_oak',fancy(13,6,3),{'type':'minecraft:fancy_foliage_placer','radius':3,'offset':4,'height':5},'birch_log'),
  'elder_birch':tree('fancy_oak',fancy(20,7,3),{'type':'minecraft:fancy_foliage_placer','radius':4,'offset':4,'height':6},'birch_log'),
+ 'winter_blossom':tree('fancy_oak',fancy(16,7,3),{'type':'minecraft:fancy_foliage_placer','radius':3,'offset':4,'height':5},'cherry_log'),
  'moon_oak':tree('fancy_oak',fancy(16,7,3),{'type':'minecraft:fancy_foliage_placer','radius':3,'offset':4,'height':6},'oak_log'),
  'ancient_oak':tree('pale_oak',{'type':'minecraft:dark_oak_trunk_placer','base_height':14,'height_rand_a':5,'height_rand_b':3},{'type':'minecraft:dark_oak_foliage_placer','radius':2,'offset':0},'dark_oak_log')}
- mixes={'fir':[('cathedral_fir',.28),('young_fir',.25),('spire_fir',1)],'ancient_fir':[('cathedral_fir',.65),('young_fir',.15),('spire_fir',1)],'birch':[('elder_birch',.18),('silver_birch',1)],'elder_birch':[('elder_birch',.75),('silver_birch',1)],'mixed':[('silver_birch',.30),('cathedral_fir',.10),('moon_oak',1)],'dark':[('cathedral_fir',.15),('ancient_oak',1)]}
+ mixes={'fir':[('cathedral_fir',.28),('young_fir',.25),('spire_fir',1)],'ancient_fir':[('cathedral_fir',.65),('young_fir',.15),('spire_fir',1)],'birch':[('elder_birch',.18),('silver_birch',1)],'elder_birch':[('elder_birch',.75),('silver_birch',1)],'mixed':[('silver_birch',.30),('cathedral_fir',.10),('moon_oak',1)],'dark':[('cathedral_fir',.15),('ancient_oak',1)],'blossom':[('silver_birch',.25),('winter_blossom',1)]}
  resources={}
+ trees['winter_blossom']['config']['foliage_provider']=simple(state('cherry_leaves',distance='7',persistent='true',waterlogged='false'))
  for name,d in trees.items():
   resources['data/midgard/worldgen/configured_feature/'+name+'.json']=d
   sapling='birch_sapling' if 'birch' in name else 'dark_oak_sapling' if name=='ancient_oak' else 'oak_sapling' if name=='moon_oak' else 'spruce_sapling'
   resources['data/midgard/worldgen/placed_feature/'+name+'_checked.json']={'feature':'midgard:'+name,'placement':[{'type':'minecraft:block_predicate_filter','predicate':{'type':'minecraft:would_survive','state':state(sapling,stage='0')}}]}
  for name,variants in mixes.items():resources['data/midgard/worldgen/configured_feature/'+name+'_grove.json']={'type':'minecraft:random_selector','config':{'features':[{'chance':chance,'feature':'midgard:'+t+'_checked'} for t,chance in variants[:-1]],'default':'midgard:'+variants[-1][0]+'_checked'}}
  for name,(mix,count) in TARGETS.items():
-  d=copy.deepcopy(load(SOURCE/'placed_feature'/(name+'.json')));d['feature']='midgard:'+mix+'_grove'
+  d=copy.deepcopy(load(SOURCE/'placed_feature'/(name+'.json')));d['feature']='midgard:'+('blossom' if name=='trees_flower_forest' else mix)+'_grove'
   # Old-growth counts10+ vanilla giants become fewer, much broader full-length crowns.
   d['placement']=[{'type':'minecraft:count','count':count},{'type':'minecraft:in_square'},{'type':'minecraft:surface_water_depth_filter','max_water_depth':0},{'type':'minecraft:heightmap','heightmap':'OCEAN_FLOOR'},{'type':'minecraft:biome'}]
   resources['data/minecraft/worldgen/placed_feature/'+name+'.json']=d
  for p in sorted((ROOT/'datapack/data/minecraft/worldgen/biome').glob('*.json')):
-  d=load(p);d['effects'].update(foliage_color='#c4dce8',grass_color='#a7bdcc',dry_foliage_color='#b5cad3',water_color='#5899b5')
-  d.setdefault('attributes',{}).update({'minecraft:visual/fog_color':'#d2d6e9','minecraft:visual/sky_color':'#b8cceb','minecraft:visual/water_fog_color':'#7197ac'})
+  d=load(p);color='#a5dfeb' if 'taiga' in p.stem or p.stem=='grove' else '#d7c4ed' if 'birch' in p.stem else '#b6a8e4' if p.stem=='dark_forest' else '#a3ddd5'
+  d['effects'].update(foliage_color=color,grass_color='#a8c4d1',dry_foliage_color='#c1cadc',water_color='#648ac2')
+  d.setdefault('attributes',{}).update({'minecraft:visual/fog_color':'#d4cbea','minecraft:visual/sky_color':'#bfbde9','minecraft:visual/water_fog_color':'#7197ac'})
   resources['data/minecraft/worldgen/biome/'+p.name]=d
  return resources
 def build():
@@ -101,7 +104,7 @@ def build():
  for p in OUT.rglob('*.json'):
   if p.relative_to(OUT).as_posix() not in expected:p.unlink()
  for name,data in expected.items():write(OUT/name,data)
- write(OUT/'pack.mcmeta',{'pack':{'description':'Midgard Storybook 0.3.0 — Minecraft 1.21.11; native frost forests + winter climate','min_format':[94,1],'max_format':[94,1]}})
+ write(OUT/'pack.mcmeta',{'pack':{'description':'Midgard Fantasy 0.4.0 — Minecraft 1.21.11; native frost forests + winter climate','min_format':[94,1],'max_format':[94,1]}})
  validate()
  with zipfile.ZipFile(ROOT/'dist/storybook-datapack.zip','w',zipfile.ZIP_DEFLATED) as z:
   for p in sorted(OUT.rglob('*')):

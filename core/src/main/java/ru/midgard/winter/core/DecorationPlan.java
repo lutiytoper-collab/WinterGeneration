@@ -15,7 +15,7 @@ public record DecorationPlan(String module,List<Cell> cells) {
     private static final Set<String> BLOCKS=Set.of("SPRUCE_LOG","SPRUCE_LEAVES","OAK_LOG","OAK_LEAVES",
         "BIRCH_LOG","BIRCH_LEAVES","SPRUCE_PLANKS","SPRUCE_FENCE","SPRUCE_STAIRS","COBBLESTONE",
         "MOSSY_COBBLESTONE","PACKED_ICE","BLUE_ICE","ICE","CALCITE","AMETHYST_BLOCK","AMETHYST_CLUSTER",
-        "SEA_LANTERN","END_ROD","PALE_OAK_LEAVES","SNOW","SNOW_BLOCK","LANTERN","SOUL_LANTERN","GLASS_PANE");
+        "SEA_LANTERN","END_ROD","PALE_OAK_LOG","PALE_OAK_LEAVES","CHERRY_LEAVES","MUSHROOM_STEM","WARPED_WART_BLOCK","PEARLESCENT_FROGLIGHT","LIGHT_BLUE_STAINED_GLASS","PURPLE_STAINED_GLASS","SNOW","SNOW_BLOCK","LANTERN","SOUL_LANTERN","GLASS_PANE");
     public DecorationPlan {
         Objects.requireNonNull(module); cells=List.copyOf(cells);
         if(cells.isEmpty()) throw new IllegalArgumentException("Empty template");
@@ -104,7 +104,7 @@ public record DecorationPlan(String module,List<Cell> cells) {
             for(int y=1;y<=spire[2];y++){
                 int radius=y<=spire[2]/2?1:0;
                 for(int x=-radius;x<=radius;x++)for(int z=-radius;z<=radius;z++)if(Math.abs(x)+Math.abs(z)<=radius)
-                    b.put(spire[0]+x,y,spire[1]+z,y<=2?"PACKED_ICE":(y%3==0?"ICE":"BLUE_ICE"));
+                    b.put(spire[0]+x,y,spire[1]+z,y<=2?"PACKED_ICE":(y%3==0?"PACKED_ICE":"BLUE_ICE"));
             }
             b.put(spire[0],spire[2]+1,spire[1],"AMETHYST_CLUSTER");
         }

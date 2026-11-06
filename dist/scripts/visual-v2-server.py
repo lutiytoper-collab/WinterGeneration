@@ -3,11 +3,12 @@
 from pathlib import Path
 import shutil,subprocess,os,time,argparse
 from urllib.parse import urlsplit
-ROOT=Path(__file__).resolve().parents[1];p=argparse.ArgumentParser();p.add_argument('--name',default='visual-v2');p.add_argument('--storybook',action='store_true');a=p.parse_args();assert a.name.replace('-','').isalnum();folder=ROOT/'.runtime'/a.name;folder.mkdir(exist_ok=False)
+ROOT=Path(__file__).resolve().parents[1];p=argparse.ArgumentParser();p.add_argument('--name',default='visual-v2');p.add_argument('--storybook',action='store_true');p.add_argument('--embedded',action='store_true');a=p.parse_args();assert a.name.replace('-','').isalnum();folder=ROOT/'.runtime'/a.name;folder.mkdir(exist_ok=False)
 (folder/'plugins').mkdir();(folder/'winter_test/datapacks').mkdir(parents=True)
 for name in ['MidgardWinterWorld.jar','WinterProbe.jar']:shutil.copyfile(ROOT/'dist'/name,folder/'plugins'/name)
-shutil.copyfile(ROOT/'.runtime/downloads/Chunky-Bukkit-1.4.40.jar',folder/'plugins/Chunky.jar');shutil.copyfile(ROOT/('dist/storybook-datapack.zip' if a.storybook else 'dist/winter-datapack.zip'),folder/'winter_test/datapacks'/('storybook-datapack.zip' if a.storybook else 'winter-datapack.zip'))
-if a.storybook:
+shutil.copyfile(ROOT/'.runtime/downloads/Chunky-Bukkit-1.4.40.jar',folder/'plugins/Chunky.jar')
+if not a.embedded:shutil.copyfile(ROOT/('dist/storybook-datapack.zip' if a.storybook else 'dist/winter-datapack.zip'),folder/'winter_test/datapacks'/('storybook-datapack.zip' if a.storybook else 'winter-datapack.zip'))
+if a.storybook and not a.embedded:
  (folder/'plugins/MidgardWinterWorld').mkdir();shutil.copyfile(ROOT/'plugin/src/main/resources/config-storybook.yml',folder/'plugins/MidgardWinterWorld/config.yml')
 (folder/'paper.jar').symlink_to(ROOT/'.runtime/downloads/paper-1.21.11-132.jar')
 for name in ['cache','libraries','versions']:(folder/name).symlink_to(ROOT/'.runtime/integration'/name,target_is_directory=True)

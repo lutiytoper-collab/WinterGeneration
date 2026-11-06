@@ -21,4 +21,17 @@ class ResourcesTest {
         assertEquals("1.21.11",c.getString("api-version"));assertEquals("ru.midgard.winter.WinterPlugin",c.getString("main"));
     }
     @Test void noMandatoryPluginDependency() throws Exception {assertFalse(load("plugin.yml").contains("depend"));}
+    @Test void paperBootstrapAndOptionalBridgesAreDeclared() throws Exception {
+        var c=load("paper-plugin.yml");assertEquals("ru.midgard.winter.WinterBootstrap",c.getString("bootstrapper"));
+        for(String dependency:List.of("WorldGuard","LunaAirDrop","FastAsyncWorldEdit"))assertFalse(c.getBoolean("dependencies.server."+dependency+".required"));
+    }
+    @Test void nativePackIsEmbeddedWithExactVersion() throws Exception {
+        try(var in=Objects.requireNonNull(getClass().getResourceAsStream("/fantasy-pack/pack.mcmeta"))){
+            String meta=new String(in.readAllBytes(),java.nio.charset.StandardCharsets.UTF_8);assertTrue(meta.contains("0.4.0"));assertTrue(meta.contains("94"));
+        }
+        assertNotNull(getClass().getResource("/fantasy-pack/data/midgard/worldgen/configured_feature/winter_blossom.json"));
+    }
+    @Test void newInstallUsesEmbeddedFantasyAndWondersByDefault() throws Exception {
+        var c=load("config.yml");assertTrue(c.getBoolean("fantasy-pack-enabled"));assertTrue(c.getBoolean("modules.wonders"));assertFalse(c.getBoolean("modules.forests"));assertTrue(c.getStringList("allowed-worlds").containsAll(List.of("world","winter_test")));
+    }
 }

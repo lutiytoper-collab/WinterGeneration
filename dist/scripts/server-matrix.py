@@ -7,7 +7,7 @@ proxy=urlsplit(os.environ.get('HTTPS_PROXY',''))
 java_flags=['-Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts']
 if proxy.hostname:
  java_flags += [f'-Dhttps.proxyHost={proxy.hostname}',f'-Dhttps.proxyPort={proxy.port or 8080}',f'-Dhttp.proxyHost={proxy.hostname}',f'-Dhttp.proxyPort={proxy.port or 8080}']
-p=argparse.ArgumentParser();p.add_argument('--paper',type=pathlib.Path,required=True);p.add_argument('--sha256',required=True);p.add_argument('--accept-eula',action='store_true');p.add_argument('--port',type=int,default=25575);p.add_argument('--resume',action='store_true');p.add_argument('--side',type=int,default=8);p.add_argument('--runtime-cache',type=pathlib.Path);p.add_argument('--run-name',default='matrix');p.add_argument('--seeds',nargs='+',type=int,default=[825180311,42,-892041]);p.add_argument('--storybook',action='store_true');a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--paper',type=pathlib.Path,required=True);p.add_argument('--sha256',required=True);p.add_argument('--accept-eula',action='store_true');p.add_argument('--port',type=int,default=25575);p.add_argument('--resume',action='store_true');p.add_argument('--side',type=int,default=8);p.add_argument('--runtime-cache',type=pathlib.Path);p.add_argument('--run-name',default='matrix');p.add_argument('--seeds',nargs='+',type=int,default=[825180311,42,-892041]);p.add_argument('--storybook',action='store_true');p.add_argument('--embedded',action='store_true');a=p.parse_args()
 pack_name='storybook-datapack.zip' if a.storybook else 'winter-datapack.zip'
 if not __import__('re').fullmatch(r'[A-Za-z0-9_-]+',a.run_name):p.error('Invalid run name')
 if not a.accept_eula:p.error('Read https://aka.ms/MinecraftEULA and explicitly accept with --accept-eula')
@@ -66,7 +66,9 @@ for seed in a.seeds:
      if source.is_dir():(folder/directory).symlink_to(source,target_is_directory=True)
    shutil.copyfile(a.paper,folder/'paper.jar');shutil.copyfile(ROOT/'dist/WinterProbe.jar',folder/'plugins/WinterProbe.jar')
    if mode=='winter':
-    (folder/'winter_test/datapacks').mkdir(parents=True);shutil.copyfile(ROOT/'dist'/pack_name,folder/'winter_test/datapacks'/pack_name);shutil.copyfile(ROOT/'dist/MidgardWinterWorld.jar',folder/'plugins/MidgardWinterWorld.jar')
+    (folder/'winter_test/datapacks').mkdir(parents=True)
+    if not a.embedded:shutil.copyfile(ROOT/'dist'/pack_name,folder/'winter_test/datapacks'/pack_name)
+    shutil.copyfile(ROOT/'dist/MidgardWinterWorld.jar',folder/'plugins/MidgardWinterWorld.jar')
     if a.storybook:
      (folder/'plugins/MidgardWinterWorld').mkdir();shutil.copyfile(ROOT/'plugin/src/main/resources/config-storybook.yml',folder/'plugins/MidgardWinterWorld/config.yml')
    (folder/'eula.txt').write_text('eula=true\n');(folder/'server.properties').write_text(f'level-name=winter_test\nlevel-seed={seed}\nserver-ip=127.0.0.1\nserver-port={a.port}\nonline-mode=true\nview-distance=3\nsimulation-distance=3\n')
@@ -74,7 +76,7 @@ for seed in a.seeds:
   for measured in (initial,restart):
    if mode=='winter':
     assert measured['winterPluginEnabled'],'Winter plugin failed to enable'
-    assert any(pack_name in p for p in measured['enabledDatapacks']),'Winter datapack not enabled'
+    assert any(('MidgardWinterWorld/fantasy' if a.embedded else pack_name) in p for p in measured['enabledDatapacks']),'Winter datapack not enabled'
     assert all('winterMarker' in c for c in measured['chunks']),'Winter processing never ran'
    else:assert not measured['winterPluginEnabled'],'Baseline must not contain winter plugin'
   for before,after in zip(initial['chunks'],restart['chunks']):

@@ -4,11 +4,9 @@ Daemon will be stopped at the end of the build
 > Task :core:processResources NO-SOURCE
 > Task :core:classes UP-TO-DATE
 > Task :core:jar UP-TO-DATE
-
-> Task :plugin:compileJava
-
-> Task :plugin:processResources
-> Task :plugin:classes
+> Task :plugin:compileJava UP-TO-DATE
+> Task :plugin:processResources UP-TO-DATE
+> Task :plugin:classes UP-TO-DATE
 > Task :plugin:jar
 > Task :plugin:assemble
 > Task :plugin:compileTestJava UP-TO-DATE
@@ -18,11 +16,9 @@ Daemon will be stopped at the end of the build
 > Task :plugin:check
 > Task :plugin:build
 > Task :probe:compileJava UP-TO-DATE
-> Task :probe:processResources
-> Task :probe:classes
-> Task :probe:jar
+> Task :probe:processResources UP-TO-DATE
+> Task :probe:classes UP-TO-DATE
+> Task :probe:jar UP-TO-DATE
 
-[Incubating] Problems report is available at: file:///workspace/WinterGeneration/build/reports/problems/problems-report.html
-
-BUILD SUCCESSFUL in 8s
-10 actionable tasks: 6 executed, 4 up-to-date
+BUILD SUCCESSFUL in 7s
+10 actionable tasks: 2 executed, 8 up-to-date

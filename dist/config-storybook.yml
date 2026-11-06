@@ -1,9 +1,9 @@
-# STORYBOOK: install storybook-datapack.zip BEFORE world generation. Rename this file config.yml.
-# Native forest generation replaces overlay trees; warm/unlisted biomes remain untouched.
-# MidgardWinterWorld 0.3.0. Только НОВЫЙ тестовый мир, не основной сервер.
+# Fantasy0.4: native forest pack is embedded and registered before world generation.
+fantasy-pack-enabled: true
+# MidgardWinterWorld 0.4.0. Только НОВЫЙ тестовый мир, не основной сервер.
 enabled: true
 preset: FAIRYTALE
-allowed-worlds: [winter_test]
+allowed-worlds: [world, winter_test]
 new-chunks-only: true
 modify-existing-chunks: false
 protect-player-builds: true
@@ -42,11 +42,12 @@ overrides:
   snow-density: 1.0
   snow-layers: 6
   forest-density: 0.0
-  clearing-chance: 0.06
-  ice-chance: 0.08
+  clearing-chance: 0.025
+  ice-chance: 0.045
 # Доступные overrides: snow-density [0..1], snow-layers [1..6], forest-density [0..1],
 # clearing-chance [0..1], cabin-chance [0..1], ice-chance [0..1], light-chance [0..1], max-changes [1..512].
 modules:
+  wonders: true
   canopy: true
   trails: true
   forests: false

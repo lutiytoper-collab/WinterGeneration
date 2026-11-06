@@ -1,18 +1,18 @@
-# Совместимость 0.3.0
+# Совместимость Fantasy 0.4
 
-Строго **Minecraft 1.21.11 / Java 21**, опубликованный Paper API. Production NMS/CraftBukkit нет. Storybook pack format94.1; чужие JAR не патчились и не распространяются.
+**Paper/Purpur 1.21.11, Java 21.** Главный файл теперь Paper plugin с bootstrapper в paper-plugin.yml, DATAPACK_DISCOVERY и command lifecycle. Это публичные Paper API, production NMS/CraftBukkit нет. Bukkit plugin.yml сохранён как метаданные, native bootstrap требует Paper/Purpur.
 
-| Стек | Реальное подтверждение |
+| Площадка | Фактический результат |
 |---|---|
-| Paper 132 + Storybook + текущий плагин |2seed,320 пар ROI,initial/restart; same-coordinate states/ores/structures/block entities совпали; variable-window diagnostic1 FAIL |
-| Purpur 2568 | Текущий native pack/JAR загрузились,4 ROI smoke |
-| Пользовательские WorldGuard+Luna + WorldEdit 7.3.19 |37 биомов,11 структур,19 fixtures,3protocol-client проверки, природный снег и cleanup,Chunky,clean stop |
-| Пользовательские WorldGuard+Luna + FAWE 2.16.2 | Отдельный полный повтор того же набора |
-| Chunky 1.4.40 | Обе интеграционные задачи и 625visited в графическом мире завершены |
-| Официальный vanilla1.21.11 клиент |6 native F2 PNG,1600×900, без shader/resource pack, локальный offline-auth |
+| Paper 132, чистая one-JAR установка | Pack обнаружен до создания мира, default config создан, native лес и новые wonders появились, Chunky 625+169visited завершён |
+| Paper 132 WG/Luna + WorldEdit 7.3.19 |19fixtures, реальный 54slot client, природный снег/End cleanup0tickets, Chunky/stop PASS |
+| Paper 132 WG/Luna + FAWE 2.16.2 | Отдельный полный повтор указанного набора PASS |
+| Purpur 2568 | Чистая one-JAR установка,4ROI initial/restart, pack rediscovered и поверхности/PDC стабильны |
+| Paper 132 matrix |64 пары ROI, initial/restart, same-coordinate states/ores/structures/block entities совпали; original window diagnostic1 FAIL |
+| Vanilla1.21.11 клиент |5 настоящих F2 PNG, без shaders/resource pack, локальный offline-auth |
 
-JSON/логи итоговых интеграций: story03-worldedit-* и story03-fawe-*. Полные 37/11 location audits в 0.3.0 повторены, не перенесены из 0.2.0. JAR/native pack проверены на побайтное совпадение в 6 тестовых папках; доказательство — story03-runtime-artifact-identity.json.
+Во всех 5 папках один текущий JAR и ноль внешних datapack ZIP. Хеши — fantasy04-artifact-identity.json. Сложные plugin classloader мосты WG/Luna проверены после перехода на Paper plugin; чужие JAR не патчились. Полный Purpur plugin stack не запускался.
 
-Luna public Generator/events, реальные Start/Unlock/End, unsafe cancellation, снежная опора сохранена,54 слота лута открыты реальным клиентом. В природном QA radius1/max-y128/snow-only blacklist, тогда как поставочный профиль сохраняет radius2. Hot reload/dynamic creation, активный restart, большие схематики и customY кроме 1 не проверены. Full Purpur plugin stack не проверен.
+Native pack глобален для серверного biome registry и не ограничивается plugin allowed-worlds. Старые внешние climate/Storybook ZIP не требуются; при обновлении их рекомендуется не смешивать со встроенным паком в новой тестовой установке. Все комбинации приоритетов старых паков и native hot reload не проверены.
 
-Native-датапак не требует WG/WE/FAWE/Luna для своих деревьев. Защиты этих плагинов относятся к позднему Bukkit-декору; native origins/branches следуют обычным Minecraft worldgen правилам. Применение biome registry глобально для сервера, а не по plugin allowed-worlds. Публичная Microsoft-аутентификация не проверена; loopback offline QA и сетевые ошибки refreshYggdrasil отдельно отражены в логах.
+Luna natural QA:radius1/max-y128/snow-only blacklist, в поставке radius2. Активный restart,hot reload/dynamic drops,customY кроме 1 и большие схематики остаются NOT RUN. Проверки выполнены с конкретными пользовательскими Luna/WG JAR. Публичная Microsoft-аутентификация не проверена; loopback QA и сетевые ошибки Yggdrasil refresh отражены отдельно.

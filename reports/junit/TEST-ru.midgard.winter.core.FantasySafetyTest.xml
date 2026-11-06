@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.midgard.winter.core.FantasySafetyTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-11-06T07:29:39.577Z" hostname="0f051bf75645" time="0.295">
+  <properties/>
+  <testcase name="protectedVolumeRejectsEveryWonder()" classname="ru.midgard.winter.core.FantasySafetyTest" time="0.013"/>
+  <testcase name="independentCrystalGridDoesNotCollideWithTheClearingGrid()" classname="ru.midgard.winter.core.FantasySafetyTest" time="0.002"/>
+  <testcase name="birchWillowRetainsBirchWood()" classname="ru.midgard.winter.core.FantasySafetyTest" time="0.002"/>
+  <testcase name="wonderKindsAndCoordinatesAreDeterministic()" classname="ru.midgard.winter.core.FantasySafetyTest" time="0.041"/>
+  <testcase name="mineralFeetFollowSlopesWithoutCarvingGround()" classname="ru.midgard.winter.core.FantasySafetyTest" time="0.009"/>
+  <testcase name="mineralCannotBridgeCliffsOrUnsupportedFeet()" classname="ru.midgard.winter.core.FantasySafetyTest" time="0.001"/>
+  <testcase name="luminousCrystalsContainNoMeltingIceOrFluids()" classname="ru.midgard.winter.core.FantasySafetyTest" time="0.025"/>
+  <testcase name="everyVariantIsBoundedAndPassesTheFullPreflight()" classname="ru.midgard.winter.core.FantasySafetyTest" time="0.195"/>
+  <testcase name="noWonderCanOverwritePlayerBlocks()" classname="ru.midgard.winter.core.FantasySafetyTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

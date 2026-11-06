@@ -14,7 +14,11 @@ for name in ['MidgardWinterWorld.jar','WinterProbe.jar','winter-datapack.zip','s
    for n in classes:
     data=z.read(n);assert data[:4]==b'\xca\xfe\xba\xbe' and struct.unpack('>H',data[6:8])[0]==65
     assert b'net/minecraft/' not in data and b'org/bukkit/craftbukkit/' not in data, 'Production NMS/CraftBukkit reference'
-   assert 'version: 0.3.0' in z.read('plugin.yml').decode() or "version: '0.3.0'" in z.read('plugin.yml').decode()
+   assert 'version: 0.4.0' in z.read('plugin.yml').decode() or "version: '0.4.0'" in z.read('plugin.yml').decode()
+   if name=='MidgardWinterWorld.jar':
+    assert 'bootstrapper: ru.midgard.winter.WinterBootstrap' in z.read('paper-plugin.yml').decode()
+    assert 'fantasy-pack/pack.mcmeta' in names
+    assert len([n for n in names if n.startswith('fantasy-pack/data/minecraft/worldgen/biome/') and n.endswith('.json')])==23
   else:
    assert len([n for n in names if '/worldgen/biome/' in n and n.endswith('.json')])==23
    assert not any('/dimension/' in n or '/noise_settings/' in n or '/structure/' in n for n in names)

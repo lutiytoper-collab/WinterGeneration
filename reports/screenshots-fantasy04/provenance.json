@@ -1,0 +1,111 @@
+{
+  "version": "0.4.0 Fantasy",
+  "minecraft": "1.21.11",
+  "server": "Paper132",
+  "world": "winter_test",
+  "seed": 825180311,
+  "one_jar_no_external_packs": true,
+  "plugin_sha256": "f2e019c2199b2a6cec58a66d71472b09844b3ddaf928853b72b883d7d3c733c6",
+  "client_sha1": "ba2df812c2d12e0219c489c4cd9a5e1f0760f5bd",
+  "capture": "Original native F2 PNGs; no processing, shaders, resource packs, generated images, or manual scene blocks. All PNG CRCs/IEND verified.",
+  "renderer": "1600x900; render10; gamma0.6; Xvfb; Mesa llvmpipe OpenGL4.5",
+  "auth": "Local loopback offline-auth QA only",
+  "camera": "Spectator; weather/time/teleports via server commands.",
+  "screenshots": [
+    {
+      "file": "01-lantern-willow.png",
+      "native_F2_file": "2026-11-06_07.36.48.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "87f81950db4fbce43eccac5d90683b86228a035c2bc0f7f90edb7e005b344e1c",
+      "captured_utc": "2026-11-06T07:36:49.063663+00:00",
+      "camera_xyz_yaw_pitch": [
+        30.0,
+        72.0,
+        190.0,
+        -42.0,
+        6.0
+      ],
+      "note": "Procedural pink lantern willow, moonstone cluster and native frost forest; one-JAR Fantasy0.4, no manually placed scene blocks or shaders.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "02-moon-mushroom.png",
+      "native_F2_file": "2026-11-06_07.38.29.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "bf12ab04554522b16b0179c2f5bbd81e9dd235e219e06982baabc2ee40bc57e0",
+      "captured_utc": "2026-11-06T07:38:30.045616+00:00",
+      "camera_xyz_yaw_pitch": [
+        36.0,
+        72.0,
+        248.0,
+        -38.0,
+        7.0
+      ],
+      "note": "Naturally generated luminous frost mushroom; pearl froglight, teal wart cap, glass gills and snow. Vanilla block lighting, no image edits.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "03-crystal-grove.png",
+      "native_F2_file": "2026-11-06_07.41.27.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "73bf5bcfc8943f6cf5976b682d723584f053813ff8b628f5c5e2b9be9e6df919",
+      "captured_utc": "2026-11-06T07:41:27.953091+00:00",
+      "camera_xyz_yaw_pitch": [
+        -38.0,
+        71.0,
+        144.0,
+        30.0,
+        8.0
+      ],
+      "note": "Procedurally placed blue-ice/amethyst crystal cluster with moonstones and luminous mushrooms. Original blocks, no artificial staging.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "04-winter-blossom-coast.png",
+      "native_F2_file": "2026-11-06_07.44.47.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "8d9421ef7840dbdd49ab41c5d0dfde258f6d773eb27640bdaa94626fb0fb6abc",
+      "captured_utc": "2026-11-06T07:44:47.756969+00:00",
+      "camera_xyz_yaw_pitch": [
+        490.0,
+        108.0,
+        740.0,
+        -40.0,
+        25.0
+      ],
+      "note": "Native snow-covered winter blossom forest along the coast, generated from the embedded Fantasy pack; pink native crowns and pastel biome sky.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "05-f3-proof.png",
+      "native_F2_file": "2026-11-06_07.46.57.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "e7fb119e0c92ac7ccd561be6ab7ffc11f10b225e344dfbd1a90bdb9d539edab2",
+      "captured_utc": "2026-11-06T07:46:57.359488+00:00",
+      "camera_xyz_yaw_pitch": [
+        490.0,
+        108.0,
+        740.0,
+        -40.0,
+        25.0
+      ],
+      "note": "Native F3 screenshot: official vanilla1.21.11, Java21, Paper, coordinates, and software OpenGL; embedded Fantasy0.4 generation.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    }
+  ]
+}

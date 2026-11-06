@@ -1,3 +1,5 @@
+> Историческая инструкция режима0.3. Для текущего одного JAR0.4 используйте [FANTASY_INSTALL.md](FANTASY_INSTALL.md).
+
 # Storybook: новый слой растительности
 
 0.1/0.2 добавляли деревья и снег поверх исходных vanilla лесов. Storybook 0.3 заменяет native-растительность в 12 лесных placed features: cathedral_fir, spire_fir, young_fir, silver_birch, elder_birch, moon_oak, ancient_oak и 6 смесей. Высота заданного ствола достигает 36 блоков, крупные кроны строятся штатным Minecraft worldgen с пересечением чанков. Поздний Bukkit-декор таких деревьев не строит и соседние FULL-чанки ради них не запрашивает.

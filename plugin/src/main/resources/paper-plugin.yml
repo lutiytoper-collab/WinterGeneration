@@ -1,0 +1,35 @@
+name: MidgardWinterWorld
+version: '0.4.0'
+main: ru.midgard.winter.WinterPlugin
+api-version: '1.21.11'
+load: STARTUP
+bootstrapper: ru.midgard.winter.WinterBootstrap
+dependencies:
+  server:
+    WorldGuard:
+      load: OMIT
+      required: false
+      join-classpath: true
+    LunaAirDrop:
+      load: OMIT
+      required: false
+      join-classpath: true
+    FastAsyncWorldEdit:
+      load: OMIT
+      required: false
+      join-classpath: true
+permissions:
+  winterworld.help:
+    default: op
+  winterworld.reload:
+    default: op
+  winterworld.status:
+    default: op
+  winterworld.info:
+    default: op
+  winterworld.debug:
+    default: op
+  winterworld.inspect:
+    default: op
+  winterworld.benchmark:
+    default: op

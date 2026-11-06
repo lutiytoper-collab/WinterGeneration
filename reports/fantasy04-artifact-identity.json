@@ -1,0 +1,32 @@
+[
+  {
+    "folder": ".runtime/fantasy04-first",
+    "plugin_sha256": "f2e019c2199b2a6cec58a66d71472b09844b3ddaf928853b72b883d7d3c733c6",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true
+  },
+  {
+    "folder": ".runtime/integration-fantasy04",
+    "plugin_sha256": "f2e019c2199b2a6cec58a66d71472b09844b3ddaf928853b72b883d7d3c733c6",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true
+  },
+  {
+    "folder": ".runtime/fawe-integration-fantasy04",
+    "plugin_sha256": "f2e019c2199b2a6cec58a66d71472b09844b3ddaf928853b72b883d7d3c733c6",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true
+  },
+  {
+    "folder": ".runtime/fantasy04-purpur",
+    "plugin_sha256": "f2e019c2199b2a6cec58a66d71472b09844b3ddaf928853b72b883d7d3c733c6",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true
+  },
+  {
+    "folder": ".runtime/fantasy04-matrix/825180311/winter",
+    "plugin_sha256": "f2e019c2199b2a6cec58a66d71472b09844b3ddaf928853b72b883d7d3c733c6",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true
+  }
+]

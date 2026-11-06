@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.midgard.winter.ResourcesTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-06T04:36:28.072Z" hostname="0f051bf75645" time="0.053">
+<testsuite name="ru.midgard.winter.ResourcesTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-06T07:32:54.250Z" hostname="0f051bf75645" time="0.078">
   <properties/>
-  <testcase name="noMandatoryPluginDependency()" classname="ru.midgard.winter.ResourcesTest" time="0.033"/>
-  <testcase name="safeConfigDefaults()" classname="ru.midgard.winter.ResourcesTest" time="0.011"/>
-  <testcase name="everyAdminCommandHasOwnPermission()" classname="ru.midgard.winter.ResourcesTest" time="0.006"/>
+  <testcase name="newInstallUsesEmbeddedFantasyAndWondersByDefault()" classname="ru.midgard.winter.ResourcesTest" time="0.047"/>
+  <testcase name="noMandatoryPluginDependency()" classname="ru.midgard.winter.ResourcesTest" time="0.006"/>
+  <testcase name="paperBootstrapAndOptionalBridgesAreDeclared()" classname="ru.midgard.winter.ResourcesTest" time="0.009"/>
+  <testcase name="nativePackIsEmbeddedWithExactVersion()" classname="ru.midgard.winter.ResourcesTest" time="0.002"/>
+  <testcase name="safeConfigDefaults()" classname="ru.midgard.winter.ResourcesTest" time="0.007"/>
+  <testcase name="everyAdminCommandHasOwnPermission()" classname="ru.midgard.winter.ResourcesTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

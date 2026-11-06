@@ -9,5 +9,5 @@ Daemon will be stopped at the end of the build
 > Task :core:testClasses
 > Task :core:test
 
-BUILD SUCCESSFUL in 12s
+BUILD SUCCESSFUL in 8s
 4 actionable tasks: 4 executed

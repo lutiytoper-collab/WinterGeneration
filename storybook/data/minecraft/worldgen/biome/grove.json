@@ -7,8 +7,8 @@
         "sound": "minecraft:music.overworld.grove"
       }
     },
-    "minecraft:visual/sky_color": "#b8cceb",
-    "minecraft:visual/fog_color": "#d2d6e9",
+    "minecraft:visual/sky_color": "#bfbde9",
+    "minecraft:visual/fog_color": "#d4cbea",
     "minecraft:visual/water_fog_color": "#7197ac"
   },
   "carvers": [
@@ -18,10 +18,10 @@
   ],
   "downfall": 0.8,
   "effects": {
-    "water_color": "#5899b5",
-    "foliage_color": "#c4dce8",
-    "grass_color": "#a7bdcc",
-    "dry_foliage_color": "#b5cad3"
+    "water_color": "#648ac2",
+    "foliage_color": "#a5dfeb",
+    "grass_color": "#a8c4d1",
+    "dry_foliage_color": "#c1cadc"
   },
   "features": [
     [],

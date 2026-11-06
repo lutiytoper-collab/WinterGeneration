@@ -1,11 +1,11 @@
-# 0.3.0 — Storybook native forests
+# 0.4.0 — Fantasy, один JAR
 
-- Отдельный native-датапак:7 форм деревьев,12 замен лесных placed features,23 биомные frost palettes, высокий плотный лес вместо прежних vanilla деревьев.
-- Иней/свисающий пале-мох, редкие hanging lanterns, постоянные светлые oak crowns, разные spruce/birch/oak/dark_oak стволы.
-- Исходные списки features/порядок и ore/carver/structure definitions сохранены. Reachability замен проверена по всем официальным ресурсам; общие water/plains/snowy features оставлены.
-- Storybook config отключает overlay forest и усиливает снег. Навес получил снежную крону; ice template — голубые/аметистовые спицы со светом, runtime visual acceptance пока NOT RUN.
--149Java+16Python PASS; оба полных Paper интеграционных стека повторены,37 биомов/11 структур каждый; Purpur smoke,320 пар ROI,6 настоящих F2 PNG.
--7 864 241 одинаковых underground raw states и все сравниваемые ore позиции совпали.1 исходный variable-window diagnostic FAIL сохранён и объяснён без переименования в PASS.
-- Новый установочный комплект с готовыми путями; климатический прежний pack и overlay config оставлены альтернативой. Старые артефакты/отчёты 0.2.0 сохранены.
+- Публичный Paper bootstrap + встроенный pack: native генерация доступна до создания мира, без ручной установки datapack ZIP. Команды переведены на Paper lifecycle, optional мосты проверены с WG/Luna/WE/FAWE.
+- Восьмая native winter_blossom форма, розовый цветущий forest, разные голубые/лавандовые/мятные/аметистовые палитры.
+- Ивы с фонарями, светящиеся бирюзовые грибы, лунные камни, реальные природные голубые кристаллы с аметистом.
+- Отдельная crystal-grid, fallback к следующему виду при неудаче, корректные якоря по размерам, slope-aware mineral foundations без изменения почвы.
+- В кристаллах больше нет тающего обычного ICE. Защиты и 512-бюджет позднего прохода сохранены.
+-161Java+16Python PASS; пять one-JAR площадок без внешних packs; Paper интеграции, Purpur initial/restart;64 пары ROI;5native F2 PNG.
+-255 PASS/1 FAIL/11 NOT RUN. Исходный variable-window FAIL сохранён; same-coordinate states и ore comparison прошли.
 
-Пределы native-крон отличаются от позднего декора; глобальная biome palette, persistent leaf behaviour, добываемые фонари, crown edges и нагрузка описаны явно.
+История 0.3.0:reports/history/v0.3.0 и dist/previous/0.3.0. Нагрузка и общие ограничения описаны отдельно.

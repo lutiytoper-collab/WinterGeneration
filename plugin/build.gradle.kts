@@ -25,3 +25,6 @@ tasks.test {
     useJUnitPlatform()
     providers.gradleProperty("lunaJar").orNull?.let { systemProperty("luna.jar", it) }
 }
+
+// Native worldgen is part of the one-file distribution.
+tasks.processResources { from(rootProject.file("storybook")) { into("fantasy-pack") } }

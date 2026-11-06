@@ -43,6 +43,6 @@
   "original_feature_lists_and_order_preserved": true,
   "ore_carver_structure_definitions_unchanged": true,
   "source_proof": "vendor/storybook/provenance.json",
-  "resources": 55,
+  "resources": 58,
   "server_codec": "NOT RUN by this static validator"
 }

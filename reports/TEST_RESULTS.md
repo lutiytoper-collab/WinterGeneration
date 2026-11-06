@@ -1,39 +1,31 @@
-# Результаты 0.3.0 Storybook
+# Проверки Fantasy0.4.0
 
-**PASS 416, FAIL 1, BLOCKED 0, NOT RUN 11. TEST VERIFIED только в указанном объёме.**
+**PASS 255, FAIL 1, BLOCKED 0, NOT RUN 11. TEST VERIFIED в указанном объёме.**
 
-149 Java unit/contract,6 климатических и 10 Storybook Python тестов, без skipped. Полный каталог: test-results.json.
+161 Java и 16 Python, без skipped. Публичный Paper API1.21.11, Java21. Контракт Luna выполнен с предоставленным JAR. Полный каталог: test-results.json.
 
 | Группа | PASS | FAIL | NOT RUN |
 |---|---:|---:|---:|
-| Java unit/contract | 149 | 0 | 0 |
-| Purpur smoke | 1 | 0 | 0 |
+| Java unit/contract | 161 | 0 | 0 |
 | Python unit | 16 | 0 | 0 |
 | artifacts | 2 | 0 | 0 |
-| biome location | 74 | 0 | 0 |
-| boundary sample | 1 | 0 | 0 |
-| climate runtime | 74 | 0 | 0 |
-| graphical samples | 6 | 0 | 0 |
-| integration fixtures | 38 | 0 | 0 |
-| native pack/reference | 2 | 0 | 0 |
+| lifecycle | 4 | 0 | 0 |
+| native static | 1 | 0 | 0 |
 | natural Luna | 4 | 0 | 0 |
-| raw variable-window diagnostic | 1 | 1 | 0 |
+| natural fantasy objects | 5 | 0 | 0 |
+| one-JAR bootstrap | 6 | 0 | 0 |
+| raw variable-window diagnostic | 0 | 1 | 0 |
+| real graphical samples | 5 | 0 | 0 |
+| real integration fixtures | 38 | 0 | 0 |
 | real protocol client | 6 | 0 | 0 |
 | remaining scope | 0 | 0 | 11 |
-| restart persistence | 4 | 0 | 0 |
-| same-coordinate worldgen | 8 | 0 | 0 |
-| server codec/load | 4 | 0 | 0 |
-| server lifecycle | 4 | 0 | 0 |
-| structure locate/API | 22 | 0 | 0 |
+| restart persistence | 3 | 0 | 0 |
+| same-coordinate worldgen | 4 | 0 | 0 |
 
-Оригинальный variable-window probe сохранил FAIL seed825180311 в чанке 131,135: разные высоты новых стволов меняют границу выборки MOTION_BLOCKING_NO_LEAVES−8. Числа STONE+9/DIORITE+5 означали дополнительные выбранные позиции, а не замену породы. Точное фиксированное Y≤31 сравнение этого чанка нашло только 3AIR→SNOW на открытой поверхности Y31.
+Один FAIL сохранён: исходный height-window fingerprint825180311/131,135. Разная высота native-стволов меняет набор выбранных координат. Как в 0.3, независимая сверка **одинаковых координат** прошла:1 572 785 raw underground states, все сравниваемые *_ore позиции/состояния на всей сохранённой высоте, bbox структур и block entities совпали. Сырые fingerprints не переименованы в PASS. Подземелье ограничено пересечением окон −64..min(31,baselineHeight−8,winterHeight−8).
 
-Независимое сравнение **одинаковых координат**, без нормализации materials/states: seeds825180311/42,320 пар ROI,7 864 241 общая подземная позиция — полное совпадение raw block states. Отдельно все рудные позиции/состояния на всей сохранённой высоте, структуры и block entities совпали. Объём подземелья — пересечение исходных окон от−64 доmin(31,baselineHeight−8,winterHeight−8), а не весь объём мира. Сырые переменные fingerprints не переименованы в PASS.
+Финальная 0.4 матрица — один seed,64ROI на вариант,128 уникальных vanilla/winter ROI и 256 запросов initial/restart. Vanilla-контроль повторно использован. Два seed/320 пар/7,9 млн 0.3 не объявляются новым прогоном 0.4.
 
-640 уникальных vanilla/winter ROI,1280 запросов с restart. Vanilla-контроли использованы повторно; зимние ветки новые с текущим JAR/Storybook. На выбранных 256 пограничных ROI seed42 поверхность исключённых биомов совпала; все возможные переходы крупных крон не проверены.
+Оба текущих Paper стека WG/Luna+WE7.3.19 и отдельно FAWE2.16.2:19fixtures,3 реальных protocol-client проверки,54-слотовый лут, природный снег,End cleanup0tickets,Chunky/stop. В 0.4 запущены fixtures, не повторный поиск 37 биомов/11 структур. Purpur2568:4ROI, initial/restart и повторное обнаружение встроенного pack. Все 5 площадок используют один текущий JAR, без внешних datapack ZIP.
 
-Каждый Paper стек WorldGuard/Luna+WorldEdit 7.3.19 либо FAWE 2.16.2:37 биомов/климат,11 типов структур,19 fixtures,3 реальных protocol-client проверки, природный снег,54 слота лута,End cleanup0 tickets,Chunky и чистый stop. Purpur 2568:4 ROI smoke с текущим native pack, полный стек NOT RUN.
-
-Шесть настоящих F2 PNG сняты официальным 1.21.11 клиентом, без шейдеров/обработки. Это осмотр выбранных мест, не исчерпывающая художественная приёмка. Кристаллы проверены unit/preflight, но успешное природное размещение и отдельный игровой кадр кристаллов в этом прогоне не получены.
-
-Первый native codec запуск отклонён из-за crown_height28 при максимуме 24; параметр исправлен до 22..24 и финальный pack загрузился на всех площадках. Ошибка сохранена в logs/story03-preview-console.log. Исторические 0.1/0.2 и промежуточные неудачи не объявляются новыми PASS.
+В игре подтверждены ивы, светящиеся грибы, лунные камни и кристаллы; новый flower_forest с зимними розовыми кронами снят отдельным кадром.5native F2 PNG, без image editing/шейдеров/ручного строительства сцены.

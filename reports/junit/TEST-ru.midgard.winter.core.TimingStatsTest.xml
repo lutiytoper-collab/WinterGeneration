@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.midgard.winter.core.TimingStatsTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-06T04:36:19.550Z" hostname="0f051bf75645" time="0.002">
+<testsuite name="ru.midgard.winter.core.TimingStatsTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-06T07:29:40.679Z" hostname="0f051bf75645" time="0.003">
   <properties/>
   <testcase name="actualStatistics()" classname="ru.midgard.winter.core.TimingStatsTest" time="0.001"/>
   <testcase name="boundedWindow()" classname="ru.midgard.winter.core.TimingStatsTest" time="0.0"/>

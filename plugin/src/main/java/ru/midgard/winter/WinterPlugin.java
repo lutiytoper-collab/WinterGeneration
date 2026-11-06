@@ -61,10 +61,11 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
         }
         Bukkit.getPluginManager().registerEvents(this,this);
         hookLuna();
-        Objects.requireNonNull(getCommand("winterworld")).setExecutor(this);
+        getLifecycleManager().registerEventHandler(io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents.COMMANDS,event->
+            event.registrar().register("winterworld","Управление зимней генерацией",(io.papermc.paper.command.brigadier.BasicCommand)(source,args)->onCommand(source.getSender(),null,"winterworld",args)));
         Bukkit.getServicesManager().register(AirDropCompatibilityManager.class,airDrop,this,
             org.bukkit.plugin.ServicePriority.Normal);
-        getLogger().info("Development build 0.3.0; late decoration only; no retrogen. LunaAirDrop adapter requires validation.");
+        getLogger().info("Fantasy build 0.4.0; embedded native pack; protected late decoration; no retrogen.");
     }
     @Override public void onDisable() {
         if(pendingTask!=null)pendingTask.cancel();pending.clear();loading.clear();for(Object item:decorationLeases.clear()){ChunkKey key=(ChunkKey)item;Chunk ch=leasedChunks.remove(key);if(ch!=null)ch.removePluginChunkTicket(this);}if(lunaBridge!=null)lunaBridge.close();
@@ -93,7 +94,7 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
             if(!c.isBoolean("modules."+m)) throw new IllegalArgumentException("Expected boolean modules."+m);
             if(c.getBoolean("modules."+m)) modules.add(m);
         }
-        for(String m:List.of("canopy","trails")){
+        for(String m:List.of("canopy","trails","wonders")){
             if(c.contains("modules."+m)&&!c.isBoolean("modules."+m))throw new IllegalArgumentException("Expected boolean modules."+m);
             if(c.getBoolean("modules."+m,true))modules.add(m);
         }
@@ -288,23 +289,29 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
         Settings settings=r.settings;DecorationSite site=new DecorationSite(w,r,decorationObstacles(ch,settings.margin()));int used=0;
         int x=ox+8,z=oz+8,y=site.surface(x,z);String biome=w.getBiome(x,y,z).getKey().getKey();
         boolean light=r.modules.contains("lights")&&Noise.unit(seed,ch.getX(),ch.getZ(),203)<settings.lightChance();
-        DecorationPlan special=null;
-        if(r.modules.contains("cabins")&&Candidates.rare(seed,ch.getX(),ch.getZ(),8,201,settings.cabinChance()))special=DecorationPlan.cabin(light);
-        else if(r.modules.contains("clearings")&&Candidates.rare(seed,ch.getX(),ch.getZ(),4,202,settings.clearingChance()))special=DecorationPlan.clearing(light);
-        else if(r.modules.contains("ice")&&Candidates.rare(seed,ch.getX(),ch.getZ(),4,204,settings.iceChance()))special=DecorationPlan.ice(seed,ch.getX(),ch.getZ());
-        if(special!=null)for(int attempt=0;attempt<5;attempt++){
-            int px=ox+3+(int)(Noise.unit(seed,ch.getX(),ch.getZ(),410+attempt)*10),pz=oz+3+(int)(Noise.unit(seed,ch.getX(),ch.getZ(),430+attempt)*10),py=site.surface(px,pz);
-            if(!allowed(r,w,px,py,pz))continue;
-            if(special.module().equals("cabins")){
-                var valid=PlacementValidator.validate(special,site,px,py,pz,ch.getX(),ch.getZ(),settings.maxChanges(),r.maxObjectSize);
-                if(valid.allowed()){used+=writePlan(w,special,special.cells(),px,py,pz);featureAt(special.module()+"-objects",px,py,pz);break;}
-            }else{
-                DecorationPlan prop=special;
-                if(prop.module().equals("clearings")){
-                    var fitted=FoundationFitter.fit(prop,site,px,pz,2);if(fitted==null){feature("denied-clearings-steep",1);continue;}prop=fitted.plan();py=fitted.ground();
+        List<DecorationPlan> candidates=new ArrayList<>();
+        if(r.modules.contains("cabins")&&Candidates.rare(seed,ch.getX(),ch.getZ(),8,201,settings.cabinChance()))candidates.add(DecorationPlan.cabin(light));
+        if(r.modules.contains("clearings")&&Candidates.rare(seed,ch.getX(),ch.getZ(),4,202,settings.clearingChance()))candidates.add(DecorationPlan.clearing(light));
+        // Offset the mineral grid: clearings must not consume every crystal candidate.
+        if(r.modules.contains("ice")&&Candidates.rare(seed,ch.getX()+1,ch.getZ()+1,4,204,settings.iceChance()))candidates.add(DecorationPlan.ice(seed,ch.getX(),ch.getZ()));
+        if(r.modules.contains("wonders")&&Noise.unit(seed,ch.getX(),ch.getZ(),884)<.38)candidates.add(FantasyPlan.choose(seed,ch.getX(),ch.getZ(),biome.contains("birch")));
+        objectLoop:for(DecorationPlan special:candidates){
+            Box shape=special.bounds(0,0,0);int minX=Math.max(1,-shape.minX()),maxX=Math.min(14,15-shape.maxX()),minZ=Math.max(1,-shape.minZ()),maxZ=Math.min(14,15-shape.maxZ());
+            for(int attempt=0;attempt<10;attempt++){
+                int px=ox+minX+(int)(Noise.unit(seed,ch.getX(),ch.getZ(),410+attempt)*(maxX-minX+1)),pz=oz+minZ+(int)(Noise.unit(seed,ch.getX(),ch.getZ(),430+attempt)*(maxZ-minZ+1)),py=site.surface(px,pz);
+                if(!allowed(r,w,px,py,pz))continue;
+                if(special.module().equals("cabins")){
+                    var valid=PlacementValidator.validate(special,site,px,py,pz,ch.getX(),ch.getZ(),settings.maxChanges(),r.maxObjectSize);
+                    if(valid.allowed()){used+=writePlan(w,special,special.cells(),px,py,pz);featureAt(special.module()+"-objects",px,py,pz);break objectLoop;}
+                }else{
+                    DecorationPlan prop=special;
+                    if(prop.module().equals("clearings")||prop.module().equals("ice")||prop.module().equals("moonstones")){
+                        var fitted=prop.module().equals("clearings")?FoundationFitter.fit(prop,site,px,pz,2):FoundationFitter.fitMineral(prop,site,px,pz,2);
+                        if(fitted==null){feature("denied-"+prop.module()+"-steep",1);continue;}prop=fitted.plan();py=fitted.ground();
+                    }
+                    var valid=ForestPlacementValidator.validateProp(prop,site,px,py,pz,ch.getX(),ch.getZ(),settings.maxChanges(),r.maxObjectSize);
+                    if(valid.allowed()){used+=writePlan(w,prop,valid.writes(),px,py,pz);featureAt(prop.module()+"-objects",px,py,pz);break objectLoop;}else feature("denied-"+prop.module()+"-"+valid.reason(),1);
                 }
-                var valid=ForestPlacementValidator.validateProp(prop,site,px,py,pz,ch.getX(),ch.getZ(),settings.maxChanges(),r.maxObjectSize);
-                if(valid.allowed()){used+=writePlan(w,prop,valid.writes(),px,py,pz);featureAt(prop.module()+"-objects",px,py,pz);break;}else feature("denied-"+prop.module()+"-"+valid.reason(),1);
             }
         }
         if(used==0&&r.modules.contains("forests")&&Noise.unit(seed,ch.getX(),ch.getZ(),205)<settings.forestDensity()){
@@ -366,7 +373,7 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
             if(plan.module().equals("fallen-logs")&&cell.block().endsWith("_LOG")){
                 var block=w.getBlockAt(x+cell.x(),ground+cell.y(),z+cell.z());var data=(org.bukkit.block.data.Orientable)block.getBlockData();data.setAxis(Axis.X);block.setBlockData(data,false);
             }
-            if(cell.block().equals("LANTERN")){
+            if(cell.block().equals("LANTERN")||cell.block().equals("SOUL_LANTERN")){
                 var block=w.getBlockAt(x+cell.x(),ground+cell.y(),z+cell.z());var data=(org.bukkit.block.data.type.Lantern)block.getBlockData();
                 data.setHanging(w.getBlockAt(block.getX(),block.getY()+1,block.getZ()).getType().isSolid());block.setBlockData(data,false);
             }
@@ -432,7 +439,7 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
                 catch(RuntimeException ex) { runtime=previous; sender.sendMessage("Отклонено; прежние настройки сохранены: "+ex.getMessage()); }
             }
             case "debug" -> { debug=!debug; sender.sendMessage("Debug="+debug); }
-            case "status", "info" -> sender.sendMessage("MidgardWinterWorld 0.3.0 DEVELOPMENT; enabled="+runtime.enabled+
+            case "status", "info" -> sender.sendMessage("MidgardWinterWorld 0.4.0 DEVELOPMENT; enabled="+runtime.enabled+
                 "; worlds="+runtime.worlds+"; processed="+seen+" decorated="+decorated+" skipped="+skipped+" boundary-restored="+boundaryRestorations+" pending="+(pending.size()+loading.size())+
                 "; leased-chunks="+decorationLeases.size()+"; features="+features+"; WorldGuard="+(worldGuardPresent()?"public API bridge, fail closed on query failure":"absent")+"; LunaAirDrop=UNVERIFIED");
             case "inspect" -> {
