@@ -1,0 +1,92 @@
+[
+  {
+    "scene": "birch_forest",
+    "x": 32,
+    "y": 69,
+    "z": 288,
+    "effectiveBiome": "minecraft:birch_forest",
+    "temperature": -0.5,
+    "actualMaterial": "WILDFLOWERS"
+  },
+  {
+    "scene": "flower_forest",
+    "x": 512,
+    "y": 119,
+    "z": 768,
+    "effectiveBiome": "minecraft:flower_forest",
+    "temperature": -0.5506056547164917,
+    "actualMaterial": "SNOW"
+  },
+  {
+    "scene": "snowy_taiga",
+    "x": 608,
+    "y": 80,
+    "z": -576,
+    "effectiveBiome": "minecraft:snowy_taiga",
+    "temperature": -0.5,
+    "actualMaterial": "AIR"
+  },
+  {
+    "scene": "frozen_peaks",
+    "x": -416,
+    "y": 127,
+    "z": 416,
+    "effectiveBiome": "minecraft:dripstone_caves",
+    "temperature": 0.7412500381469727,
+    "actualMaterial": "DRIPSTONE_BLOCK"
+  },
+  {
+    "scene": "river",
+    "x": -96,
+    "y": 101,
+    "z": -64,
+    "effectiveBiome": "minecraft:river",
+    "temperature": -0.5311159491539001,
+    "actualMaterial": "SNOW"
+  },
+  {
+    "scene": "beach",
+    "x": 384,
+    "y": 63,
+    "z": -544,
+    "effectiveBiome": "minecraft:beach",
+    "temperature": 0.800000011920929,
+    "actualMaterial": "AIR"
+  },
+  {
+    "scene": "badlands",
+    "x": 3456,
+    "y": 151,
+    "z": -2816,
+    "effectiveBiome": "minecraft:badlands",
+    "temperature": 1.915626049041748,
+    "actualMaterial": "AIR"
+  },
+  {
+    "scene": "savanna",
+    "x": -1376,
+    "y": 102,
+    "z": 1376,
+    "effectiveBiome": "minecraft:savanna",
+    "temperature": 1.972499966621399,
+    "actualMaterial": "AIR"
+  },
+  {
+    "scene": "jungle",
+    "x": -1056,
+    "y": 240,
+    "z": 640,
+    "effectiveBiome": "minecraft:jungle",
+    "temperature": 0.7516733407974243,
+    "actualMaterial": "AIR"
+  },
+  {
+    "scene": "lush_cave",
+    "x": -32,
+    "y": 2,
+    "z": 96,
+    "effectiveBiome": "minecraft:lush_caves",
+    "temperature": 0.5,
+    "actualMaterial": "AIR"
+  }
+]

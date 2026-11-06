@@ -1,0 +1,19 @@
+PREPARING birch_forest 32 288
+SITE_READY birch_forest ground 68 camera {'xyz_yaw_pitch': [32.5, 77, 192.5, 0.0, -0.8235701059456743], 'score': 0.6494142063567404, 'occludedSamples': 0, 'nearOccludedSamples': 0, 'radius': 96}
+PREPARING flower_forest 512 768
+SITE_READY flower_forest ground 118 camera {'xyz_yaw_pitch': [444.5, 94, 700.5, -45.0, -19.672217381692956], 'score': 2.780333042901577, 'occludedSamples': 1, 'nearOccludedSamples': 0, 'radius': 96}
+PREPARING snowy_taiga 608 -576
+SITE_READY snowy_taiga ground 79 camera {'xyz_yaw_pitch': [608.5, 91, -479.5, 180.0, 0.966774518200894], 'score': 0.5419935289079463, 'occludedSamples': 0, 'nearOccludedSamples': 0, 'radius': 96}
+PREPARING frozen_peaks -416 416
+SITE_READY frozen_peaks ground 126 camera {'xyz_yaw_pitch': [-381.5, 158, 382.5, 45.0, 32.48947531228954], 'score': 0.7493685187373725, 'occludedSamples': 0, 'nearOccludedSamples': 0, 'radius': 48}
+PREPARING river -96 -64
+SITE_READY river ground 100 camera {'xyz_yaw_pitch': [-129.5, 118, -29.5, -135.0, 19.067730803427747], 'score': 0.0559361517943352, 'occludedSamples': 0, 'nearOccludedSamples': 0, 'radius': 48}
+PREPARING beach 384 -544
+SITE_READY beach ground 62 camera {'xyz_yaw_pitch': [435.5, 91, -594.5, 45.0, 20.95418404317396], 'score': 0.057251042590437604, 'occludedSamples': 0, 'nearOccludedSamples': 0, 'radius': 72}
+PREPARING badlands 3456 -2816
+SITE_READY badlands ground 150 camera {'xyz_yaw_pitch': [3456.5, 168, -2863.5, 0.0, 19.098411571118195], 'score': 0.0540953057329083, 'occludedSamples': 0, 'nearOccludedSamples': 0, 'radius': 48}
+PREPARING savanna -1376 1376
+SITE_READY savanna ground 101 camera {'xyz_yaw_pitch': [-1341.5, 122, 1410.5, 135.0, 22.197532685011556], 'score': 0.13185196110069333, 'occludedSamples': 0, 'nearOccludedSamples': 0, 'radius': 48}
+PREPARING jungle -1056 640
+SITE_READY jungle ground 239 camera {'xyz_yaw_pitch': [-1106.5, 235, 589.5, -45.0, -11.275571968866265], 'score': 1.276534318131976, 'occludedSamples': 0, 'nearOccludedSamples': 0, 'radius': 72}
+ALL_SITES_READY

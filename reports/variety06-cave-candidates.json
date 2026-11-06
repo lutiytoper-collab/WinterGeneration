@@ -1,0 +1,262 @@
+[
+  {
+    "pose": [
+      -31.5,
+      1,
+      96.5,
+      45,
+      4
+    ],
+    "score": 122,
+    "clearLength": 32,
+    "greenSamples": 26,
+    "ceiling": 16
+  },
+  {
+    "pose": [
+      -27.5,
+      1,
+      92.5,
+      45,
+      4
+    ],
+    "score": 122,
+    "clearLength": 32,
+    "greenSamples": 26,
+    "ceiling": 17
+  },
+  {
+    "pose": [
+      40.5,
+      31,
+      -31.5,
+      180,
+      4
+    ],
+    "score": 112,
+    "clearLength": 32,
+    "greenSamples": 25,
+    "ceiling": 5
+  },
+  {
+    "pose": [
+      -43.5,
+      1,
+      84.5,
+      315,
+      4
+    ],
+    "score": 110,
+    "clearLength": 32,
+    "greenSamples": 22,
+    "ceiling": 17
+  },
+  {
+    "pose": [
+      16.5,
+      16,
+      40.5,
+      225,
+      4
+    ],
+    "score": 110,
+    "clearLength": 32,
+    "greenSamples": 22,
+    "ceiling": 12
+  },
+  {
+    "pose": [
+      16.5,
+      16,
+      36.5,
+      225,
+      4
+    ],
+    "score": 108,
+    "clearLength": 30,
+    "greenSamples": 22,
+    "ceiling": 13
+  },
+  {
+    "pose": [
+      -27.5,
+      1,
+      84.5,
+      0,
+      4
+    ],
+    "score": 104,
+    "clearLength": 32,
+    "greenSamples": 20,
+    "ceiling": 17
+  },
+  {
+    "pose": [
+      -39.5,
+      1,
+      88.5,
+      315,
+      4
+    ],
+    "score": 103,
+    "clearLength": 28,
+    "greenSamples": 21,
+    "ceiling": 17
+  },
+  {
+    "pose": [
+      24.5,
+      16,
+      44.5,
+      180,
+      4
+    ],
+    "score": 103,
+    "clearLength": 32,
+    "greenSamples": 21,
+    "ceiling": 8
+  },
+  {
+    "pose": [
+      36.5,
+      16,
+      20.5,
+      45,
+      4
+    ],
+    "score": 103,
+    "clearLength": 32,
+    "greenSamples": 20,
+    "ceiling": 11
+  },
+  {
+    "pose": [
+      -43.5,
+      1,
+      96.5,
+      270,
+      4
+    ],
+    "score": 101,
+    "clearLength": 32,
+    "greenSamples": 19,
+    "ceiling": 16
+  },
+  {
+    "pose": [
+      -47.5,
+      1,
+      96.5,
+      270,
+      4
+    ],
+    "score": 98,
+    "clearLength": 32,
+    "greenSamples": 18,
+    "ceiling": 16
+  },
+  {
+    "pose": [
+      8.5,
+      16,
+      32.5,
+      270,
+      4
+    ],
+    "score": 98,
+    "clearLength": 32,
+    "greenSamples": 18,
+    "ceiling": 17
+  },
+  {
+    "pose": [
+      12.5,
+      16,
+      32.5,
+      270,
+      4
+    ],
+    "score": 98,
+    "clearLength": 32,
+    "greenSamples": 18,
+    "ceiling": 17
+  },
+  {
+    "pose": [
+      20.5,
+      16,
+      44.5,
+      225,
+      4
+    ],
+    "score": 98,
+    "clearLength": 32,
+    "greenSamples": 19,
+    "ceiling": 9
+  },
+  {
+    "pose": [
+      24.5,
+      16,
+      40.5,
+      180,
+      4
+    ],
+    "score": 97,
+    "clearLength": 28,
+    "greenSamples": 19,
+    "ceiling": 17
+  },
+  {
+    "pose": [
+      16.5,
+      16,
+      44.5,
+      225,
+      4
+    ],
+    "score": 96,
+    "clearLength": 32,
+    "greenSamples": 18,
+    "ceiling": 10
+  },
+  {
+    "pose": [
+      -47.5,
+      1,
+      80.5,
+      315,
+      4
+    ],
+    "score": 95,
+    "clearLength": 32,
+    "greenSamples": 17,
+    "ceiling": 17
+  },
+  {
+    "pose": [
+      -39.5,
+      1,
+      80.5,
+      0,
+      4
+    ],
+    "score": 95,
+    "clearLength": 32,
+    "greenSamples": 17,
+    "ceiling": 12
+  },
+  {
+    "pose": [
+      -39.5,
+      1,
+      84.5,
+      0,
+      4
+    ],
+    "score": 95,
+    "clearLength": 32,
+    "greenSamples": 17,
+    "ceiling": 17
+  }
+]

@@ -10,6 +10,8 @@
 
 ![Тёплая пустынная деревня](reports/screenshots-terrain06/07-warm-desert-village.png)
 
+[Дополнительная галерея: 11 разных мест](reports/screenshots-variety06/README.md) · [Скачать все 11 PNG](dist/game-screenshots-variety-0.6.0.zip)
+
 ## Установка и режим
 
 Нужен **новый обычный NORMAL мир**. Замените JAR на остановленном тестовом сервере, оставив одну копию плагина. Внешний datapack ZIP не требуется. Для позднего декора своего имени мира добавьте его в allowed-worlds.

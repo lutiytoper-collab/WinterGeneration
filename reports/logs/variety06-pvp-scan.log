@@ -1,0 +1,15 @@
+PVP_SCAN 288 288
+PVP_RESULT {'searchCentre': [288, 288], 'best': {'xMin': 272, 'zMin': 264, 'size': 128, 'columnsFullyScanned': 16384, 'minY': 92, 'maxY': 141, 'heightRange': 49, 'maxAdjacentStep': 18, 'p95AdjacentStep': 2, 'wetOrIceColumns': 0, 'tallObstacleColumns': 1171, 'plainsBiomeFraction': 0.62890625, 'score': 62.1396484375, 'candidateForNaturalPvp': False}}
+PVP_SCAN 1152 864
+PVP_RESULT {'searchCentre': [1152, 864], 'best': {'xMin': 1064, 'zMin': 768, 'size': 128, 'columnsFullyScanned': 16384, 'minY': 60, 'maxY': 128, 'heightRange': 68, 'maxAdjacentStep': 48, 'p95AdjacentStep': 2, 'wetOrIceColumns': 1078, 'tallObstacleColumns': 2845, 'plainsBiomeFraction': 0.7060546875, 'score': 99.61376953125, 'candidateForNaturalPvp': False}}
+PVP_SCAN -1952 96
+PVP_RESULT {'searchCentre': [-1952, 96], 'best': {'xMin': -1992, 'zMin': 40, 'size': 128, 'columnsFullyScanned': 16384, 'minY': 56, 'maxY': 95, 'heightRange': 39, 'maxAdjacentStep': 16, 'p95AdjacentStep': 2, 'wetOrIceColumns': 0, 'tallObstacleColumns': 1433, 'plainsBiomeFraction': 0.583984375, 'score': 54.3173828125, 'candidateForNaturalPvp': False}}
+PVP_SCAN 32 2080
+PVP_RESULT {'searchCentre': [32, 2080], 'best': {'xMin': 16, 'zMin': 2048, 'size': 128, 'columnsFullyScanned': 16384, 'minY': 57, 'maxY': 130, 'heightRange': 73, 'maxAdjacentStep': 42, 'p95AdjacentStep': 3, 'wetOrIceColumns': 688, 'tallObstacleColumns': 732, 'plainsBiomeFraction': 0.767578125, 'score': 88.78125, 'candidateForNaturalPvp': False}}
+PVP_SCAN -64 -2112
+PVP_RESULT {'searchCentre': [-64, -2112], 'best': {'xMin': -120, 'zMin': -2208, 'size': 128, 'columnsFullyScanned': 16384, 'minY': 60, 'maxY': 111, 'heightRange': 51, 'maxAdjacentStep': 36, 'p95AdjacentStep': 2, 'wetOrIceColumns': 348, 'tallObstacleColumns': 3306, 'plainsBiomeFraction': 0.5830078125, 'score': 79.3056640625, 'candidateForNaturalPvp': False}}
+PVP_SCAN 4192 4160
+PVP_RESULT {'searchCentre': [4192, 4160], 'best': {'xMin': 4128, 'zMin': 4128, 'size': 128, 'columnsFullyScanned': 16384, 'minY': 57, 'maxY': 107, 'heightRange': 50, 'maxAdjacentStep': 31, 'p95AdjacentStep': 2, 'wetOrIceColumns': 3583, 'tallObstacleColumns': 1379, 'plainsBiomeFraction': 0.4931640625, 'score': 106.234130859375, 'candidateForNaturalPvp': False}}
+PVP_SCAN -4832 5216
+PVP_RESULT {'searchCentre': [-4832, 5216], 'best': {'xMin': -4848, 'zMin': 5192, 'size': 128, 'columnsFullyScanned': 16384, 'minY': 94, 'maxY': 239, 'heightRange': 145, 'maxAdjacentStep': 22, 'p95AdjacentStep': 3, 'wetOrIceColumns': 0, 'tallObstacleColumns': 445, 'plainsBiomeFraction': 0.87109375, 'score': 149.7509765625, 'candidateForNaturalPvp': False}}
+PVP_SCAN_DONE

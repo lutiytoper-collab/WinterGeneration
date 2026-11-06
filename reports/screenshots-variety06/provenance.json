@@ -1,0 +1,358 @@
+{
+  "minecraft": "1.21.11",
+  "plugin_version": "0.6.0",
+  "plugin_sha256": "1144a989f62f1e722a6ec32bd7686050c8318d6c623872d493d7e46a1e1c3b18",
+  "official_client_sha1": "ba2df812c2d12e0219c489c4cd9a5e1f0760f5bd",
+  "runtime": "terrain06-world",
+  "seed": 825180311,
+  "capture": "Native Minecraft F2, 1600x900, no image editing, shaders or resource pack. Vanilla custom graphics, renderDistance12, clouds off, FOV70, gamma0.6. All PNG chunk CRCs, source byte equality and SHA verified.",
+  "changes": "Camera teleports, spectator, clear weather, daytime selection and vanilla night vision for the lush-cave image only. No terrain flattening, building placement, vegetation clearing or lighting blocks added. JAR unchanged from released 0.6.0.",
+  "biome_notes": "Locate coordinates identify a region, not every pixel. The frozen_peaks locate has exposed dripstone_caves at its lower actual surface; adjacent ice/snow remains visible. Snow strips in warm scenes belong to neighbouring winter biomes.",
+  "surface_probe": [
+    {
+      "scene": "birch_forest",
+      "x": 32,
+      "y": 69,
+      "z": 288,
+      "effectiveBiome": "minecraft:birch_forest",
+      "temperature": -0.5,
+      "actualMaterial": "WILDFLOWERS"
+    },
+    {
+      "scene": "flower_forest",
+      "x": 512,
+      "y": 119,
+      "z": 768,
+      "effectiveBiome": "minecraft:flower_forest",
+      "temperature": -0.5506056547164917,
+      "actualMaterial": "SNOW"
+    },
+    {
+      "scene": "snowy_taiga",
+      "x": 608,
+      "y": 80,
+      "z": -576,
+      "effectiveBiome": "minecraft:snowy_taiga",
+      "temperature": -0.5,
+      "actualMaterial": "AIR"
+    },
+    {
+      "scene": "frozen_peaks",
+      "x": -416,
+      "y": 127,
+      "z": 416,
+      "effectiveBiome": "minecraft:dripstone_caves",
+      "temperature": 0.7412500381469727,
+      "actualMaterial": "DRIPSTONE_BLOCK"
+    },
+    {
+      "scene": "river",
+      "x": -96,
+      "y": 101,
+      "z": -64,
+      "effectiveBiome": "minecraft:river",
+      "temperature": -0.5311159491539001,
+      "actualMaterial": "SNOW"
+    },
+    {
+      "scene": "beach",
+      "x": 384,
+      "y": 63,
+      "z": -544,
+      "effectiveBiome": "minecraft:beach",
+      "temperature": 0.800000011920929,
+      "actualMaterial": "AIR"
+    },
+    {
+      "scene": "badlands",
+      "x": 3456,
+      "y": 151,
+      "z": -2816,
+      "effectiveBiome": "minecraft:badlands",
+      "temperature": 1.915626049041748,
+      "actualMaterial": "AIR"
+    },
+    {
+      "scene": "savanna",
+      "x": -1376,
+      "y": 102,
+      "z": 1376,
+      "effectiveBiome": "minecraft:savanna",
+      "temperature": 1.972499966621399,
+      "actualMaterial": "AIR"
+    },
+    {
+      "scene": "jungle",
+      "x": -1056,
+      "y": 240,
+      "z": 640,
+      "effectiveBiome": "minecraft:jungle",
+      "temperature": 0.7516733407974243,
+      "actualMaterial": "AIR"
+    },
+    {
+      "scene": "lush_cave",
+      "x": -32,
+      "y": 2,
+      "z": 96,
+      "effectiveBiome": "minecraft:lush_caves",
+      "temperature": 0.5,
+      "actualMaterial": "AIR"
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "01-frost-birch.png",
+      "native_F2_file": "2026-11-06_16.58.11.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "e4b2cdb6c82a0eb0282d7cf7a5808a61a5e52e1d8f7130973d68b050929c7c78",
+      "captured_utc": "2026-11-06T16:58:11.496154+00:00",
+      "camera_xyz_yaw_pitch": [
+        32.5,
+        77.0,
+        192.5,
+        0.0,
+        -0.8235701059456743
+      ],
+      "note": "Cold birch grove and valley; default 0.6.0 native terrain. Native F2, no scene construction or image editing.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG",
+      "caption_ru": "Зимняя роща с розовыми ивами",
+      "captured_local": "2026-11-06T21:58:11.496154+05:00",
+      "night_vision": false,
+      "time_of_day": 9000
+    },
+    {
+      "file": "02-winter-blossom.png",
+      "native_F2_file": "2026-11-06_16.59.11.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "32eeb88e21453dcddf568d360b0fdf6134b71205593cbd206d72845fa3f2bc90",
+      "captured_utc": "2026-11-06T16:59:11.889332+00:00",
+      "camera_xyz_yaw_pitch": [
+        444.5,
+        94.0,
+        700.5,
+        -45.0,
+        -19.672217381692956
+      ],
+      "note": "Flower forest with native pink winter crowns on the new terrain. Native F2, no scene construction or image editing.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG",
+      "caption_ru": "Цветочный лес на склонах",
+      "captured_local": "2026-11-06T21:59:11.889332+05:00",
+      "night_vision": false,
+      "time_of_day": 9000
+    },
+    {
+      "file": "03-snowy-taiga.png",
+      "native_F2_file": "2026-11-06_17.00.12.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "2ef0da14a1c4f680ba9b563b509ea2e31829fbd714874fbb43f6e8fef12d76d4",
+      "captured_utc": "2026-11-06T17:00:12.410508+00:00",
+      "camera_xyz_yaw_pitch": [
+        608.5,
+        91.0,
+        -479.5,
+        180.0,
+        0.966774518200894
+      ],
+      "note": "Snowy taiga and tall cold conifers. Native F2, no scene construction or image editing.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG",
+      "caption_ru": "Снежная тайга и замёрзшая вода",
+      "captured_local": "2026-11-06T22:00:12.410508+05:00",
+      "night_vision": false,
+      "time_of_day": 9000
+    },
+    {
+      "file": "04-glacial-peaks.png",
+      "native_F2_file": "2026-11-06_17.01.12.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "4028862c8c7aedefd426d60f3f4abf5508e1a62c15b108e389f3db751bf6514d",
+      "captured_utc": "2026-11-06T17:01:12.895693+00:00",
+      "camera_xyz_yaw_pitch": [
+        -381.5,
+        158.0,
+        382.5,
+        45.0,
+        32.48947531228954
+      ],
+      "note": "Cold rocky peaks and snowfields on the native terrain profile. Native F2, no scene construction or image editing.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG",
+      "caption_ru": "Ледяные скалы и открытый каменный разлом",
+      "captured_local": "2026-11-06T22:01:12.895693+05:00",
+      "night_vision": false,
+      "time_of_day": 9000
+    },
+    {
+      "file": "05-river-gorge.png",
+      "native_F2_file": "2026-11-06_17.02.13.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "76da4963b163892c53d67bd52ae77f24da82a82e78ab47c5bd0910651f5e0520",
+      "captured_utc": "2026-11-06T17:02:13.400886+00:00",
+      "camera_xyz_yaw_pitch": [
+        -129.5,
+        118.0,
+        -29.5,
+        -135.0,
+        19.067730803427747
+      ],
+      "note": "River-biome valley and adjoining cliffs. Native F2, no scene construction or image editing.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG",
+      "caption_ru": "Ущелье в речном биоме",
+      "captured_local": "2026-11-06T22:02:13.400886+05:00",
+      "night_vision": false,
+      "time_of_day": 9000
+    },
+    {
+      "file": "06-coast.png",
+      "native_F2_file": "2026-11-06_17.03.13.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "09d3aa0a862d4f55e0c083d250aa07e45c680fe982bb067b25bcd68d0cfefffc",
+      "captured_utc": "2026-11-06T17:03:13.850084+00:00",
+      "camera_xyz_yaw_pitch": [
+        435.5,
+        91.0,
+        -594.5,
+        45.0,
+        20.95418404317396
+      ],
+      "note": "Coast and sea with the adjoining landforms; time11500. Native F2, no scene construction or image editing.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG",
+      "caption_ru": "Побережье и море",
+      "captured_local": "2026-11-06T22:03:13.850084+05:00",
+      "night_vision": false,
+      "time_of_day": 11500
+    },
+    {
+      "file": "07-red-canyon.png",
+      "native_F2_file": "2026-11-06_17.04.14.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "cc59f4161960c9d83d11ce0a0cc546935527af4bc3601ace08eac6eefa978bfa",
+      "captured_utc": "2026-11-06T17:04:14.355259+00:00",
+      "camera_xyz_yaw_pitch": [
+        3456.5,
+        168.0,
+        -2863.5,
+        0.0,
+        19.098411571118195
+      ],
+      "note": "Warm badlands, terracotta canyons and mesas; no winter biome override. Native F2, no scene construction or image editing.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG",
+      "caption_ru": "Красные каньоны у границы биомов",
+      "captured_local": "2026-11-06T22:04:14.355259+05:00",
+      "night_vision": false,
+      "time_of_day": 9000
+    },
+    {
+      "file": "08-savanna.png",
+      "native_F2_file": "2026-11-06_17.05.14.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "e6d0549d28396ab72b767030618a28f654651b80e4272abc9924e05feac15f96",
+      "captured_utc": "2026-11-06T17:05:14.836420+00:00",
+      "camera_xyz_yaw_pitch": [
+        -1341.5,
+        122.0,
+        1410.5,
+        135.0,
+        22.197532685011556
+      ],
+      "note": "Warm savanna and acacia terrain; no winter biome override. Native F2, no scene construction or image editing.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG",
+      "caption_ru": "Саванна и горные склоны",
+      "captured_local": "2026-11-06T22:05:14.836420+05:00",
+      "night_vision": false,
+      "time_of_day": 9000
+    },
+    {
+      "file": "09-jungle.png",
+      "native_F2_file": "2026-11-06_17.06.15.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "2330363af95ebed9a2130a3f7f805b8e41355dbfd1c0584d5360cb347d248397",
+      "captured_utc": "2026-11-06T17:06:15.601721+00:00",
+      "camera_xyz_yaw_pitch": [
+        -1106.5,
+        235.0,
+        589.5,
+        -45.0,
+        -11.275571968866265
+      ],
+      "note": "Warm jungle and new native relief; no winter biome override. Native F2, no scene construction or image editing.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG",
+      "caption_ru": "Зелёные джунгли на высоте",
+      "captured_local": "2026-11-06T22:06:15.601721+05:00",
+      "night_vision": false,
+      "time_of_day": 9000
+    },
+    {
+      "file": "10-pink-highlands.png",
+      "native_F2_file": "2026-11-06_17.09.02.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "e61b98ac63ed95e34f4b11ac6bbc0e14c659060e2dce700f25f4cccf876c06f3",
+      "captured_utc": "2026-11-06T17:09:02.584929+00:00",
+      "camera_xyz_yaw_pitch": [
+        560.5,
+        154.0,
+        768.5,
+        90.0,
+        26.201030055783804
+      ],
+      "note": "Elevated view of native winter-blossom crowns and surrounding hills. Default 0.6.0, time9000, no scene construction.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG",
+      "caption_ru": "Панорама розовых крон",
+      "captured_local": "2026-11-06T22:09:02.584929+05:00",
+      "night_vision": false,
+      "time_of_day": 9000
+    },
+    {
+      "file": "11-lush-cave.png",
+      "native_F2_file": "2026-11-06_17.10.02.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "6125fc4764d0a03baec532ebe3bbae2d4fb0ca9f8f4f83006e35004fab60e642",
+      "captured_utc": "2026-11-06T17:10:02.934095+00:00",
+      "camera_xyz_yaw_pitch": [
+        -31.5,
+        1.0,
+        96.5,
+        45.0,
+        4.0
+      ],
+      "note": "Native lush cave. Vanilla night-vision effect applied for visibility, particles hidden; no placed lighting, no shaders or image editing.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG",
+      "caption_ru": "Lush-пещера с ночным зрением",
+      "captured_local": "2026-11-06T22:10:02.934095+05:00",
+      "night_vision": true,
+      "time_of_day": 9000
+    }
+  ]
+}

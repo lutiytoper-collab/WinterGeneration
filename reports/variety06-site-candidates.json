@@ -1,0 +1,686 @@
+[
+  {
+    "biome_locate": "birch_forest",
+    "native_locate_xyz": [
+      32,
+      109,
+      288
+    ],
+    "naturalGroundY": 68,
+    "cameraCandidates": [
+      {
+        "xyz_yaw_pitch": [
+          32.5,
+          77,
+          192.5,
+          0.0,
+          -0.8235701059456743
+        ],
+        "score": 0.6494142063567404,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 96
+      },
+      {
+        "xyz_yaw_pitch": [
+          32.5,
+          70,
+          216.5,
+          0.0,
+          -6.6387227686673205
+        ],
+        "score": 2.9983233661200392,
+        "occludedSamples": 2,
+        "nearOccludedSamples": 0,
+        "radius": 72
+      },
+      {
+        "xyz_yaw_pitch": [
+          32.5,
+          74,
+          240.5,
+          0.0,
+          -5.2138008599482015
+        ],
+        "score": 3.912828051596892,
+        "occludedSamples": 3,
+        "nearOccludedSamples": 0,
+        "radius": 48
+      },
+      {
+        "xyz_yaw_pitch": [
+          -15.5,
+          70,
+          288.5,
+          -90.0,
+          -9.903080020356516
+        ],
+        "score": 6.194184801221391,
+        "occludedSamples": 5,
+        "nearOccludedSamples": 0,
+        "radius": 48
+      },
+      {
+        "xyz_yaw_pitch": [
+          66.5,
+          80,
+          254.5,
+          45.0,
+          1.9296541918848713
+        ],
+        "score": 7.484220748486908,
+        "occludedSamples": 7,
+        "nearOccludedSamples": 0,
+        "radius": 48
+      }
+    ]
+  },
+  {
+    "biome_locate": "flower_forest",
+    "native_locate_xyz": [
+      512,
+      109,
+      768
+    ],
+    "naturalGroundY": 118,
+    "cameraCandidates": [
+      {
+        "xyz_yaw_pitch": [
+          444.5,
+          94,
+          700.5,
+          -45.0,
+          -19.672217381692956
+        ],
+        "score": 2.780333042901577,
+        "occludedSamples": 1,
+        "nearOccludedSamples": 0,
+        "radius": 96
+      },
+      {
+        "xyz_yaw_pitch": [
+          461.5,
+          100,
+          717.5,
+          -45.0,
+          -21.478850166370766
+        ],
+        "score": 2.888731009982246,
+        "occludedSamples": 1,
+        "nearOccludedSamples": 0,
+        "radius": 72
+      },
+      {
+        "xyz_yaw_pitch": [
+          580.5,
+          70,
+          836.5,
+          135.0,
+          -31.260763947892382
+        ],
+        "score": 4.475645836873543,
+        "occludedSamples": 2,
+        "nearOccludedSamples": 0,
+        "radius": 96
+      },
+      {
+        "xyz_yaw_pitch": [
+          563.5,
+          70,
+          819.5,
+          135.0,
+          -38.98772235856835
+        ],
+        "score": 4.939263341514101,
+        "occludedSamples": 2,
+        "nearOccludedSamples": 0,
+        "radius": 72
+      },
+      {
+        "xyz_yaw_pitch": [
+          478.5,
+          100,
+          734.5,
+          -45.0,
+          -30.550217217258723
+        ],
+        "score": 5.4330130330355235,
+        "occludedSamples": 3,
+        "nearOccludedSamples": 0,
+        "radius": 48
+      }
+    ]
+  },
+  {
+    "biome_locate": "snowy_taiga",
+    "native_locate_xyz": [
+      608,
+      109,
+      -576
+    ],
+    "naturalGroundY": 79,
+    "cameraCandidates": [
+      {
+        "xyz_yaw_pitch": [
+          608.5,
+          91,
+          -479.5,
+          180.0,
+          0.966774518200894
+        ],
+        "score": 0.5419935289079463,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 96
+      },
+      {
+        "xyz_yaw_pitch": [
+          608.5,
+          86,
+          -503.5,
+          180.0,
+          -2.6877452966702875
+        ],
+        "score": 0.7612647178002172,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 72
+      },
+      {
+        "xyz_yaw_pitch": [
+          557.5,
+          81,
+          -524.5,
+          -135.0,
+          -6.627329484926222
+        ],
+        "score": 0.9976397690955733,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 72
+      },
+      {
+        "xyz_yaw_pitch": [
+          536.5,
+          72,
+          -575.5,
+          -90.0,
+          -13.570952978786849
+        ],
+        "score": 1.414257178727211,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 72
+      },
+      {
+        "xyz_yaw_pitch": [
+          574.5,
+          76,
+          -541.5,
+          -135.0,
+          -15.550146960823717
+        ],
+        "score": 1.533008817649423,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 48
+      }
+    ]
+  },
+  {
+    "biome_locate": "frozen_peaks",
+    "native_locate_xyz": [
+      -416,
+      173,
+      416
+    ],
+    "naturalGroundY": 126,
+    "cameraCandidates": [
+      {
+        "xyz_yaw_pitch": [
+          -381.5,
+          158,
+          382.5,
+          45.0,
+          32.48947531228954
+        ],
+        "score": 0.7493685187373725,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 48
+      },
+      {
+        "xyz_yaw_pitch": [
+          -415.5,
+          192,
+          320.5,
+          0.0,
+          33.94548274015356
+        ],
+        "score": 0.8367289644092134,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 96
+      },
+      {
+        "xyz_yaw_pitch": [
+          -415.5,
+          189,
+          488.5,
+          180.0,
+          40.558013951777816
+        ],
+        "score": 1.233480837106669,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 72
+      },
+      {
+        "xyz_yaw_pitch": [
+          -415.5,
+          169,
+          368.5,
+          0.0,
+          40.928013605200825
+        ],
+        "score": 1.2556808163120494,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 48
+      },
+      {
+        "xyz_yaw_pitch": [
+          -415.5,
+          192,
+          344.5,
+          0.0,
+          41.907976231141085
+        ],
+        "score": 1.314478573868465,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 72
+      }
+    ]
+  },
+  {
+    "biome_locate": "river",
+    "native_locate_xyz": [
+      -96,
+      109,
+      -64
+    ],
+    "naturalGroundY": 100,
+    "cameraCandidates": [
+      {
+        "xyz_yaw_pitch": [
+          -129.5,
+          118,
+          -29.5,
+          -135.0,
+          19.067730803427747
+        ],
+        "score": 0.0559361517943352,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 48
+      },
+      {
+        "xyz_yaw_pitch": [
+          -95.5,
+          115,
+          -15.5,
+          180.0,
+          15.841290700878524
+        ],
+        "score": 0.24952255794728856,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 48
+      },
+      {
+        "xyz_yaw_pitch": [
+          -27.5,
+          128,
+          4.5,
+          135.0,
+          15.472700841264261
+        ],
+        "score": 0.2716379495241443,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 96
+      },
+      {
+        "xyz_yaw_pitch": [
+          -44.5,
+          120,
+          -12.5,
+          135.0,
+          14.475600437416
+        ],
+        "score": 0.33146397375503994,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 72
+      },
+      {
+        "xyz_yaw_pitch": [
+          -143.5,
+          130,
+          -63.5,
+          -90.0,
+          30.80551044343724
+        ],
+        "score": 0.6483306266062343,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 48
+      }
+    ]
+  },
+  {
+    "biome_locate": "beach",
+    "native_locate_xyz": [
+      384,
+      109,
+      -544
+    ],
+    "naturalGroundY": 62,
+    "cameraCandidates": [
+      {
+        "xyz_yaw_pitch": [
+          435.5,
+          91,
+          -594.5,
+          45.0,
+          20.95418404317396
+        ],
+        "score": 0.057251042590437604,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 72
+      },
+      {
+        "xyz_yaw_pitch": [
+          350.5,
+          82,
+          -577.5,
+          -45.0,
+          21.168642877177554
+        ],
+        "score": 0.07011857263065323,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 48
+      },
+      {
+        "xyz_yaw_pitch": [
+          336.5,
+          82,
+          -543.5,
+          -90.0,
+          21.202103106202028
+        ],
+        "score": 0.07212618637212166,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 48
+      },
+      {
+        "xyz_yaw_pitch": [
+          384.5,
+          82,
+          -591.5,
+          0.0,
+          21.202103106202028
+        ],
+        "score": 0.07212618637212166,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 48
+      },
+      {
+        "xyz_yaw_pitch": [
+          452.5,
+          101,
+          -611.5,
+          45.0,
+          21.36525979337191
+        ],
+        "score": 0.08191558760231452,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 96
+      }
+    ]
+  },
+  {
+    "biome_locate": "badlands",
+    "native_locate_xyz": [
+      3456,
+      109,
+      -2816
+    ],
+    "naturalGroundY": 150,
+    "cameraCandidates": [
+      {
+        "xyz_yaw_pitch": [
+          3456.5,
+          168,
+          -2863.5,
+          0.0,
+          19.098411571118195
+        ],
+        "score": 0.0540953057329083,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 48
+      },
+      {
+        "xyz_yaw_pitch": [
+          3456.5,
+          191,
+          -2911.5,
+          0.0,
+          22.42634760777286
+        ],
+        "score": 0.14558085646637167,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 96
+      },
+      {
+        "xyz_yaw_pitch": [
+          3422.5,
+          172,
+          -2781.5,
+          -135.0,
+          23.211563598232736
+        ],
+        "score": 0.19269381589396417,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 48
+      },
+      {
+        "xyz_yaw_pitch": [
+          3456.5,
+          189,
+          -2887.5,
+          0.0,
+          27.58706767586389
+        ],
+        "score": 0.4552240605518333,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 72
+      },
+      {
+        "xyz_yaw_pitch": [
+          3405.5,
+          163,
+          -2764.5,
+          -135.0,
+          9.152245020510275
+        ],
+        "score": 0.6508652987693835,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 72
+      }
+    ]
+  },
+  {
+    "biome_locate": "savanna",
+    "native_locate_xyz": [
+      -1376,
+      109,
+      1376
+    ],
+    "naturalGroundY": 101,
+    "cameraCandidates": [
+      {
+        "xyz_yaw_pitch": [
+          -1341.5,
+          122,
+          1410.5,
+          135.0,
+          22.197532685011556
+        ],
+        "score": 0.13185196110069333,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 48
+      },
+      {
+        "xyz_yaw_pitch": [
+          -1324.5,
+          137,
+          1427.5,
+          135.0,
+          25.641039393179874
+        ],
+        "score": 0.3384623635907924,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 72
+      },
+      {
+        "xyz_yaw_pitch": [
+          -1375.5,
+          121,
+          1472.5,
+          180.0,
+          10.976700980866903
+        ],
+        "score": 0.5413979411479858,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 96
+      },
+      {
+        "xyz_yaw_pitch": [
+          -1375.5,
+          97,
+          1448.5,
+          180.0,
+          -4.273326530927807
+        ],
+        "score": 1.4563995918556685,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 72
+      },
+      {
+        "xyz_yaw_pitch": [
+          -1327.5,
+          163,
+          1376.5,
+          90.0,
+          51.62718900866219
+        ],
+        "score": 1.8976313405197314,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 48
+      }
+    ]
+  },
+  {
+    "biome_locate": "jungle",
+    "native_locate_xyz": [
+      -1056,
+      109,
+      640
+    ],
+    "naturalGroundY": 239,
+    "cameraCandidates": [
+      {
+        "xyz_yaw_pitch": [
+          -1106.5,
+          235,
+          589.5,
+          -45.0,
+          -11.275571968866265
+        ],
+        "score": 1.276534318131976,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 72
+      },
+      {
+        "xyz_yaw_pitch": [
+          -1089.5,
+          226,
+          606.5,
+          -45.0,
+          -25.93086977418405
+        ],
+        "score": 2.1558521864510425,
+        "occludedSamples": 0,
+        "nearOccludedSamples": 0,
+        "radius": 48
+      },
+      {
+        "xyz_yaw_pitch": [
+          -1021.5,
+          262,
+          674.5,
+          135.0,
+          14.706234799460159
+        ],
+        "score": 4.282374087967609,
+        "occludedSamples": 4,
+        "nearOccludedSamples": 0,
+        "radius": 48
+      },
+      {
+        "xyz_yaw_pitch": [
+          -1055.5,
+          143,
+          568.5,
+          0.0,
+          -55.90911350498028
+        ],
+        "score": 4.954546810298817,
+        "occludedSamples": 1,
+        "nearOccludedSamples": 0,
+        "radius": 72
+      },
+      {
+        "xyz_yaw_pitch": [
+          -1055.5,
+          128,
+          544.5,
+          0.0,
+          -51.65936565990982
+        ],
+        "score": 5.699561939594589,
+        "occludedSamples": 2,
+        "nearOccludedSamples": 0,
+        "radius": 96
+      }
+    ]
+  }
+]
