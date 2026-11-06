@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.15,
+        "feature": "midgard:cathedral_fir_checked"
+      }
+    ],
+    "default": "midgard:ancient_oak_checked"
+  }
+}

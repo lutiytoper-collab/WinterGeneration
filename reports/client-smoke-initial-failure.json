@@ -1,0 +1,14 @@
+{
+  "version": "1.21.11",
+  "client": "mineflayer",
+  "scope": "isolated loopback QA server with offline authentication",
+  "checks": [
+    {
+      "name": "real_luna_block_appears",
+      "status": "FAIL",
+      "detail": "air"
+    }
+  ],
+  "started": true,
+  "error": "Error: real_luna_block_appears: air\n    at check (/workspace/WinterGeneration/scripts/client-smoke.cjs:11:116)\n    at EventEmitter.<anonymous> (/workspace/WinterGeneration/scripts/client-smoke.cjs:28:3)"
+}

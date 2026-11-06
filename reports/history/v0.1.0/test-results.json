@@ -1,0 +1,1987 @@
+{
+  "project_status": "TEST VERIFIED (scoped); not RELEASE CANDIDATE",
+  "counts": {
+    "PASS": 287,
+    "FAIL": 1,
+    "BLOCKED": 0,
+    "NOT RUN": 8
+  },
+  "counting": "117 Java + 6 Python cases; runtime checks listed individually. One strict diagnostic remains FAIL. Historical failed iterations are preserved separately and not counted as final test cases. 6000 oracle samples are one batch, not 6000 extra test cases.",
+  "checks": [
+    {
+      "id": "ru.midgard.winter.LunaContractTest.publicCancellableStartAndEndEvents()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.LunaContractTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.LunaContractTest.cancellationIsCheckedBeforeRegionOrBlockMutation()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.LunaContractTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.ResourcesTest.noMandatoryPluginDependency()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.ResourcesTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.ResourcesTest.safeConfigDefaults()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.ResourcesTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.ResourcesTest.everyAdminCommandHasOwnPermission()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.ResourcesTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.BiomeZoomerTest.preserveOriginalColdClimate()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.BiomeZoomerTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.BiomeZoomerTest.noGuessAtHighAltitude()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.BiomeZoomerTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.BiomeZoomerTest.deterministicAndLocal()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.BiomeZoomerTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.noiseRangeAndNegativeContinuity()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.invalidConfigRejected()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.protectedRegionDenied()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.seedAndSaltMatter()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.excludedWins()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.caveUnderPlatform()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[1] LIGHT",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[2] BALANCED",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[3] FAIRYTALE",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.treeCabinObstructionDenied()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.boxesAndMargins()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.slopeDenied()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.dimensionDenied()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.safePlatform()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[1] plains",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[2] forest",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[3] birch_forest",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[4] taiga",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[5] meadow",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[6] river",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.shallowCentralDipCannotLeaveFloatingChest()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[1] desert",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[2] savanna",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[3] jungle",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[4] badlands",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[5] warm_ocean",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[6] lukewarm_ocean",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[7] mangrove_swamp",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[8] lush_caves",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[9] deep_dark",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[10] unknown",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.boundariesAndNegativeCoordinates()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.unsafeWaterIcePowderSnow()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.reservationAndRelease()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.deterministicAcrossThreads()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.emptyAllowlistDenies()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.hotCannotBeEnabled()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.unloadedNeverRead()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.invalidAirDropLimits()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.biomeIdentity()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[1] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=-1, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=1, block=SPRUCE_LEAVES, layers=0], Cell[x=1, y=2, z=0, b…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[2] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=7, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=-1, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=1, bloc…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[3] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-1, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=-1, y=1, z=0, block=BIRCH_LEAVES, layers=0], Cell[x=-1, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=0, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[4] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=OAK_LOG, layers=0], Cell[x=-1, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=-1, y=1, z=0, block=OAK_LEAVES, layers=0], Cell[x=-1, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=0, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=0, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=0, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=0, y=2, z=0, block=OAK…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[5] DecorationPlan[module=fallen-logs, cells=[Cell[x=-2, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-2, y=2, z=0, block=SNOW, layers=1], Cell[x=-1, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SNOW, layers=1], Cell[x=0, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=0, y=2, z=0, block=SNOW, layers=1], Cell[x=1, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=1, y=2, z=0, block=SNOW, layers=1], Cell[x=2, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=2, y=2, z=0, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[6] DecorationPlan[module=fallen-logs, cells=[Cell[x=-2, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=2, z=0, block=SNOW, layers=1], Cell[x=-1, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SNOW, layers=1], Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SNOW, layers=1], Cell[x=1, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=1, y=2, z=0, block=SNOW, layers=1], Cell[x=2, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=2, y=2, z=0, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[7] DecorationPlan[module=ice, cells=[Cell[x=-2, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=-1, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=0, block=ICE, layers=0], Cell[x=-1, y=2, z=0, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=1, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=-2, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=-1, block=ICE, layers=0], Cell[x=0, y=2, z=-1, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=2, z=0, block=PACKED_ICE, lay…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[8] DecorationPlan[module=clearings, cells=[Cell[x=-2, y=1, z=1, block=MOSSY_COBBLESTONE, layers=0], Cell[x=-2, y=2, z=1, block=SNOW, layers=1], Cell[x=-1, y=1, z=1, block=COBBLESTONE, layers=0], Cell[x=-1, y=2, z=1, block=SNOW, layers=1], Cell[x=2, y=1, z=1, block=SPRUCE_FENCE, layers=0], Cell[x=2, y=2, z=1, block=SPRUCE_FENCE, layers=0], Cell[x=2, y=3, z=1, block=LANTERN, layers=0]]]",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[9] DecorationPlan[module=clearings, cells=[Cell[x=-2, y=1, z=1, block=MOSSY_COBBLESTONE, layers=0], Cell[x=-2, y=2, z=1, block=SNOW, layers=1], Cell[x=-1, y=1, z=1, block=COBBLESTONE, layers=0], Cell[x=-1, y=2, z=1, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[10] DecorationPlan[module=cabins, cells=[Cell[x=-2, y=1, z=-2, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=-1, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=0, block=SPRUCE_PLANKS, layers=0], Cell[x=…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[11] DecorationPlan[module=cabins, cells=[Cell[x=-2, y=1, z=-2, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=-1, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=0, block=SPRUCE_PLANKS, layers=0], Cell[x=…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[1] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=-1, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=1, block=SPRUCE_LEAVES, layers=0], Cell[x=1, y=2, z=0, b…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[2] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=7, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=-1, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=1, bloc…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[3] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-1, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=-1, y=1, z=0, block=BIRCH_LEAVES, layers=0], Cell[x=-1, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=0, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[4] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=OAK_LOG, layers=0], Cell[x=-1, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=-1, y=1, z=0, block=OAK_LEAVES, layers=0], Cell[x=-1, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=0, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=0, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=0, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=0, y=2, z=0, block=OAK…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[5] DecorationPlan[module=fallen-logs, cells=[Cell[x=-2, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-2, y=2, z=0, block=SNOW, layers=1], Cell[x=-1, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SNOW, layers=1], Cell[x=0, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=0, y=2, z=0, block=SNOW, layers=1], Cell[x=1, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=1, y=2, z=0, block=SNOW, layers=1], Cell[x=2, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=2, y=2, z=0, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[6] DecorationPlan[module=fallen-logs, cells=[Cell[x=-2, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=2, z=0, block=SNOW, layers=1], Cell[x=-1, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SNOW, layers=1], Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SNOW, layers=1], Cell[x=1, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=1, y=2, z=0, block=SNOW, layers=1], Cell[x=2, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=2, y=2, z=0, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[7] DecorationPlan[module=ice, cells=[Cell[x=-2, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=-1, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=0, block=ICE, layers=0], Cell[x=-1, y=2, z=0, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=1, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=-2, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=-1, block=ICE, layers=0], Cell[x=0, y=2, z=-1, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=2, z=0, block=PACKED_ICE, lay…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[8] DecorationPlan[module=clearings, cells=[Cell[x=-2, y=1, z=1, block=MOSSY_COBBLESTONE, layers=0], Cell[x=-2, y=2, z=1, block=SNOW, layers=1], Cell[x=-1, y=1, z=1, block=COBBLESTONE, layers=0], Cell[x=-1, y=2, z=1, block=SNOW, layers=1], Cell[x=2, y=1, z=1, block=SPRUCE_FENCE, layers=0], Cell[x=2, y=2, z=1, block=SPRUCE_FENCE, layers=0], Cell[x=2, y=3, z=1, block=LANTERN, layers=0]]]",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[9] DecorationPlan[module=clearings, cells=[Cell[x=-2, y=1, z=1, block=MOSSY_COBBLESTONE, layers=0], Cell[x=-2, y=2, z=1, block=SNOW, layers=1], Cell[x=-1, y=1, z=1, block=COBBLESTONE, layers=0], Cell[x=-1, y=2, z=1, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[10] DecorationPlan[module=cabins, cells=[Cell[x=-2, y=1, z=-2, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=-1, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=0, block=SPRUCE_PLANKS, layers=0], Cell[x=…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[11] DecorationPlan[module=cabins, cells=[Cell[x=-2, y=1, z=-2, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=-1, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=0, block=SPRUCE_PLANKS, layers=0], Cell[x=…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[1] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=-1, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=1, block=SPRUCE_LEAVES, layers=0], Cell[x=1, y=2, z=0, b…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[2] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=7, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=-1, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=1, bloc…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[3] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-1, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=-1, y=1, z=0, block=BIRCH_LEAVES, layers=0], Cell[x=-1, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=0, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[4] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=OAK_LOG, layers=0], Cell[x=-1, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=-1, y=1, z=0, block=OAK_LEAVES, layers=0], Cell[x=-1, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=0, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=0, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=0, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=0, y=2, z=0, block=OAK…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[5] DecorationPlan[module=fallen-logs, cells=[Cell[x=-2, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-2, y=2, z=0, block=SNOW, layers=1], Cell[x=-1, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SNOW, layers=1], Cell[x=0, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=0, y=2, z=0, block=SNOW, layers=1], Cell[x=1, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=1, y=2, z=0, block=SNOW, layers=1], Cell[x=2, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=2, y=2, z=0, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[6] DecorationPlan[module=fallen-logs, cells=[Cell[x=-2, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=2, z=0, block=SNOW, layers=1], Cell[x=-1, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SNOW, layers=1], Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SNOW, layers=1], Cell[x=1, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=1, y=2, z=0, block=SNOW, layers=1], Cell[x=2, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=2, y=2, z=0, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[7] DecorationPlan[module=ice, cells=[Cell[x=-2, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=-1, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=0, block=ICE, layers=0], Cell[x=-1, y=2, z=0, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=1, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=-2, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=-1, block=ICE, layers=0], Cell[x=0, y=2, z=-1, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=2, z=0, block=PACKED_ICE, lay…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[8] DecorationPlan[module=clearings, cells=[Cell[x=-2, y=1, z=1, block=MOSSY_COBBLESTONE, layers=0], Cell[x=-2, y=2, z=1, block=SNOW, layers=1], Cell[x=-1, y=1, z=1, block=COBBLESTONE, layers=0], Cell[x=-1, y=2, z=1, block=SNOW, layers=1], Cell[x=2, y=1, z=1, block=SPRUCE_FENCE, layers=0], Cell[x=2, y=2, z=1, block=SPRUCE_FENCE, layers=0], Cell[x=2, y=3, z=1, block=LANTERN, layers=0]]]",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[9] DecorationPlan[module=clearings, cells=[Cell[x=-2, y=1, z=1, block=MOSSY_COBBLESTONE, layers=0], Cell[x=-2, y=2, z=1, block=SNOW, layers=1], Cell[x=-1, y=1, z=1, block=COBBLESTONE, layers=0], Cell[x=-1, y=2, z=1, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[10] DecorationPlan[module=cabins, cells=[Cell[x=-2, y=1, z=-2, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=-1, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=0, block=SPRUCE_PLANKS, layers=0], Cell[x=…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[11] DecorationPlan[module=cabins, cells=[Cell[x=-2, y=1, z=-2, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=-1, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=0, block=SPRUCE_PLANKS, layers=0], Cell[x=…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.snowNeverCreatesDeepWall()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.negativeChunkBoundary()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[1] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=-1, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=1, block=SPRUCE_LEAVES, layers=0], Cell[x=1, y=2, z=0, b…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[2] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=7, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=-1, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=1, bloc…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[3] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-1, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=-1, y=1, z=0, block=BIRCH_LEAVES, layers=0], Cell[x=-1, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=0, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[4] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=OAK_LOG, layers=0], Cell[x=-1, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=-1, y=1, z=0, block=OAK_LEAVES, layers=0], Cell[x=-1, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=0, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=0, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=0, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=0, y=2, z=0, block=OAK…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[5] DecorationPlan[module=fallen-logs, cells=[Cell[x=-2, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-2, y=2, z=0, block=SNOW, layers=1], Cell[x=-1, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SNOW, layers=1], Cell[x=0, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=0, y=2, z=0, block=SNOW, layers=1], Cell[x=1, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=1, y=2, z=0, block=SNOW, layers=1], Cell[x=2, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=2, y=2, z=0, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[6] DecorationPlan[module=fallen-logs, cells=[Cell[x=-2, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=2, z=0, block=SNOW, layers=1], Cell[x=-1, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SNOW, layers=1], Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SNOW, layers=1], Cell[x=1, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=1, y=2, z=0, block=SNOW, layers=1], Cell[x=2, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=2, y=2, z=0, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[7] DecorationPlan[module=ice, cells=[Cell[x=-2, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=-1, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=0, block=ICE, layers=0], Cell[x=-1, y=2, z=0, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=1, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=-2, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=-1, block=ICE, layers=0], Cell[x=0, y=2, z=-1, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=2, z=0, block=PACKED_ICE, lay…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[8] DecorationPlan[module=clearings, cells=[Cell[x=-2, y=1, z=1, block=MOSSY_COBBLESTONE, layers=0], Cell[x=-2, y=2, z=1, block=SNOW, layers=1], Cell[x=-1, y=1, z=1, block=COBBLESTONE, layers=0], Cell[x=-1, y=2, z=1, block=SNOW, layers=1], Cell[x=2, y=1, z=1, block=SPRUCE_FENCE, layers=0], Cell[x=2, y=2, z=1, block=SPRUCE_FENCE, layers=0], Cell[x=2, y=3, z=1, block=LANTERN, layers=0]]]",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[9] DecorationPlan[module=clearings, cells=[Cell[x=-2, y=1, z=1, block=MOSSY_COBBLESTONE, layers=0], Cell[x=-2, y=2, z=1, block=SNOW, layers=1], Cell[x=-1, y=1, z=1, block=COBBLESTONE, layers=0], Cell[x=-1, y=2, z=1, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[10] DecorationPlan[module=cabins, cells=[Cell[x=-2, y=1, z=-2, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=-1, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=0, block=SPRUCE_PLANKS, layers=0], Cell[x=…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[11] DecorationPlan[module=cabins, cells=[Cell[x=-2, y=1, z=-2, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=-1, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=0, block=SPRUCE_PLANKS, layers=0], Cell[x=…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.invalidBlueprintRejected()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.noWritingOutsideWorldHeight()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.slopeNoFoundationRewrite()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.budgetRejectsCompleteObject()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.caveBelowFootprint()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.sparseGridSpacing()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.maximumObjectSizeRespected()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.noReadingUnloadedChunk()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[1] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=-1, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=1, block=SPRUCE_LEAVES, layers=0], Cell[x=1, y=2, z=0, b…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[2] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=7, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=-1, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=1, bloc…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[3] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-1, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=-1, y=1, z=0, block=BIRCH_LEAVES, layers=0], Cell[x=-1, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=0, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[4] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=OAK_LOG, layers=0], Cell[x=-1, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=-1, y=1, z=0, block=OAK_LEAVES, layers=0], Cell[x=-1, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=0, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=0, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=0, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=0, y=2, z=0, block=OAK…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[5] DecorationPlan[module=fallen-logs, cells=[Cell[x=-2, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-2, y=2, z=0, block=SNOW, layers=1], Cell[x=-1, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SNOW, layers=1], Cell[x=0, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=0, y=2, z=0, block=SNOW, layers=1], Cell[x=1, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=1, y=2, z=0, block=SNOW, layers=1], Cell[x=2, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=2, y=2, z=0, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[6] DecorationPlan[module=fallen-logs, cells=[Cell[x=-2, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=2, z=0, block=SNOW, layers=1], Cell[x=-1, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SNOW, layers=1], Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SNOW, layers=1], Cell[x=1, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=1, y=2, z=0, block=SNOW, layers=1], Cell[x=2, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=2, y=2, z=0, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[7] DecorationPlan[module=ice, cells=[Cell[x=-2, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=-1, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=0, block=ICE, layers=0], Cell[x=-1, y=2, z=0, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=1, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=-2, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=-1, block=ICE, layers=0], Cell[x=0, y=2, z=-1, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=2, z=0, block=PACKED_ICE, lay…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[8] DecorationPlan[module=clearings, cells=[Cell[x=-2, y=1, z=1, block=MOSSY_COBBLESTONE, layers=0], Cell[x=-2, y=2, z=1, block=SNOW, layers=1], Cell[x=-1, y=1, z=1, block=COBBLESTONE, layers=0], Cell[x=-1, y=2, z=1, block=SNOW, layers=1], Cell[x=2, y=1, z=1, block=SPRUCE_FENCE, layers=0], Cell[x=2, y=2, z=1, block=SPRUCE_FENCE, layers=0], Cell[x=2, y=3, z=1, block=LANTERN, layers=0]]]",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[9] DecorationPlan[module=clearings, cells=[Cell[x=-2, y=1, z=1, block=MOSSY_COBBLESTONE, layers=0], Cell[x=-2, y=2, z=1, block=SNOW, layers=1], Cell[x=-1, y=1, z=1, block=COBBLESTONE, layers=0], Cell[x=-1, y=2, z=1, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[10] DecorationPlan[module=cabins, cells=[Cell[x=-2, y=1, z=-2, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=-1, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=0, block=SPRUCE_PLANKS, layers=0], Cell[x=…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[11] DecorationPlan[module=cabins, cells=[Cell[x=-2, y=1, z=-2, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=-1, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=0, block=SPRUCE_PLANKS, layers=0], Cell[x=…",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.determinismAcrossGenerationOrder()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.TimingStatsTest.actualStatistics()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.TimingStatsTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.TimingStatsTest.boundedWindow()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.TimingStatsTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.TimingStatsTest.noInventedMeasurements()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.TimingStatsTest.xml"
+    },
+    {
+      "id": "python.excluded_biome_rejected",
+      "status": "PASS",
+      "group": "Python unit",
+      "evidence": "logs/datapack-tests.log"
+    },
+    {
+      "id": "python.lost_features_rejected",
+      "status": "PASS",
+      "group": "Python unit",
+      "evidence": "logs/datapack-tests.log"
+    },
+    {
+      "id": "python.original_tampering_rejected",
+      "status": "PASS",
+      "group": "Python unit",
+      "evidence": "logs/datapack-tests.log"
+    },
+    {
+      "id": "python.precipitation_loss_rejected",
+      "status": "PASS",
+      "group": "Python unit",
+      "evidence": "logs/datapack-tests.log"
+    },
+    {
+      "id": "python.valid_pack",
+      "status": "PASS",
+      "group": "Python unit",
+      "evidence": "logs/datapack-tests.log"
+    },
+    {
+      "id": "python.wrong_pack_version_rejected",
+      "status": "PASS",
+      "group": "Python unit",
+      "evidence": "logs/datapack-tests.log"
+    },
+    {
+      "id": "locate_biome.plains",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.plains",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": -0.5,
+        "criterion": "snow temperature < 0.15; altitude-adjusted",
+        "original_or_configured_base": -0.5
+      }
+    },
+    {
+      "id": "locate_biome.sunflower_plains",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.sunflower_plains",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": -0.5,
+        "criterion": "snow temperature < 0.15; altitude-adjusted",
+        "original_or_configured_base": -0.5
+      }
+    },
+    {
+      "id": "locate_biome.forest",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.forest",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": -0.5,
+        "criterion": "snow temperature < 0.15; altitude-adjusted",
+        "original_or_configured_base": -0.5
+      }
+    },
+    {
+      "id": "locate_biome.flower_forest",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.flower_forest",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": -0.5,
+        "criterion": "snow temperature < 0.15; altitude-adjusted",
+        "original_or_configured_base": -0.5
+      }
+    },
+    {
+      "id": "locate_biome.birch_forest",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.birch_forest",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": -0.5,
+        "criterion": "snow temperature < 0.15; altitude-adjusted",
+        "original_or_configured_base": -0.5
+      }
+    },
+    {
+      "id": "locate_biome.old_growth_birch_forest",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.old_growth_birch_forest",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": -0.5,
+        "criterion": "snow temperature < 0.15; altitude-adjusted",
+        "original_or_configured_base": -0.5
+      }
+    },
+    {
+      "id": "locate_biome.dark_forest",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.dark_forest",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": -0.5,
+        "criterion": "snow temperature < 0.15; altitude-adjusted",
+        "original_or_configured_base": -0.5
+      }
+    },
+    {
+      "id": "locate_biome.taiga",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.taiga",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": -0.5,
+        "criterion": "snow temperature < 0.15; altitude-adjusted",
+        "original_or_configured_base": -0.5
+      }
+    },
+    {
+      "id": "locate_biome.old_growth_pine_taiga",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.old_growth_pine_taiga",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": -0.5,
+        "criterion": "snow temperature < 0.15; altitude-adjusted",
+        "original_or_configured_base": -0.5
+      }
+    },
+    {
+      "id": "locate_biome.old_growth_spruce_taiga",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.old_growth_spruce_taiga",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": -0.5,
+        "criterion": "snow temperature < 0.15; altitude-adjusted",
+        "original_or_configured_base": -0.5
+      }
+    },
+    {
+      "id": "locate_biome.snowy_taiga",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.snowy_taiga",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": -0.5,
+        "criterion": "snow temperature < 0.15; altitude-adjusted",
+        "original_or_configured_base": -0.5
+      }
+    },
+    {
+      "id": "locate_biome.snowy_plains",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.snowy_plains",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": -0.5,
+        "criterion": "snow temperature < 0.15; altitude-adjusted",
+        "original_or_configured_base": -0.5
+      }
+    },
+    {
+      "id": "locate_biome.meadow",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.meadow",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": -0.5,
+        "criterion": "snow temperature < 0.15; altitude-adjusted",
+        "original_or_configured_base": -0.5
+      }
+    },
+    {
+      "id": "locate_biome.grove",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.grove",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": -0.5,
+        "criterion": "snow temperature < 0.15; altitude-adjusted",
+        "original_or_configured_base": -0.5
+      }
+    },
+    {
+      "id": "locate_biome.snowy_slopes",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.snowy_slopes",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": -0.5,
+        "criterion": "snow temperature < 0.15; altitude-adjusted",
+        "original_or_configured_base": -0.5
+      }
+    },
+    {
+      "id": "locate_biome.frozen_peaks",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.frozen_peaks",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": -0.5799999833106995,
+        "criterion": "snow temperature < 0.15; altitude-adjusted",
+        "original_or_configured_base": -0.5
+      }
+    },
+    {
+      "id": "locate_biome.jagged_peaks",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.jagged_peaks",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": -0.5,
+        "criterion": "snow temperature < 0.15; altitude-adjusted",
+        "original_or_configured_base": -0.5
+      }
+    },
+    {
+      "id": "locate_biome.stony_peaks",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.stony_peaks",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": -0.5,
+        "criterion": "snow temperature < 0.15; altitude-adjusted",
+        "original_or_configured_base": -0.5
+      }
+    },
+    {
+      "id": "locate_biome.windswept_hills",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.windswept_hills",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": -0.5,
+        "criterion": "snow temperature < 0.15; altitude-adjusted",
+        "original_or_configured_base": -0.5
+      }
+    },
+    {
+      "id": "locate_biome.windswept_forest",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.windswept_forest",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": -0.5,
+        "criterion": "snow temperature < 0.15; altitude-adjusted",
+        "original_or_configured_base": -0.5
+      }
+    },
+    {
+      "id": "locate_biome.windswept_gravelly_hills",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.windswept_gravelly_hills",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": -0.5,
+        "criterion": "snow temperature < 0.15; altitude-adjusted",
+        "original_or_configured_base": -0.5
+      }
+    },
+    {
+      "id": "locate_biome.river",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.river",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": -0.5,
+        "criterion": "snow temperature < 0.15; altitude-adjusted",
+        "original_or_configured_base": -0.5
+      }
+    },
+    {
+      "id": "locate_biome.frozen_river",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.frozen_river",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": -0.5,
+        "criterion": "snow temperature < 0.15; altitude-adjusted",
+        "original_or_configured_base": -0.5
+      }
+    },
+    {
+      "id": "locate_biome.desert",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.desert",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": 2.0,
+        "criterion": "equals original base temperature at sampled Y=80",
+        "original_or_configured_base": 2.0
+      }
+    },
+    {
+      "id": "locate_biome.savanna",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.savanna",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": 2.0,
+        "criterion": "equals original base temperature at sampled Y=80",
+        "original_or_configured_base": 2.0
+      }
+    },
+    {
+      "id": "locate_biome.savanna_plateau",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.savanna_plateau",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": 2.0,
+        "criterion": "equals original base temperature at sampled Y=80",
+        "original_or_configured_base": 2.0
+      }
+    },
+    {
+      "id": "locate_biome.windswept_savanna",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.windswept_savanna",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": 2.0,
+        "criterion": "equals original base temperature at sampled Y=80",
+        "original_or_configured_base": 2.0
+      }
+    },
+    {
+      "id": "locate_biome.jungle",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.jungle",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": 0.949999988079071,
+        "criterion": "equals original base temperature at sampled Y=80",
+        "original_or_configured_base": 0.95
+      }
+    },
+    {
+      "id": "locate_biome.sparse_jungle",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.sparse_jungle",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": 0.949999988079071,
+        "criterion": "equals original base temperature at sampled Y=80",
+        "original_or_configured_base": 0.95
+      }
+    },
+    {
+      "id": "locate_biome.bamboo_jungle",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.bamboo_jungle",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": 0.949999988079071,
+        "criterion": "equals original base temperature at sampled Y=80",
+        "original_or_configured_base": 0.95
+      }
+    },
+    {
+      "id": "locate_biome.badlands",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.badlands",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": 2.0,
+        "criterion": "equals original base temperature at sampled Y=80",
+        "original_or_configured_base": 2.0
+      }
+    },
+    {
+      "id": "locate_biome.eroded_badlands",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.eroded_badlands",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": 2.0,
+        "criterion": "equals original base temperature at sampled Y=80",
+        "original_or_configured_base": 2.0
+      }
+    },
+    {
+      "id": "locate_biome.wooded_badlands",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.wooded_badlands",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": 2.0,
+        "criterion": "equals original base temperature at sampled Y=80",
+        "original_or_configured_base": 2.0
+      }
+    },
+    {
+      "id": "locate_biome.warm_ocean",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.warm_ocean",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": 0.5,
+        "criterion": "equals original base temperature at sampled Y=80",
+        "original_or_configured_base": 0.5
+      }
+    },
+    {
+      "id": "locate_biome.lukewarm_ocean",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.lukewarm_ocean",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": 0.5,
+        "criterion": "equals original base temperature at sampled Y=80",
+        "original_or_configured_base": 0.5
+      }
+    },
+    {
+      "id": "locate_biome.deep_lukewarm_ocean",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.deep_lukewarm_ocean",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": 0.5,
+        "criterion": "equals original base temperature at sampled Y=80",
+        "original_or_configured_base": 0.5
+      }
+    },
+    {
+      "id": "locate_biome.mangrove_swamp",
+      "status": "PASS",
+      "group": "biome location",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "climate.mangrove_swamp",
+      "status": "PASS",
+      "group": "climate",
+      "evidence": "runtime-audit.json",
+      "detail": {
+        "measured": 0.800000011920929,
+        "criterion": "equals original base temperature at sampled Y=80",
+        "original_or_configured_base": 0.8
+      }
+    },
+    {
+      "id": "structure.village_plains",
+      "status": "PASS",
+      "group": "structure locate/API",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "structure.village_snowy",
+      "status": "PASS",
+      "group": "structure locate/API",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "structure.pillager_outpost",
+      "status": "PASS",
+      "group": "structure locate/API",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "structure.mansion",
+      "status": "PASS",
+      "group": "structure locate/API",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "structure.ruined_portal",
+      "status": "PASS",
+      "group": "structure locate/API",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "structure.stronghold",
+      "status": "PASS",
+      "group": "structure locate/API",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "structure.mineshaft",
+      "status": "PASS",
+      "group": "structure locate/API",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "structure.ancient_city",
+      "status": "PASS",
+      "group": "structure locate/API",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "structure.trial_chambers",
+      "status": "PASS",
+      "group": "structure locate/API",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "structure.shipwreck",
+      "status": "PASS",
+      "group": "structure locate/API",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "structure.ocean_ruin_cold",
+      "status": "PASS",
+      "group": "structure locate/API",
+      "evidence": "runtime-audit.json"
+    },
+    {
+      "id": "worldedit.safe_stone_platform",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.reject_WATER",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.reject_LAVA",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.reject_POWDER_SNOW",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.reject_PACKED_ICE",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.cavity_under_surface",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.obstruction_SPRUCE_LOG",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.obstruction_PACKED_ICE",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.obstruction_SPRUCE_PLANKS",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.obstruction_SNOW",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.thin_snow_preserved",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.active_reservation_blocks_second_drop",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.release_reservation_restores_safety",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.real_WorldGuard_region_rejected",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.WorldGuard_region_removal_restores_safety",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.real_Luna_unsafe_start_cancelled",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.real_Luna_start",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.real_Luna_unlock",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.real_Luna_end",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.real_luna_block_appears",
+      "status": "PASS",
+      "group": "real client",
+      "evidence": "release-snow-safe-worldedit-client-smoke.json"
+    },
+    {
+      "id": "worldedit.real_client_opens_luna_inventory",
+      "status": "PASS",
+      "group": "real client",
+      "evidence": "release-snow-safe-worldedit-client-smoke.json"
+    },
+    {
+      "id": "worldedit.real_luna_cleanup",
+      "status": "PASS",
+      "group": "real client",
+      "evidence": "release-snow-safe-worldedit-client-smoke.json"
+    },
+    {
+      "id": "worldedit.natural_snow_start",
+      "status": "PASS",
+      "group": "natural Luna",
+      "evidence": "release-snow-safe-worldedit-natural-luna.json"
+    },
+    {
+      "id": "worldedit.natural_end_cleanup",
+      "status": "PASS",
+      "group": "natural Luna",
+      "evidence": "release-snow-safe-worldedit-natural-luna.json"
+    },
+    {
+      "id": "worldedit.chunky_task",
+      "status": "PASS",
+      "group": "Chunky",
+      "evidence": "logs/release-snow-safe-worldedit-integration-console.log"
+    },
+    {
+      "id": "worldedit.clean_stop",
+      "status": "PASS",
+      "group": "server lifecycle",
+      "evidence": "logs/release-snow-safe-worldedit-integration-console.log"
+    },
+    {
+      "id": "fawe.safe_stone_platform",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.reject_WATER",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.reject_LAVA",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.reject_POWDER_SNOW",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.reject_PACKED_ICE",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.cavity_under_surface",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.obstruction_SPRUCE_LOG",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.obstruction_PACKED_ICE",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.obstruction_SPRUCE_PLANKS",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.obstruction_SNOW",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.thin_snow_preserved",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.active_reservation_blocks_second_drop",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.release_reservation_restores_safety",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.real_WorldGuard_region_rejected",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.WorldGuard_region_removal_restores_safety",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.real_Luna_unsafe_start_cancelled",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.real_Luna_start",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.real_Luna_unlock",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.real_Luna_end",
+      "status": "PASS",
+      "group": "integration fixtures",
+      "evidence": "release-snow-safe-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.real_luna_block_appears",
+      "status": "PASS",
+      "group": "real client",
+      "evidence": "release-snow-safe-fawe-client-smoke.json"
+    },
+    {
+      "id": "fawe.real_client_opens_luna_inventory",
+      "status": "PASS",
+      "group": "real client",
+      "evidence": "release-snow-safe-fawe-client-smoke.json"
+    },
+    {
+      "id": "fawe.real_luna_cleanup",
+      "status": "PASS",
+      "group": "real client",
+      "evidence": "release-snow-safe-fawe-client-smoke.json"
+    },
+    {
+      "id": "fawe.natural_snow_start",
+      "status": "PASS",
+      "group": "natural Luna",
+      "evidence": "release-snow-safe-fawe-natural-luna.json"
+    },
+    {
+      "id": "fawe.natural_end_cleanup",
+      "status": "PASS",
+      "group": "natural Luna",
+      "evidence": "release-snow-safe-fawe-natural-luna.json"
+    },
+    {
+      "id": "fawe.chunky_task",
+      "status": "PASS",
+      "group": "Chunky",
+      "evidence": "logs/release-snow-safe-fawe-integration-console.log"
+    },
+    {
+      "id": "fawe.clean_stop",
+      "status": "PASS",
+      "group": "server lifecycle",
+      "evidence": "logs/release-snow-safe-fawe-integration-console.log"
+    },
+    {
+      "id": "825180311.terrain_and_ores",
+      "status": "PASS",
+      "group": "worldgen invariants",
+      "evidence": "invariant-validation.json"
+    },
+    {
+      "id": "825180311.structure_boxes_after_reload",
+      "status": "PASS",
+      "group": "worldgen invariants",
+      "evidence": "invariant-validation.json"
+    },
+    {
+      "id": "825180311.existing_block_entities_preserved",
+      "status": "PASS",
+      "group": "worldgen invariants",
+      "evidence": "invariant-validation.json"
+    },
+    {
+      "id": "825180311.restart_idempotence",
+      "status": "PASS",
+      "group": "worldgen invariants",
+      "evidence": "invariant-validation.json"
+    },
+    {
+      "id": "825180311.strict_snapshot_equality",
+      "status": "PASS",
+      "group": "strict diagnostic",
+      "evidence": "invariant-validation.json",
+      "detail": {
+        "raw_material_differences": 0,
+        "additional_block_entities": []
+      }
+    },
+    {
+      "id": "42.terrain_and_ores",
+      "status": "PASS",
+      "group": "worldgen invariants",
+      "evidence": "invariant-validation.json"
+    },
+    {
+      "id": "42.structure_boxes_after_reload",
+      "status": "PASS",
+      "group": "worldgen invariants",
+      "evidence": "invariant-validation.json"
+    },
+    {
+      "id": "42.existing_block_entities_preserved",
+      "status": "PASS",
+      "group": "worldgen invariants",
+      "evidence": "invariant-validation.json"
+    },
+    {
+      "id": "42.restart_idempotence",
+      "status": "PASS",
+      "group": "worldgen invariants",
+      "evidence": "invariant-validation.json"
+    },
+    {
+      "id": "42.strict_snapshot_equality",
+      "status": "PASS",
+      "group": "strict diagnostic",
+      "evidence": "invariant-validation.json",
+      "detail": {
+        "raw_material_differences": 0,
+        "additional_block_entities": []
+      }
+    },
+    {
+      "id": "-892041.terrain_and_ores",
+      "status": "PASS",
+      "group": "worldgen invariants",
+      "evidence": "invariant-validation.json"
+    },
+    {
+      "id": "-892041.structure_boxes_after_reload",
+      "status": "PASS",
+      "group": "worldgen invariants",
+      "evidence": "invariant-validation.json"
+    },
+    {
+      "id": "-892041.existing_block_entities_preserved",
+      "status": "PASS",
+      "group": "worldgen invariants",
+      "evidence": "invariant-validation.json"
+    },
+    {
+      "id": "-892041.restart_idempotence",
+      "status": "PASS",
+      "group": "worldgen invariants",
+      "evidence": "invariant-validation.json"
+    },
+    {
+      "id": "-892041.strict_snapshot_equality",
+      "status": "FAIL",
+      "group": "strict diagnostic",
+      "evidence": "invariant-validation.json",
+      "detail": {
+        "raw_material_differences": 5,
+        "additional_block_entities": [
+          "2087,63,2054:BEE_NEST"
+        ]
+      }
+    },
+    {
+      "id": "825180311.initial.paper_pack_load",
+      "status": "PASS",
+      "group": "server codec/load",
+      "evidence": "runtime/frozen/825180311/winter/measurement-initial.json"
+    },
+    {
+      "id": "825180311.restart.paper_pack_load",
+      "status": "PASS",
+      "group": "server codec/load",
+      "evidence": "runtime/frozen/825180311/winter/measurement-restart.json"
+    },
+    {
+      "id": "42.initial.paper_pack_load",
+      "status": "PASS",
+      "group": "server codec/load",
+      "evidence": "runtime/boundary/42/winter/measurement-initial.json"
+    },
+    {
+      "id": "42.restart.paper_pack_load",
+      "status": "PASS",
+      "group": "server codec/load",
+      "evidence": "runtime/boundary/42/winter/measurement-restart.json"
+    },
+    {
+      "id": "-892041.initial.paper_pack_load",
+      "status": "PASS",
+      "group": "server codec/load",
+      "evidence": "runtime/boundary-final/-892041/winter/measurement-initial.json"
+    },
+    {
+      "id": "-892041.restart.paper_pack_load",
+      "status": "PASS",
+      "group": "server codec/load",
+      "evidence": "runtime/boundary-final/-892041/winter/measurement-restart.json"
+    },
+    {
+      "id": "purpur.final_pack_and_plugin",
+      "status": "PASS",
+      "group": "Purpur",
+      "evidence": "purpur-final-smoke.json"
+    },
+    {
+      "id": "purpur.initial_restart",
+      "status": "PASS",
+      "group": "Purpur",
+      "evidence": "server-matrix-purpur.json"
+    },
+    {
+      "id": "official_biome_sources",
+      "status": "PASS",
+      "group": "static/reference",
+      "evidence": "mojang-biome-verification.json"
+    },
+    {
+      "id": "biome_zoom_mojang_reference",
+      "status": "PASS",
+      "group": "static/reference",
+      "evidence": "logs/biome-zoom-reference.log"
+    },
+    {
+      "id": "excluded_boundary_regression",
+      "status": "PASS",
+      "group": "worldgen regression",
+      "evidence": "boundary-regression.json"
+    },
+    {
+      "id": "pack_static_validation",
+      "status": "PASS",
+      "group": "static/reference",
+      "evidence": "logs/datapack-validation.log"
+    },
+    {
+      "id": "artifact_structure",
+      "status": "PASS",
+      "group": "artifact",
+      "evidence": "artifact-check.json"
+    },
+    {
+      "id": "graphical_visual_acceptance",
+      "status": "NOT RUN",
+      "group": "remaining scope",
+      "evidence": "KNOWN_ISSUES.md"
+    },
+    {
+      "id": "50_to_100_player_soak",
+      "status": "NOT RUN",
+      "group": "remaining scope",
+      "evidence": "KNOWN_ISSUES.md"
+    },
+    {
+      "id": "full_purpur_plugin_integration",
+      "status": "NOT RUN",
+      "group": "remaining scope",
+      "evidence": "KNOWN_ISSUES.md"
+    },
+    {
+      "id": "all_high_altitude_boundaries",
+      "status": "NOT RUN",
+      "group": "remaining scope",
+      "evidence": "KNOWN_ISSUES.md"
+    },
+    {
+      "id": "crash_recovery_atomicity",
+      "status": "NOT RUN",
+      "group": "remaining scope",
+      "evidence": "KNOWN_ISSUES.md"
+    },
+    {
+      "id": "active_luna_restart_restore",
+      "status": "NOT RUN",
+      "group": "remaining scope",
+      "evidence": "KNOWN_ISSUES.md"
+    },
+    {
+      "id": "luna_hot_reload_and_dynamic_creation",
+      "status": "NOT RUN",
+      "group": "remaining scope",
+      "evidence": "KNOWN_ISSUES.md"
+    },
+    {
+      "id": "large_schematics_custom_y_offsets",
+      "status": "NOT RUN",
+      "group": "remaining scope",
+      "evidence": "KNOWN_ISSUES.md"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+CLIENT_READY
+CLIENT_FAILED Error: Kicked {"type":"compound","value":{"translate":{"type":"string","value":"multiplayer.disconnect.flying"}}}

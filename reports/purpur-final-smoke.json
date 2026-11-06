@@ -1,0 +1,207 @@
+{
+  "seed": 825180311,
+  "minecraft": "1.21.11",
+  "server": "1.21.11-2568-f57bd86 (MC: 1.21.11)",
+  "winterPluginEnabled": true,
+  "enabledDatapacks": [
+    "file/bukkit",
+    "file/winter-datapack.zip",
+    "paper",
+    "vanilla"
+  ],
+  "measurement": "serial getChunkAtAsync request-to-completion latency; not isolated generation CPU time",
+  "heapStart": 379584512,
+  "heapEnd": 640155648,
+  "chunks": [
+    {
+      "x": 300,
+      "z": 300,
+      "existed": false,
+      "requestMillis": 9117.501598,
+      "undergroundMaterials": {
+        "AIR": 281,
+        "ANDESITE": 522,
+        "BEDROCK": 771,
+        "CAVE_AIR": 352,
+        "COAL_ORE": 39,
+        "COBWEB": 16,
+        "COPPER_ORE": 52,
+        "DEEPSLATE": 14165,
+        "DEEPSLATE_COPPER_ORE": 2,
+        "DEEPSLATE_DIAMOND_ORE": 35,
+        "DEEPSLATE_GOLD_ORE": 29,
+        "DEEPSLATE_IRON_ORE": 39,
+        "DEEPSLATE_LAPIS_ORE": 21,
+        "DEEPSLATE_REDSTONE_ORE": 51,
+        "DIORITE": 525,
+        "DIRT": 246,
+        "GLOW_LICHEN": 4,
+        "GRANITE": 621,
+        "GRAVEL": 297,
+        "IRON_ORE": 48,
+        "LAPIS_ORE": 6,
+        "OAK_FENCE": 32,
+        "OAK_PLANKS": 32,
+        "RAIL": 4,
+        "REDSTONE_ORE": 4,
+        "SPAWNER": 1,
+        "STONE": 5331,
+        "TUFF": 1048,
+        "WALL_TORCH": 2
+      },
+      "rawUndergroundBlockStateHash": "542b69c648a5b0f999ea99db24adeafe12a5d46b3a022a64e33bbf91efea648a",
+      "belowSurfaceGeometry": "e6d9774f561220707f17fd161ce11b8c48b74492f148b02493f929121f6c69d9",
+      "snowBlocks": 0,
+      "surfaceByBiome": {
+        "minecraft:savanna": "67cf7584102f22c48a34bdab605e71bbc7e88a1d3c9d9c8fa9e567c70de40e22"
+      },
+      "structures": [
+        "minecraft:mineshaft:BoundingBox [minX=4701.0, minY=-30.0, minZ=4724.0, maxX=4845.0, maxY=-1.0, maxZ=4878.0]"
+      ],
+      "blockEntities": [
+        "4813,-10,4810:SPAWNER"
+      ],
+      "winterMarker": 3
+    },
+    {
+      "x": 301,
+      "z": 300,
+      "existed": false,
+      "requestMillis": 1964.653156,
+      "undergroundMaterials": {
+        "AIR": 397,
+        "ANDESITE": 993,
+        "BEDROCK": 758,
+        "CAVE_AIR": 238,
+        "COBWEB": 69,
+        "COPPER_ORE": 42,
+        "DEEPSLATE": 13141,
+        "DEEPSLATE_DIAMOND_ORE": 25,
+        "DEEPSLATE_GOLD_ORE": 19,
+        "DEEPSLATE_IRON_ORE": 27,
+        "DEEPSLATE_LAPIS_ORE": 14,
+        "DEEPSLATE_REDSTONE_ORE": 37,
+        "DIORITE": 848,
+        "DIRT": 203,
+        "GLOW_LICHEN": 2,
+        "GOLD_ORE": 4,
+        "GRANITE": 966,
+        "GRAVEL": 381,
+        "IRON_ORE": 23,
+        "LAPIS_ORE": 11,
+        "OAK_FENCE": 20,
+        "OAK_PLANKS": 15,
+        "RAIL": 7,
+        "SPAWNER": 1,
+        "STONE": 4517,
+        "TUFF": 1818
+      },
+      "rawUndergroundBlockStateHash": "9105a9f3c4f18e84a580ce65abb4b99663db5c77bef75e5529bafaa768e0032e",
+      "belowSurfaceGeometry": "9a6c8428a4d225eb4dbd811bca1e05a8151526795de6984d86220c6f88f08b6a",
+      "snowBlocks": 0,
+      "surfaceByBiome": {
+        "minecraft:savanna": "0edc8b23c1476d2796b53ce24c868c6707f42cc38e6be8a15dcb50b364af736d",
+        "minecraft:stony_shore": "40eaa877ead27ea3c910f2e9face421473dbe3449078b22bb427096db14f0b88"
+      },
+      "structures": [
+        "minecraft:mineshaft:BoundingBox [minX=4701.0, minY=-30.0, minZ=4724.0, maxX=4845.0, maxY=-1.0, maxZ=4878.0]"
+      ],
+      "blockEntities": [
+        "4825,-10,4803:SPAWNER"
+      ],
+      "winterMarker": 3
+    },
+    {
+      "x": 300,
+      "z": 301,
+      "existed": true,
+      "requestMillis": 0.152139,
+      "undergroundMaterials": {
+        "AIR": 1946,
+        "ANDESITE": 429,
+        "BEDROCK": 768,
+        "CAVE_AIR": 262,
+        "COAL_ORE": 30,
+        "COBWEB": 1,
+        "COPPER_ORE": 36,
+        "DEEPSLATE": 13347,
+        "DEEPSLATE_COPPER_ORE": 20,
+        "DEEPSLATE_DIAMOND_ORE": 19,
+        "DEEPSLATE_GOLD_ORE": 26,
+        "DEEPSLATE_IRON_ORE": 17,
+        "DEEPSLATE_LAPIS_ORE": 24,
+        "DEEPSLATE_REDSTONE_ORE": 22,
+        "DIORITE": 1139,
+        "DIRT": 178,
+        "GLOW_LICHEN": 1,
+        "GRANITE": 10,
+        "GRAVEL": 649,
+        "IRON_ORE": 39,
+        "LAVA": 206,
+        "OAK_FENCE": 16,
+        "OAK_LOG": 2,
+        "OAK_PLANKS": 39,
+        "REDSTONE_ORE": 3,
+        "STONE": 4114,
+        "TUFF": 1233
+      },
+      "rawUndergroundBlockStateHash": "27ce61be7c73c6cb10b0a2356763a874ac35a6c37bf5e28bd17ff7e499f5dd57",
+      "belowSurfaceGeometry": "aea867ae53325ed00730e3ccd96caa4c56bd78bab075996fee2525182a6eea64",
+      "snowBlocks": 0,
+      "surfaceByBiome": {
+        "minecraft:savanna": "7b7c56c64dc5b9545845a187c2566ac75683358cc63c69f82b6944ad4954d081"
+      },
+      "structures": [
+        "minecraft:mineshaft:BoundingBox [minX=4701.0, minY=-30.0, minZ=4724.0, maxX=4845.0, maxY=-1.0, maxZ=4878.0]"
+      ],
+      "blockEntities": [],
+      "winterMarker": 3
+    },
+    {
+      "x": 301,
+      "z": 301,
+      "existed": false,
+      "requestMillis": 887.982993,
+      "undergroundMaterials": {
+        "AIR": 423,
+        "ANDESITE": 70,
+        "BEDROCK": 776,
+        "CAVE_AIR": 72,
+        "COAL_ORE": 26,
+        "COBWEB": 1,
+        "COPPER_ORE": 27,
+        "DEEPSLATE": 14717,
+        "DEEPSLATE_COPPER_ORE": 4,
+        "DEEPSLATE_DIAMOND_ORE": 20,
+        "DEEPSLATE_GOLD_ORE": 27,
+        "DEEPSLATE_IRON_ORE": 45,
+        "DEEPSLATE_LAPIS_ORE": 23,
+        "DEEPSLATE_REDSTONE_ORE": 19,
+        "DIAMOND_ORE": 5,
+        "DIORITE": 474,
+        "DIRT": 88,
+        "GRANITE": 191,
+        "GRAVEL": 418,
+        "IRON_ORE": 39,
+        "LAPIS_ORE": 3,
+        "LAVA": 8,
+        "OAK_FENCE": 8,
+        "OAK_PLANKS": 6,
+        "STONE": 5961,
+        "TUFF": 1125
+      },
+      "rawUndergroundBlockStateHash": "5a74732b05de5334fb3ca8a02f41a0d0e9ec6b14ef31794d3a6cd5dfef6d0434",
+      "belowSurfaceGeometry": "4f24c4a0fdb28ae768ec1cef30f3110418b84a3057cad440a60a47d9ab248a61",
+      "snowBlocks": 0,
+      "surfaceByBiome": {
+        "minecraft:savanna": "de13decf5b34de425649e9a6fd62d3ab68f58c5f7efbbaa056ea77f889b4c2a6",
+        "minecraft:stony_shore": "dafb390628961c87bae16bc4d6fa195c6241ffc20a1a0430e73152563b8948ae"
+      },
+      "structures": [
+        "minecraft:mineshaft:BoundingBox [minX=4701.0, minY=-30.0, minZ=4724.0, maxX=4845.0, maxY=-1.0, maxZ=4878.0]"
+      ],
+      "blockEntities": [],
+      "winterMarker": 3
+    }
+  ]
+}

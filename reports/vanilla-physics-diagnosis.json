@@ -1,0 +1,12 @@
+{
+  "run": "verified2",
+  "changed_material_counts": {
+    "AIR": -649,
+    "WATER": 508,
+    "LAVA": 140,
+    "COBBLESTONE": 1,
+    "STONE": 24,
+    "ANDESITE": 3
+  },
+  "diagnosis": "Unfrozen vanilla itself changes air/fluids and creates cooling blocks; freeze ticks equally for immutable worldgen comparison. Raw failed run retained."
+}

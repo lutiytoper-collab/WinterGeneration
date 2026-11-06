@@ -1,0 +1,118 @@
+[
+  {
+    "seed": 825180311,
+    "run": "frozen",
+    "chunks_per_world": 256,
+    "checks": {
+      "terrain_and_ores": true,
+      "structure_boxes_after_reload": true,
+      "existing_block_entities_preserved": true,
+      "restart_idempotence": true
+    },
+    "nonterrain_changes": [],
+    "additional_block_entities": [],
+    "raw_material_differences": []
+  },
+  {
+    "seed": 42,
+    "run": "boundary",
+    "chunks_per_world": 256,
+    "checks": {
+      "terrain_and_ores": true,
+      "structure_boxes_after_reload": true,
+      "existing_block_entities_preserved": true,
+      "restart_idempotence": true
+    },
+    "nonterrain_changes": [],
+    "additional_block_entities": [],
+    "raw_material_differences": []
+  },
+  {
+    "seed": -892041,
+    "run": "boundary-final",
+    "chunks_per_world": 256,
+    "checks": {
+      "terrain_and_ores": true,
+      "structure_boxes_after_reload": true,
+      "existing_block_entities_preserved": true,
+      "restart_idempotence": true
+    },
+    "nonterrain_changes": [
+      {
+        "x": 2188,
+        "y": 30,
+        "z": 2163,
+        "before": "minecraft:seagrass",
+        "after": "minecraft:water"
+      },
+      {
+        "x": 2231,
+        "y": 23,
+        "z": 2271,
+        "before": "minecraft:seagrass",
+        "after": "minecraft:water"
+      },
+      {
+        "x": 2223,
+        "y": 28,
+        "z": 2278,
+        "before": "minecraft:seagrass",
+        "after": "minecraft:water"
+      },
+      {
+        "x": 2226,
+        "y": 23,
+        "z": 2272,
+        "before": "minecraft:water",
+        "after": "minecraft:seagrass"
+      },
+      {
+        "x": 2225,
+        "y": 26,
+        "z": 2277,
+        "before": "minecraft:water",
+        "after": "minecraft:seagrass"
+      }
+    ],
+    "additional_block_entities": [
+      "2087,63,2054:BEE_NEST"
+    ],
+    "raw_material_differences": [
+      {
+        "x": 2188,
+        "y": 30,
+        "z": 2163,
+        "before": "minecraft:seagrass",
+        "after": "minecraft:water"
+      },
+      {
+        "x": 2231,
+        "y": 23,
+        "z": 2271,
+        "before": "minecraft:seagrass",
+        "after": "minecraft:water"
+      },
+      {
+        "x": 2223,
+        "y": 28,
+        "z": 2278,
+        "before": "minecraft:seagrass",
+        "after": "minecraft:water"
+      },
+      {
+        "x": 2226,
+        "y": 23,
+        "z": 2272,
+        "before": "minecraft:water",
+        "after": "minecraft:seagrass"
+      },
+      {
+        "x": 2225,
+        "y": 26,
+        "z": 2277,
+        "before": "minecraft:water",
+        "after": "minecraft:seagrass"
+      }
+    ]
+  }
+]

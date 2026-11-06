@@ -1,0 +1,10 @@
+Verified 500 / 4652
+Verified 1000 / 4652
+Verified 1500 / 4652
+Verified 2000 / 4652
+Verified 2500 / 4652
+Verified 3000 / 4652
+Verified 3500 / 4652
+Verified 4000 / 4652
+Verified 4500 / 4652
+{'minecraft': '1.21.11', 'client_url': 'https://piston-data.mojang.com/v1/objects/ba2df812c2d12e0219c489c4cd9a5e1f0760f5bd/client.jar', 'client_sha1': 'ba2df812c2d12e0219c489c4cd9a5e1f0760f5bd', 'asset_index_sha1': 'd216443b5a6b0b33e8f9db446f4f1a0adbe210d1', 'verified_library_files': 61, 'verified_asset_objects': 4591, 'scope': 'Official unmodified client; isolated offline-auth QA server only; no Microsoft login credentials supplied'}

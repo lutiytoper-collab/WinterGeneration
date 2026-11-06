@@ -1,0 +1,43 @@
+{
+  "seed": 825180311,
+  "version": "0.3.0",
+  "metrics": {
+    "canopy-snow": 77714,
+    "denied-clearings-steep": 81,
+    "clearings-objects": 21,
+    "denied-clearings-unsupported": 7,
+    "denied-ice-chunk_boundary": 2,
+    "skip-block entities in chunk": 92,
+    "denied-ice-terrain": 8,
+    "denied-clearings-obstructed": 69,
+    "trail-blocks": 3176,
+    "denied-clearings-terrain": 45,
+    "river-ice": 23,
+    "drift-blocks": 195520
+  },
+  "samples": {
+    "clearings-objects": [
+      "43,75,107",
+      "40,67,291",
+      "165,103,99",
+      "172,44,292",
+      "229,116,41",
+      "229,83,299",
+      "43,94,-28",
+      "-26,105,-29",
+      "-92,99,44",
+      "-92,77,101",
+      "-89,71,165",
+      "-92,72,292",
+      "-21,100,41",
+      "-151,77,170",
+      "102,110,-91",
+      "-155,88,234",
+      "-156,78,364",
+      "-156,87,422",
+      "170,134,483",
+      "-86,94,484",
+      "106,149,490"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Task :probe:compileJava
+/workspace/WinterGeneration/probe/src/main/java/ru/midgard/winter/probe/WorldgenProbe.java:78: warning: [removal] getKey() in Structure has been deprecated and marked for removal
+        List<String> structures=chunk.getStructures().stream().map(s->s.getStructure().getKey()+":"+s.getBoundingBox()).sorted().toList();
+                                                                                      ^
+/workspace/WinterGeneration/probe/src/main/java/ru/midgard/winter/probe/RuntimeAudit.java:51: warning: [removal] getKey() in Structure has been deprecated and marked for removal
+                var boxes=chunk.getStructures().stream().map(g->g.getStructure().getKey()+":"+g.getBoundingBox()).sorted().toList();
+                                                                                ^
+Note: /workspace/WinterGeneration/probe/src/main/java/ru/midgard/winter/probe/RuntimeAudit.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+2 warnings
+
+> Task :probe:processResources UP-TO-DATE
+> Task :probe:classes
+> Task :probe:jar
+
+[Incubating] Problems report is available at: file:///workspace/WinterGeneration/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 9s
+3 actionable tasks: 2 executed, 1 up-to-date

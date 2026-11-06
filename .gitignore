@@ -1,0 +1,19 @@
+.gradle/
+**/build/
+.runtime/
+.cache/
+*.log
+
+__pycache__/
+
+!reports/logs/*.log
+
+# Published as GitHub Release assets; canonical source/screenshots live in the repository.
+dist/reports.zip
+dist/sources.zip
+dist/game-screenshots*.zip
+dist/previous/**/*.zip
+dist/scripts/
+
+# Retain public QA evidence, including nested runtime console logs.
+!reports/**/*.log

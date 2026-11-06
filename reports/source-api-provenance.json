@@ -1,0 +1,10 @@
+{
+  "paper_commit": "c5eb0790f199da6c38d0a650e1e5cd5415b28185",
+  "brigadier_commit": "9ba4f13c0fe82b07c08c2dc2d8043f075ffd0d98",
+  "status": "compile-only API built from unmodified official sources; not an official Paper release binary",
+  "dependency_deviations": {
+    "bungeecord-chat": "Maven Central 1.21-R0.2 instead of unavailable Paper deprecated+build.21",
+    "brigadier": "pinned official source commit instead of official 1.3.10 Maven binary"
+  },
+  "api_bundled_in_plugin": false
+}

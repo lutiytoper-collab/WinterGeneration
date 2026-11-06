@@ -1,0 +1,17 @@
+{
+  "version": "7.3.19",
+  "file": {
+    "id": "NG02iq6v",
+    "hashes": {
+      "sha512": "105b1f2c3d1f55ba8db3357421655f0d2597f736b1419336aae5c9210a492c0a8d6c136dfc1143131bfc4186f247393ef0b1eabf497796030317371e5196acde",
+      "sha1": "652162e53cfca132dc95c2c538ebcaa5d55a44df"
+    },
+    "url": "https://cdn.modrinth.com/data/1u6JkXh5/versions/2YDdVDmG/worldedit-bukkit-7.3.19.jar",
+    "filename": "worldedit-bukkit-7.3.19.jar",
+    "primary": true,
+    "size": 7313661,
+    "file_type": null
+  },
+  "java_major": 65,
+  "sha256": "639f7df29a4ec739885f19a101f497318ddc8e3da20473939908dff834e540df"
+}

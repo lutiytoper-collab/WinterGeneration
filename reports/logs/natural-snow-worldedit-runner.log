@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/tmp/midgard_integration_run.py", line 35, in <module>
+    send('winterprobe natural-end');wait('NATURALLUNA_COMPLETE',30);shutil.copyfile(folder/'plugins/WinterProbe/natural-luna.json',root/('reports/'+prefix+'natural-luna.json'))
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/midgard_integration_run.py", line 21, in wait
+    raise TimeoutError(token)
+TimeoutError: NATURALLUNA_COMPLETE

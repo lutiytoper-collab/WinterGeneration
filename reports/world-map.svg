@@ -1,0 +1,520 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="470" viewBox="0 0 850 470">
+<rect width="850" height="470" fill="#101923"/>
+<g font-family="sans-serif" fill="#e9f0f7"><text x="24" y="30" font-size="20">Real chunk audit: seed 825180311</text><text x="24" y="52" font-size="12">Diagnostic data map; not a Minecraft screenshot. Each cell = 16 x 16 blocks.</text>
+<text x="24" y="82" font-size="16">vanilla</text>
+<rect x="24" y="100" width="22" height="19" fill="#edf4f9"><title>chunk 128,128; snow blocks 246; biomes minecraft:snowy_taiga</title></rect>
+<rect x="47" y="100" width="22" height="19" fill="#e6edf2"><title>chunk 129,128; snow blocks 237; biomes minecraft:snowy_taiga</title></rect>
+<rect x="70" y="100" width="22" height="19" fill="#dbe2e7"><title>chunk 130,128; snow blocks 221; biomes minecraft:snowy_taiga</title></rect>
+<rect x="93" y="100" width="22" height="19" fill="#b2b9be"><title>chunk 131,128; snow blocks 166; biomes minecraft:snowy_taiga</title></rect>
+<rect x="116" y="100" width="22" height="19" fill="#d5dce1"><title>chunk 132,128; snow blocks 214; biomes minecraft:snowy_taiga</title></rect>
+<rect x="139" y="100" width="22" height="19" fill="#f3faff"><title>chunk 133,128; snow blocks 254; biomes minecraft:snowy_taiga</title></rect>
+<rect x="162" y="100" width="22" height="19" fill="#f0f7fc"><title>chunk 134,128; snow blocks 250; biomes minecraft:snowy_taiga</title></rect>
+<rect x="185" y="100" width="22" height="19" fill="#f3faff"><title>chunk 135,128; snow blocks 254; biomes minecraft:snowy_taiga</title></rect>
+<rect x="208" y="100" width="22" height="19" fill="#eff6fb"><title>chunk 136,128; snow blocks 249; biomes minecraft:snowy_taiga</title></rect>
+<rect x="231" y="100" width="22" height="19" fill="#f1f8fd"><title>chunk 137,128; snow blocks 251; biomes minecraft:snowy_taiga</title></rect>
+<rect x="254" y="100" width="22" height="19" fill="#f5fcff"><title>chunk 138,128; snow blocks 256; biomes minecraft:snowy_taiga</title></rect>
+<rect x="277" y="100" width="22" height="19" fill="#f4fbff"><title>chunk 139,128; snow blocks 255; biomes minecraft:snowy_taiga</title></rect>
+<rect x="300" y="100" width="22" height="19" fill="#f1f8fd"><title>chunk 140,128; snow blocks 251; biomes minecraft:snowy_taiga</title></rect>
+<rect x="323" y="100" width="22" height="19" fill="#f2f9fe"><title>chunk 141,128; snow blocks 252; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="346" y="100" width="22" height="19" fill="#eff6fb"><title>chunk 142,128; snow blocks 248; biomes minecraft:snowy_plains</title></rect>
+<rect x="369" y="100" width="22" height="19" fill="#f1f8fd"><title>chunk 143,128; snow blocks 251; biomes minecraft:snowy_plains</title></rect>
+<rect x="24" y="120" width="22" height="19" fill="#f4fbff"><title>chunk 128,129; snow blocks 255; biomes minecraft:snowy_taiga</title></rect>
+<rect x="47" y="120" width="22" height="19" fill="#596065"><title>chunk 129,129; snow blocks 46; biomes minecraft:snowy_taiga</title></rect>
+<rect x="70" y="120" width="22" height="19" fill="#50575c"><title>chunk 130,129; snow blocks 35; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="93" y="120" width="22" height="19" fill="#373e43"><title>chunk 131,129; snow blocks 0; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="116" y="120" width="22" height="19" fill="#484f54"><title>chunk 132,129; snow blocks 24; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="139" y="120" width="22" height="19" fill="#565d62"><title>chunk 133,129; snow blocks 42; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="162" y="120" width="22" height="19" fill="#e9f0f5"><title>chunk 134,129; snow blocks 241; biomes minecraft:snowy_taiga</title></rect>
+<rect x="185" y="120" width="22" height="19" fill="#f3faff"><title>chunk 135,129; snow blocks 254; biomes minecraft:snowy_taiga</title></rect>
+<rect x="208" y="120" width="22" height="19" fill="#f4fbff"><title>chunk 136,129; snow blocks 255; biomes minecraft:snowy_taiga</title></rect>
+<rect x="231" y="120" width="22" height="19" fill="#e8eff4"><title>chunk 137,129; snow blocks 239; biomes minecraft:snowy_taiga</title></rect>
+<rect x="254" y="120" width="22" height="19" fill="#f3faff"><title>chunk 138,129; snow blocks 254; biomes minecraft:snowy_taiga</title></rect>
+<rect x="277" y="120" width="22" height="19" fill="#eaf1f6"><title>chunk 139,129; snow blocks 242; biomes minecraft:snowy_taiga</title></rect>
+<rect x="300" y="120" width="22" height="19" fill="#ecf3f8"><title>chunk 140,129; snow blocks 245; biomes minecraft:snowy_taiga</title></rect>
+<rect x="323" y="120" width="22" height="19" fill="#e6edf2"><title>chunk 141,129; snow blocks 237; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="346" y="120" width="22" height="19" fill="#f0f7fc"><title>chunk 142,129; snow blocks 250; biomes minecraft:snowy_plains</title></rect>
+<rect x="369" y="120" width="22" height="19" fill="#eef5fa"><title>chunk 143,129; snow blocks 247; biomes minecraft:snowy_plains</title></rect>
+<rect x="24" y="140" width="22" height="19" fill="#dbe2e7"><title>chunk 128,130; snow blocks 221; biomes minecraft:snowy_taiga</title></rect>
+<rect x="47" y="140" width="22" height="19" fill="#7f868b"><title>chunk 129,130; snow blocks 98; biomes minecraft:snowy_taiga</title></rect>
+<rect x="70" y="140" width="22" height="19" fill="#373e43"><title>chunk 130,130; snow blocks 0; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="93" y="140" width="22" height="19" fill="#373e43"><title>chunk 131,130; snow blocks 0; biomes minecraft:frozen_river</title></rect>
+<rect x="116" y="140" width="22" height="19" fill="#373e43"><title>chunk 132,130; snow blocks 0; biomes minecraft:frozen_river</title></rect>
+<rect x="139" y="140" width="22" height="19" fill="#373e43"><title>chunk 133,130; snow blocks 1; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="162" y="140" width="22" height="19" fill="#ccd3d8"><title>chunk 134,130; snow blocks 201; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="185" y="140" width="22" height="19" fill="#f2f9fe"><title>chunk 135,130; snow blocks 253; biomes minecraft:snowy_taiga</title></rect>
+<rect x="208" y="140" width="22" height="19" fill="#f5fcff"><title>chunk 136,130; snow blocks 256; biomes minecraft:snowy_taiga</title></rect>
+<rect x="231" y="140" width="22" height="19" fill="#e9f0f5"><title>chunk 137,130; snow blocks 241; biomes minecraft:snowy_taiga</title></rect>
+<rect x="254" y="140" width="22" height="19" fill="#f1f8fd"><title>chunk 138,130; snow blocks 251; biomes minecraft:snowy_taiga</title></rect>
+<rect x="277" y="140" width="22" height="19" fill="#ecf3f8"><title>chunk 139,130; snow blocks 244; biomes minecraft:snowy_taiga</title></rect>
+<rect x="300" y="140" width="22" height="19" fill="#f2f9fe"><title>chunk 140,130; snow blocks 253; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="323" y="140" width="22" height="19" fill="#f2f9fe"><title>chunk 141,130; snow blocks 252; biomes minecraft:snowy_plains</title></rect>
+<rect x="346" y="140" width="22" height="19" fill="#f2f9fe"><title>chunk 142,130; snow blocks 253; biomes minecraft:snowy_plains</title></rect>
+<rect x="369" y="140" width="22" height="19" fill="#edf4f9"><title>chunk 143,130; snow blocks 246; biomes minecraft:snowy_plains</title></rect>
+<rect x="24" y="160" width="22" height="19" fill="#5c6368"><title>chunk 128,131; snow blocks 50; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="47" y="160" width="22" height="19" fill="#373e43"><title>chunk 129,131; snow blocks 0; biomes minecraft:frozen_river</title></rect>
+<rect x="70" y="160" width="22" height="19" fill="#40474c"><title>chunk 130,131; snow blocks 13; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="93" y="160" width="22" height="19" fill="#747b80"><title>chunk 131,131; snow blocks 83; biomes minecraft:snowy_taiga</title></rect>
+<rect x="116" y="160" width="22" height="19" fill="#454c51"><title>chunk 132,131; snow blocks 19; biomes minecraft:frozen_river, minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="139" y="160" width="22" height="19" fill="#373e43"><title>chunk 133,131; snow blocks 0; biomes minecraft:frozen_river</title></rect>
+<rect x="162" y="160" width="22" height="19" fill="#777e83"><title>chunk 134,131; snow blocks 87; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="185" y="160" width="22" height="19" fill="#f0f7fc"><title>chunk 135,131; snow blocks 250; biomes minecraft:snowy_taiga</title></rect>
+<rect x="208" y="160" width="22" height="19" fill="#e4ebf0"><title>chunk 136,131; snow blocks 234; biomes minecraft:snowy_taiga</title></rect>
+<rect x="231" y="160" width="22" height="19" fill="#f2f9fe"><title>chunk 137,131; snow blocks 253; biomes minecraft:snowy_taiga</title></rect>
+<rect x="254" y="160" width="22" height="19" fill="#f0f7fc"><title>chunk 138,131; snow blocks 250; biomes minecraft:snowy_taiga</title></rect>
+<rect x="277" y="160" width="22" height="19" fill="#f3faff"><title>chunk 139,131; snow blocks 254; biomes minecraft:snowy_taiga</title></rect>
+<rect x="300" y="160" width="22" height="19" fill="#ebf2f7"><title>chunk 140,131; snow blocks 243; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="323" y="160" width="22" height="19" fill="#f1f8fd"><title>chunk 141,131; snow blocks 251; biomes minecraft:snowy_plains</title></rect>
+<rect x="346" y="160" width="22" height="19" fill="#edf4f9"><title>chunk 142,131; snow blocks 246; biomes minecraft:snowy_plains</title></rect>
+<rect x="369" y="160" width="22" height="19" fill="#edf4f9"><title>chunk 143,131; snow blocks 246; biomes minecraft:snowy_plains</title></rect>
+<rect x="24" y="180" width="22" height="19" fill="#373e43"><title>chunk 128,132; snow blocks 0; biomes minecraft:frozen_river, minecraft:river, minecraft:snowy_taiga</title></rect>
+<rect x="47" y="180" width="22" height="19" fill="#6a7176"><title>chunk 129,132; snow blocks 69; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="70" y="180" width="22" height="19" fill="#b6bdc2"><title>chunk 130,132; snow blocks 172; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="93" y="180" width="22" height="19" fill="#f3faff"><title>chunk 131,132; snow blocks 254; biomes minecraft:snowy_taiga</title></rect>
+<rect x="116" y="180" width="22" height="19" fill="#d6dde2"><title>chunk 132,132; snow blocks 215; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="139" y="180" width="22" height="19" fill="#373e43"><title>chunk 133,132; snow blocks 0; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="162" y="180" width="22" height="19" fill="#757c81"><title>chunk 134,132; snow blocks 84; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="185" y="180" width="22" height="19" fill="#f2f9fe"><title>chunk 135,132; snow blocks 252; biomes minecraft:snowy_taiga</title></rect>
+<rect x="208" y="180" width="22" height="19" fill="#f3faff"><title>chunk 136,132; snow blocks 254; biomes minecraft:snowy_taiga</title></rect>
+<rect x="231" y="180" width="22" height="19" fill="#f1f8fd"><title>chunk 137,132; snow blocks 251; biomes minecraft:snowy_taiga</title></rect>
+<rect x="254" y="180" width="22" height="19" fill="#eff6fb"><title>chunk 138,132; snow blocks 249; biomes minecraft:snowy_taiga</title></rect>
+<rect x="277" y="180" width="22" height="19" fill="#edf4f9"><title>chunk 139,132; snow blocks 246; biomes minecraft:snowy_taiga</title></rect>
+<rect x="300" y="180" width="22" height="19" fill="#f0f7fc"><title>chunk 140,132; snow blocks 250; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="323" y="180" width="22" height="19" fill="#f3faff"><title>chunk 141,132; snow blocks 254; biomes minecraft:snowy_plains</title></rect>
+<rect x="346" y="180" width="22" height="19" fill="#eff6fb"><title>chunk 142,132; snow blocks 249; biomes minecraft:snowy_plains</title></rect>
+<rect x="369" y="180" width="22" height="19" fill="#d4dbe0"><title>chunk 143,132; snow blocks 212; biomes minecraft:snowy_plains</title></rect>
+<rect x="24" y="200" width="22" height="19" fill="#3c4348"><title>chunk 128,133; snow blocks 8; biomes minecraft:frozen_river, minecraft:river, minecraft:taiga</title></rect>
+<rect x="47" y="200" width="22" height="19" fill="#90979c"><title>chunk 129,133; snow blocks 120; biomes minecraft:snowy_taiga, minecraft:taiga</title></rect>
+<rect x="70" y="200" width="22" height="19" fill="#e9f0f5"><title>chunk 130,133; snow blocks 240; biomes minecraft:snowy_taiga</title></rect>
+<rect x="93" y="200" width="22" height="19" fill="#ecf3f8"><title>chunk 131,133; snow blocks 244; biomes minecraft:snowy_taiga</title></rect>
+<rect x="116" y="200" width="22" height="19" fill="#f4fbff"><title>chunk 132,133; snow blocks 255; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="139" y="200" width="22" height="19" fill="#a7aeb3"><title>chunk 133,133; snow blocks 152; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="162" y="200" width="22" height="19" fill="#3b4247"><title>chunk 134,133; snow blocks 6; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="185" y="200" width="22" height="19" fill="#8b9297"><title>chunk 135,133; snow blocks 114; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="208" y="200" width="22" height="19" fill="#dbe2e7"><title>chunk 136,133; snow blocks 221; biomes minecraft:snowy_taiga</title></rect>
+<rect x="231" y="200" width="22" height="19" fill="#f1f8fd"><title>chunk 137,133; snow blocks 251; biomes minecraft:snowy_taiga</title></rect>
+<rect x="254" y="200" width="22" height="19" fill="#ecf3f8"><title>chunk 138,133; snow blocks 245; biomes minecraft:snowy_taiga</title></rect>
+<rect x="277" y="200" width="22" height="19" fill="#f4fbff"><title>chunk 139,133; snow blocks 255; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="300" y="200" width="22" height="19" fill="#ebf2f7"><title>chunk 140,133; snow blocks 243; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="323" y="200" width="22" height="19" fill="#f2f9fe"><title>chunk 141,133; snow blocks 252; biomes minecraft:snowy_plains</title></rect>
+<rect x="346" y="200" width="22" height="19" fill="#eff6fb"><title>chunk 142,133; snow blocks 249; biomes minecraft:snowy_plains</title></rect>
+<rect x="369" y="200" width="22" height="19" fill="#ebf2f7"><title>chunk 143,133; snow blocks 243; biomes minecraft:snowy_plains</title></rect>
+<rect x="24" y="220" width="22" height="19" fill="#373e43"><title>chunk 128,134; snow blocks 0; biomes minecraft:taiga</title></rect>
+<rect x="47" y="220" width="22" height="19" fill="#373e43"><title>chunk 129,134; snow blocks 0; biomes minecraft:taiga</title></rect>
+<rect x="70" y="220" width="22" height="19" fill="#92999e"><title>chunk 130,134; snow blocks 123; biomes minecraft:snowy_taiga, minecraft:taiga</title></rect>
+<rect x="93" y="220" width="22" height="19" fill="#eff6fb"><title>chunk 131,134; snow blocks 249; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="116" y="220" width="22" height="19" fill="#e8eff4"><title>chunk 132,134; snow blocks 239; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="139" y="220" width="22" height="19" fill="#f1f8fd"><title>chunk 133,134; snow blocks 251; biomes minecraft:snowy_plains</title></rect>
+<rect x="162" y="220" width="22" height="19" fill="#767d82"><title>chunk 134,134; snow blocks 85; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="185" y="220" width="22" height="19" fill="#a4abb0"><title>chunk 135,134; snow blocks 148; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="208" y="220" width="22" height="19" fill="#eaf1f6"><title>chunk 136,134; snow blocks 242; biomes minecraft:snowy_taiga</title></rect>
+<rect x="231" y="220" width="22" height="19" fill="#f3faff"><title>chunk 137,134; snow blocks 254; biomes minecraft:snowy_taiga</title></rect>
+<rect x="254" y="220" width="22" height="19" fill="#eff6fb"><title>chunk 138,134; snow blocks 249; biomes minecraft:snowy_taiga</title></rect>
+<rect x="277" y="220" width="22" height="19" fill="#f3faff"><title>chunk 139,134; snow blocks 254; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="300" y="220" width="22" height="19" fill="#f1f8fd"><title>chunk 140,134; snow blocks 251; biomes minecraft:snowy_plains</title></rect>
+<rect x="323" y="220" width="22" height="19" fill="#f2f9fe"><title>chunk 141,134; snow blocks 253; biomes minecraft:snowy_plains</title></rect>
+<rect x="346" y="220" width="22" height="19" fill="#f0f7fc"><title>chunk 142,134; snow blocks 250; biomes minecraft:snowy_plains</title></rect>
+<rect x="369" y="220" width="22" height="19" fill="#f4fbff"><title>chunk 143,134; snow blocks 255; biomes minecraft:snowy_plains</title></rect>
+<rect x="24" y="240" width="22" height="19" fill="#373e43"><title>chunk 128,135; snow blocks 0; biomes minecraft:taiga</title></rect>
+<rect x="47" y="240" width="22" height="19" fill="#373e43"><title>chunk 129,135; snow blocks 0; biomes minecraft:taiga</title></rect>
+<rect x="70" y="240" width="22" height="19" fill="#373e43"><title>chunk 130,135; snow blocks 0; biomes minecraft:forest, minecraft:taiga</title></rect>
+<rect x="93" y="240" width="22" height="19" fill="#a0a7ac"><title>chunk 131,135; snow blocks 142; biomes minecraft:forest, minecraft:snowy_plains, minecraft:taiga</title></rect>
+<rect x="116" y="240" width="22" height="19" fill="#e8eff4"><title>chunk 132,135; snow blocks 239; biomes minecraft:snowy_plains</title></rect>
+<rect x="139" y="240" width="22" height="19" fill="#eff6fb"><title>chunk 133,135; snow blocks 248; biomes minecraft:snowy_plains</title></rect>
+<rect x="162" y="240" width="22" height="19" fill="#aeb5ba"><title>chunk 134,135; snow blocks 161; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="185" y="240" width="22" height="19" fill="#7b8287"><title>chunk 135,135; snow blocks 92; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="208" y="240" width="22" height="19" fill="#f3faff"><title>chunk 136,135; snow blocks 254; biomes minecraft:snowy_taiga</title></rect>
+<rect x="231" y="240" width="22" height="19" fill="#f3faff"><title>chunk 137,135; snow blocks 254; biomes minecraft:snowy_taiga</title></rect>
+<rect x="254" y="240" width="22" height="19" fill="#dbe2e7"><title>chunk 138,135; snow blocks 221; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="277" y="240" width="22" height="19" fill="#e8eff4"><title>chunk 139,135; snow blocks 239; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="300" y="240" width="22" height="19" fill="#f2f9fe"><title>chunk 140,135; snow blocks 252; biomes minecraft:snowy_plains</title></rect>
+<rect x="323" y="240" width="22" height="19" fill="#f1f8fd"><title>chunk 141,135; snow blocks 251; biomes minecraft:snowy_plains</title></rect>
+<rect x="346" y="240" width="22" height="19" fill="#eff6fb"><title>chunk 142,135; snow blocks 248; biomes minecraft:snowy_plains</title></rect>
+<rect x="369" y="240" width="22" height="19" fill="#f1f8fd"><title>chunk 143,135; snow blocks 251; biomes minecraft:snowy_plains</title></rect>
+<rect x="24" y="260" width="22" height="19" fill="#373e43"><title>chunk 128,136; snow blocks 0; biomes minecraft:taiga</title></rect>
+<rect x="47" y="260" width="22" height="19" fill="#373e43"><title>chunk 129,136; snow blocks 0; biomes minecraft:taiga</title></rect>
+<rect x="70" y="260" width="22" height="19" fill="#373e43"><title>chunk 130,136; snow blocks 0; biomes minecraft:taiga</title></rect>
+<rect x="93" y="260" width="22" height="19" fill="#40474c"><title>chunk 131,136; snow blocks 13; biomes minecraft:forest, minecraft:snowy_plains</title></rect>
+<rect x="116" y="260" width="22" height="19" fill="#cdd4d9"><title>chunk 132,136; snow blocks 203; biomes minecraft:forest, minecraft:snowy_plains</title></rect>
+<rect x="139" y="260" width="22" height="19" fill="#e9f0f5"><title>chunk 133,136; snow blocks 241; biomes minecraft:snowy_plains</title></rect>
+<rect x="162" y="260" width="22" height="19" fill="#e9f0f5"><title>chunk 134,136; snow blocks 241; biomes minecraft:snowy_plains</title></rect>
+<rect x="185" y="260" width="22" height="19" fill="#656c71"><title>chunk 135,136; snow blocks 62; biomes minecraft:frozen_river, minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="208" y="260" width="22" height="19" fill="#959ca1"><title>chunk 136,136; snow blocks 127; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="231" y="260" width="22" height="19" fill="#f1f8fd"><title>chunk 137,136; snow blocks 251; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="254" y="260" width="22" height="19" fill="#949ba0"><title>chunk 138,136; snow blocks 126; biomes minecraft:snowy_plains</title></rect>
+<rect x="277" y="260" width="22" height="19" fill="#aeb5ba"><title>chunk 139,136; snow blocks 161; biomes minecraft:snowy_plains</title></rect>
+<rect x="300" y="260" width="22" height="19" fill="#f3faff"><title>chunk 140,136; snow blocks 254; biomes minecraft:snowy_plains</title></rect>
+<rect x="323" y="260" width="22" height="19" fill="#eff6fb"><title>chunk 141,136; snow blocks 248; biomes minecraft:snowy_plains</title></rect>
+<rect x="346" y="260" width="22" height="19" fill="#f4fbff"><title>chunk 142,136; snow blocks 255; biomes minecraft:snowy_plains</title></rect>
+<rect x="369" y="260" width="22" height="19" fill="#eef5fa"><title>chunk 143,136; snow blocks 247; biomes minecraft:snowy_plains</title></rect>
+<rect x="24" y="280" width="22" height="19" fill="#373e43"><title>chunk 128,137; snow blocks 0; biomes minecraft:taiga</title></rect>
+<rect x="47" y="280" width="22" height="19" fill="#373e43"><title>chunk 129,137; snow blocks 0; biomes minecraft:taiga</title></rect>
+<rect x="70" y="280" width="22" height="19" fill="#373e43"><title>chunk 130,137; snow blocks 0; biomes minecraft:forest, minecraft:taiga</title></rect>
+<rect x="93" y="280" width="22" height="19" fill="#373e43"><title>chunk 131,137; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="116" y="280" width="22" height="19" fill="#373e43"><title>chunk 132,137; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="139" y="280" width="22" height="19" fill="#676e73"><title>chunk 133,137; snow blocks 66; biomes minecraft:forest, minecraft:snowy_plains</title></rect>
+<rect x="162" y="280" width="22" height="19" fill="#d0d7dc"><title>chunk 134,137; snow blocks 207; biomes minecraft:forest, minecraft:snowy_plains</title></rect>
+<rect x="185" y="280" width="22" height="19" fill="#e4ebf0"><title>chunk 135,137; snow blocks 234; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="208" y="280" width="22" height="19" fill="#6a7176"><title>chunk 136,137; snow blocks 69; biomes minecraft:frozen_river, minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="231" y="280" width="22" height="19" fill="#b1b8bd"><title>chunk 137,137; snow blocks 165; biomes minecraft:frozen_river, minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="254" y="280" width="22" height="19" fill="#d8dfe4"><title>chunk 138,137; snow blocks 218; biomes minecraft:snowy_plains</title></rect>
+<rect x="277" y="280" width="22" height="19" fill="#eef5fa"><title>chunk 139,137; snow blocks 247; biomes minecraft:snowy_plains</title></rect>
+<rect x="300" y="280" width="22" height="19" fill="#f1f8fd"><title>chunk 140,137; snow blocks 251; biomes minecraft:snowy_plains</title></rect>
+<rect x="323" y="280" width="22" height="19" fill="#f2f9fe"><title>chunk 141,137; snow blocks 252; biomes minecraft:snowy_plains</title></rect>
+<rect x="346" y="280" width="22" height="19" fill="#f5fcff"><title>chunk 142,137; snow blocks 256; biomes minecraft:snowy_plains</title></rect>
+<rect x="369" y="280" width="22" height="19" fill="#eff6fb"><title>chunk 143,137; snow blocks 249; biomes minecraft:snowy_plains</title></rect>
+<rect x="24" y="300" width="22" height="19" fill="#373e43"><title>chunk 128,138; snow blocks 0; biomes minecraft:taiga</title></rect>
+<rect x="47" y="300" width="22" height="19" fill="#373e43"><title>chunk 129,138; snow blocks 0; biomes minecraft:forest, minecraft:taiga</title></rect>
+<rect x="70" y="300" width="22" height="19" fill="#373e43"><title>chunk 130,138; snow blocks 0; biomes minecraft:forest, minecraft:taiga</title></rect>
+<rect x="93" y="300" width="22" height="19" fill="#373e43"><title>chunk 131,138; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="116" y="300" width="22" height="19" fill="#373e43"><title>chunk 132,138; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="139" y="300" width="22" height="19" fill="#373e43"><title>chunk 133,138; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="162" y="300" width="22" height="19" fill="#454c51"><title>chunk 134,138; snow blocks 19; biomes minecraft:forest, minecraft:snowy_plains</title></rect>
+<rect x="185" y="300" width="22" height="19" fill="#676e73"><title>chunk 135,138; snow blocks 65; biomes minecraft:forest, minecraft:snowy_plains</title></rect>
+<rect x="208" y="300" width="22" height="19" fill="#c8cfd4"><title>chunk 136,138; snow blocks 196; biomes minecraft:forest, minecraft:snowy_plains</title></rect>
+<rect x="231" y="300" width="22" height="19" fill="#5d6469"><title>chunk 137,138; snow blocks 52; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="254" y="300" width="22" height="19" fill="#373e43"><title>chunk 138,138; snow blocks 0; biomes minecraft:frozen_river</title></rect>
+<rect x="277" y="300" width="22" height="19" fill="#80878c"><title>chunk 139,138; snow blocks 99; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="300" y="300" width="22" height="19" fill="#e6edf2"><title>chunk 140,138; snow blocks 237; biomes minecraft:snowy_plains</title></rect>
+<rect x="323" y="300" width="22" height="19" fill="#f3faff"><title>chunk 141,138; snow blocks 254; biomes minecraft:snowy_plains</title></rect>
+<rect x="346" y="300" width="22" height="19" fill="#f2f9fe"><title>chunk 142,138; snow blocks 252; biomes minecraft:snowy_plains</title></rect>
+<rect x="369" y="300" width="22" height="19" fill="#f2f9fe"><title>chunk 143,138; snow blocks 252; biomes minecraft:snowy_plains</title></rect>
+<rect x="24" y="320" width="22" height="19" fill="#373e43"><title>chunk 128,139; snow blocks 0; biomes minecraft:taiga</title></rect>
+<rect x="47" y="320" width="22" height="19" fill="#373e43"><title>chunk 129,139; snow blocks 0; biomes minecraft:forest, minecraft:taiga</title></rect>
+<rect x="70" y="320" width="22" height="19" fill="#373e43"><title>chunk 130,139; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="93" y="320" width="22" height="19" fill="#373e43"><title>chunk 131,139; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="116" y="320" width="22" height="19" fill="#373e43"><title>chunk 132,139; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="139" y="320" width="22" height="19" fill="#373e43"><title>chunk 133,139; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="162" y="320" width="22" height="19" fill="#373e43"><title>chunk 134,139; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="185" y="320" width="22" height="19" fill="#373e43"><title>chunk 135,139; snow blocks 0; biomes minecraft:forest, minecraft:plains</title></rect>
+<rect x="208" y="320" width="22" height="19" fill="#777e83"><title>chunk 136,139; snow blocks 87; biomes minecraft:forest, minecraft:plains, minecraft:snowy_plains</title></rect>
+<rect x="231" y="320" width="22" height="19" fill="#e9f0f5"><title>chunk 137,139; snow blocks 240; biomes minecraft:snowy_plains</title></rect>
+<rect x="254" y="320" width="22" height="19" fill="#a8afb4"><title>chunk 138,139; snow blocks 153; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="277" y="320" width="22" height="19" fill="#91989d"><title>chunk 139,139; snow blocks 122; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="300" y="320" width="22" height="19" fill="#565d62"><title>chunk 140,139; snow blocks 42; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="323" y="320" width="22" height="19" fill="#bec5ca"><title>chunk 141,139; snow blocks 183; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="346" y="320" width="22" height="19" fill="#d7dee3"><title>chunk 142,139; snow blocks 216; biomes minecraft:snowy_plains</title></rect>
+<rect x="369" y="320" width="22" height="19" fill="#ecf3f8"><title>chunk 143,139; snow blocks 245; biomes minecraft:snowy_plains</title></rect>
+<rect x="24" y="340" width="22" height="19" fill="#373e43"><title>chunk 128,140; snow blocks 0; biomes minecraft:forest, minecraft:taiga</title></rect>
+<rect x="47" y="340" width="22" height="19" fill="#373e43"><title>chunk 129,140; snow blocks 0; biomes minecraft:forest, minecraft:taiga</title></rect>
+<rect x="70" y="340" width="22" height="19" fill="#373e43"><title>chunk 130,140; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="93" y="340" width="22" height="19" fill="#373e43"><title>chunk 131,140; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="116" y="340" width="22" height="19" fill="#373e43"><title>chunk 132,140; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="139" y="340" width="22" height="19" fill="#373e43"><title>chunk 133,140; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="162" y="340" width="22" height="19" fill="#373e43"><title>chunk 134,140; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="185" y="340" width="22" height="19" fill="#373e43"><title>chunk 135,140; snow blocks 0; biomes minecraft:forest, minecraft:plains</title></rect>
+<rect x="208" y="340" width="22" height="19" fill="#373e43"><title>chunk 136,140; snow blocks 0; biomes minecraft:plains</title></rect>
+<rect x="231" y="340" width="22" height="19" fill="#90979c"><title>chunk 137,140; snow blocks 120; biomes minecraft:plains, minecraft:snowy_plains</title></rect>
+<rect x="254" y="340" width="22" height="19" fill="#d0d7dc"><title>chunk 138,140; snow blocks 207; biomes minecraft:plains, minecraft:snowy_plains</title></rect>
+<rect x="277" y="340" width="22" height="19" fill="#eff6fb"><title>chunk 139,140; snow blocks 248; biomes minecraft:snowy_plains</title></rect>
+<rect x="300" y="340" width="22" height="19" fill="#bdc4c9"><title>chunk 140,140; snow blocks 181; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="323" y="340" width="22" height="19" fill="#4b5257"><title>chunk 141,140; snow blocks 27; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="346" y="340" width="22" height="19" fill="#d9e0e5"><title>chunk 142,140; snow blocks 219; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="369" y="340" width="22" height="19" fill="#eef5fa"><title>chunk 143,140; snow blocks 247; biomes minecraft:snowy_plains</title></rect>
+<rect x="24" y="360" width="22" height="19" fill="#373e43"><title>chunk 128,141; snow blocks 0; biomes minecraft:forest, minecraft:taiga</title></rect>
+<rect x="47" y="360" width="22" height="19" fill="#373e43"><title>chunk 129,141; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="70" y="360" width="22" height="19" fill="#373e43"><title>chunk 130,141; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="93" y="360" width="22" height="19" fill="#373e43"><title>chunk 131,141; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="116" y="360" width="22" height="19" fill="#373e43"><title>chunk 132,141; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="139" y="360" width="22" height="19" fill="#373e43"><title>chunk 133,141; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="162" y="360" width="22" height="19" fill="#373e43"><title>chunk 134,141; snow blocks 0; biomes minecraft:forest, minecraft:plains</title></rect>
+<rect x="185" y="360" width="22" height="19" fill="#373e43"><title>chunk 135,141; snow blocks 0; biomes minecraft:forest, minecraft:plains</title></rect>
+<rect x="208" y="360" width="22" height="19" fill="#373e43"><title>chunk 136,141; snow blocks 0; biomes minecraft:plains</title></rect>
+<rect x="231" y="360" width="22" height="19" fill="#373e43"><title>chunk 137,141; snow blocks 1; biomes minecraft:plains</title></rect>
+<rect x="254" y="360" width="22" height="19" fill="#394045"><title>chunk 138,141; snow blocks 4; biomes minecraft:plains</title></rect>
+<rect x="277" y="360" width="22" height="19" fill="#939a9f"><title>chunk 139,141; snow blocks 124; biomes minecraft:plains, minecraft:snowy_plains</title></rect>
+<rect x="300" y="360" width="22" height="19" fill="#f1f8fd"><title>chunk 140,141; snow blocks 251; biomes minecraft:snowy_plains</title></rect>
+<rect x="323" y="360" width="22" height="19" fill="#bfc6cb"><title>chunk 141,141; snow blocks 184; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="346" y="360" width="22" height="19" fill="#6c7378"><title>chunk 142,141; snow blocks 72; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="369" y="360" width="22" height="19" fill="#eef5fa"><title>chunk 143,141; snow blocks 247; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="24" y="380" width="22" height="19" fill="#373e43"><title>chunk 128,142; snow blocks 0; biomes minecraft:forest, minecraft:taiga</title></rect>
+<rect x="47" y="380" width="22" height="19" fill="#373e43"><title>chunk 129,142; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="70" y="380" width="22" height="19" fill="#373e43"><title>chunk 130,142; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="93" y="380" width="22" height="19" fill="#373e43"><title>chunk 131,142; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="116" y="380" width="22" height="19" fill="#373e43"><title>chunk 132,142; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="139" y="380" width="22" height="19" fill="#373e43"><title>chunk 133,142; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="162" y="380" width="22" height="19" fill="#373e43"><title>chunk 134,142; snow blocks 0; biomes minecraft:forest, minecraft:plains</title></rect>
+<rect x="185" y="380" width="22" height="19" fill="#373e43"><title>chunk 135,142; snow blocks 0; biomes minecraft:plains</title></rect>
+<rect x="208" y="380" width="22" height="19" fill="#373e43"><title>chunk 136,142; snow blocks 0; biomes minecraft:plains</title></rect>
+<rect x="231" y="380" width="22" height="19" fill="#373e43"><title>chunk 137,142; snow blocks 0; biomes minecraft:plains</title></rect>
+<rect x="254" y="380" width="22" height="19" fill="#373e43"><title>chunk 138,142; snow blocks 0; biomes minecraft:plains</title></rect>
+<rect x="277" y="380" width="22" height="19" fill="#3c4348"><title>chunk 139,142; snow blocks 7; biomes minecraft:plains</title></rect>
+<rect x="300" y="380" width="22" height="19" fill="#5f666b"><title>chunk 140,142; snow blocks 55; biomes minecraft:plains, minecraft:snowy_plains</title></rect>
+<rect x="323" y="380" width="22" height="19" fill="#e5ecf1"><title>chunk 141,142; snow blocks 235; biomes minecraft:plains, minecraft:snowy_plains</title></rect>
+<rect x="346" y="380" width="22" height="19" fill="#adb4b9"><title>chunk 142,142; snow blocks 159; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="369" y="380" width="22" height="19" fill="#858c91"><title>chunk 143,142; snow blocks 106; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="24" y="400" width="22" height="19" fill="#373e43"><title>chunk 128,143; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="47" y="400" width="22" height="19" fill="#373e43"><title>chunk 129,143; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="70" y="400" width="22" height="19" fill="#373e43"><title>chunk 130,143; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="93" y="400" width="22" height="19" fill="#373e43"><title>chunk 131,143; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="116" y="400" width="22" height="19" fill="#373e43"><title>chunk 132,143; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="139" y="400" width="22" height="19" fill="#373e43"><title>chunk 133,143; snow blocks 0; biomes minecraft:forest</title></rect>
+<rect x="162" y="400" width="22" height="19" fill="#373e43"><title>chunk 134,143; snow blocks 0; biomes minecraft:forest, minecraft:plains</title></rect>
+<rect x="185" y="400" width="22" height="19" fill="#373e43"><title>chunk 135,143; snow blocks 0; biomes minecraft:plains</title></rect>
+<rect x="208" y="400" width="22" height="19" fill="#373e43"><title>chunk 136,143; snow blocks 0; biomes minecraft:plains</title></rect>
+<rect x="231" y="400" width="22" height="19" fill="#373e43"><title>chunk 137,143; snow blocks 0; biomes minecraft:plains</title></rect>
+<rect x="254" y="400" width="22" height="19" fill="#373e43"><title>chunk 138,143; snow blocks 0; biomes minecraft:plains</title></rect>
+<rect x="277" y="400" width="22" height="19" fill="#373e43"><title>chunk 139,143; snow blocks 0; biomes minecraft:plains</title></rect>
+<rect x="300" y="400" width="22" height="19" fill="#373e43"><title>chunk 140,143; snow blocks 0; biomes minecraft:plains</title></rect>
+<rect x="323" y="400" width="22" height="19" fill="#686f74"><title>chunk 141,143; snow blocks 67; biomes minecraft:plains, minecraft:snowy_plains</title></rect>
+<rect x="346" y="400" width="22" height="19" fill="#dbe2e7"><title>chunk 142,143; snow blocks 221; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="369" y="400" width="22" height="19" fill="#373e43"><title>chunk 143,143; snow blocks 0; biomes minecraft:frozen_river</title></rect>
+<text x="24" y="445" font-size="12">X/Z chunks 128..143; brightness = observed snow count</text>
+<text x="434" y="82" font-size="16">winter</text>
+<rect x="434" y="100" width="22" height="19" fill="#f5fcff"><title>chunk 128,128; snow blocks 284; biomes minecraft:snowy_taiga</title></rect>
+<rect x="457" y="100" width="22" height="19" fill="#f5fcff"><title>chunk 129,128; snow blocks 291; biomes minecraft:snowy_taiga</title></rect>
+<rect x="480" y="100" width="22" height="19" fill="#f5fcff"><title>chunk 130,128; snow blocks 256; biomes minecraft:snowy_taiga</title></rect>
+<rect x="503" y="100" width="22" height="19" fill="#c0c7cc"><title>chunk 131,128; snow blocks 185; biomes minecraft:snowy_taiga</title></rect>
+<rect x="526" y="100" width="22" height="19" fill="#e6edf2"><title>chunk 132,128; snow blocks 236; biomes minecraft:snowy_taiga</title></rect>
+<rect x="549" y="100" width="22" height="19" fill="#f5fcff"><title>chunk 133,128; snow blocks 305; biomes minecraft:snowy_taiga</title></rect>
+<rect x="572" y="100" width="22" height="19" fill="#f0f7fc"><title>chunk 134,128; snow blocks 250; biomes minecraft:snowy_taiga</title></rect>
+<rect x="595" y="100" width="22" height="19" fill="#f5fcff"><title>chunk 135,128; snow blocks 303; biomes minecraft:snowy_taiga</title></rect>
+<rect x="618" y="100" width="22" height="19" fill="#f5fcff"><title>chunk 136,128; snow blocks 300; biomes minecraft:snowy_taiga</title></rect>
+<rect x="641" y="100" width="22" height="19" fill="#f1f8fd"><title>chunk 137,128; snow blocks 251; biomes minecraft:snowy_taiga</title></rect>
+<rect x="664" y="100" width="22" height="19" fill="#f5fcff"><title>chunk 138,128; snow blocks 318; biomes minecraft:snowy_taiga</title></rect>
+<rect x="687" y="100" width="22" height="19" fill="#f5fcff"><title>chunk 139,128; snow blocks 304; biomes minecraft:snowy_taiga</title></rect>
+<rect x="710" y="100" width="22" height="19" fill="#f5fcff"><title>chunk 140,128; snow blocks 287; biomes minecraft:snowy_taiga</title></rect>
+<rect x="733" y="100" width="22" height="19" fill="#f5fcff"><title>chunk 141,128; snow blocks 309; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="756" y="100" width="22" height="19" fill="#eff6fb"><title>chunk 142,128; snow blocks 248; biomes minecraft:snowy_plains</title></rect>
+<rect x="779" y="100" width="22" height="19" fill="#f1f8fd"><title>chunk 143,128; snow blocks 251; biomes minecraft:snowy_plains</title></rect>
+<rect x="434" y="120" width="22" height="19" fill="#f5fcff"><title>chunk 128,129; snow blocks 301; biomes minecraft:snowy_taiga</title></rect>
+<rect x="457" y="120" width="22" height="19" fill="#596065"><title>chunk 129,129; snow blocks 47; biomes minecraft:snowy_taiga</title></rect>
+<rect x="480" y="120" width="22" height="19" fill="#51585d"><title>chunk 130,129; snow blocks 36; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="503" y="120" width="22" height="19" fill="#373e43"><title>chunk 131,129; snow blocks 0; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="526" y="120" width="22" height="19" fill="#495055"><title>chunk 132,129; snow blocks 25; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="549" y="120" width="22" height="19" fill="#565d62"><title>chunk 133,129; snow blocks 42; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="572" y="120" width="22" height="19" fill="#f5fcff"><title>chunk 134,129; snow blocks 298; biomes minecraft:snowy_taiga</title></rect>
+<rect x="595" y="120" width="22" height="19" fill="#f5fcff"><title>chunk 135,129; snow blocks 289; biomes minecraft:snowy_taiga</title></rect>
+<rect x="618" y="120" width="22" height="19" fill="#f5fcff"><title>chunk 136,129; snow blocks 310; biomes minecraft:snowy_taiga</title></rect>
+<rect x="641" y="120" width="22" height="19" fill="#f5fcff"><title>chunk 137,129; snow blocks 284; biomes minecraft:snowy_taiga</title></rect>
+<rect x="664" y="120" width="22" height="19" fill="#f5fcff"><title>chunk 138,129; snow blocks 312; biomes minecraft:snowy_taiga</title></rect>
+<rect x="687" y="120" width="22" height="19" fill="#f5fcff"><title>chunk 139,129; snow blocks 270; biomes minecraft:snowy_taiga</title></rect>
+<rect x="710" y="120" width="22" height="19" fill="#ecf3f8"><title>chunk 140,129; snow blocks 245; biomes minecraft:snowy_taiga</title></rect>
+<rect x="733" y="120" width="22" height="19" fill="#e6edf2"><title>chunk 141,129; snow blocks 237; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="756" y="120" width="22" height="19" fill="#f0f7fc"><title>chunk 142,129; snow blocks 250; biomes minecraft:snowy_plains</title></rect>
+<rect x="779" y="120" width="22" height="19" fill="#eef5fa"><title>chunk 143,129; snow blocks 247; biomes minecraft:snowy_plains</title></rect>
+<rect x="434" y="140" width="22" height="19" fill="#dbe2e7"><title>chunk 128,130; snow blocks 221; biomes minecraft:snowy_taiga</title></rect>
+<rect x="457" y="140" width="22" height="19" fill="#7f868b"><title>chunk 129,130; snow blocks 98; biomes minecraft:snowy_taiga</title></rect>
+<rect x="480" y="140" width="22" height="19" fill="#373e43"><title>chunk 130,130; snow blocks 0; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="503" y="140" width="22" height="19" fill="#373e43"><title>chunk 131,130; snow blocks 0; biomes minecraft:frozen_river</title></rect>
+<rect x="526" y="140" width="22" height="19" fill="#373e43"><title>chunk 132,130; snow blocks 0; biomes minecraft:frozen_river</title></rect>
+<rect x="549" y="140" width="22" height="19" fill="#373e43"><title>chunk 133,130; snow blocks 1; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="572" y="140" width="22" height="19" fill="#e8eff4"><title>chunk 134,130; snow blocks 239; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="595" y="140" width="22" height="19" fill="#f5fcff"><title>chunk 135,130; snow blocks 328; biomes minecraft:snowy_taiga</title></rect>
+<rect x="618" y="140" width="22" height="19" fill="#f5fcff"><title>chunk 136,130; snow blocks 303; biomes minecraft:snowy_taiga</title></rect>
+<rect x="641" y="140" width="22" height="19" fill="#f5fcff"><title>chunk 137,130; snow blocks 278; biomes minecraft:snowy_taiga</title></rect>
+<rect x="664" y="140" width="22" height="19" fill="#f5fcff"><title>chunk 138,130; snow blocks 301; biomes minecraft:snowy_taiga</title></rect>
+<rect x="687" y="140" width="22" height="19" fill="#ecf3f8"><title>chunk 139,130; snow blocks 244; biomes minecraft:snowy_taiga</title></rect>
+<rect x="710" y="140" width="22" height="19" fill="#f2f9fe"><title>chunk 140,130; snow blocks 253; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="733" y="140" width="22" height="19" fill="#f2f9fe"><title>chunk 141,130; snow blocks 252; biomes minecraft:snowy_plains</title></rect>
+<rect x="756" y="140" width="22" height="19" fill="#f2f9fe"><title>chunk 142,130; snow blocks 253; biomes minecraft:snowy_plains</title></rect>
+<rect x="779" y="140" width="22" height="19" fill="#edf4f9"><title>chunk 143,130; snow blocks 246; biomes minecraft:snowy_plains</title></rect>
+<rect x="434" y="160" width="22" height="19" fill="#5c6368"><title>chunk 128,131; snow blocks 50; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="457" y="160" width="22" height="19" fill="#373e43"><title>chunk 129,131; snow blocks 0; biomes minecraft:frozen_river</title></rect>
+<rect x="480" y="160" width="22" height="19" fill="#40474c"><title>chunk 130,131; snow blocks 13; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="503" y="160" width="22" height="19" fill="#858c91"><title>chunk 131,131; snow blocks 106; biomes minecraft:snowy_taiga</title></rect>
+<rect x="526" y="160" width="22" height="19" fill="#464d52"><title>chunk 132,131; snow blocks 21; biomes minecraft:frozen_river, minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="549" y="160" width="22" height="19" fill="#373e43"><title>chunk 133,131; snow blocks 0; biomes minecraft:frozen_river</title></rect>
+<rect x="572" y="160" width="22" height="19" fill="#7b8287"><title>chunk 134,131; snow blocks 92; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="595" y="160" width="22" height="19" fill="#f5fcff"><title>chunk 135,131; snow blocks 290; biomes minecraft:snowy_taiga</title></rect>
+<rect x="618" y="160" width="22" height="19" fill="#f5fcff"><title>chunk 136,131; snow blocks 271; biomes minecraft:snowy_taiga</title></rect>
+<rect x="641" y="160" width="22" height="19" fill="#f5fcff"><title>chunk 137,131; snow blocks 328; biomes minecraft:snowy_taiga</title></rect>
+<rect x="664" y="160" width="22" height="19" fill="#f5fcff"><title>chunk 138,131; snow blocks 273; biomes minecraft:snowy_taiga</title></rect>
+<rect x="687" y="160" width="22" height="19" fill="#f5fcff"><title>chunk 139,131; snow blocks 309; biomes minecraft:snowy_taiga</title></rect>
+<rect x="710" y="160" width="22" height="19" fill="#ebf2f7"><title>chunk 140,131; snow blocks 243; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="733" y="160" width="22" height="19" fill="#f1f8fd"><title>chunk 141,131; snow blocks 251; biomes minecraft:snowy_plains</title></rect>
+<rect x="756" y="160" width="22" height="19" fill="#edf4f9"><title>chunk 142,131; snow blocks 246; biomes minecraft:snowy_plains</title></rect>
+<rect x="779" y="160" width="22" height="19" fill="#edf4f9"><title>chunk 143,131; snow blocks 246; biomes minecraft:snowy_plains</title></rect>
+<rect x="434" y="180" width="22" height="19" fill="#373e43"><title>chunk 128,132; snow blocks 0; biomes minecraft:frozen_river, minecraft:river, minecraft:snowy_taiga</title></rect>
+<rect x="457" y="180" width="22" height="19" fill="#6a7176"><title>chunk 129,132; snow blocks 69; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="480" y="180" width="22" height="19" fill="#b6bdc2"><title>chunk 130,132; snow blocks 172; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="503" y="180" width="22" height="19" fill="#f3faff"><title>chunk 131,132; snow blocks 254; biomes minecraft:snowy_taiga</title></rect>
+<rect x="526" y="180" width="22" height="19" fill="#d6dde2"><title>chunk 132,132; snow blocks 215; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="549" y="180" width="22" height="19" fill="#373e43"><title>chunk 133,132; snow blocks 0; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="572" y="180" width="22" height="19" fill="#757c81"><title>chunk 134,132; snow blocks 84; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="595" y="180" width="22" height="19" fill="#f2f9fe"><title>chunk 135,132; snow blocks 252; biomes minecraft:snowy_taiga</title></rect>
+<rect x="618" y="180" width="22" height="19" fill="#f3faff"><title>chunk 136,132; snow blocks 254; biomes minecraft:snowy_taiga</title></rect>
+<rect x="641" y="180" width="22" height="19" fill="#f1f8fd"><title>chunk 137,132; snow blocks 251; biomes minecraft:snowy_taiga</title></rect>
+<rect x="664" y="180" width="22" height="19" fill="#eff6fb"><title>chunk 138,132; snow blocks 249; biomes minecraft:snowy_taiga</title></rect>
+<rect x="687" y="180" width="22" height="19" fill="#f5fcff"><title>chunk 139,132; snow blocks 280; biomes minecraft:snowy_taiga</title></rect>
+<rect x="710" y="180" width="22" height="19" fill="#f0f7fc"><title>chunk 140,132; snow blocks 250; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="733" y="180" width="22" height="19" fill="#f3faff"><title>chunk 141,132; snow blocks 254; biomes minecraft:snowy_plains</title></rect>
+<rect x="756" y="180" width="22" height="19" fill="#eff6fb"><title>chunk 142,132; snow blocks 249; biomes minecraft:snowy_plains</title></rect>
+<rect x="779" y="180" width="22" height="19" fill="#d4dbe0"><title>chunk 143,132; snow blocks 212; biomes minecraft:snowy_plains</title></rect>
+<rect x="434" y="200" width="22" height="19" fill="#bac1c6"><title>chunk 128,133; snow blocks 177; biomes minecraft:frozen_river, minecraft:river, minecraft:taiga</title></rect>
+<rect x="457" y="200" width="22" height="19" fill="#eff6fb"><title>chunk 129,133; snow blocks 249; biomes minecraft:snowy_taiga, minecraft:taiga</title></rect>
+<rect x="480" y="200" width="22" height="19" fill="#ecf3f8"><title>chunk 130,133; snow blocks 245; biomes minecraft:snowy_taiga</title></rect>
+<rect x="503" y="200" width="22" height="19" fill="#ecf3f8"><title>chunk 131,133; snow blocks 244; biomes minecraft:snowy_taiga</title></rect>
+<rect x="526" y="200" width="22" height="19" fill="#f4fbff"><title>chunk 132,133; snow blocks 255; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="549" y="200" width="22" height="19" fill="#a7aeb3"><title>chunk 133,133; snow blocks 152; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="572" y="200" width="22" height="19" fill="#3b4247"><title>chunk 134,133; snow blocks 6; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="595" y="200" width="22" height="19" fill="#8b9297"><title>chunk 135,133; snow blocks 114; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="618" y="200" width="22" height="19" fill="#dbe2e7"><title>chunk 136,133; snow blocks 221; biomes minecraft:snowy_taiga</title></rect>
+<rect x="641" y="200" width="22" height="19" fill="#f1f8fd"><title>chunk 137,133; snow blocks 251; biomes minecraft:snowy_taiga</title></rect>
+<rect x="664" y="200" width="22" height="19" fill="#ecf3f8"><title>chunk 138,133; snow blocks 245; biomes minecraft:snowy_taiga</title></rect>
+<rect x="687" y="200" width="22" height="19" fill="#f5fcff"><title>chunk 139,133; snow blocks 312; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="710" y="200" width="22" height="19" fill="#ebf2f7"><title>chunk 140,133; snow blocks 243; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="733" y="200" width="22" height="19" fill="#f2f9fe"><title>chunk 141,133; snow blocks 252; biomes minecraft:snowy_plains</title></rect>
+<rect x="756" y="200" width="22" height="19" fill="#eff6fb"><title>chunk 142,133; snow blocks 249; biomes minecraft:snowy_plains</title></rect>
+<rect x="779" y="200" width="22" height="19" fill="#ebf2f7"><title>chunk 143,133; snow blocks 243; biomes minecraft:snowy_plains</title></rect>
+<rect x="434" y="220" width="22" height="19" fill="#f5fcff"><title>chunk 128,134; snow blocks 310; biomes minecraft:taiga</title></rect>
+<rect x="457" y="220" width="22" height="19" fill="#edf4f9"><title>chunk 129,134; snow blocks 246; biomes minecraft:taiga</title></rect>
+<rect x="480" y="220" width="22" height="19" fill="#f2f9fe"><title>chunk 130,134; snow blocks 253; biomes minecraft:snowy_taiga, minecraft:taiga</title></rect>
+<rect x="503" y="220" width="22" height="19" fill="#eff6fb"><title>chunk 131,134; snow blocks 249; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="526" y="220" width="22" height="19" fill="#e8eff4"><title>chunk 132,134; snow blocks 239; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="549" y="220" width="22" height="19" fill="#f1f8fd"><title>chunk 133,134; snow blocks 251; biomes minecraft:snowy_plains</title></rect>
+<rect x="572" y="220" width="22" height="19" fill="#767d82"><title>chunk 134,134; snow blocks 85; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="595" y="220" width="22" height="19" fill="#a4abb0"><title>chunk 135,134; snow blocks 148; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="618" y="220" width="22" height="19" fill="#eaf1f6"><title>chunk 136,134; snow blocks 242; biomes minecraft:snowy_taiga</title></rect>
+<rect x="641" y="220" width="22" height="19" fill="#f3faff"><title>chunk 137,134; snow blocks 254; biomes minecraft:snowy_taiga</title></rect>
+<rect x="664" y="220" width="22" height="19" fill="#eff6fb"><title>chunk 138,134; snow blocks 249; biomes minecraft:snowy_taiga</title></rect>
+<rect x="687" y="220" width="22" height="19" fill="#f5fcff"><title>chunk 139,134; snow blocks 281; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="710" y="220" width="22" height="19" fill="#f1f8fd"><title>chunk 140,134; snow blocks 251; biomes minecraft:snowy_plains</title></rect>
+<rect x="733" y="220" width="22" height="19" fill="#f2f9fe"><title>chunk 141,134; snow blocks 253; biomes minecraft:snowy_plains</title></rect>
+<rect x="756" y="220" width="22" height="19" fill="#f0f7fc"><title>chunk 142,134; snow blocks 250; biomes minecraft:snowy_plains</title></rect>
+<rect x="779" y="220" width="22" height="19" fill="#f4fbff"><title>chunk 143,134; snow blocks 255; biomes minecraft:snowy_plains</title></rect>
+<rect x="434" y="240" width="22" height="19" fill="#f5fcff"><title>chunk 128,135; snow blocks 298; biomes minecraft:taiga</title></rect>
+<rect x="457" y="240" width="22" height="19" fill="#f0f7fc"><title>chunk 129,135; snow blocks 250; biomes minecraft:taiga</title></rect>
+<rect x="480" y="240" width="22" height="19" fill="#f5fcff"><title>chunk 130,135; snow blocks 256; biomes minecraft:forest, minecraft:taiga</title></rect>
+<rect x="503" y="240" width="22" height="19" fill="#e7eef3"><title>chunk 131,135; snow blocks 238; biomes minecraft:forest, minecraft:snowy_plains, minecraft:taiga</title></rect>
+<rect x="526" y="240" width="22" height="19" fill="#e8eff4"><title>chunk 132,135; snow blocks 239; biomes minecraft:snowy_plains</title></rect>
+<rect x="549" y="240" width="22" height="19" fill="#eff6fb"><title>chunk 133,135; snow blocks 248; biomes minecraft:snowy_plains</title></rect>
+<rect x="572" y="240" width="22" height="19" fill="#aeb5ba"><title>chunk 134,135; snow blocks 161; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="595" y="240" width="22" height="19" fill="#7b8287"><title>chunk 135,135; snow blocks 92; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="618" y="240" width="22" height="19" fill="#f3faff"><title>chunk 136,135; snow blocks 254; biomes minecraft:snowy_taiga</title></rect>
+<rect x="641" y="240" width="22" height="19" fill="#f3faff"><title>chunk 137,135; snow blocks 254; biomes minecraft:snowy_taiga</title></rect>
+<rect x="664" y="240" width="22" height="19" fill="#dbe2e7"><title>chunk 138,135; snow blocks 221; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="687" y="240" width="22" height="19" fill="#f5fcff"><title>chunk 139,135; snow blocks 257; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="710" y="240" width="22" height="19" fill="#f2f9fe"><title>chunk 140,135; snow blocks 252; biomes minecraft:snowy_plains</title></rect>
+<rect x="733" y="240" width="22" height="19" fill="#f1f8fd"><title>chunk 141,135; snow blocks 251; biomes minecraft:snowy_plains</title></rect>
+<rect x="756" y="240" width="22" height="19" fill="#eff6fb"><title>chunk 142,135; snow blocks 248; biomes minecraft:snowy_plains</title></rect>
+<rect x="779" y="240" width="22" height="19" fill="#f1f8fd"><title>chunk 143,135; snow blocks 251; biomes minecraft:snowy_plains</title></rect>
+<rect x="434" y="260" width="22" height="19" fill="#ebf2f7"><title>chunk 128,136; snow blocks 243; biomes minecraft:taiga</title></rect>
+<rect x="457" y="260" width="22" height="19" fill="#f4fbff"><title>chunk 129,136; snow blocks 255; biomes minecraft:taiga</title></rect>
+<rect x="480" y="260" width="22" height="19" fill="#ecf3f8"><title>chunk 130,136; snow blocks 244; biomes minecraft:taiga</title></rect>
+<rect x="503" y="260" width="22" height="19" fill="#f0f7fc"><title>chunk 131,136; snow blocks 250; biomes minecraft:forest, minecraft:snowy_plains</title></rect>
+<rect x="526" y="260" width="22" height="19" fill="#edf4f9"><title>chunk 132,136; snow blocks 246; biomes minecraft:forest, minecraft:snowy_plains</title></rect>
+<rect x="549" y="260" width="22" height="19" fill="#ecf3f8"><title>chunk 133,136; snow blocks 245; biomes minecraft:snowy_plains</title></rect>
+<rect x="572" y="260" width="22" height="19" fill="#e9f0f5"><title>chunk 134,136; snow blocks 241; biomes minecraft:snowy_plains</title></rect>
+<rect x="595" y="260" width="22" height="19" fill="#656c71"><title>chunk 135,136; snow blocks 62; biomes minecraft:frozen_river, minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="618" y="260" width="22" height="19" fill="#959ca1"><title>chunk 136,136; snow blocks 127; biomes minecraft:frozen_river, minecraft:snowy_taiga</title></rect>
+<rect x="641" y="260" width="22" height="19" fill="#f1f8fd"><title>chunk 137,136; snow blocks 251; biomes minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="664" y="260" width="22" height="19" fill="#949ba0"><title>chunk 138,136; snow blocks 126; biomes minecraft:snowy_plains</title></rect>
+<rect x="687" y="260" width="22" height="19" fill="#aeb5ba"><title>chunk 139,136; snow blocks 161; biomes minecraft:snowy_plains</title></rect>
+<rect x="710" y="260" width="22" height="19" fill="#f3faff"><title>chunk 140,136; snow blocks 254; biomes minecraft:snowy_plains</title></rect>
+<rect x="733" y="260" width="22" height="19" fill="#eff6fb"><title>chunk 141,136; snow blocks 248; biomes minecraft:snowy_plains</title></rect>
+<rect x="756" y="260" width="22" height="19" fill="#f4fbff"><title>chunk 142,136; snow blocks 255; biomes minecraft:snowy_plains</title></rect>
+<rect x="779" y="260" width="22" height="19" fill="#eef5fa"><title>chunk 143,136; snow blocks 247; biomes minecraft:snowy_plains</title></rect>
+<rect x="434" y="280" width="22" height="19" fill="#f2f9fe"><title>chunk 128,137; snow blocks 252; biomes minecraft:taiga</title></rect>
+<rect x="457" y="280" width="22" height="19" fill="#f1f8fd"><title>chunk 129,137; snow blocks 251; biomes minecraft:taiga</title></rect>
+<rect x="480" y="280" width="22" height="19" fill="#e4ebf0"><title>chunk 130,137; snow blocks 234; biomes minecraft:forest, minecraft:taiga</title></rect>
+<rect x="503" y="280" width="22" height="19" fill="#c0c7cc"><title>chunk 131,137; snow blocks 185; biomes minecraft:forest</title></rect>
+<rect x="526" y="280" width="22" height="19" fill="#d8dfe4"><title>chunk 132,137; snow blocks 217; biomes minecraft:forest</title></rect>
+<rect x="549" y="280" width="22" height="19" fill="#dbe2e7"><title>chunk 133,137; snow blocks 221; biomes minecraft:forest, minecraft:snowy_plains</title></rect>
+<rect x="572" y="280" width="22" height="19" fill="#e2e9ee"><title>chunk 134,137; snow blocks 231; biomes minecraft:forest, minecraft:snowy_plains</title></rect>
+<rect x="595" y="280" width="22" height="19" fill="#e4ebf0"><title>chunk 135,137; snow blocks 234; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="618" y="280" width="22" height="19" fill="#6a7176"><title>chunk 136,137; snow blocks 69; biomes minecraft:frozen_river, minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="641" y="280" width="22" height="19" fill="#b1b8bd"><title>chunk 137,137; snow blocks 165; biomes minecraft:frozen_river, minecraft:snowy_plains, minecraft:snowy_taiga</title></rect>
+<rect x="664" y="280" width="22" height="19" fill="#d8dfe4"><title>chunk 138,137; snow blocks 218; biomes minecraft:snowy_plains</title></rect>
+<rect x="687" y="280" width="22" height="19" fill="#eef5fa"><title>chunk 139,137; snow blocks 247; biomes minecraft:snowy_plains</title></rect>
+<rect x="710" y="280" width="22" height="19" fill="#f1f8fd"><title>chunk 140,137; snow blocks 251; biomes minecraft:snowy_plains</title></rect>
+<rect x="733" y="280" width="22" height="19" fill="#f2f9fe"><title>chunk 141,137; snow blocks 252; biomes minecraft:snowy_plains</title></rect>
+<rect x="756" y="280" width="22" height="19" fill="#f5fcff"><title>chunk 142,137; snow blocks 256; biomes minecraft:snowy_plains</title></rect>
+<rect x="779" y="280" width="22" height="19" fill="#eff6fb"><title>chunk 143,137; snow blocks 249; biomes minecraft:snowy_plains</title></rect>
+<rect x="434" y="300" width="22" height="19" fill="#f2f9fe"><title>chunk 128,138; snow blocks 252; biomes minecraft:taiga</title></rect>
+<rect x="457" y="300" width="22" height="19" fill="#eff6fb"><title>chunk 129,138; snow blocks 249; biomes minecraft:forest, minecraft:taiga</title></rect>
+<rect x="480" y="300" width="22" height="19" fill="#dde4e9"><title>chunk 130,138; snow blocks 224; biomes minecraft:forest, minecraft:taiga</title></rect>
+<rect x="503" y="300" width="22" height="19" fill="#dbe2e7"><title>chunk 131,138; snow blocks 222; biomes minecraft:forest</title></rect>
+<rect x="526" y="300" width="22" height="19" fill="#e0e7ec"><title>chunk 132,138; snow blocks 228; biomes minecraft:forest</title></rect>
+<rect x="549" y="300" width="22" height="19" fill="#d7dee3"><title>chunk 133,138; snow blocks 216; biomes minecraft:forest</title></rect>
+<rect x="572" y="300" width="22" height="19" fill="#d6dde2"><title>chunk 134,138; snow blocks 215; biomes minecraft:forest, minecraft:snowy_plains</title></rect>
+<rect x="595" y="300" width="22" height="19" fill="#d7dee3"><title>chunk 135,138; snow blocks 216; biomes minecraft:forest, minecraft:snowy_plains</title></rect>
+<rect x="618" y="300" width="22" height="19" fill="#dbe2e7"><title>chunk 136,138; snow blocks 221; biomes minecraft:forest, minecraft:snowy_plains</title></rect>
+<rect x="641" y="300" width="22" height="19" fill="#5d6469"><title>chunk 137,138; snow blocks 52; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="664" y="300" width="22" height="19" fill="#373e43"><title>chunk 138,138; snow blocks 0; biomes minecraft:frozen_river</title></rect>
+<rect x="687" y="300" width="22" height="19" fill="#80878c"><title>chunk 139,138; snow blocks 99; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="710" y="300" width="22" height="19" fill="#e6edf2"><title>chunk 140,138; snow blocks 237; biomes minecraft:snowy_plains</title></rect>
+<rect x="733" y="300" width="22" height="19" fill="#f3faff"><title>chunk 141,138; snow blocks 254; biomes minecraft:snowy_plains</title></rect>
+<rect x="756" y="300" width="22" height="19" fill="#f2f9fe"><title>chunk 142,138; snow blocks 252; biomes minecraft:snowy_plains</title></rect>
+<rect x="779" y="300" width="22" height="19" fill="#f2f9fe"><title>chunk 143,138; snow blocks 253; biomes minecraft:snowy_plains</title></rect>
+<rect x="434" y="320" width="22" height="19" fill="#edf4f9"><title>chunk 128,139; snow blocks 246; biomes minecraft:taiga</title></rect>
+<rect x="457" y="320" width="22" height="19" fill="#dbe2e7"><title>chunk 129,139; snow blocks 221; biomes minecraft:forest, minecraft:taiga</title></rect>
+<rect x="480" y="320" width="22" height="19" fill="#cad1d6"><title>chunk 130,139; snow blocks 199; biomes minecraft:forest</title></rect>
+<rect x="503" y="320" width="22" height="19" fill="#dde4e9"><title>chunk 131,139; snow blocks 225; biomes minecraft:forest</title></rect>
+<rect x="526" y="320" width="22" height="19" fill="#d5dce1"><title>chunk 132,139; snow blocks 213; biomes minecraft:forest</title></rect>
+<rect x="549" y="320" width="22" height="19" fill="#d2d9de"><title>chunk 133,139; snow blocks 209; biomes minecraft:forest</title></rect>
+<rect x="572" y="320" width="22" height="19" fill="#d5dce1"><title>chunk 134,139; snow blocks 214; biomes minecraft:forest</title></rect>
+<rect x="595" y="320" width="22" height="19" fill="#cfd6db"><title>chunk 135,139; snow blocks 206; biomes minecraft:forest, minecraft:plains</title></rect>
+<rect x="618" y="320" width="22" height="19" fill="#ebf2f7"><title>chunk 136,139; snow blocks 243; biomes minecraft:forest, minecraft:plains, minecraft:snowy_plains</title></rect>
+<rect x="641" y="320" width="22" height="19" fill="#e9f0f5"><title>chunk 137,139; snow blocks 240; biomes minecraft:snowy_plains</title></rect>
+<rect x="664" y="320" width="22" height="19" fill="#a8afb4"><title>chunk 138,139; snow blocks 153; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="687" y="320" width="22" height="19" fill="#91989d"><title>chunk 139,139; snow blocks 122; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="710" y="320" width="22" height="19" fill="#565d62"><title>chunk 140,139; snow blocks 42; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="733" y="320" width="22" height="19" fill="#bec5ca"><title>chunk 141,139; snow blocks 183; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="756" y="320" width="22" height="19" fill="#d7dee3"><title>chunk 142,139; snow blocks 216; biomes minecraft:snowy_plains</title></rect>
+<rect x="779" y="320" width="22" height="19" fill="#edf4f9"><title>chunk 143,139; snow blocks 246; biomes minecraft:snowy_plains</title></rect>
+<rect x="434" y="340" width="22" height="19" fill="#eef5fa"><title>chunk 128,140; snow blocks 247; biomes minecraft:forest, minecraft:taiga</title></rect>
+<rect x="457" y="340" width="22" height="19" fill="#cbd2d7"><title>chunk 129,140; snow blocks 200; biomes minecraft:forest, minecraft:taiga</title></rect>
+<rect x="480" y="340" width="22" height="19" fill="#dde4e9"><title>chunk 130,140; snow blocks 225; biomes minecraft:forest</title></rect>
+<rect x="503" y="340" width="22" height="19" fill="#d8dfe4"><title>chunk 131,140; snow blocks 218; biomes minecraft:forest</title></rect>
+<rect x="526" y="340" width="22" height="19" fill="#d4dbe0"><title>chunk 132,140; snow blocks 212; biomes minecraft:forest</title></rect>
+<rect x="549" y="340" width="22" height="19" fill="#dce3e8"><title>chunk 133,140; snow blocks 223; biomes minecraft:forest</title></rect>
+<rect x="572" y="340" width="22" height="19" fill="#d0d7dc"><title>chunk 134,140; snow blocks 207; biomes minecraft:forest</title></rect>
+<rect x="595" y="340" width="22" height="19" fill="#cad1d6"><title>chunk 135,140; snow blocks 199; biomes minecraft:forest, minecraft:plains</title></rect>
+<rect x="618" y="340" width="22" height="19" fill="#c7ced3"><title>chunk 136,140; snow blocks 195; biomes minecraft:plains</title></rect>
+<rect x="641" y="340" width="22" height="19" fill="#dde4e9"><title>chunk 137,140; snow blocks 224; biomes minecraft:plains, minecraft:snowy_plains</title></rect>
+<rect x="664" y="340" width="22" height="19" fill="#ecf3f8"><title>chunk 138,140; snow blocks 244; biomes minecraft:plains, minecraft:snowy_plains</title></rect>
+<rect x="687" y="340" width="22" height="19" fill="#eff6fb"><title>chunk 139,140; snow blocks 248; biomes minecraft:snowy_plains</title></rect>
+<rect x="710" y="340" width="22" height="19" fill="#bdc4c9"><title>chunk 140,140; snow blocks 181; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="733" y="340" width="22" height="19" fill="#4b5257"><title>chunk 141,140; snow blocks 27; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="756" y="340" width="22" height="19" fill="#d9e0e5"><title>chunk 142,140; snow blocks 219; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="779" y="340" width="22" height="19" fill="#f2f9fe"><title>chunk 143,140; snow blocks 252; biomes minecraft:snowy_plains</title></rect>
+<rect x="434" y="360" width="22" height="19" fill="#eff6fb"><title>chunk 128,141; snow blocks 249; biomes minecraft:forest, minecraft:taiga</title></rect>
+<rect x="457" y="360" width="22" height="19" fill="#dfe6eb"><title>chunk 129,141; snow blocks 227; biomes minecraft:forest</title></rect>
+<rect x="480" y="360" width="22" height="19" fill="#d3dadf"><title>chunk 130,141; snow blocks 211; biomes minecraft:forest</title></rect>
+<rect x="503" y="360" width="22" height="19" fill="#d3dadf"><title>chunk 131,141; snow blocks 211; biomes minecraft:forest</title></rect>
+<rect x="526" y="360" width="22" height="19" fill="#dbe2e7"><title>chunk 132,141; snow blocks 221; biomes minecraft:forest</title></rect>
+<rect x="549" y="360" width="22" height="19" fill="#d5dce1"><title>chunk 133,141; snow blocks 214; biomes minecraft:forest</title></rect>
+<rect x="572" y="360" width="22" height="19" fill="#b2b9be"><title>chunk 134,141; snow blocks 166; biomes minecraft:forest, minecraft:plains</title></rect>
+<rect x="595" y="360" width="22" height="19" fill="#cbd2d7"><title>chunk 135,141; snow blocks 200; biomes minecraft:forest, minecraft:plains</title></rect>
+<rect x="618" y="360" width="22" height="19" fill="#c2c9ce"><title>chunk 136,141; snow blocks 188; biomes minecraft:plains</title></rect>
+<rect x="641" y="360" width="22" height="19" fill="#c6cdd2"><title>chunk 137,141; snow blocks 194; biomes minecraft:plains</title></rect>
+<rect x="664" y="360" width="22" height="19" fill="#cbd2d7"><title>chunk 138,141; snow blocks 200; biomes minecraft:plains</title></rect>
+<rect x="687" y="360" width="22" height="19" fill="#dee5ea"><title>chunk 139,141; snow blocks 226; biomes minecraft:plains, minecraft:snowy_plains</title></rect>
+<rect x="710" y="360" width="22" height="19" fill="#f1f8fd"><title>chunk 140,141; snow blocks 251; biomes minecraft:snowy_plains</title></rect>
+<rect x="733" y="360" width="22" height="19" fill="#bfc6cb"><title>chunk 141,141; snow blocks 184; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="756" y="360" width="22" height="19" fill="#6c7378"><title>chunk 142,141; snow blocks 72; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="779" y="360" width="22" height="19" fill="#eef5fa"><title>chunk 143,141; snow blocks 247; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="434" y="380" width="22" height="19" fill="#e0e7ec"><title>chunk 128,142; snow blocks 228; biomes minecraft:forest, minecraft:taiga</title></rect>
+<rect x="457" y="380" width="22" height="19" fill="#d9e0e5"><title>chunk 129,142; snow blocks 219; biomes minecraft:forest</title></rect>
+<rect x="480" y="380" width="22" height="19" fill="#d8dfe4"><title>chunk 130,142; snow blocks 217; biomes minecraft:forest</title></rect>
+<rect x="503" y="380" width="22" height="19" fill="#bbc2c7"><title>chunk 131,142; snow blocks 179; biomes minecraft:forest</title></rect>
+<rect x="526" y="380" width="22" height="19" fill="#d5dce1"><title>chunk 132,142; snow blocks 214; biomes minecraft:forest</title></rect>
+<rect x="549" y="380" width="22" height="19" fill="#eef5fa"><title>chunk 133,142; snow blocks 247; biomes minecraft:forest</title></rect>
+<rect x="572" y="380" width="22" height="19" fill="#cdd4d9"><title>chunk 134,142; snow blocks 203; biomes minecraft:forest, minecraft:plains</title></rect>
+<rect x="595" y="380" width="22" height="19" fill="#c5ccd1"><title>chunk 135,142; snow blocks 192; biomes minecraft:plains</title></rect>
+<rect x="618" y="380" width="22" height="19" fill="#ccd3d8"><title>chunk 136,142; snow blocks 201; biomes minecraft:plains</title></rect>
+<rect x="641" y="380" width="22" height="19" fill="#c4cbd0"><title>chunk 137,142; snow blocks 191; biomes minecraft:plains</title></rect>
+<rect x="664" y="380" width="22" height="19" fill="#cbd2d7"><title>chunk 138,142; snow blocks 200; biomes minecraft:plains</title></rect>
+<rect x="687" y="380" width="22" height="19" fill="#dde4e9"><title>chunk 139,142; snow blocks 224; biomes minecraft:plains</title></rect>
+<rect x="710" y="380" width="22" height="19" fill="#dbe2e7"><title>chunk 140,142; snow blocks 221; biomes minecraft:plains, minecraft:snowy_plains</title></rect>
+<rect x="733" y="380" width="22" height="19" fill="#eef5fa"><title>chunk 141,142; snow blocks 247; biomes minecraft:plains, minecraft:snowy_plains</title></rect>
+<rect x="756" y="380" width="22" height="19" fill="#adb4b9"><title>chunk 142,142; snow blocks 159; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="779" y="380" width="22" height="19" fill="#858c91"><title>chunk 143,142; snow blocks 106; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="434" y="400" width="22" height="19" fill="#e3eaef"><title>chunk 128,143; snow blocks 233; biomes minecraft:forest</title></rect>
+<rect x="457" y="400" width="22" height="19" fill="#d8dfe4"><title>chunk 129,143; snow blocks 217; biomes minecraft:forest</title></rect>
+<rect x="480" y="400" width="22" height="19" fill="#dfe6eb"><title>chunk 130,143; snow blocks 227; biomes minecraft:forest</title></rect>
+<rect x="503" y="400" width="22" height="19" fill="#ced5da"><title>chunk 131,143; snow blocks 204; biomes minecraft:forest</title></rect>
+<rect x="526" y="400" width="22" height="19" fill="#90979c"><title>chunk 132,143; snow blocks 121; biomes minecraft:forest</title></rect>
+<rect x="549" y="400" width="22" height="19" fill="#cbd2d7"><title>chunk 133,143; snow blocks 200; biomes minecraft:forest</title></rect>
+<rect x="572" y="400" width="22" height="19" fill="#d3dadf"><title>chunk 134,143; snow blocks 211; biomes minecraft:forest, minecraft:plains</title></rect>
+<rect x="595" y="400" width="22" height="19" fill="#ccd3d8"><title>chunk 135,143; snow blocks 202; biomes minecraft:plains</title></rect>
+<rect x="618" y="400" width="22" height="19" fill="#c4cbd0"><title>chunk 136,143; snow blocks 190; biomes minecraft:plains</title></rect>
+<rect x="641" y="400" width="22" height="19" fill="#d2d9de"><title>chunk 137,143; snow blocks 209; biomes minecraft:plains</title></rect>
+<rect x="664" y="400" width="22" height="19" fill="#cad1d6"><title>chunk 138,143; snow blocks 199; biomes minecraft:plains</title></rect>
+<rect x="687" y="400" width="22" height="19" fill="#ccd3d8"><title>chunk 139,143; snow blocks 201; biomes minecraft:plains</title></rect>
+<rect x="710" y="400" width="22" height="19" fill="#c8cfd4"><title>chunk 140,143; snow blocks 196; biomes minecraft:plains</title></rect>
+<rect x="733" y="400" width="22" height="19" fill="#d7dee3"><title>chunk 141,143; snow blocks 216; biomes minecraft:plains, minecraft:snowy_plains</title></rect>
+<rect x="756" y="400" width="22" height="19" fill="#dde4e9"><title>chunk 142,143; snow blocks 225; biomes minecraft:frozen_river, minecraft:snowy_plains</title></rect>
+<rect x="779" y="400" width="22" height="19" fill="#373e43"><title>chunk 143,143; snow blocks 0; biomes minecraft:frozen_river</title></rect>
+<text x="434" y="445" font-size="12">X/Z chunks 128..143; brightness = observed snow count</text>
+</g></svg>

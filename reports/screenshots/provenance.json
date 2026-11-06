@@ -1,0 +1,118 @@
+{
+  "created_utc": "2026-11-06T00:40:25.417948+00:00",
+  "minecraft": "1.21.11",
+  "server": "Paper 1.21.11 build 132",
+  "world": "winter_test",
+  "seed": 825180311,
+  "client": {
+    "minecraft": "1.21.11",
+    "client_url": "https://piston-data.mojang.com/v1/objects/ba2df812c2d12e0219c489c4cd9a5e1f0760f5bd/client.jar",
+    "client_sha1": "ba2df812c2d12e0219c489c4cd9a5e1f0760f5bd",
+    "asset_index_sha1": "d216443b5a6b0b33e8f9db446f4f1a0adbe210d1",
+    "verified_library_files": 61,
+    "verified_asset_objects": 4591,
+    "scope": "Official unmodified client; isolated offline-auth QA server only; no Microsoft login credentials supplied"
+  },
+  "renderer": "Mesa llvmpipe OpenGL 4.5; original vanilla textures; no shaders",
+  "method": "Minecraft built-in F2 screenshots; copied byte for byte, no resizing, compositing, enhancement, or image generation",
+  "world_source": "Isolated copy of .runtime/integration/winter_test; original measured worlds preserved",
+  "controlled_conditions": "Spectator camera; time and clear weather set by server commands. No blocks placed manually for the screenshots. Vanilla village is not a custom cabin.",
+  "plugin_sha256": "ca41a71c8aa435e6059faf463d65c7810f3de41742eed9e975d791f9c990270a",
+  "images": [
+    {
+      "file": "01-snow-forest.png",
+      "native_F2_file": "2026-11-06_00.37.11.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "910af496e9bdb31566b8970f0e97d9efd75403b497f2b09cd6a0758734b3e285",
+      "captured_utc": "2026-11-06T00:37:12.338701+00:00",
+      "camera_xyz_yaw_pitch": [
+        145.5,
+        98.0,
+        135.5,
+        -20.0,
+        17.0
+      ],
+      "note": "Снежный хвойный лес; дневной вид",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "02-frozen-lake.png",
+      "native_F2_file": "2026-11-06_00.37.59.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "8a0c03d9e32f0b0f81651dee0833fdd8a748b8d2b1150821fb41f1aee590178f",
+      "captured_utc": "2026-11-06T00:37:59.627740+00:00",
+      "camera_xyz_yaw_pitch": [
+        -109.5,
+        80.0,
+        -104.5,
+        -20.0,
+        16.0
+      ],
+      "note": "Замёрзший водоём у заснеженного горного склона",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "03-birch-forest.png",
+      "native_F2_file": "2026-11-06_00.38.43.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "85467c5bb7e7e983985eae655bb6d4b3d8ce6f1fcab4d1954774267fc9c48e52",
+      "captured_utc": "2026-11-06T00:38:43.740538+00:00",
+      "camera_xyz_yaw_pitch": [
+        25.0,
+        83.0,
+        260.0,
+        0.0,
+        12.0
+      ],
+      "note": "Заснеженный смешанный лес с берёзами",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "04-village-night.png",
+      "native_F2_file": "2026-11-06_00.39.37.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "24dafb8003ec9b13db20e4688d763baa9db375b3039799fcf862b12a038a0104",
+      "captured_utc": "2026-11-06T00:39:37.645587+00:00",
+      "camera_xyz_yaw_pitch": [
+        1890.0,
+        77.0,
+        1665.0,
+        -20.0,
+        12.0
+      ],
+      "note": "Ванильная заснеженная деревня ночью; не домики собственного модуля",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "05-f3-proof.png",
+      "native_F2_file": "2026-11-06_00.40.24.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "8006998f6041845da628ad1dd59bb9cd6191ffed1dffdde1121cfaf0703e91a3",
+      "captured_utc": "2026-11-06T00:40:24.770474+00:00",
+      "camera_xyz_yaw_pitch": [
+        145.5,
+        98.0,
+        135.5,
+        -20.0,
+        17.0
+      ],
+      "note": "Тот же лес с экраном F3: реальная версия Minecraft, координаты и отладочные данные",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    }
+  ]
+}

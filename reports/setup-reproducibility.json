@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "scope": "prepare-integration --natural-snow executed in a temporary isolated root for both variants; generated files checked; second invocation preserved existing directories",
+  "server_launch_in_this_check": false,
+  "runtime_evidence": "final-integration-profiles.json"
+}

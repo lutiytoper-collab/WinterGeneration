@@ -1,0 +1,204 @@
+[
+  {
+    "biome": "plains",
+    "changes": {
+      "temperature": {
+        "before": 0.8,
+        "after": -0.5
+      }
+    }
+  },
+  {
+    "biome": "sunflower_plains",
+    "changes": {
+      "temperature": {
+        "before": 0.8,
+        "after": -0.5
+      }
+    }
+  },
+  {
+    "biome": "forest",
+    "changes": {
+      "temperature": {
+        "before": 0.7,
+        "after": -0.5
+      }
+    }
+  },
+  {
+    "biome": "flower_forest",
+    "changes": {
+      "temperature": {
+        "before": 0.7,
+        "after": -0.5
+      }
+    }
+  },
+  {
+    "biome": "birch_forest",
+    "changes": {
+      "temperature": {
+        "before": 0.6,
+        "after": -0.5
+      }
+    }
+  },
+  {
+    "biome": "old_growth_birch_forest",
+    "changes": {
+      "temperature": {
+        "before": 0.6,
+        "after": -0.5
+      }
+    }
+  },
+  {
+    "biome": "dark_forest",
+    "changes": {
+      "temperature": {
+        "before": 0.7,
+        "after": -0.5
+      }
+    }
+  },
+  {
+    "biome": "taiga",
+    "changes": {
+      "temperature": {
+        "before": 0.25,
+        "after": -0.5
+      }
+    }
+  },
+  {
+    "biome": "old_growth_pine_taiga",
+    "changes": {
+      "temperature": {
+        "before": 0.3,
+        "after": -0.5
+      }
+    }
+  },
+  {
+    "biome": "old_growth_spruce_taiga",
+    "changes": {
+      "temperature": {
+        "before": 0.25,
+        "after": -0.5
+      }
+    }
+  },
+  {
+    "biome": "snowy_taiga",
+    "changes": {}
+  },
+  {
+    "biome": "snowy_plains",
+    "changes": {
+      "temperature": {
+        "before": 0.0,
+        "after": -0.5
+      }
+    }
+  },
+  {
+    "biome": "meadow",
+    "changes": {
+      "temperature": {
+        "before": 0.5,
+        "after": -0.5
+      }
+    }
+  },
+  {
+    "biome": "grove",
+    "changes": {
+      "temperature": {
+        "before": -0.2,
+        "after": -0.5
+      }
+    }
+  },
+  {
+    "biome": "snowy_slopes",
+    "changes": {
+      "temperature": {
+        "before": -0.3,
+        "after": -0.5
+      }
+    }
+  },
+  {
+    "biome": "frozen_peaks",
+    "changes": {
+      "temperature": {
+        "before": -0.7,
+        "after": -0.5
+      }
+    }
+  },
+  {
+    "biome": "jagged_peaks",
+    "changes": {
+      "temperature": {
+        "before": -0.7,
+        "after": -0.5
+      }
+    }
+  },
+  {
+    "biome": "stony_peaks",
+    "changes": {
+      "temperature": {
+        "before": 1.0,
+        "after": -0.5
+      }
+    }
+  },
+  {
+    "biome": "windswept_hills",
+    "changes": {
+      "temperature": {
+        "before": 0.2,
+        "after": -0.5
+      }
+    }
+  },
+  {
+    "biome": "windswept_forest",
+    "changes": {
+      "temperature": {
+        "before": 0.2,
+        "after": -0.5
+      }
+    }
+  },
+  {
+    "biome": "windswept_gravelly_hills",
+    "changes": {
+      "temperature": {
+        "before": 0.2,
+        "after": -0.5
+      }
+    }
+  },
+  {
+    "biome": "river",
+    "changes": {
+      "temperature": {
+        "before": 0.5,
+        "after": -0.5
+      }
+    }
+  },
+  {
+    "biome": "frozen_river",
+    "changes": {
+      "temperature": {
+        "before": 0.0,
+        "after": -0.5
+      }
+    }
+  }
+]

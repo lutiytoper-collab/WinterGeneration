@@ -1,0 +1,16 @@
+{
+  "generator": "jdk.proxy4.$Proxy80",
+  "mode": "real native random Generator over natural winter_test, not a built fixture",
+  "status": "PASS",
+  "seconds": 28,
+  "world": "winter_test",
+  "x": 660,
+  "y": 70,
+  "z": -223,
+  "biome": "minecraft:stony_shore",
+  "belowBefore": "minecraft:stone",
+  "belowAfter": "minecraft:stone",
+  "ticketCountAfterEnd": 0,
+  "surfacePreservedAfterEnd": true,
+  "blockAfterEnd": "AIR"
+}

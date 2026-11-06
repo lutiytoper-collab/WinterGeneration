@@ -1,0 +1,113 @@
+{
+  "minecraft": "1.21.11",
+  "official_server_sha1": "64bb6d763bed0a9f1d632ec347938594144943ed",
+  "official_inner_sha256": "ec47239a8de246335e1d54f6ac319bd35641778eb4b6a6da06372840d02fcebc",
+  "allowlisted_reachable_biomes_by_override": {
+    "trees_taiga": [
+      "snowy_taiga",
+      "taiga"
+    ],
+    "trees_grove": [
+      "grove"
+    ],
+    "trees_old_growth_pine_taiga": [
+      "old_growth_pine_taiga"
+    ],
+    "trees_old_growth_spruce_taiga": [
+      "old_growth_spruce_taiga"
+    ],
+    "trees_windswept_forest": [
+      "windswept_forest"
+    ],
+    "trees_windswept_hills": [
+      "windswept_forest",
+      "windswept_gravelly_hills",
+      "windswept_hills"
+    ],
+    "trees_birch": [
+      "birch_forest"
+    ],
+    "birch_tall": [
+      "old_growth_birch_forest"
+    ],
+    "trees_birch_and_oak_leaf_litter": [
+      "forest"
+    ],
+    "trees_flower_forest": [
+      "flower_forest"
+    ],
+    "trees_meadow": [
+      "meadow"
+    ],
+    "dark_forest_vegetation": [
+      "dark_forest"
+    ]
+  },
+  "reachability": "Conservative transitive graph of all official biome/placed/configured feature references; ambiguous IDs follow both kinds.",
+  "sources": [
+    {
+      "file": "vendor/storybook/placed_feature/trees_taiga.json",
+      "sha256": "8033710791353274c08a9fff62f1facc21fc36803fab2a9acd7e36b476db8d5f"
+    },
+    {
+      "file": "vendor/storybook/placed_feature/trees_grove.json",
+      "sha256": "57a4695f838e765a8576b95b797da5a4c6b6595a2c320b2542c1e9675f2ca473"
+    },
+    {
+      "file": "vendor/storybook/placed_feature/trees_old_growth_pine_taiga.json",
+      "sha256": "659adda72509858aede91cab105fda3da8818458faac0a630bc3286374326256"
+    },
+    {
+      "file": "vendor/storybook/placed_feature/trees_old_growth_spruce_taiga.json",
+      "sha256": "c7383b1358db2f08803982de92a9da8004412e19240058eaac25f4762099b45e"
+    },
+    {
+      "file": "vendor/storybook/placed_feature/trees_windswept_forest.json",
+      "sha256": "f356ff2db3733eaa22f07c44d37e86dc7c538216b5bed11fd558f71a3c2ce1c1"
+    },
+    {
+      "file": "vendor/storybook/placed_feature/trees_windswept_hills.json",
+      "sha256": "c7e93ad98a0b56c3d7bcf33ae561e31add19ac0577fb5a066041d059740974e0"
+    },
+    {
+      "file": "vendor/storybook/placed_feature/trees_birch.json",
+      "sha256": "f23e7626d6cd0af3543775e9414e3c5125a00f30ed96c9500d026e5e087e14fd"
+    },
+    {
+      "file": "vendor/storybook/placed_feature/birch_tall.json",
+      "sha256": "5b9a9f2e9f1983ae2056a66d5c1c93b98601fc7603883bb2015e30ac13a5a8ba"
+    },
+    {
+      "file": "vendor/storybook/placed_feature/trees_birch_and_oak_leaf_litter.json",
+      "sha256": "a3bddb672c8db97503005f0549cfc45120dab01df5ed1f25cfcfffa74adaaf22"
+    },
+    {
+      "file": "vendor/storybook/placed_feature/trees_flower_forest.json",
+      "sha256": "6c1fba6304ebdf124bcb44d065a24bc27028e096e00b1b7f2d438b9cca68b07f"
+    },
+    {
+      "file": "vendor/storybook/placed_feature/trees_meadow.json",
+      "sha256": "494e07b75025c472da38badcc854e2adc15a4a5c66d8aca037dc23e964046d4e"
+    },
+    {
+      "file": "vendor/storybook/placed_feature/dark_forest_vegetation.json",
+      "sha256": "33ca8e591d163b6d4228efddcf2b8d83e2e89d55023a2babc6da29f6a9029331"
+    },
+    {
+      "file": "vendor/storybook/configured_feature/spruce.json",
+      "sha256": "bd347c7302f53b5a99aa411b3cfcd91a2b0ad048172fb494872f841b2cb4b0ba"
+    },
+    {
+      "file": "vendor/storybook/configured_feature/mega_spruce.json",
+      "sha256": "b6a6687b3dd8db6866d244b5d778a37a745fd6782dbe213fe1aac809354ae6cb"
+    },
+    {
+      "file": "vendor/storybook/configured_feature/fancy_oak.json",
+      "sha256": "de6eaf5e4352cd7ce777c57fadcbebf983db058cc7dc8a45cbe9c984197aca19"
+    },
+    {
+      "file": "vendor/storybook/configured_feature/pale_oak.json",
+      "sha256": "9edd67197dc1060d743513b4e5b66362613e15e31b3cc7f952a5698cf7b8e5d5"
+    }
+  ]
+}

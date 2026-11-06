@@ -1,0 +1,644 @@
+[
+  {
+    "seed": 42,
+    "diffs": [
+      {
+        "chunk": [
+          133,
+          128
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          134,
+          128
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          135,
+          128
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          136,
+          128
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          137,
+          128
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          138,
+          128
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          141,
+          128
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          132,
+          129
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          133,
+          129
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          134,
+          129
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          135,
+          129
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          136,
+          129
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          137,
+          129
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          138,
+          129
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          139,
+          129
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          133,
+          130
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          134,
+          130
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          135,
+          130
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          136,
+          130
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          137,
+          130
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          138,
+          130
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          139,
+          130
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          129,
+          131
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          130,
+          131
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          132,
+          131
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          133,
+          131
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          134,
+          131
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          135,
+          131
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          136,
+          131
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          137,
+          131
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          138,
+          131
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          139,
+          131
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          140,
+          131
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          141,
+          131
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          128,
+          132
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          129,
+          132
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          130,
+          132
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          132,
+          132
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          133,
+          132
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          134,
+          132
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          135,
+          132
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          136,
+          132
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          137,
+          132
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          138,
+          132
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          139,
+          132
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          140,
+          132
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          141,
+          132
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          128,
+          133
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          129,
+          133
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          130,
+          133
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          131,
+          133
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          132,
+          133
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          133,
+          133
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          134,
+          133
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          135,
+          133
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          136,
+          133
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          137,
+          133
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          138,
+          133
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          140,
+          133
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          141,
+          133
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          128,
+          134
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          129,
+          134
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          130,
+          134
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          131,
+          134
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          132,
+          134
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          133,
+          134
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          134,
+          134
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          135,
+          134
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          136,
+          134
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          128,
+          135
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          131,
+          135
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          132,
+          135
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          133,
+          135
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          134,
+          135
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          135,
+          135
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          136,
+          135
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          133,
+          136
+        ],
+        "field": "belowSurfaceGeometry"
+      }
+    ],
+    "timings": {
+      "vanilla": {
+        "chunks": 256,
+        "mean_ms": 111.72387714843751,
+        "median_ms": 0.05334,
+        "p95_ms": 943.260609,
+        "max_ms": 4010.413269,
+        "heapStart": 448357432,
+        "heapEnd": 526129152
+      },
+      "winter": {
+        "chunks": 256,
+        "mean_ms": 146.084178953125,
+        "median_ms": 0.0354435,
+        "p95_ms": 1035.160232,
+        "max_ms": 11683.479908,
+        "heapStart": 577765376,
+        "heapEnd": 631461360
+      }
+    },
+    "metadata_y_refreshes": [
+      {
+        "mode": "vanilla",
+        "chunk": [
+          136,
+          130
+        ],
+        "before": [
+          "minecraft:mineshaft:BoundingBox [minX=2071.0, minY=-41.0, minZ=2030.0, maxX=2227.0, maxY=-22.0, maxZ=2202.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2166.0, minY=-52.0, minZ=1987.0, maxX=2311.0, maxY=-30.0, maxZ=2157.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2177.0, minY=26.0, minZ=2035.0, maxX=2311.0, maxY=45.0, maxZ=2164.0]",
+          "minecraft:shipwreck:BoundingBox [minX=2176.0, minY=90.0, minZ=2089.0, maxX=2184.0, maxY=98.0, maxZ=2110.0]"
+        ],
+        "after": [
+          "minecraft:mineshaft:BoundingBox [minX=2071.0, minY=-41.0, minZ=2030.0, maxX=2227.0, maxY=-22.0, maxZ=2202.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2166.0, minY=-52.0, minZ=1987.0, maxX=2311.0, maxY=-30.0, maxZ=2157.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2177.0, minY=26.0, minZ=2035.0, maxX=2311.0, maxY=45.0, maxZ=2164.0]",
+          "minecraft:shipwreck:BoundingBox [minX=2176.0, minY=50.0, minZ=2089.0, maxX=2184.0, maxY=58.0, maxZ=2110.0]"
+        ]
+      },
+      {
+        "mode": "vanilla",
+        "chunk": [
+          136,
+          131
+        ],
+        "before": [
+          "minecraft:mineshaft:BoundingBox [minX=2071.0, minY=-41.0, minZ=2030.0, maxX=2227.0, maxY=-22.0, maxZ=2202.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2166.0, minY=-52.0, minZ=1987.0, maxX=2311.0, maxY=-30.0, maxZ=2157.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2177.0, minY=26.0, minZ=2035.0, maxX=2311.0, maxY=45.0, maxZ=2164.0]",
+          "minecraft:shipwreck:BoundingBox [minX=2176.0, minY=90.0, minZ=2089.0, maxX=2184.0, maxY=98.0, maxZ=2110.0]"
+        ],
+        "after": [
+          "minecraft:mineshaft:BoundingBox [minX=2071.0, minY=-41.0, minZ=2030.0, maxX=2227.0, maxY=-22.0, maxZ=2202.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2166.0, minY=-52.0, minZ=1987.0, maxX=2311.0, maxY=-30.0, maxZ=2157.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2177.0, minY=26.0, minZ=2035.0, maxX=2311.0, maxY=45.0, maxZ=2164.0]",
+          "minecraft:shipwreck:BoundingBox [minX=2176.0, minY=50.0, minZ=2089.0, maxX=2184.0, maxY=58.0, maxZ=2110.0]"
+        ]
+      },
+      {
+        "mode": "winter",
+        "chunk": [
+          136,
+          130
+        ],
+        "before": [
+          "minecraft:mineshaft:BoundingBox [minX=2071.0, minY=-41.0, minZ=2030.0, maxX=2227.0, maxY=-22.0, maxZ=2202.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2166.0, minY=-52.0, minZ=1987.0, maxX=2311.0, maxY=-30.0, maxZ=2157.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2177.0, minY=26.0, minZ=2035.0, maxX=2311.0, maxY=45.0, maxZ=2164.0]",
+          "minecraft:shipwreck:BoundingBox [minX=2176.0, minY=90.0, minZ=2089.0, maxX=2184.0, maxY=98.0, maxZ=2110.0]"
+        ],
+        "after": [
+          "minecraft:mineshaft:BoundingBox [minX=2071.0, minY=-41.0, minZ=2030.0, maxX=2227.0, maxY=-22.0, maxZ=2202.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2166.0, minY=-52.0, minZ=1987.0, maxX=2311.0, maxY=-30.0, maxZ=2157.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2177.0, minY=26.0, minZ=2035.0, maxX=2311.0, maxY=45.0, maxZ=2164.0]",
+          "minecraft:shipwreck:BoundingBox [minX=2176.0, minY=50.0, minZ=2089.0, maxX=2184.0, maxY=58.0, maxZ=2110.0]"
+        ]
+      },
+      {
+        "mode": "winter",
+        "chunk": [
+          136,
+          131
+        ],
+        "before": [
+          "minecraft:mineshaft:BoundingBox [minX=2071.0, minY=-41.0, minZ=2030.0, maxX=2227.0, maxY=-22.0, maxZ=2202.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2166.0, minY=-52.0, minZ=1987.0, maxX=2311.0, maxY=-30.0, maxZ=2157.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2177.0, minY=26.0, minZ=2035.0, maxX=2311.0, maxY=45.0, maxZ=2164.0]",
+          "minecraft:shipwreck:BoundingBox [minX=2176.0, minY=90.0, minZ=2089.0, maxX=2184.0, maxY=98.0, maxZ=2110.0]"
+        ],
+        "after": [
+          "minecraft:mineshaft:BoundingBox [minX=2071.0, minY=-41.0, minZ=2030.0, maxX=2227.0, maxY=-22.0, maxZ=2202.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2166.0, minY=-52.0, minZ=1987.0, maxX=2311.0, maxY=-30.0, maxZ=2157.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2177.0, minY=26.0, minZ=2035.0, maxX=2311.0, maxY=45.0, maxZ=2164.0]",
+          "minecraft:shipwreck:BoundingBox [minX=2176.0, minY=50.0, minZ=2089.0, maxX=2184.0, maxY=58.0, maxZ=2110.0]"
+        ]
+      }
+    ]
+  }
+]

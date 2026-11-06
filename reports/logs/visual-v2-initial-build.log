@@ -1,0 +1,52 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :core:compileJava
+> Task :core:processResources NO-SOURCE
+> Task :core:classes
+> Task :core:jar
+> Task :core:compileTestJava
+> Task :core:processTestResources NO-SOURCE
+> Task :core:testClasses
+
+> Task :core:test FAILED
+
+PlacementTest > validTemplatesPlace(DecorationPlan) > [1] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=7, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=8, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=9, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=10, z=0, block=SPRUC… FAILED
+    org.opentest4j.AssertionFailedError at PlacementTest.java:22
+
+PlacementTest > validTemplatesPlace(DecorationPlan) > [2] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=7, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=8, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=9, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=10, z=0, block=SPRUC… FAILED
+    org.opentest4j.AssertionFailedError at PlacementTest.java:22
+
+PlacementTest > reservedAirDropProtectsWholeTemplate(DecorationPlan) > [1] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=7, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=8, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=9, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=10, z=0, block=SPRUC… FAILED
+    org.opentest4j.AssertionFailedError at PlacementTest.java:35
+
+PlacementTest > reservedAirDropProtectsWholeTemplate(DecorationPlan) > [2] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=7, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=8, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=9, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=10, z=0, block=SPRUC… FAILED
+    org.opentest4j.AssertionFailedError at PlacementTest.java:35
+
+PlacementTest > rejectsExcludedBiomeInsideFootprint(DecorationPlan) > [1] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=7, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=8, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=9, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=10, z=0, block=SPRUC… FAILED
+    org.opentest4j.AssertionFailedError at PlacementTest.java:32
+
+PlacementTest > rejectsExcludedBiomeInsideFootprint(DecorationPlan) > [2] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=7, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=8, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=9, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=10, z=0, block=SPRUC… FAILED
+    org.opentest4j.AssertionFailedError at PlacementTest.java:32
+
+PlacementTest > neverOverwritePlayerBlocksOrTrees(DecorationPlan) > [1] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=7, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=8, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=9, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=10, z=0, block=SPRUC… FAILED
+    org.opentest4j.AssertionFailedError at PlacementTest.java:29
+
+PlacementTest > neverOverwritePlayerBlocksOrTrees(DecorationPlan) > [2] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=7, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=8, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=9, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=10, z=0, block=SPRUC… FAILED
+    org.opentest4j.AssertionFailedError at PlacementTest.java:29
+
+PlacementTest > invalidBlueprintRejected() FAILED
+    org.opentest4j.AssertionFailedError at PlacementTest.java:55
+
+112 tests completed, 9 failed
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':core:test'.
+> There were failing tests. See the report at: file:///workspace/WinterGeneration/core/build/reports/tests/test/index.html
+
+* Try:
+> Run with --scan to get full insights.
+
+BUILD FAILED in 12s
+4 actionable tasks: 4 executed

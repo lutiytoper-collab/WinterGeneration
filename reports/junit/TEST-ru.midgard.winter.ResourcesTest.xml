@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.midgard.winter.ResourcesTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-06T04:36:28.072Z" hostname="0f051bf75645" time="0.053">
+  <properties/>
+  <testcase name="noMandatoryPluginDependency()" classname="ru.midgard.winter.ResourcesTest" time="0.033"/>
+  <testcase name="safeConfigDefaults()" classname="ru.midgard.winter.ResourcesTest" time="0.011"/>
+  <testcase name="everyAdminCommandHasOwnPermission()" classname="ru.midgard.winter.ResourcesTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

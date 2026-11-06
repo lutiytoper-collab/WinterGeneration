@@ -1,0 +1,70 @@
+# MidgardWinterWorld 0.1.0. Только НОВЫЙ тестовый мир, не основной сервер.
+enabled: true
+preset: FAIRYTALE
+allowed-worlds: [winter_test]
+new-chunks-only: true
+modify-existing-chunks: false
+protect-player-builds: true
+protect-worldguard-regions: true
+# WorldGuard: проверка bounding boxes всех регионов; ошибка API запрещает декор.
+protect-structures: true
+structure-margin: 8
+# Пустой allowlist запрещает обработку. Неизвестный ID вызывает ошибку настройки.
+allowed-biomes:
+  - plains
+  - sunflower_plains
+  - forest
+  - flower_forest
+  - birch_forest
+  - old_growth_birch_forest
+  - dark_forest
+  - taiga
+  - old_growth_pine_taiga
+  - old_growth_spruce_taiga
+  - snowy_taiga
+  - snowy_plains
+  - meadow
+  - grove
+  - snowy_slopes
+  - frozen_peaks
+  - jagged_peaks
+  - stony_peaks
+  - windswept_hills
+  - windswept_forest
+  - windswept_gravelly_hills
+  - river
+  - frozen_river
+excluded-biomes: [desert, savanna, savanna_plateau, windswept_savanna, jungle, sparse_jungle, bamboo_jungle, badlands, eroded_badlands, wooded_badlands, warm_ocean, lukewarm_ocean, deep_lukewarm_ocean, mangrove_swamp]
+# Значения overrides заменяют параметры выбранного пресета. {} сохраняет пресет.
+overrides: {}
+# Доступные overrides: snow-density [0..1], snow-layers [1..4], forest-density [0..1],
+# clearing-chance [0..1], cabin-chance [0..1], ice-chance [0..1], light-chance [0..1], max-changes [1..512].
+modules:
+  forests: true
+  snowdrifts: true
+  frozen-water: true
+  clearings: true
+  cabins: false
+  ice: true
+  lights: true
+# Домики отключены до серверной и визуальной проверки.
+airdrop:
+  minimum-reservation-radius: 16
+  platform-radius: 2
+  headroom: 5
+  support-depth: 3
+  max-slope: 1
+  # Тонкий снег сохраняется; аирдроп ставится НАД ним, без удаления слоя.
+  max-shallow-snow-layers: 2
+max-object-size: 7
+logging: true
+debug: false
+
+# Короткое ожидание уже генерируемых соседей, без их загрузки.
+max-pending-chunks: 512
+max-pending-ticks: 100
+max-chunks-per-tick: 4
+max-millis-per-tick: 2
+
+# Исправление нативного замерзания на границе незимних биомов, только в новых чанках.
+protect-biome-boundaries: true

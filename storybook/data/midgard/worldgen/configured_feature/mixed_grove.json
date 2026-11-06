@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.3,
+        "feature": "midgard:silver_birch_checked"
+      },
+      {
+        "chance": 0.1,
+        "feature": "midgard:cathedral_fir_checked"
+      }
+    ],
+    "default": "midgard:moon_oak_checked"
+  }
+}

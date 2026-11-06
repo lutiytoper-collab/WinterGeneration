@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/tmp/midgard_integration_run.py", line 26, in <module>
+    send('winterprobe natural');wait('NATURALLUNA_READY',180);natural=json.loads((folder/'plugins/WinterProbe/natural-luna.json').read_text())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/midgard_integration_run.py", line 21, in wait
+    raise TimeoutError(token)
+TimeoutError: NATURALLUNA_READY
+tegration_run.py", line 23, in <module>
+    wait('Done (');send('winterworld status');send('datapack list enabled');send(os.environ.get('QA_COMMAND','winterprobe audit'));wait('WINTERAUDIT_DONE',1200)
+    ^^^^^^^^^^^^^^
+  File "/tmp/midgard_integration_run.py", line 18, in wait
+    if proc.poll() is not None:raise RuntimeError('Server exited '+str(proc.returncode))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Server exited 0

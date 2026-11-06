@@ -1,0 +1,22 @@
+[
+  {
+    "folder": ".runtime/integration",
+    "plugin_sha256": "fad4c8771ef124ca97c1ec18a8e7af7b98924362ad23219586c8a1a9b468dad8",
+    "matches_current": true
+  },
+  {
+    "folder": ".runtime/fawe-integration",
+    "plugin_sha256": "fad4c8771ef124ca97c1ec18a8e7af7b98924362ad23219586c8a1a9b468dad8",
+    "matches_current": true
+  },
+  {
+    "folder": ".runtime/fairy02-purpur-smoke",
+    "plugin_sha256": "fad4c8771ef124ca97c1ec18a8e7af7b98924362ad23219586c8a1a9b468dad8",
+    "matches_current": true
+  },
+  {
+    "folder": ".runtime/fairy02-final-world",
+    "plugin_sha256": "fad4c8771ef124ca97c1ec18a8e7af7b98924362ad23219586c8a1a9b468dad8",
+    "matches_current": true
+  }
+]

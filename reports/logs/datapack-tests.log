@@ -1,0 +1,11 @@
+test_excluded_biome_rejected (__main__.DatapackTests.test_excluded_biome_rejected) ... ok
+test_lost_features_rejected (__main__.DatapackTests.test_lost_features_rejected) ... ok
+test_original_tampering_rejected (__main__.DatapackTests.test_original_tampering_rejected) ... ok
+test_precipitation_loss_rejected (__main__.DatapackTests.test_precipitation_loss_rejected) ... ok
+test_valid_pack (__main__.DatapackTests.test_valid_pack) ... ok
+test_wrong_pack_version_rejected (__main__.DatapackTests.test_wrong_pack_version_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.066s
+
+OK

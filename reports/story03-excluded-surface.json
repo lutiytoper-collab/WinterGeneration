@@ -1,0 +1,6 @@
+{
+  "seed": 42,
+  "roi": 256,
+  "excluded_surface_hash_differences": [],
+  "scope": "Exact original per-biome probe surface-window fingerprints after restart in this selected region. Does not establish all possible cross-biome crown edges."
+}

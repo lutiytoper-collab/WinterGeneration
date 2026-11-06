@@ -1,0 +1,107 @@
+[
+  {
+    "seed": 825180311,
+    "roi_per_variant": 64,
+    "source": "runtime/v0.2.0/825180311",
+    "current_plugin_sha256": "fad4c8771ef124ca97c1ec18a8e7af7b98924362ad23219586c8a1a9b468dad8",
+    "baseline_reused_from": ".runtime/fairy-v2-matrix/825180311/vanilla",
+    "final_vanilla_winter_differences": {
+      "rawUndergroundBlockStateHash": [],
+      "belowSurfaceGeometry": [],
+      "structures": [],
+      "blockEntities": []
+    },
+    "excluded_biome_surface_differences": [],
+    "restart_differences": {
+      "vanilla": {
+        "rawUndergroundBlockStateHash": [],
+        "belowSurfaceGeometry": [],
+        "surfaceByBiome": [],
+        "blockEntities": [],
+        "winterMarker": [],
+        "material_deltas": []
+      },
+      "winter": {
+        "rawUndergroundBlockStateHash": [],
+        "belowSurfaceGeometry": [],
+        "surfaceByBiome": [],
+        "blockEntities": [],
+        "winterMarker": [],
+        "material_deltas": []
+      }
+    }
+  },
+  {
+    "seed": 42,
+    "roi_per_variant": 256,
+    "source": "runtime/v0.2.0/42",
+    "current_plugin_sha256": "fad4c8771ef124ca97c1ec18a8e7af7b98924362ad23219586c8a1a9b468dad8",
+    "baseline_reused_from": ".runtime/fairy-v2-boundary/42/vanilla",
+    "final_vanilla_winter_differences": {
+      "rawUndergroundBlockStateHash": [],
+      "belowSurfaceGeometry": [],
+      "structures": [],
+      "blockEntities": []
+    },
+    "excluded_biome_surface_differences": [],
+    "restart_differences": {
+      "vanilla": {
+        "rawUndergroundBlockStateHash": [],
+        "belowSurfaceGeometry": [],
+        "surfaceByBiome": [],
+        "blockEntities": [],
+        "winterMarker": [],
+        "material_deltas": []
+      },
+      "winter": {
+        "rawUndergroundBlockStateHash": [
+          [
+            131,
+            143
+          ],
+          [
+            132,
+            143
+          ],
+          [
+            133,
+            143
+          ],
+          [
+            134,
+            143
+          ],
+          [
+            135,
+            143
+          ],
+          [
+            136,
+            143
+          ]
+        ],
+        "belowSurfaceGeometry": [
+          [
+            136,
+            143
+          ]
+        ],
+        "surfaceByBiome": [],
+        "blockEntities": [],
+        "winterMarker": [],
+        "material_deltas": [
+          {
+            "chunk": [
+              136,
+              143
+            ],
+            "delta": {
+              "GLOW_LICHEN": -1,
+              "AIR": 1
+            }
+          }
+        ]
+      }
+    }
+  }
+]

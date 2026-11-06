@@ -1,0 +1,961 @@
+{
+  "project_status": "BUILD VERIFIED (source API compile path)",
+  "counting": "113 Java unit/contract tests + 6 Python unit tests + 4 separate build/static checks. Runtime tests remain distinct. Historical failures corrected during implementation are not extra final test cases.",
+  "counts": {
+    "PASS": 123,
+    "FAIL": 0,
+    "BLOCKED": 2,
+    "NOT RUN": 9
+  },
+  "checks": [
+    {
+      "id": "ru.midgard.winter.core.CoreTest.noiseRangeAndNegativeContinuity()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.invalidConfigRejected()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.protectedRegionDenied()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.seedAndSaltMatter()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.excludedWins()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.caveUnderPlatform()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[1] LIGHT",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[2] BALANCED",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[3] FAIRYTALE",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.treeCabinObstructionDenied()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.boxesAndMargins()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.slopeDenied()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.dimensionDenied()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.safePlatform()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[1] plains",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[2] forest",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[3] birch_forest",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[4] taiga",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[5] meadow",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[6] river",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[1] desert",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[2] savanna",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[3] jungle",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[4] badlands",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[5] warm_ocean",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[6] lukewarm_ocean",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[7] mangrove_swamp",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[8] lush_caves",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[9] deep_dark",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.[10] unknown",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.boundariesAndNegativeCoordinates()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.unsafeWaterIcePowderSnow()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.reservationAndRelease()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.deterministicAcrossThreads()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.emptyAllowlistDenies()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.hotCannotBeEnabled()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.unloadedNeverRead()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.CoreTest.invalidAirDropLimits()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.CoreTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.biomeIdentity()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[1] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=-1, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=1, block=SPRUCE_LEAVES, layers=0], Cell[x=1, y=2, z=0, b…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[2] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=7, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=-1, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=1, bloc…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[3] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-1, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=-1, y=1, z=0, block=BIRCH_LEAVES, layers=0], Cell[x=-1, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=0, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[4] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=OAK_LOG, layers=0], Cell[x=-1, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=-1, y=1, z=0, block=OAK_LEAVES, layers=0], Cell[x=-1, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=0, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=0, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=0, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=0, y=2, z=0, block=OAK…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[5] DecorationPlan[module=fallen-logs, cells=[Cell[x=-2, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-2, y=2, z=0, block=SNOW, layers=1], Cell[x=-1, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SNOW, layers=1], Cell[x=0, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=0, y=2, z=0, block=SNOW, layers=1], Cell[x=1, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=1, y=2, z=0, block=SNOW, layers=1], Cell[x=2, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=2, y=2, z=0, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[6] DecorationPlan[module=fallen-logs, cells=[Cell[x=-2, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=2, z=0, block=SNOW, layers=1], Cell[x=-1, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SNOW, layers=1], Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SNOW, layers=1], Cell[x=1, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=1, y=2, z=0, block=SNOW, layers=1], Cell[x=2, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=2, y=2, z=0, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[7] DecorationPlan[module=ice, cells=[Cell[x=-2, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=-1, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=0, block=ICE, layers=0], Cell[x=-1, y=2, z=0, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=1, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=-2, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=-1, block=ICE, layers=0], Cell[x=0, y=2, z=-1, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=2, z=0, block=PACKED_ICE, lay…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[8] DecorationPlan[module=clearings, cells=[Cell[x=-2, y=1, z=1, block=MOSSY_COBBLESTONE, layers=0], Cell[x=-2, y=2, z=1, block=SNOW, layers=1], Cell[x=-1, y=1, z=1, block=COBBLESTONE, layers=0], Cell[x=-1, y=2, z=1, block=SNOW, layers=1], Cell[x=2, y=1, z=1, block=SPRUCE_FENCE, layers=0], Cell[x=2, y=2, z=1, block=SPRUCE_FENCE, layers=0], Cell[x=2, y=3, z=1, block=LANTERN, layers=0]]]",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[9] DecorationPlan[module=clearings, cells=[Cell[x=-2, y=1, z=1, block=MOSSY_COBBLESTONE, layers=0], Cell[x=-2, y=2, z=1, block=SNOW, layers=1], Cell[x=-1, y=1, z=1, block=COBBLESTONE, layers=0], Cell[x=-1, y=2, z=1, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[10] DecorationPlan[module=cabins, cells=[Cell[x=-2, y=1, z=-2, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=-1, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=0, block=SPRUCE_PLANKS, layers=0], Cell[x=…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[11] DecorationPlan[module=cabins, cells=[Cell[x=-2, y=1, z=-2, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=-1, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=0, block=SPRUCE_PLANKS, layers=0], Cell[x=…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[1] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=-1, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=1, block=SPRUCE_LEAVES, layers=0], Cell[x=1, y=2, z=0, b…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[2] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=7, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=-1, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=1, bloc…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[3] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-1, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=-1, y=1, z=0, block=BIRCH_LEAVES, layers=0], Cell[x=-1, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=0, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[4] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=OAK_LOG, layers=0], Cell[x=-1, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=-1, y=1, z=0, block=OAK_LEAVES, layers=0], Cell[x=-1, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=0, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=0, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=0, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=0, y=2, z=0, block=OAK…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[5] DecorationPlan[module=fallen-logs, cells=[Cell[x=-2, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-2, y=2, z=0, block=SNOW, layers=1], Cell[x=-1, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SNOW, layers=1], Cell[x=0, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=0, y=2, z=0, block=SNOW, layers=1], Cell[x=1, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=1, y=2, z=0, block=SNOW, layers=1], Cell[x=2, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=2, y=2, z=0, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[6] DecorationPlan[module=fallen-logs, cells=[Cell[x=-2, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=2, z=0, block=SNOW, layers=1], Cell[x=-1, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SNOW, layers=1], Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SNOW, layers=1], Cell[x=1, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=1, y=2, z=0, block=SNOW, layers=1], Cell[x=2, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=2, y=2, z=0, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[7] DecorationPlan[module=ice, cells=[Cell[x=-2, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=-1, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=0, block=ICE, layers=0], Cell[x=-1, y=2, z=0, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=1, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=-2, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=-1, block=ICE, layers=0], Cell[x=0, y=2, z=-1, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=2, z=0, block=PACKED_ICE, lay…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[8] DecorationPlan[module=clearings, cells=[Cell[x=-2, y=1, z=1, block=MOSSY_COBBLESTONE, layers=0], Cell[x=-2, y=2, z=1, block=SNOW, layers=1], Cell[x=-1, y=1, z=1, block=COBBLESTONE, layers=0], Cell[x=-1, y=2, z=1, block=SNOW, layers=1], Cell[x=2, y=1, z=1, block=SPRUCE_FENCE, layers=0], Cell[x=2, y=2, z=1, block=SPRUCE_FENCE, layers=0], Cell[x=2, y=3, z=1, block=LANTERN, layers=0]]]",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[9] DecorationPlan[module=clearings, cells=[Cell[x=-2, y=1, z=1, block=MOSSY_COBBLESTONE, layers=0], Cell[x=-2, y=2, z=1, block=SNOW, layers=1], Cell[x=-1, y=1, z=1, block=COBBLESTONE, layers=0], Cell[x=-1, y=2, z=1, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[10] DecorationPlan[module=cabins, cells=[Cell[x=-2, y=1, z=-2, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=-1, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=0, block=SPRUCE_PLANKS, layers=0], Cell[x=…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[11] DecorationPlan[module=cabins, cells=[Cell[x=-2, y=1, z=-2, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=-1, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=0, block=SPRUCE_PLANKS, layers=0], Cell[x=…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[1] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=-1, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=1, block=SPRUCE_LEAVES, layers=0], Cell[x=1, y=2, z=0, b…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[2] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=7, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=-1, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=1, bloc…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[3] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-1, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=-1, y=1, z=0, block=BIRCH_LEAVES, layers=0], Cell[x=-1, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=0, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[4] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=OAK_LOG, layers=0], Cell[x=-1, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=-1, y=1, z=0, block=OAK_LEAVES, layers=0], Cell[x=-1, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=0, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=0, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=0, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=0, y=2, z=0, block=OAK…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[5] DecorationPlan[module=fallen-logs, cells=[Cell[x=-2, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-2, y=2, z=0, block=SNOW, layers=1], Cell[x=-1, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SNOW, layers=1], Cell[x=0, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=0, y=2, z=0, block=SNOW, layers=1], Cell[x=1, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=1, y=2, z=0, block=SNOW, layers=1], Cell[x=2, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=2, y=2, z=0, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[6] DecorationPlan[module=fallen-logs, cells=[Cell[x=-2, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=2, z=0, block=SNOW, layers=1], Cell[x=-1, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SNOW, layers=1], Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SNOW, layers=1], Cell[x=1, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=1, y=2, z=0, block=SNOW, layers=1], Cell[x=2, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=2, y=2, z=0, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[7] DecorationPlan[module=ice, cells=[Cell[x=-2, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=-1, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=0, block=ICE, layers=0], Cell[x=-1, y=2, z=0, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=1, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=-2, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=-1, block=ICE, layers=0], Cell[x=0, y=2, z=-1, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=2, z=0, block=PACKED_ICE, lay…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[8] DecorationPlan[module=clearings, cells=[Cell[x=-2, y=1, z=1, block=MOSSY_COBBLESTONE, layers=0], Cell[x=-2, y=2, z=1, block=SNOW, layers=1], Cell[x=-1, y=1, z=1, block=COBBLESTONE, layers=0], Cell[x=-1, y=2, z=1, block=SNOW, layers=1], Cell[x=2, y=1, z=1, block=SPRUCE_FENCE, layers=0], Cell[x=2, y=2, z=1, block=SPRUCE_FENCE, layers=0], Cell[x=2, y=3, z=1, block=LANTERN, layers=0]]]",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[9] DecorationPlan[module=clearings, cells=[Cell[x=-2, y=1, z=1, block=MOSSY_COBBLESTONE, layers=0], Cell[x=-2, y=2, z=1, block=SNOW, layers=1], Cell[x=-1, y=1, z=1, block=COBBLESTONE, layers=0], Cell[x=-1, y=2, z=1, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[10] DecorationPlan[module=cabins, cells=[Cell[x=-2, y=1, z=-2, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=-1, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=0, block=SPRUCE_PLANKS, layers=0], Cell[x=…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[11] DecorationPlan[module=cabins, cells=[Cell[x=-2, y=1, z=-2, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=-1, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=0, block=SPRUCE_PLANKS, layers=0], Cell[x=…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.snowNeverCreatesDeepWall()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.negativeChunkBoundary()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[1] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=-1, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=1, block=SPRUCE_LEAVES, layers=0], Cell[x=1, y=2, z=0, b…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[2] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=7, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=-1, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=1, bloc…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[3] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-1, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=-1, y=1, z=0, block=BIRCH_LEAVES, layers=0], Cell[x=-1, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=0, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[4] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=OAK_LOG, layers=0], Cell[x=-1, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=-1, y=1, z=0, block=OAK_LEAVES, layers=0], Cell[x=-1, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=0, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=0, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=0, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=0, y=2, z=0, block=OAK…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[5] DecorationPlan[module=fallen-logs, cells=[Cell[x=-2, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-2, y=2, z=0, block=SNOW, layers=1], Cell[x=-1, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SNOW, layers=1], Cell[x=0, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=0, y=2, z=0, block=SNOW, layers=1], Cell[x=1, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=1, y=2, z=0, block=SNOW, layers=1], Cell[x=2, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=2, y=2, z=0, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[6] DecorationPlan[module=fallen-logs, cells=[Cell[x=-2, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=2, z=0, block=SNOW, layers=1], Cell[x=-1, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SNOW, layers=1], Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SNOW, layers=1], Cell[x=1, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=1, y=2, z=0, block=SNOW, layers=1], Cell[x=2, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=2, y=2, z=0, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[7] DecorationPlan[module=ice, cells=[Cell[x=-2, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=-1, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=0, block=ICE, layers=0], Cell[x=-1, y=2, z=0, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=1, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=-2, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=-1, block=ICE, layers=0], Cell[x=0, y=2, z=-1, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=2, z=0, block=PACKED_ICE, lay…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[8] DecorationPlan[module=clearings, cells=[Cell[x=-2, y=1, z=1, block=MOSSY_COBBLESTONE, layers=0], Cell[x=-2, y=2, z=1, block=SNOW, layers=1], Cell[x=-1, y=1, z=1, block=COBBLESTONE, layers=0], Cell[x=-1, y=2, z=1, block=SNOW, layers=1], Cell[x=2, y=1, z=1, block=SPRUCE_FENCE, layers=0], Cell[x=2, y=2, z=1, block=SPRUCE_FENCE, layers=0], Cell[x=2, y=3, z=1, block=LANTERN, layers=0]]]",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[9] DecorationPlan[module=clearings, cells=[Cell[x=-2, y=1, z=1, block=MOSSY_COBBLESTONE, layers=0], Cell[x=-2, y=2, z=1, block=SNOW, layers=1], Cell[x=-1, y=1, z=1, block=COBBLESTONE, layers=0], Cell[x=-1, y=2, z=1, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[10] DecorationPlan[module=cabins, cells=[Cell[x=-2, y=1, z=-2, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=-1, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=0, block=SPRUCE_PLANKS, layers=0], Cell[x=…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[11] DecorationPlan[module=cabins, cells=[Cell[x=-2, y=1, z=-2, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=-1, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=0, block=SPRUCE_PLANKS, layers=0], Cell[x=…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.invalidBlueprintRejected()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.noWritingOutsideWorldHeight()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.slopeNoFoundationRewrite()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.budgetRejectsCompleteObject()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.caveBelowFootprint()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.sparseGridSpacing()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.maximumObjectSizeRespected()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.noReadingUnloadedChunk()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[1] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=-1, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=1, block=SPRUCE_LEAVES, layers=0], Cell[x=1, y=2, z=0, b…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[2] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=3, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=4, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=5, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=6, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=7, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=-1, block=SPRUCE_LEAVES, layers=0], Cell[x=0, y=2, z=1, bloc…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[3] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-1, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=-1, y=1, z=0, block=BIRCH_LEAVES, layers=0], Cell[x=-1, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=-1, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=0, block=BIRCH_LEAVES, layers=0], Cell[x=1, y=1, z=1, block=BIRCH_LEAVES, layers=0], Cell[x=0, y…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[4] DecorationPlan[module=forests, cells=[Cell[x=0, y=1, z=0, block=OAK_LOG, layers=0], Cell[x=-1, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=-1, y=1, z=0, block=OAK_LEAVES, layers=0], Cell[x=-1, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=0, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=0, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=-1, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=0, block=OAK_LEAVES, layers=0], Cell[x=1, y=1, z=1, block=OAK_LEAVES, layers=0], Cell[x=0, y=2, z=0, block=OAK…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[5] DecorationPlan[module=fallen-logs, cells=[Cell[x=-2, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-2, y=2, z=0, block=SNOW, layers=1], Cell[x=-1, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SNOW, layers=1], Cell[x=0, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=0, y=2, z=0, block=SNOW, layers=1], Cell[x=1, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=1, y=2, z=0, block=SNOW, layers=1], Cell[x=2, y=1, z=0, block=BIRCH_LOG, layers=0], Cell[x=2, y=2, z=0, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[6] DecorationPlan[module=fallen-logs, cells=[Cell[x=-2, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=2, z=0, block=SNOW, layers=1], Cell[x=-1, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=-1, y=2, z=0, block=SNOW, layers=1], Cell[x=0, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=0, y=2, z=0, block=SNOW, layers=1], Cell[x=1, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=1, y=2, z=0, block=SNOW, layers=1], Cell[x=2, y=1, z=0, block=SPRUCE_LOG, layers=0], Cell[x=2, y=2, z=0, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[7] DecorationPlan[module=ice, cells=[Cell[x=-2, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=-1, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=0, block=ICE, layers=0], Cell[x=-1, y=2, z=0, block=PACKED_ICE, layers=0], Cell[x=-1, y=1, z=1, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=-2, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=-1, block=ICE, layers=0], Cell[x=0, y=2, z=-1, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=2, z=0, block=PACKED_ICE, lay…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[8] DecorationPlan[module=clearings, cells=[Cell[x=-2, y=1, z=1, block=MOSSY_COBBLESTONE, layers=0], Cell[x=-2, y=2, z=1, block=SNOW, layers=1], Cell[x=-1, y=1, z=1, block=COBBLESTONE, layers=0], Cell[x=-1, y=2, z=1, block=SNOW, layers=1], Cell[x=2, y=1, z=1, block=SPRUCE_FENCE, layers=0], Cell[x=2, y=2, z=1, block=SPRUCE_FENCE, layers=0], Cell[x=2, y=3, z=1, block=LANTERN, layers=0]]]",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[9] DecorationPlan[module=clearings, cells=[Cell[x=-2, y=1, z=1, block=MOSSY_COBBLESTONE, layers=0], Cell[x=-2, y=2, z=1, block=SNOW, layers=1], Cell[x=-1, y=1, z=1, block=COBBLESTONE, layers=0], Cell[x=-1, y=2, z=1, block=SNOW, layers=1]]]",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[10] DecorationPlan[module=cabins, cells=[Cell[x=-2, y=1, z=-2, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=-1, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=0, block=SPRUCE_PLANKS, layers=0], Cell[x=…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.[11] DecorationPlan[module=cabins, cells=[Cell[x=-2, y=1, z=-2, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-2, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=-1, block=SPRUCE_PLANKS, layers=0], Cell[x=-2, y=2, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=3, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=4, z=-1, block=SPRUCE_LOG, layers=0], Cell[x=-2, y=1, z=0, block=SPRUCE_PLANKS, layers=0], Cell[x=…",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.PlacementTest.determinismAcrossGenerationOrder()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.TimingStatsTest.actualStatistics()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.TimingStatsTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.TimingStatsTest.boundedWindow()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.TimingStatsTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.TimingStatsTest.noInventedMeasurements()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.core.TimingStatsTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.LunaContractTest.publicCancellableStartAndEndEvents()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.LunaContractTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.LunaContractTest.cancellationIsCheckedBeforeRegionOrBlockMutation()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.LunaContractTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.ResourcesTest.noMandatoryPluginDependency()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.ResourcesTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.ResourcesTest.safeConfigDefaults()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.ResourcesTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.ResourcesTest.everyAdminCommandHasOwnPermission()",
+      "status": "PASS",
+      "type": "JUnit 5",
+      "command": "PAPER_API_MODE=source LUNA_JAR=/path/to/actual.jar bash scripts/check.sh full",
+      "evidence": "junit/TEST-ru.midgard.winter.ResourcesTest.xml"
+    },
+    {
+      "id": "test_valid_pack",
+      "status": "PASS",
+      "type": "Python unittest",
+      "command": "python3 scripts/test_datapack.py",
+      "evidence": "logs/datapack-tests.log"
+    },
+    {
+      "id": "test_lost_features_rejected",
+      "status": "PASS",
+      "type": "Python unittest",
+      "command": "python3 scripts/test_datapack.py",
+      "evidence": "logs/datapack-tests.log"
+    },
+    {
+      "id": "test_excluded_biome_rejected",
+      "status": "PASS",
+      "type": "Python unittest",
+      "command": "python3 scripts/test_datapack.py",
+      "evidence": "logs/datapack-tests.log"
+    },
+    {
+      "id": "test_wrong_pack_version_rejected",
+      "status": "PASS",
+      "type": "Python unittest",
+      "command": "python3 scripts/test_datapack.py",
+      "evidence": "logs/datapack-tests.log"
+    },
+    {
+      "id": "test_precipitation_loss_rejected",
+      "status": "PASS",
+      "type": "Python unittest",
+      "command": "python3 scripts/test_datapack.py",
+      "evidence": "logs/datapack-tests.log"
+    },
+    {
+      "id": "test_original_tampering_rejected",
+      "status": "PASS",
+      "type": "Python unittest",
+      "command": "python3 scripts/test_datapack.py",
+      "evidence": "logs/datapack-tests.log"
+    },
+    {
+      "id": "official_source_api_compile",
+      "status": "PASS",
+      "type": "compile source build",
+      "command": "bash scripts/build-source-api.sh",
+      "evidence": "logs/paper-api-source-build.log"
+    },
+    {
+      "id": "plugin_jar",
+      "status": "PASS",
+      "type": "build and artifact validation",
+      "command": "gradle -PpaperApiClasspath=/workspace/tools/paper-api-build/build :plugin:build",
+      "evidence": "artifact-check.json"
+    },
+    {
+      "id": "probe_jar",
+      "status": "PASS",
+      "type": "build and artifact validation",
+      "command": "gradle -PpaperApiClasspath=/workspace/tools/paper-api-build/build :probe:jar",
+      "evidence": "artifact-check.json"
+    },
+    {
+      "id": "datapack_registry_and_diff",
+      "status": "PASS",
+      "type": "static validation",
+      "command": "python3 scripts/datapack.py",
+      "evidence": "logs/datapack-validation.log"
+    },
+    {
+      "id": "published_api_download",
+      "status": "BLOCKED",
+      "type": "standard build dependency",
+      "command": "curl -I https://repo.papermc.io/repository/maven-public/",
+      "evidence": "logs/paper-proxy-403.txt",
+      "reason": "HTTP 403 network policy; source API alternative is separately verified"
+    },
+    {
+      "id": "paper_smoke",
+      "status": "BLOCKED",
+      "type": "integration",
+      "command": "scripts/test-server.sh VERIFIED_PAPER_JAR",
+      "evidence": "KNOWN_ISSUES.md",
+      "reason": "Official Paper/Mojang download blocked; no server JAR or explicit Minecraft EULA acceptance"
+    },
+    {
+      "id": "server_restart",
+      "status": "NOT RUN",
+      "type": "runtime",
+      "command": "See README.md and relevant report",
+      "evidence": "KNOWN_ISSUES.md",
+      "reason": "Probe and script compiled; no real server run"
+    },
+    {
+      "id": "biome_runtime",
+      "status": "NOT RUN",
+      "type": "runtime",
+      "command": "See README.md and relevant report",
+      "evidence": "KNOWN_ISSUES.md",
+      "reason": "No real generated coordinates"
+    },
+    {
+      "id": "structures_multiseed",
+      "status": "NOT RUN",
+      "type": "runtime",
+      "command": "See README.md and relevant report",
+      "evidence": "KNOWN_ISSUES.md",
+      "reason": "No baseline/winter worlds generated; matrix prepared"
+    },
+    {
+      "id": "luna_runtime",
+      "status": "NOT RUN",
+      "type": "runtime",
+      "command": "See README.md and relevant report",
+      "evidence": "KNOWN_ISSUES.md",
+      "reason": "Actual JAR public event contract tested statically; runtime still missing"
+    },
+    {
+      "id": "worldguard_runtime",
+      "status": "NOT RUN",
+      "type": "runtime",
+      "command": "See README.md and relevant report",
+      "evidence": "KNOWN_ISSUES.md",
+      "reason": "Actual JAR available but required WorldEdit/Paper runtime missing"
+    },
+    {
+      "id": "purpur_runtime",
+      "status": "NOT RUN",
+      "type": "runtime",
+      "command": "See README.md and relevant report",
+      "evidence": "KNOWN_ISSUES.md",
+      "reason": "No verified Purpur 1.21.11 server"
+    },
+    {
+      "id": "chunky_fawe_runtime",
+      "status": "NOT RUN",
+      "type": "runtime",
+      "command": "See README.md and relevant report",
+      "evidence": "KNOWN_ISSUES.md",
+      "reason": "No Chunky/FAWE JAR or server"
+    },
+    {
+      "id": "stress_baseline",
+      "status": "NOT RUN",
+      "type": "runtime",
+      "command": "See README.md and relevant report",
+      "evidence": "KNOWN_ISSUES.md",
+      "reason": "Probe compiled but no actual latency/memory measurements"
+    },
+    {
+      "id": "visual",
+      "status": "NOT RUN",
+      "type": "runtime",
+      "command": "See README.md and relevant report",
+      "evidence": "KNOWN_ISSUES.md",
+      "reason": "No real Minecraft screenshots"
+    }
+  ]
+}

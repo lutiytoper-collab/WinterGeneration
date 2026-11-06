@@ -1,0 +1,25 @@
+name: MidgardWinterWorld
+version: '0.3.0'
+main: ru.midgard.winter.WinterPlugin
+api-version: '1.21.11'
+load: STARTUP
+softdepend: [WorldGuard, LunaAirDrop, Chunky, FastAsyncWorldEdit]
+commands:
+  winterworld:
+    description: Диагностика зимнего мира
+    usage: /winterworld help
+permissions:
+  winterworld.help:
+    default: op
+  winterworld.reload:
+    default: op
+  winterworld.status:
+    default: op
+  winterworld.info:
+    default: op
+  winterworld.debug:
+    default: op
+  winterworld.inspect:
+    default: op
+  winterworld.benchmark:
+    default: op

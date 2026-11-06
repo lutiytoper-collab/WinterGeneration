@@ -1,0 +1,158 @@
+[
+  {
+    "chunk": [
+      129,
+      132
+    ],
+    "changes": [
+      {
+        "x": 2071,
+        "y": 23,
+        "z": 2121,
+        "before": "minecraft:granite",
+        "after": "minecraft:diorite"
+      },
+      {
+        "x": 2071,
+        "y": 23,
+        "z": 2122,
+        "before": "minecraft:granite",
+        "after": "minecraft:diorite"
+      },
+      {
+        "x": 2071,
+        "y": 23,
+        "z": 2123,
+        "before": "minecraft:granite",
+        "after": "minecraft:diorite"
+      },
+      {
+        "x": 2071,
+        "y": 24,
+        "z": 2120,
+        "before": "minecraft:granite",
+        "after": "minecraft:diorite"
+      },
+      {
+        "x": 2071,
+        "y": 24,
+        "z": 2121,
+        "before": "minecraft:granite",
+        "after": "minecraft:diorite"
+      },
+      {
+        "x": 2071,
+        "y": 24,
+        "z": 2122,
+        "before": "minecraft:granite",
+        "after": "minecraft:diorite"
+      },
+      {
+        "x": 2071,
+        "y": 24,
+        "z": 2123,
+        "before": "minecraft:granite",
+        "after": "minecraft:diorite"
+      },
+      {
+        "x": 2071,
+        "y": 25,
+        "z": 2121,
+        "before": "minecraft:granite",
+        "after": "minecraft:diorite"
+      },
+      {
+        "x": 2071,
+        "y": 25,
+        "z": 2122,
+        "before": "minecraft:granite",
+        "after": "minecraft:diorite"
+      },
+      {
+        "x": 2071,
+        "y": 25,
+        "z": 2123,
+        "before": "minecraft:granite",
+        "after": "minecraft:diorite"
+      },
+      {
+        "x": 2072,
+        "y": 22,
+        "z": 2121,
+        "before": "minecraft:granite",
+        "after": "minecraft:diorite"
+      },
+      {
+        "x": 2072,
+        "y": 23,
+        "z": 2120,
+        "before": "minecraft:granite",
+        "after": "minecraft:diorite"
+      },
+      {
+        "x": 2072,
+        "y": 23,
+        "z": 2121,
+        "before": "minecraft:granite",
+        "after": "minecraft:diorite"
+      },
+      {
+        "x": 2072,
+        "y": 24,
+        "z": 2120,
+        "before": "minecraft:granite",
+        "after": "minecraft:diorite"
+      },
+      {
+        "x": 2072,
+        "y": 24,
+        "z": 2121,
+        "before": "minecraft:granite",
+        "after": "minecraft:diorite"
+      },
+      {
+        "x": 2072,
+        "y": 25,
+        "z": 2120,
+        "before": "minecraft:granite",
+        "after": "minecraft:diorite"
+      },
+      {
+        "x": 2072,
+        "y": 25,
+        "z": 2121,
+        "before": "minecraft:granite",
+        "after": "minecraft:diorite"
+      },
+      {
+        "x": 2072,
+        "y": 26,
+        "z": 2120,
+        "before": "minecraft:granite",
+        "after": "minecraft:diorite"
+      }
+    ]
+  },
+  {
+    "chunk": [
+      130,
+      133
+    ],
+    "changes": [
+      {
+        "x": 2084,
+        "y": 0,
+        "z": 2136,
+        "before": "minecraft:iron_ore",
+        "after": "minecraft:deepslate_iron_ore"
+      },
+      {
+        "x": 2084,
+        "y": 0,
+        "z": 2137,
+        "before": "minecraft:iron_ore",
+        "after": "minecraft:deepslate_iron_ore"
+      }
+    ]
+  }
+]

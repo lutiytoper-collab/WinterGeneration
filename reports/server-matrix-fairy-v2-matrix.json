@@ -1,0 +1,27 @@
+[
+  {
+    "seed": 825180311,
+    "diffs": [],
+    "timings": {
+      "vanilla": {
+        "chunks": 64,
+        "mean_ms": 117.340732546875,
+        "median_ms": 0.117417,
+        "p95_ms": 796.267915,
+        "max_ms": 1706.827674,
+        "heapStart": 417857536,
+        "heapEnd": 560988160
+      },
+      "winter": {
+        "chunks": 64,
+        "mean_ms": 158.166034234375,
+        "median_ms": 0.10050200000000001,
+        "p95_ms": 987.720003,
+        "max_ms": 2569.051701,
+        "heapStart": 545259520,
+        "heapEnd": 543686656
+      }
+    },
+    "metadata_y_refreshes": []
+  }
+]

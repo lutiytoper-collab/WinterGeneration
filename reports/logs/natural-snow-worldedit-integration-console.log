@@ -1,0 +1,722 @@
+Starting org.bukkit.craftbukkit.Main
+[20:48:38 INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.9+10-LTS; Eclipse Adoptium Temurin-21.0.9+10) on Linux 6.18.57 (amd64)
+[20:48:38 INFO]: [bootstrap] Loading Paper 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) for Minecraft 1.21.11
+[20:48:38 INFO]: [PluginInitializerManager] Initializing plugins...
+[20:48:38 INFO]: [PluginInitializerManager] Initialized 6 plugins
+[20:48:38 INFO]: [PluginInitializerManager] Bukkit plugins (6):
+ - Chunky (1.4.40), LunaAirDrop (1.0.3-MidgardFix), MidgardWinterWorld (0.1.0), WinterProbe (0.1.0), WorldEdit (7.3.19+7378-cb4171a), WorldGuard (7.0.16+2355-f7fded2)
+[20:48:43 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[20:48:44 INFO]: Loaded 1470 recipes
+[20:48:44 INFO]: Loaded 1584 advancements
+[20:48:45 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[20:48:45 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 423.8ms
+[20:48:45 INFO]: Starting minecraft server version 1.21.11
+[20:48:45 INFO]: Loading properties
+[20:48:45 INFO]: This server is running Paper version 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[20:48:45 INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[20:48:45 INFO]: Server Ping Player Sample Count: 12
+[20:48:45 INFO]: Using 4 threads for Netty based IO
+[20:48:46 INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[20:48:46 INFO]: Default game type: SURVIVAL
+[20:48:46 INFO]: Generating keypair
+> 
+  
+[20:48:46 INFO]: Starting Minecraft server on 127.0.0.1:25576
+> 
+  
+[20:48:46 INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+> 
+  
+[20:48:46 INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+> 
+  
+[20:48:46 INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.19+7378-cb4171a
+> 
+  
+[20:48:47 INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@9e57d78]
+> 
+  
+[20:48:47 INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.16+2355-f7fded2
+> 
+  
+[20:48:47 INFO]: [Chunky] Loading server plugin Chunky v1.4.40
+> 
+  
+[20:48:47 INFO]: [LunaAirDrop] Loading server plugin LunaAirDrop v1.0.3-MidgardFix
+> 
+  
+[20:48:47 INFO]: [MidgardWinterWorld] Loading server plugin MidgardWinterWorld v0.1.0
+> 
+  
+[20:48:47 INFO]: [WinterProbe] Loading server plugin WinterProbe v0.1.0
+> 
+  
+[20:48:47 INFO]: Server permissions file permissions.yml is empty, ignoring it
+> 
+  
+[20:48:47 INFO]: [WorldEdit] Enabling WorldEdit v7.3.19+7378-cb4171a
+> 
+  
+[20:48:47 INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+> 
+  
+[20:48:47 INFO]: WEPIF: Using the Bukkit Permissions API.
+> 
+  
+[20:48:48 INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_21_11.PaperweightAdapter as the Bukkit adapter
+> 
+  
+[31;1m[20:48:48 ERROR]: Failed to request yggdrasil public key
+com.mojang.authlib.exceptions.MinecraftClientException: Failed to read from https://api.minecraftservices.com/publickeys due to Connection refused
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:111) ~[authlib-7.0.61.jar:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:56) ~[authlib-7.0.61.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.fetch(YggdrasilServicesKeyInfo.java:114) ~[authlib-7.0.61.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo$1.run(YggdrasilServicesKeyInfo.java:89) ~[authlib-7.0.61.jar:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1302) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1143) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1705) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1629) ~[?:?]
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307) ~[?:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:82) ~[authlib-7.0.61.jar:?]
+	... 9 more
+[m> 
+  
+[20:48:49 INFO]: [MidgardWinterWorld] Enabling MidgardWinterWorld v0.1.0
+> 
+  
+[20:48:49 INFO]: [MidgardWinterWorld] Development build 0.1.0; late decoration only; no retrogen. LunaAirDrop adapter requires validation.
+> 
+  
+[33;1m[20:48:49 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[m> 
+  
+[33;1m[20:48:49 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[m> 
+  
+[33;1m[20:48:49 WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[m> 
+  
+[33;1m[20:48:49 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[m> 
+  
+[20:48:49 INFO]: Preparing level "winter_test"
+> 
+  
+[20:48:50 INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
+> 
+  
+[20:48:50 INFO]: Prepared spawn area in 0 ms
+> 
+  
+[20:48:50 INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+> 
+  
+[20:48:50 INFO]: Prepared spawn area in 1 ms
+> 
+  
+[20:48:50 INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+> 
+  
+[20:48:50 INFO]: Prepared spawn area in 0 ms
+> 
+  
+[20:48:50 INFO]: Done preparing level "winter_test" (0.691s)
+> 
+  
+[20:48:50 INFO]: [WorldGuard] Enabling WorldGuard v7.0.16+2355-f7fded2
+> 
+  
+[20:48:50 INFO]: [WorldGuard] (winter_test) Поджигание динамита РАЗРЕШЕНО.
+> 
+  
+[20:48:50 INFO]: [WorldGuard] (winter_test) Огниво РАЗРЕШЕНО.
+> 
+  
+[20:48:50 INFO]: [WorldGuard] (winter_test) Распространение огня от лавы РАЗРЕШЕНО
+> 
+  
+[20:48:50 INFO]: [WorldGuard] (winter_test) Распространения огоня НЕОГРАНИЧЕНО.
+> 
+  
+[20:48:50 INFO]: [WorldGuard] Конфигурация загружена для мира 'winter_test'
+> 
+  
+[20:48:50 INFO]: [WorldGuard] (winter_test_nether) Поджигание динамита РАЗРЕШЕНО.
+> 
+  
+[20:48:50 INFO]: [WorldGuard] (winter_test_nether) Огниво РАЗРЕШЕНО.
+> 
+  
+[20:48:50 INFO]: [WorldGuard] (winter_test_nether) Распространение огня от лавы РАЗРЕШЕНО
+> 
+  
+[20:48:50 INFO]: [WorldGuard] (winter_test_nether) Распространения огоня НЕОГРАНИЧЕНО.
+> 
+  
+[20:48:50 INFO]: [WorldGuard] Конфигурация загружена для мира 'winter_test_nether'
+> 
+  
+[20:48:50 INFO]: [WorldGuard] (winter_test_the_end) Поджигание динамита РАЗРЕШЕНО.
+> 
+  
+[20:48:50 INFO]: [WorldGuard] (winter_test_the_end) Огниво РАЗРЕШЕНО.
+> 
+  
+[20:48:50 INFO]: [WorldGuard] (winter_test_the_end) Распространение огня от лавы РАЗРЕШЕНО
+> 
+  
+[20:48:50 INFO]: [WorldGuard] (winter_test_the_end) Распространения огоня НЕОГРАНИЧЕНО.
+> 
+  
+[20:48:50 INFO]: [WorldGuard] Конфигурация загружена для мира 'winter_test_the_end'
+> 
+  
+[20:48:50 INFO]: [WorldGuard] Загрузка данных регионов...
+> 
+  
+[20:48:50 INFO]: [Chunky] Enabling Chunky v1.4.40
+> 
+  
+[20:48:50 INFO]: [LunaAirDrop] Enabling LunaAirDrop v1.0.3-MidgardFix
+> 
+  
+[20:48:50 INFO]: [LunaAirDrop] Language: ru
+> 
+  
+[20:48:51 INFO]: [92mАирдроп default загружен![0m
+> 
+  
+[20:48:51 INFO]: [92mПлагин успешно включён за 272ms[0m
+> 
+  
+[20:48:51 INFO]: [MidgardWinterWorld] LunaAirDrop public event gate registered; runtime compatibility still UNVERIFIED
+> 
+  
+[20:48:51 INFO]: [WinterProbe] Enabling WinterProbe v0.1.0
+> 
+  
+[20:48:51 INFO]: [spark] Starting background profiler...
+> 
+  
+[20:48:51 INFO]: Running delayed init tasks
+> 
+  
+[20:48:51 INFO]: Done (13.764s)! For help, type "help"
+> > > > 
+  
+[20:48:51 INFO]: MidgardWinterWorld 0.1.0 DEVELOPMENT; enabled=true; worlds=[winter_test, winter_fixture]; processed=0 decorated=0 skipped=0 boundary-restored=0 pending=0; WorldGuard=public API bridge, fail closed on query failure; LunaAirDrop=UNVERIFIED
+> 
+  
+[20:48:51 INFO]: There are 4 data pack(s) enabled: [92m[[37mvanilla (built-in)[92m][37m, [92m[[37mfile/bukkit (world)[92m][37m, [92m[[37mfile/winter-datapack.zip (world)[92m][37m, [92m[[37mpaper (built-in)[92m][0m
+> 
+  
+[20:48:51 INFO]: Loading 0 persistent chunks for world 'minecraft:winter_fixture'...
+> 
+  
+[20:48:51 INFO]: Prepared spawn area in 0 ms
+> 
+  
+[20:48:51 INFO]: [WorldGuard] (winter_fixture) Поджигание динамита РАЗРЕШЕНО.
+> 
+  
+[20:48:51 INFO]: [WorldGuard] (winter_fixture) Огниво РАЗРЕШЕНО.
+> 
+  
+[20:48:51 INFO]: [WorldGuard] (winter_fixture) Распространение огня от лавы РАЗРЕШЕНО
+> 
+  
+[20:48:51 INFO]: [WorldGuard] (winter_fixture) Распространения огоня НЕОГРАНИЧЕНО.
+> 
+  
+[20:48:51 INFO]: [WorldGuard] Конфигурация загружена для мира 'winter_fixture'
+> 
+  
+[20:48:51 INFO]: Настройки применены атомарно; только новые чанки
+> 
+  
+[33;1m[20:48:52 WARN]: *************************************************************************************
+[m> 
+  
+[33;1m[20:48:52 WARN]: You are running the latest build for your Minecraft version (1.21.11)
+[m> 
+  
+[33;1m[20:48:52 WARN]: However, you are 6 release(s) behind the latest stable release (26.3)!
+[m> 
+  
+[33;1m[20:48:52 WARN]: It is recommended that you update as soon as possible
+[m> 
+  
+[33;1m[20:48:52 WARN]: https://papermc.io/downloads/paper
+[m> 
+  
+[33;1m[20:48:52 WARN]: *************************************************************************************
+[m> 
+  
+[20:48:57 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-17, z=-60]: vanilla structure with margin
+> 
+  
+[20:48:57 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-17, z=-59]: vanilla structure with margin
+> 
+  
+[20:48:57 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-16, z=-60]: vanilla structure with margin
+> 
+  
+[20:48:58 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-16, z=-59]: vanilla structure with margin
+> 
+  
+[20:48:58 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-18, z=-59]: vanilla structure with margin
+> 
+  
+[20:48:59 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-18, z=-60]: vanilla structure with margin
+> 
+  
+[20:48:59 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-18, z=-61]: block entities in chunk
+> 
+  
+[20:48:59 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-17, z=-58]: vanilla structure with margin
+> 
+  
+[20:48:59 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-18, z=-58]: vanilla structure with margin
+> 
+  
+[20:48:59 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-16, z=-58]: vanilla structure with margin
+> 
+  
+[20:48:59 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-15, z=-60]: vanilla structure with margin
+> 
+  
+[20:48:59 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-15, z=-59]: vanilla structure with margin
+> 
+  
+[20:48:59 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-15, z=-58]: vanilla structure with margin
+> 
+  
+[20:48:59 INFO]: [MidgardWinterWorld] Luna search: protected at -258,63,-946
+> 
+  
+[20:49:01 INFO]: [MidgardWinterWorld] Luna search: native generator returned no candidate
+> 
+  
+[20:49:03 INFO]: [MidgardWinterWorld] Luna search: native generator returned no candidate
+> 
+  
+[20:49:03 INFO]: [92mStarted[0m
+> 
+  
+[20:49:04 INFO]: [MidgardWinterWorld] Luna search: native generator returned no candidate
+> 
+  
+[20:49:05 INFO]: [MidgardWinterWorld] Luna search: native generator returned no candidate
+> 
+  
+[20:49:06 INFO]: [MidgardWinterWorld] Luna search: native generator returned no candidate
+> 
+  
+[20:49:06 INFO]: [WinterProbe] WINTERAUDIT_DONE biomes=0 checks=18
+> > 
+  
+[20:49:06 INFO]: [91mFail start: 0[0m
+> 
+  
+[20:49:08 INFO]: [MidgardWinterWorld] Luna search: native generator returned no candidate
+> 
+  
+[20:49:09 INFO]: [MidgardWinterWorld] Luna search: native generator returned no candidate
+> 
+  
+[20:49:09 INFO]: [91mFail start: 1[0m
+> 
+  
+[20:49:10 INFO]: [MidgardWinterWorld] Luna search: native generator returned no candidate
+> 
+  
+[20:49:10 INFO]: [91mFail start: 2[0m
+> 
+  
+[20:49:10 INFO]: [MidgardWinterWorld] Luna search: native generator returned no candidate
+> 
+  
+[20:49:11 INFO]: [MidgardWinterWorld] Luna search: native generator returned no candidate
+> 
+  
+[20:49:11 INFO]: [91mFail start: 3[0m
+> 
+  
+[20:49:12 INFO]: [MidgardWinterWorld] Luna search: native generator returned no candidate
+> 
+  
+[20:49:12 INFO]: [91mFail start: 4[0m
+> 
+  
+[20:49:14 INFO]: [91mFail start: 5[0m
+> 
+  
+[20:49:14 INFO]: [91mFail start: 6[0m
+> 
+  
+[20:49:15 INFO]: [91mFail start: 7[0m
+> 
+  
+[20:49:15 INFO]: [91mFail start: 8[0m
+> 
+  
+[20:49:16 INFO]: [92mStarted[0m
+> 
+  
+[20:49:16 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=39, z=-5]: WorldGuard region default_region
+> 
+  
+[20:49:16 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=39, z=-4]: WorldGuard region default_region
+> 
+  
+[20:49:16 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=40, z=-3]: WorldGuard region default_region
+> 
+  
+[20:49:16 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=39, z=-3]: WorldGuard region default_region
+> 
+  
+[20:49:16 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=41, z=-3]: WorldGuard region default_region
+> 
+  
+[20:49:16 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=41, z=-4]: WorldGuard region default_region
+> 
+  
+[20:49:16 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=41, z=-5]: WorldGuard region default_region
+> 
+  
+[20:49:16 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=38, z=-5]: WorldGuard region default_region
+> 
+  
+[20:49:16 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=38, z=-4]: WorldGuard region default_region
+> 
+  
+[20:49:16 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=38, z=-3]: WorldGuard region default_region
+> 
+  
+[20:49:16 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=40, z=-2]: WorldGuard region default_region
+> 
+  
+[20:49:16 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=41, z=-2]: WorldGuard region default_region
+> 
+  
+[20:49:16 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=39, z=-2]: WorldGuard region default_region
+> 
+  
+[20:49:16 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=38, z=-2]: WorldGuard region default_region
+> 
+  
+[20:49:16 INFO]: [WinterProbe] NATURALLUNA_READY
+> 
+  
+[20:49:16 INFO]: UUID of player WinterQA is a9b60c29-8744-3d74-b1d0-2a7c0259a5b8
+> 
+  
+[20:49:16 INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [WorldGuard]
+> 
+  
+[20:49:17 INFO]: [93mWinterQA joined the game[0m
+> 
+  
+[20:49:17 INFO]: WinterQA[/127.0.0.1:51384] logged in with entity id 27 at ([winter_test]663.5, 70.0, -222.5)
+> > > > 
+  
+[20:49:17 INFO]: [91mNothing changed. The player already is an operator[0m
+> 
+  
+[20:49:17 INFO]: [3m[37mYou whisper to WinterQA: QA_GO[0m
+> 
+  
+[20:49:20 INFO]: [WorldGuard] Изменения в данных региона, выполненные в 'winter_test' были сохранены в фоновом режиме
+> 
+  
+[20:49:20 INFO]: [WorldGuard] Изменения в данных региона, выполненные в 'winter_fixture' были сохранены в фоновом режиме
+> 
+  
+[20:49:23 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=40, z=0]: vanilla structure with margin
+> 
+  
+[20:49:23 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=40, z=1]: vanilla structure with margin
+> 
+  
+[20:49:23 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=39, z=0]: vanilla structure with margin
+> 
+  
+[20:49:23 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=39, z=1]: vanilla structure with margin
+> 
+  
+[20:49:23 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=25, z=46]: vanilla structure with margin
+> 
+  
+[20:49:24 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=26, z=46]: vanilla structure with margin
+> 
+  
+[33;1m[20:49:24 WARN]: WinterQA was kicked for floating too long!
+[m> 
+  
+[20:49:24 INFO]: WinterQA lost connection: Flying is not enabled on this server
+> 
+  
+[20:49:24 INFO]: [93mWinterQA left the game[0m
+> 
+  
+[20:49:24 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=26, z=47]: vanilla structure with margin
+> 
+  
+[20:49:24 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=25, z=47]: vanilla structure with margin
+> > 
+  
+[31;1m[20:49:24 ERROR]: [WinterProbe] NATURALLUNA_FAILED
+java.lang.IllegalStateException: Cleanup invariant failed
+	at WinterProbe.jar//ru.midgard.winter.probe.NaturalLunaAudit.verifyEnd(NaturalLunaAudit.java:43) ~[?:?]
+	at WinterProbe.jar//ru.midgard.winter.probe.WorldgenProbe.onCommand(WorldgenProbe.java:20) ~[?:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.command.brigadier.bukkit.BukkitCommandNode$BukkitBrigCommand.run(BukkitCommandNode.java:83) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.3.10.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:104) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:469) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:374) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:362) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.Commands.performPrefixedCommand(Commands.java:353) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.dedicated.DedicatedServer.handleConsoleInputs(DedicatedServer.java:594) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.dedicated.DedicatedServer.tickConnection(DedicatedServer.java:550) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1833) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1611) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.dedicated.DedicatedServer.tickServer(DedicatedServer.java:427) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1667) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1335) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:388) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[m> 
+  
+[20:49:24 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=38, z=0]: vanilla structure with margin
+> 
+  
+[20:49:44 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-14, z=-60]: vanilla structure with margin
+> 
+  
+[20:49:44 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-14, z=-59]: vanilla structure with margin
+> 
+  
+[20:49:47 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-32, z=51]: vanilla structure with margin
+> 
+  
+[20:49:47 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-32, z=52]: vanilla structure with margin
+> 
+  
+[20:49:47 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-31, z=51]: vanilla structure with margin
+> 
+  
+[20:49:48 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-31, z=52]: vanilla structure with margin
+> 
+  
+[20:49:49 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-31, z=50]: vanilla structure with margin
+> 
+  
+[20:49:49 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-33, z=51]: vanilla structure with margin
+> 
+  
+[20:49:49 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-33, z=50]: vanilla structure with margin
+> 
+  
+[20:49:49 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-33, z=52]: vanilla structure with margin
+> 
+  
+[20:49:49 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-33, z=53]: vanilla structure with margin
+> 
+  
+[20:49:49 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-32, z=53]: vanilla structure with margin
+> 
+  
+[20:49:49 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-31, z=53]: vanilla structure with margin
+> 
+  
+[20:49:49 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-30, z=50]: vanilla structure with margin
+> 
+  
+[20:49:49 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-30, z=51]: vanilla structure with margin
+> 
+  
+[20:49:49 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-30, z=52]: vanilla structure with margin
+> 
+  
+[20:49:49 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-30, z=53]: vanilla structure with margin
+> 
+  
+[20:49:49 INFO]: [MidgardWinterWorld] Skip ChunkKey[world=f146d9e9-23de-4184-b0ab-644529a4d15c, x=-32, z=50]: vanilla structure with margin
+> > 
+  
+[20:49:55 INFO]: Stopping the server
+> 
+  
+[20:49:55 INFO]: Stopping server
+> 
+  
+[20:49:55 INFO]: [WinterProbe] Disabling WinterProbe v0.1.0
+> 
+  
+[20:49:55 INFO]: [MidgardWinterWorld] Disabling MidgardWinterWorld v0.1.0
+> 
+  
+[20:49:55 INFO]: [LunaAirDrop] Disabling LunaAirDrop v1.0.3-MidgardFix
+> 
+  
+[20:49:55 INFO]: [92mПлагин успешно выключен за 28ms[0m
+> 
+  
+[20:49:55 INFO]: [Chunky] Disabling Chunky v1.4.40
+> 
+  
+[20:49:55 INFO]: [WorldGuard] Disabling WorldGuard v7.0.16+2355-f7fded2
+> 
+  
+[20:49:55 INFO]: [WorldGuard] ЗАвершение работы исполнителя и отмена любых отложенных задач...
+> 
+  
+[20:49:55 INFO]: [WorldEdit] Disabling WorldEdit v7.3.19+7378-cb4171a
+> 
+  
+[20:49:55 INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+> 
+  
+[20:49:55 INFO]: Saving players
+> 
+  
+[20:49:55 INFO]: Saving worlds
+> 
+  
+[20:49:55 INFO]: Saving chunks for level 'ServerLevel[winter_test]'/minecraft:overworld
+> 
+  
+[20:49:55 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'winter_test'
+> 
+  
+[20:49:55 INFO]: [ChunkHolderManager] Halted chunk system for world 'winter_test'
+> 
+  
+[20:49:55 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'winter_test'
+> 
+  
+[20:49:56 INFO]: [ChunkHolderManager] Saved 447 block chunks, 2 entity chunks, 0 poi chunks in world 'winter_test' in 0.49s
+> 
+  
+[20:49:56 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'winter_test'
+> 
+  
+[20:49:56 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'winter_test'
+> 
+  
+[20:49:56 INFO]: Saving chunks for level 'ServerLevel[winter_test_nether]'/minecraft:the_nether
+> 
+  
+[20:49:56 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'winter_test_nether'
+> 
+  
+[20:49:56 INFO]: [ChunkHolderManager] Halted chunk system for world 'winter_test_nether'
+> 
+  
+[20:49:56 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'winter_test_nether'
+> 
+  
+[20:49:56 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'winter_test_nether' in 0.00s
+> 
+  
+[20:49:56 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'winter_test_nether'
+> 
+  
+[20:49:56 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'winter_test_nether'
+> 
+  
+[20:49:56 INFO]: Saving chunks for level 'ServerLevel[winter_test_the_end]'/minecraft:the_end
+> 
+  
+[20:49:56 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'winter_test_the_end'
+> 
+  
+[20:49:56 INFO]: [ChunkHolderManager] Halted chunk system for world 'winter_test_the_end'
+> 
+  
+[20:49:56 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'winter_test_the_end'
+> 
+  
+[20:49:56 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'winter_test_the_end' in 0.00s
+> 
+  
+[20:49:56 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'winter_test_the_end'
+> 
+  
+[20:49:56 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'winter_test_the_end'
+> 
+  
+[20:49:56 INFO]: Saving chunks for level 'ServerLevel[winter_fixture]'/minecraft:winter_fixture
+> 
+  
+[20:49:56 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'winter_fixture'
+> 
+  
+[20:49:56 INFO]: [ChunkHolderManager] Halted chunk system for world 'winter_fixture'
+> 
+  
+[20:49:56 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'winter_fixture'
+> 
+  
+[20:49:56 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'winter_fixture' in 0.01s
+> 
+  
+[20:49:56 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'winter_fixture'
+> 
+  
+[20:49:56 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'winter_fixture'
+> 
+  
+[20:49:56 INFO]: ThreadedAnvilChunkStorage (winter_test): All chunks are saved
+> 
+  
+[20:49:56 INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+> 
+  
+[20:49:56 INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+> 
+  
+[20:49:56 INFO]: ThreadedAnvilChunkStorage (winter_fixture): All chunks are saved
+> 
+  
+[20:49:56 INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+> 
+  
+[20:49:56 INFO]: Waiting for all RegionFile I/O tasks to complete...
+> 
+  
+[20:49:56 INFO]: All RegionFile I/O tasks to complete
+> 
+  
+[20:49:56 INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+> 
+  
+[20:49:56 INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
+> 

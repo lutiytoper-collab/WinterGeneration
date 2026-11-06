@@ -1,0 +1,104 @@
+[
+  {
+    "seed": 42,
+    "diffs": [],
+    "timings": {
+      "vanilla": {
+        "chunks": 256,
+        "mean_ms": 77.66352104296875,
+        "median_ms": 0.050145499999999996,
+        "p95_ms": 773.877411,
+        "max_ms": 2016.523467,
+        "heapStart": 497025024,
+        "heapEnd": 651936784
+      },
+      "winter": {
+        "chunks": 256,
+        "mean_ms": 80.18208229296874,
+        "median_ms": 0.044953,
+        "p95_ms": 775.140099,
+        "max_ms": 2132.13459,
+        "heapStart": 462946304,
+        "heapEnd": 390011136
+      }
+    },
+    "metadata_y_refreshes": [
+      {
+        "mode": "vanilla",
+        "chunk": [
+          136,
+          130
+        ],
+        "before": [
+          "minecraft:mineshaft:BoundingBox [minX=2071.0, minY=-41.0, minZ=2030.0, maxX=2227.0, maxY=-22.0, maxZ=2202.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2166.0, minY=-52.0, minZ=1987.0, maxX=2311.0, maxY=-30.0, maxZ=2157.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2177.0, minY=26.0, minZ=2035.0, maxX=2311.0, maxY=45.0, maxZ=2164.0]",
+          "minecraft:shipwreck:BoundingBox [minX=2176.0, minY=90.0, minZ=2089.0, maxX=2184.0, maxY=98.0, maxZ=2110.0]"
+        ],
+        "after": [
+          "minecraft:mineshaft:BoundingBox [minX=2071.0, minY=-41.0, minZ=2030.0, maxX=2227.0, maxY=-22.0, maxZ=2202.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2166.0, minY=-52.0, minZ=1987.0, maxX=2311.0, maxY=-30.0, maxZ=2157.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2177.0, minY=26.0, minZ=2035.0, maxX=2311.0, maxY=45.0, maxZ=2164.0]",
+          "minecraft:shipwreck:BoundingBox [minX=2176.0, minY=50.0, minZ=2089.0, maxX=2184.0, maxY=58.0, maxZ=2110.0]"
+        ]
+      },
+      {
+        "mode": "vanilla",
+        "chunk": [
+          136,
+          131
+        ],
+        "before": [
+          "minecraft:mineshaft:BoundingBox [minX=2071.0, minY=-41.0, minZ=2030.0, maxX=2227.0, maxY=-22.0, maxZ=2202.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2166.0, minY=-52.0, minZ=1987.0, maxX=2311.0, maxY=-30.0, maxZ=2157.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2177.0, minY=26.0, minZ=2035.0, maxX=2311.0, maxY=45.0, maxZ=2164.0]",
+          "minecraft:shipwreck:BoundingBox [minX=2176.0, minY=90.0, minZ=2089.0, maxX=2184.0, maxY=98.0, maxZ=2110.0]"
+        ],
+        "after": [
+          "minecraft:mineshaft:BoundingBox [minX=2071.0, minY=-41.0, minZ=2030.0, maxX=2227.0, maxY=-22.0, maxZ=2202.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2166.0, minY=-52.0, minZ=1987.0, maxX=2311.0, maxY=-30.0, maxZ=2157.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2177.0, minY=26.0, minZ=2035.0, maxX=2311.0, maxY=45.0, maxZ=2164.0]",
+          "minecraft:shipwreck:BoundingBox [minX=2176.0, minY=50.0, minZ=2089.0, maxX=2184.0, maxY=58.0, maxZ=2110.0]"
+        ]
+      },
+      {
+        "mode": "winter",
+        "chunk": [
+          136,
+          130
+        ],
+        "before": [
+          "minecraft:mineshaft:BoundingBox [minX=2071.0, minY=-41.0, minZ=2030.0, maxX=2227.0, maxY=-22.0, maxZ=2202.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2166.0, minY=-52.0, minZ=1987.0, maxX=2311.0, maxY=-30.0, maxZ=2157.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2177.0, minY=26.0, minZ=2035.0, maxX=2311.0, maxY=45.0, maxZ=2164.0]",
+          "minecraft:shipwreck:BoundingBox [minX=2176.0, minY=90.0, minZ=2089.0, maxX=2184.0, maxY=98.0, maxZ=2110.0]"
+        ],
+        "after": [
+          "minecraft:mineshaft:BoundingBox [minX=2071.0, minY=-41.0, minZ=2030.0, maxX=2227.0, maxY=-22.0, maxZ=2202.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2166.0, minY=-52.0, minZ=1987.0, maxX=2311.0, maxY=-30.0, maxZ=2157.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2177.0, minY=26.0, minZ=2035.0, maxX=2311.0, maxY=45.0, maxZ=2164.0]",
+          "minecraft:shipwreck:BoundingBox [minX=2176.0, minY=50.0, minZ=2089.0, maxX=2184.0, maxY=58.0, maxZ=2110.0]"
+        ]
+      },
+      {
+        "mode": "winter",
+        "chunk": [
+          136,
+          131
+        ],
+        "before": [
+          "minecraft:mineshaft:BoundingBox [minX=2071.0, minY=-41.0, minZ=2030.0, maxX=2227.0, maxY=-22.0, maxZ=2202.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2166.0, minY=-52.0, minZ=1987.0, maxX=2311.0, maxY=-30.0, maxZ=2157.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2177.0, minY=26.0, minZ=2035.0, maxX=2311.0, maxY=45.0, maxZ=2164.0]",
+          "minecraft:shipwreck:BoundingBox [minX=2176.0, minY=90.0, minZ=2089.0, maxX=2184.0, maxY=98.0, maxZ=2110.0]"
+        ],
+        "after": [
+          "minecraft:mineshaft:BoundingBox [minX=2071.0, minY=-41.0, minZ=2030.0, maxX=2227.0, maxY=-22.0, maxZ=2202.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2166.0, minY=-52.0, minZ=1987.0, maxX=2311.0, maxY=-30.0, maxZ=2157.0]",
+          "minecraft:mineshaft:BoundingBox [minX=2177.0, minY=26.0, minZ=2035.0, maxX=2311.0, maxY=45.0, maxZ=2164.0]",
+          "minecraft:shipwreck:BoundingBox [minX=2176.0, minY=50.0, minZ=2089.0, maxX=2184.0, maxY=58.0, maxZ=2110.0]"
+        ]
+      }
+    ]
+  }
+]

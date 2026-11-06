@@ -1,0 +1,49 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :core:compileJava
+> Task :core:processResources NO-SOURCE
+> Task :core:classes
+> Task :core:jar
+> Task :core:compileTestJava
+> Task :core:processTestResources NO-SOURCE
+> Task :core:testClasses
+> Task :core:test
+
+BUILD SUCCESSFUL in 12s
+4 actionable tasks: 4 executed
+PASS: 23 biome definitions; climate-only diff; registry references; exact 94.1 metadata. Server load NOT RUN.
+test_excluded_biome_rejected (__main__.DatapackTests.test_excluded_biome_rejected) ... ok
+test_lost_features_rejected (__main__.DatapackTests.test_lost_features_rejected) ... ok
+test_original_tampering_rejected (__main__.DatapackTests.test_original_tampering_rejected) ... ok
+test_precipitation_loss_rejected (__main__.DatapackTests.test_precipitation_loss_rejected) ... ok
+test_valid_pack (__main__.DatapackTests.test_valid_pack) ... ok
+test_wrong_pack_version_rejected (__main__.DatapackTests.test_wrong_pack_version_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.080s
+
+OK
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :core:compileJava UP-TO-DATE
+> Task :core:processResources NO-SOURCE
+> Task :core:classes UP-TO-DATE
+> Task :core:jar UP-TO-DATE
+> Task :plugin:compileJava UP-TO-DATE
+> Task :plugin:processResources UP-TO-DATE
+> Task :plugin:classes UP-TO-DATE
+> Task :plugin:jar
+> Task :plugin:assemble
+> Task :plugin:compileTestJava UP-TO-DATE
+> Task :plugin:processTestResources NO-SOURCE
+> Task :plugin:testClasses UP-TO-DATE
+> Task :plugin:test
+> Task :plugin:check
+> Task :plugin:build
+> Task :probe:compileJava UP-TO-DATE
+> Task :probe:processResources UP-TO-DATE
+> Task :probe:classes UP-TO-DATE
+> Task :probe:jar UP-TO-DATE
+
+BUILD SUCCESSFUL in 9s
+10 actionable tasks: 2 executed, 8 up-to-date

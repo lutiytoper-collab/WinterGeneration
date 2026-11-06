@@ -1,0 +1,59 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :core:compileJava
+> Task :core:processResources NO-SOURCE
+> Task :core:classes
+> Task :core:jar
+> Task :core:compileTestJava
+> Task :core:processTestResources NO-SOURCE
+> Task :core:testClasses
+> Task :core:test
+
+BUILD SUCCESSFUL in 12s
+4 actionable tasks: 4 executed
+PASS: 23 biome definitions; climate-only diff; registry references; exact 94.1 metadata. Server load NOT RUN.
+test_excluded_biome_rejected (__main__.DatapackTests.test_excluded_biome_rejected) ... ok
+test_lost_features_rejected (__main__.DatapackTests.test_lost_features_rejected) ... ok
+test_original_tampering_rejected (__main__.DatapackTests.test_original_tampering_rejected) ... ok
+test_precipitation_loss_rejected (__main__.DatapackTests.test_precipitation_loss_rejected) ... ok
+test_valid_pack (__main__.DatapackTests.test_valid_pack) ... ok
+test_wrong_pack_version_rejected (__main__.DatapackTests.test_wrong_pack_version_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.066s
+
+OK
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :core:compileJava UP-TO-DATE
+> Task :core:processResources NO-SOURCE
+> Task :core:classes UP-TO-DATE
+> Task :core:jar UP-TO-DATE
+
+> Task :plugin:compileJava
+/workspace/WinterGeneration/plugin/src/main/java/ru/midgard/winter/WinterPlugin.java:248: warning: [removal] getKey() in Structure has been deprecated and marked for removal
+            var b=structure.getBoundingBox();String id=structure.getStructure().getKey().getKey();
+                                                                               ^
+Note: /workspace/WinterGeneration/plugin/src/main/java/ru/midgard/winter/WinterPlugin.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 warning
+
+> Task :plugin:processResources
+> Task :plugin:classes
+> Task :plugin:jar
+> Task :plugin:assemble
+> Task :plugin:compileTestJava UP-TO-DATE
+> Task :plugin:processTestResources NO-SOURCE
+> Task :plugin:testClasses UP-TO-DATE
+> Task :plugin:test
+> Task :plugin:check
+> Task :plugin:build
+> Task :probe:compileJava UP-TO-DATE
+> Task :probe:processResources
+> Task :probe:classes
+> Task :probe:jar
+
+[Incubating] Problems report is available at: file:///workspace/WinterGeneration/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 8s
+10 actionable tasks: 6 executed, 4 up-to-date

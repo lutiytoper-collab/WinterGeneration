@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.midgard.winter.core.WinterLandscapeTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-06T04:36:19.552Z" hostname="0f051bf75645" time="0.011">
+  <properties/>
+  <testcase name="driftsAreBoundedAndSmooth()" classname="ru.midgard.winter.core.WinterLandscapeTest" time="0.001"/>
+  <testcase name="trailsAreSparseAndContinuousAcrossChunkAndNegativeBoundaries()" classname="ru.midgard.winter.core.WinterLandscapeTest" time="0.008"/>
+  <testcase name="differentSeedsChangeTheRoute()" classname="ru.midgard.winter.core.WinterLandscapeTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,31 @@
+[
+  {
+    "chunk": [
+      131,
+      135
+    ],
+    "changes": [
+      {
+        "x": 2101,
+        "y": 31,
+        "z": 2169,
+        "before": "minecraft:air",
+        "after": "minecraft:snow"
+      },
+      {
+        "x": 2102,
+        "y": 31,
+        "z": 2171,
+        "before": "minecraft:air",
+        "after": "minecraft:snow"
+      },
+      {
+        "x": 2102,
+        "y": 31,
+        "z": 2172,
+        "before": "minecraft:air",
+        "after": "minecraft:snow"
+      }
+    ]
+  }
+]

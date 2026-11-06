@@ -1,0 +1,40 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :core:compileJava UP-TO-DATE
+> Task :core:processResources NO-SOURCE
+> Task :core:classes UP-TO-DATE
+> Task :core:jar UP-TO-DATE
+> Task :core:compileTestJava UP-TO-DATE
+> Task :core:processTestResources NO-SOURCE
+> Task :core:testClasses UP-TO-DATE
+> Task :core:test UP-TO-DATE
+
+> Task :plugin:compileJava
+Note: /workspace/WinterGeneration/plugin/src/main/java/ru/midgard/winter/WinterPlugin.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :plugin:processResources UP-TO-DATE
+> Task :plugin:classes
+> Task :plugin:jar UP-TO-DATE
+> Task :plugin:assemble UP-TO-DATE
+> Task :plugin:compileTestJava
+> Task :plugin:processTestResources NO-SOURCE
+> Task :plugin:testClasses
+> Task :plugin:test
+> Task :plugin:check
+> Task :plugin:build
+
+> Task :probe:compileJava
+/workspace/WinterGeneration/probe/src/main/java/ru/midgard/winter/probe/WorldgenProbe.java:55: warning: [removal] getKey() in Structure has been deprecated and marked for removal
+        List<String> structures=chunk.getStructures().stream().map(s->s.getStructure().getKey()+":"+s.getBoundingBox()).sorted().toList();
+                                                                                      ^
+1 warning
+
+> Task :probe:processResources UP-TO-DATE
+> Task :probe:classes
+> Task :probe:jar UP-TO-DATE
+
+[Incubating] Problems report is available at: file:///workspace/WinterGeneration/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 14s
+12 actionable tasks: 4 executed, 8 up-to-date

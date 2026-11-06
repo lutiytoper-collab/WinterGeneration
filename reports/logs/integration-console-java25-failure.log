@@ -1,0 +1,417 @@
+Starting org.bukkit.craftbukkit.Main
+[18:56:46 INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.9+10-LTS; Eclipse Adoptium Temurin-21.0.9+10) on Linux 6.18.57 (amd64)
+[18:56:46 INFO]: [bootstrap] Loading Paper 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) for Minecraft 1.21.11
+[18:56:47 INFO]: [PluginInitializerManager] Initializing plugins...
+[18:56:47 INFO]: [ReobfServer] Remapping server...
+[18:56:52 INFO]: [ReobfServer] Done remapping server in 5127ms.
+[18:56:52 INFO]: [PluginRemapper] Remapping plugin 'plugins/MidgardWinterWorld.jar'...
+[18:56:52 INFO]: [PluginRemapper] Remapping plugin 'plugins/LunaAirDrop.jar'...
+[18:56:52 INFO]: [PluginRemapper] Done remapping plugin 'plugins/MidgardWinterWorld.jar' in 116ms.
+[18:56:52 INFO]: [PluginRemapper] Remapping plugin 'plugins/WorldGuard.jar'...
+[18:56:53 INFO]: [PluginRemapper] Done remapping plugin 'plugins/WorldGuard.jar' in 254ms.
+[18:56:53 INFO]: [PluginRemapper] Remapping plugin 'plugins/WinterProbe.jar'...
+[18:56:53 INFO]: [PluginRemapper] Done remapping plugin 'plugins/WinterProbe.jar' in 25ms.
+[18:56:53 INFO]: [PluginRemapper] Done remapping plugin 'plugins/LunaAirDrop.jar' in 440ms.
+[18:56:53 INFO]: [PluginInitializerManager] Initialized 6 plugins
+[18:56:53 INFO]: [PluginInitializerManager] Bukkit plugins (6):
+ - Chunky (1.4.40), LunaAirDrop (1.0.3-MidgardFix), MidgardWinterWorld (0.1.0), WinterProbe (0.1.0), WorldEdit (7.4.6+7648-00664b0), WorldGuard (7.0.16+2355-f7fded2)
+[18:56:57 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[18:56:57 INFO]: Found new data pack file/bukkit, loading it automatically
+[18:56:57 INFO]: Found new data pack file/winter-datapack.zip, loading it automatically
+[18:56:57 INFO]: Found new data pack paper, loading it automatically
+[18:56:58 INFO]: No existing world data, creating new world
+[18:56:59 INFO]: Loaded 1470 recipes
+[18:56:59 INFO]: Loaded 1584 advancements
+[18:56:59 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[18:56:59 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 369.9ms
+[18:56:59 INFO]: Starting minecraft server version 1.21.11
+[18:56:59 INFO]: Loading properties
+[18:56:59 INFO]: This server is running Paper version 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[18:57:00 INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[18:57:00 INFO]: Server Ping Player Sample Count: 12
+[18:57:00 INFO]: Using 4 threads for Netty based IO
+[18:57:00 INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[18:57:00 INFO]: Default game type: SURVIVAL
+[18:57:00 INFO]: Generating keypair
+> 
+  
+[18:57:01 INFO]: Starting Minecraft server on 127.0.0.1:25576
+> 
+  
+[18:57:01 INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+> 
+  
+[18:57:01 INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+> 
+  
+[31;1m[18:57:01 ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'WorldEdit.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.UnsupportedClassVersionError: com/sk89q/worldedit/bukkit/WorldEditPlugin has been compiled by a more recent version of the Java Runtime (class file version 69.0), this version of the Java Runtime only recognizes class file versions up to 65.0
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:129) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:38) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:39) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:555) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:320) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1253) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:388) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.UnsupportedClassVersionError: com/sk89q/worldedit/bukkit/WorldEditPlugin has been compiled by a more recent version of the Java Runtime (class file version 69.0), this version of the Java Runtime only recognizes class file versions up to 65.0
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027) ~[?:?]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:263) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:180) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:175) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:536) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:515) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:82) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:125) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	... 9 more
+[m> 
+  
+[31;1m[18:57:01 ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'WorldGuard.jar' in folder 'plugins/.paper-remapped'
+org.bukkit.plugin.InvalidPluginException: java.lang.UnsupportedClassVersionError: com/sk89q/minecraft/util/commands/CommandException has been compiled by a more recent version of the Java Runtime (class file version 69.0), this version of the Java Runtime only recognizes class file versions up to 65.0
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:129) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:38) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:39) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:555) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:320) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1253) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:388) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.UnsupportedClassVersionError: com/sk89q/minecraft/util/commands/CommandException has been compiled by a more recent version of the Java Runtime (class file version 69.0), this version of the Java Runtime only recognizes class file versions up to 65.0
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027) ~[?:?]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:263) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:180) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:155) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.entrypoint.classloader.group.SpigotPluginClassLoaderGroup.lookupClass(SpigotPluginClassLoaderGroup.java:43) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at io.papermc.paper.plugin.entrypoint.classloader.group.SimpleListPluginClassLoaderGroup.getClassByName(SimpleListPluginClassLoaderGroup.java:37) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at io.papermc.paper.plugin.entrypoint.classloader.group.LockingClassLoaderGroup.getClassByName(LockingClassLoaderGroup.java:34) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:198) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:175) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:536) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:515) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:82) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:125) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	... 9 more
+[m> 
+  
+[18:57:01 INFO]: [Chunky] Loading server plugin Chunky v1.4.40
+> 
+  
+[18:57:01 INFO]: [LunaAirDrop] Loading server plugin LunaAirDrop v1.0.3-MidgardFix
+> 
+  
+[18:57:01 INFO]: [MidgardWinterWorld] Loading server plugin MidgardWinterWorld v0.1.0
+> 
+  
+[18:57:01 INFO]: [WinterProbe] Loading server plugin WinterProbe v0.1.0
+> 
+  
+[18:57:01 INFO]: [MidgardWinterWorld] Enabling MidgardWinterWorld v0.1.0
+> 
+  
+[18:57:01 INFO]: [MidgardWinterWorld] Development build 0.1.0; late decoration only; no retrogen. LunaAirDrop adapter requires validation.
+> 
+  
+[33;1m[18:57:01 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[m> 
+  
+[33;1m[18:57:01 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[m> 
+  
+[33;1m[18:57:01 WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[m> 
+  
+[33;1m[18:57:01 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[m> 
+  
+[18:57:01 INFO]: Preparing level "winter_test"
+> 
+  
+[18:57:01 INFO]: Selecting spawn point for world 'minecraft:overworld'...
+> 
+  
+[31;1m[18:57:02 ERROR]: Failed to request yggdrasil public key
+com.mojang.authlib.exceptions.MinecraftClientException: Failed to read from https://api.minecraftservices.com/publickeys due to Connection refused
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:111) ~[authlib-7.0.61.jar:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:56) ~[authlib-7.0.61.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.fetch(YggdrasilServicesKeyInfo.java:114) ~[authlib-7.0.61.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo$1.run(YggdrasilServicesKeyInfo.java:89) ~[authlib-7.0.61.jar:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1302) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1143) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1705) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1629) ~[?:?]
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307) ~[?:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:82) ~[authlib-7.0.61.jar:?]
+	... 9 more
+[m> 
+  
+[18:57:12 INFO]: Selecting spawn point for world 'minecraft:the_nether'...
+> 
+  
+[18:57:13 INFO]: Selecting spawn point for world 'minecraft:the_end'...
+> 
+  
+[18:57:13 INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
+> 
+  
+[18:57:13 INFO]: Preparing spawn area: 100%
+> 
+  
+[18:57:13 INFO]: Prepared spawn area in 12252 ms
+> 
+  
+[18:57:13 INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+> 
+  
+[18:57:13 INFO]: Preparing spawn area: 100%
+> 
+  
+[18:57:13 INFO]: Prepared spawn area in 991 ms
+> 
+  
+[18:57:13 INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+> 
+  
+[18:57:13 INFO]: Preparing spawn area: 100%
+> 
+  
+[18:57:13 INFO]: Prepared spawn area in 393 ms
+> 
+  
+[18:57:13 INFO]: Done preparing level "winter_test" (12.699s)
+> 
+  
+[18:57:13 INFO]: [Chunky] Enabling Chunky v1.4.40
+> 
+  
+[18:57:14 INFO]: [LunaAirDrop] Enabling LunaAirDrop v1.0.3-MidgardFix
+> 
+  
+[18:57:14 INFO]: [LunaAirDrop] Language: ru
+> 
+  
+[31;1m[18:57:14 ERROR]: Error occurred while enabling LunaAirDrop v1.0.3-MidgardFix (Is it up to date?)
+java.lang.UnsupportedClassVersionError: com/sk89q/minecraft/util/commands/CommandException has been compiled by a more recent version of the Java Runtime (class file version 69.0), this version of the Java Runtime only recognizes class file versions up to 65.0
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027) ~[?:?]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:263) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:180) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:155) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.entrypoint.classloader.group.SpigotPluginClassLoaderGroup.lookupClass(SpigotPluginClassLoaderGroup.java:43) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at io.papermc.paper.plugin.entrypoint.classloader.group.SimpleListPluginClassLoaderGroup.getClassByName(SimpleListPluginClassLoaderGroup.java:37) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at io.papermc.paper.plugin.entrypoint.classloader.group.LockingClassLoaderGroup.getClassByName(LockingClassLoaderGroup.java:34) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:198) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:175) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at LunaAirDrop.jar//org.by1337.bairdrop.worldGuardHook.RegionManager.addFlag(RegionManager.java:80) ~[?:?]
+	at LunaAirDrop.jar//org.by1337.bairdrop.worldGuardHook.RegionManager.LoadFlags(RegionManager.java:69) ~[?:?]
+	at LunaAirDrop.jar//org.by1337.bairdrop.configManager.CConfig.loadConfiguration(CConfig.java:129) ~[?:?]
+	at LunaAirDrop.jar//org.by1337.bairdrop.BAirDrop.onEnable(BAirDrop.java:85) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:279) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:207) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:639) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:596) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.initPostWorld(MinecraftServer.java:636) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:365) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1253) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:388) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[m> 
+  
+[18:57:14 INFO]: [LunaAirDrop] Disabling LunaAirDrop v1.0.3-MidgardFix
+> 
+  
+[18:57:14 INFO]: [WinterProbe] Enabling WinterProbe v0.1.0
+> 
+  
+[18:57:14 INFO]: [spark] Starting background profiler...
+> 
+  
+[18:57:14 INFO]: Running delayed init tasks
+> 
+  
+[18:57:14 INFO]: Done (28.259s)! For help, type "help"
+> 
+  
+[18:57:14 INFO]: *************************************************************************************
+> 
+  
+[18:57:14 INFO]: This is the first time you're starting this server.
+> 
+  
+[18:57:14 INFO]: It's recommended you read our 'Getting Started' documentation for guidance.
+> 
+  
+[18:57:14 INFO]: View this and more helpful information here: https://docs.papermc.io/paper/next-steps
+> 
+  
+[18:57:14 INFO]: *************************************************************************************
+> > > > 
+  
+[18:57:14 INFO]: MidgardWinterWorld 0.1.0 DEVELOPMENT; enabled=true; worlds=[winter_test]; processed=1 decorated=0 skipped=0 pending=1; WorldGuard=absent; LunaAirDrop=UNVERIFIED
+> 
+  
+[18:57:14 INFO]: There are 4 data pack(s) enabled: [92m[[37mvanilla (built-in)[92m][37m, [92m[[37mfile/bukkit (world)[92m][37m, [92m[[37mfile/winter-datapack.zip (world)[92m][37m, [92m[[37mpaper (built-in)[92m][0m
+> 
+  
+[33;1m[18:57:15 WARN]: *************************************************************************************
+[m> 
+  
+[33;1m[18:57:15 WARN]: You are running the latest build for your Minecraft version (1.21.11)
+[m> 
+  
+[33;1m[18:57:15 WARN]: However, you are 6 release(s) behind the latest stable release (26.3)!
+[m> 
+  
+[33;1m[18:57:15 WARN]: It is recommended that you update as soon as possible
+[m> 
+  
+[33;1m[18:57:15 WARN]: https://papermc.io/downloads/paper
+[m> 
+  
+[33;1m[18:57:15 WARN]: *************************************************************************************
+[m> 
+  
+[18:57:37 INFO]: Stopping server
+> 
+  
+[18:57:37 INFO]: [WinterProbe] Disabling WinterProbe v0.1.0
+> 
+  
+[18:57:37 INFO]: [MidgardWinterWorld] Disabling MidgardWinterWorld v0.1.0
+> 
+  
+[18:57:37 INFO]: [Chunky] Disabling Chunky v1.4.40
+> 
+  
+[18:57:37 INFO]: Saving players
+> 
+  
+[18:57:37 INFO]: Saving worlds
+> 
+  
+[18:57:37 INFO]: Saving chunks for level 'ServerLevel[winter_test]'/minecraft:overworld
+> 
+  
+[18:57:37 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'winter_test'
+> 
+  
+[18:57:37 INFO]: [ChunkHolderManager] Halted chunk system for world 'winter_test'
+> 
+  
+[18:57:37 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'winter_test'
+> 
+  
+[18:57:37 INFO]: [ChunkHolderManager] Saved 527 block chunks, 0 entity chunks, 0 poi chunks in world 'winter_test' in 0.26s
+> 
+  
+[18:57:37 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'winter_test'
+> 
+  
+[18:57:37 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'winter_test'
+> 
+  
+[18:57:37 INFO]: Saving chunks for level 'ServerLevel[winter_test_nether]'/minecraft:the_nether
+> 
+  
+[18:57:37 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'winter_test_nether'
+> 
+  
+[18:57:37 INFO]: [ChunkHolderManager] Halted chunk system for world 'winter_test_nether'
+> 
+  
+[18:57:37 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'winter_test_nether'
+> 
+  
+[18:57:37 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'winter_test_nether' in 0.00s
+> 
+  
+[18:57:37 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'winter_test_nether'
+> 
+  
+[18:57:37 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'winter_test_nether'
+> 
+  
+[18:57:37 INFO]: Saving chunks for level 'ServerLevel[winter_test_the_end]'/minecraft:the_end
+> 
+  
+[18:57:37 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'winter_test_the_end'
+> 
+  
+[18:57:37 INFO]: [ChunkHolderManager] Halted chunk system for world 'winter_test_the_end'
+> 
+  
+[18:57:37 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'winter_test_the_end'
+> 
+  
+[18:57:37 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'winter_test_the_end' in 0.00s
+> 
+  
+[18:57:37 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'winter_test_the_end'
+> 
+  
+[18:57:37 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'winter_test_the_end'
+> 
+  
+[18:57:37 INFO]: ThreadedAnvilChunkStorage (winter_test): All chunks are saved
+> 
+  
+[18:57:37 INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+> 
+  
+[18:57:37 INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+> 
+  
+[18:57:37 INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+> 
+  
+[18:57:37 INFO]: Waiting for all RegionFile I/O tasks to complete...
+> 
+  
+[18:57:37 INFO]: All RegionFile I/O tasks to complete
+> 
+  
+[18:57:37 INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+> 
+  
+[18:57:37 INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
+> 

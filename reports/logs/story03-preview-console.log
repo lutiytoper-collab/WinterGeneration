@@ -1,0 +1,120 @@
+Starting org.bukkit.craftbukkit.Main
+[04:36:29 INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.9+10-LTS; Eclipse Adoptium Temurin-21.0.9+10) on Linux 6.18.57 (amd64)
+[04:36:29 INFO]: [bootstrap] Loading Paper 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) for Minecraft 1.21.11
+[04:36:30 INFO]: [PluginInitializerManager] Initializing plugins...
+[04:36:30 INFO]: [ReobfServer] Remapping server...
+[04:36:36 INFO]: [ReobfServer] Done remapping server in 5102ms.
+[04:36:36 INFO]: [PluginRemapper] Remapping plugin 'plugins/MidgardWinterWorld.jar'...
+[04:36:36 INFO]: [PluginRemapper] Remapping plugin 'plugins/WinterProbe.jar'...
+[04:36:36 INFO]: [PluginRemapper] Done remapping plugin 'plugins/WinterProbe.jar' in 109ms.
+[04:36:36 INFO]: [PluginRemapper] Done remapping plugin 'plugins/MidgardWinterWorld.jar' in 120ms.
+[04:36:36 INFO]: [PluginInitializerManager] Initialized 3 plugins
+[04:36:36 INFO]: [PluginInitializerManager] Bukkit plugins (3):
+ - Chunky (1.4.40), MidgardWinterWorld (0.3.0), WinterProbe (0.3.0)
+[04:36:41 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[04:36:41 INFO]: Found new data pack file/bukkit, loading it automatically
+[04:36:41 INFO]: Found new data pack file/storybook-datapack.zip, loading it automatically
+[04:36:41 INFO]: Found new data pack paper, loading it automatically
+[31;1m[04:36:41 ERROR]: Failed to request yggdrasil public key
+com.mojang.authlib.exceptions.MinecraftClientException: Failed to read from https://api.minecraftservices.com/publickeys due to Connection refused
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:111) ~[authlib-7.0.61.jar:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:56) ~[authlib-7.0.61.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.fetch(YggdrasilServicesKeyInfo.java:114) ~[authlib-7.0.61.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo$1.run(YggdrasilServicesKeyInfo.java:89) ~[authlib-7.0.61.jar:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1302) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1143) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1705) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1629) ~[?:?]
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307) ~[?:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:82) ~[authlib-7.0.61.jar:?]
+	... 9 more
+[m[31;1m[04:36:41 ERROR]: Registry loading errors:
+> Errors in registry minecraft:root:
+>> Errors in element minecraft:worldgen/configured_feature:
+java.lang.IllegalStateException: Unbound values in registry ResourceKey[minecraft:root / minecraft:worldgen/configured_feature]: [midgard:cathedral_fir]
+	at net.minecraft.core.MappedRegistry.freeze(MappedRegistry.java:304)
+	at net.minecraft.resources.RegistryDataLoader.lambda$load$6(RegistryDataLoader.java:193)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at net.minecraft.resources.RegistryDataLoader.load(RegistryDataLoader.java:189)
+	at net.minecraft.resources.RegistryDataLoader.load(RegistryDataLoader.java:166)
+	at net.minecraft.server.WorldLoader.load(WorldLoader.java:45)
+	at net.minecraft.server.Main.lambda$main$1(Main.java:259)
+	at net.minecraft.util.Util.blockUntilDone(Util.java:1057)
+	at net.minecraft.util.Util.blockUntilDone(Util.java:1052)
+	at net.minecraft.server.Main.main(Main.java:258)
+	at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21)
+	at org.bukkit.craftbukkit.Main.main(Main.java:204)
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+> Errors in registry minecraft:worldgen/configured_feature:
+>> Errors in element midgard:cathedral_fir:
+java.lang.IllegalStateException: Failed to parse midgard:worldgen/configured_feature/cathedral_fir.json from pack file/storybook-datapack.zip
+	at net.minecraft.resources.RegistryDataLoader.loadContentsFromManager(RegistryDataLoader.java:326)
+	at net.minecraft.resources.RegistryDataLoader$Loader.loadFromResources(RegistryDataLoader.java:382)
+	at net.minecraft.resources.RegistryDataLoader.lambda$load$2(RegistryDataLoader.java:166)
+	at net.minecraft.resources.RegistryDataLoader.lambda$load$5(RegistryDataLoader.java:188)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at net.minecraft.resources.RegistryDataLoader.load(RegistryDataLoader.java:188)
+	at net.minecraft.resources.RegistryDataLoader.load(RegistryDataLoader.java:166)
+	at net.minecraft.server.WorldLoader.load(WorldLoader.java:45)
+	at net.minecraft.server.Main.lambda$main$1(Main.java:259)
+	at net.minecraft.util.Util.blockUntilDone(Util.java:1057)
+	at net.minecraft.util.Util.blockUntilDone(Util.java:1052)
+	at net.minecraft.server.Main.main(Main.java:258)
+	at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21)
+	at org.bukkit.craftbukkit.Main.main(Main.java:204)
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.IllegalStateException: Value provider too high: 24 [22-28]
+	at com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+	at com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+	at net.minecraft.resources.RegistryDataLoader.loadElementFromResource(RegistryDataLoader.java:299)
+	at net.minecraft.resources.RegistryDataLoader.loadContentsFromManager(RegistryDataLoader.java:322)
+	... 15 more
+
+[m[33;1m[04:36:42 WARN]: Failed to load datapacks, can't proceed with server load. You can either fix your datapacks or reset to vanilla with --safeMode
+java.util.concurrent.ExecutionException: net.minecraft.ReportedException: Registry Loading
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073) ~[?:?]
+	at net.minecraft.server.Main.main(Main.java:283) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at org.bukkit.craftbukkit.Main.main(Main.java:204) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: net.minecraft.ReportedException: Registry Loading
+	at net.minecraft.resources.RegistryDataLoader.createReportWithBriefInfo(RegistryDataLoader.java:284) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.resources.RegistryDataLoader.logErrors(RegistryDataLoader.java:243) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.resources.RegistryDataLoader.load(RegistryDataLoader.java:203) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.resources.RegistryDataLoader.load(RegistryDataLoader.java:166) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.WorldLoader.load(WorldLoader.java:45) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.Main.lambda$main$1(Main.java:259) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.util.Util.blockUntilDone(Util.java:1057) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.util.Util.blockUntilDone(Util.java:1052) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.Main.main(Main.java:258) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	... 4 more
+Caused by: java.lang.IllegalStateException: Failed to load registries due to errors
+	at net.minecraft.resources.RegistryDataLoader.createReportWithBriefInfo(RegistryDataLoader.java:264) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	... 12 more
+[m

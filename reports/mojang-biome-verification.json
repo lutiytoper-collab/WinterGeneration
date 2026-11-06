@@ -1,0 +1,35 @@
+{
+  "minecraft": "1.21.11",
+  "pack_version": {
+    "resource_major": 75,
+    "resource_minor": 0,
+    "data_major": 94,
+    "data_minor": 1
+  },
+  "biomes_equal_to_official_server": [
+    "birch_forest",
+    "dark_forest",
+    "flower_forest",
+    "forest",
+    "frozen_peaks",
+    "frozen_river",
+    "grove",
+    "jagged_peaks",
+    "meadow",
+    "old_growth_birch_forest",
+    "old_growth_pine_taiga",
+    "old_growth_spruce_taiga",
+    "plains",
+    "river",
+    "snowy_plains",
+    "snowy_slopes",
+    "snowy_taiga",
+    "stony_peaks",
+    "sunflower_plains",
+    "taiga",
+    "windswept_forest",
+    "windswept_gravelly_hills",
+    "windswept_hills"
+  ],
+  "server_sha1": "64bb6d763bed0a9f1d632ec347938594144943ed"
+}

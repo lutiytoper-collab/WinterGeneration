@@ -1,0 +1,34 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :core:compileJava UP-TO-DATE
+> Task :core:processResources NO-SOURCE
+> Task :core:classes UP-TO-DATE
+> Task :core:jar UP-TO-DATE
+> Task :core:compileTestJava UP-TO-DATE
+> Task :core:processTestResources NO-SOURCE
+> Task :core:testClasses UP-TO-DATE
+> Task :core:test UP-TO-DATE
+
+> Task :plugin:compileJava
+Note: /workspace/WinterGeneration/plugin/src/main/java/ru/midgard/winter/WinterPlugin.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :plugin:processResources UP-TO-DATE
+> Task :plugin:classes
+> Task :plugin:jar
+> Task :plugin:assemble
+> Task :plugin:compileTestJava UP-TO-DATE
+> Task :plugin:processTestResources NO-SOURCE
+> Task :plugin:testClasses UP-TO-DATE
+> Task :plugin:test
+> Task :plugin:check
+> Task :plugin:build
+> Task :probe:compileJava UP-TO-DATE
+> Task :probe:processResources UP-TO-DATE
+> Task :probe:classes UP-TO-DATE
+> Task :probe:jar UP-TO-DATE
+
+[Incubating] Problems report is available at: file:///workspace/WinterGeneration/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 7s
+12 actionable tasks: 3 executed, 9 up-to-date

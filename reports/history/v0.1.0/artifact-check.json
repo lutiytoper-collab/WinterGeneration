@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "minecraft": "1.21.11",
+  "java_class_major": 65,
+  "artifacts": [
+    {
+      "name": "MidgardWinterWorld.jar",
+      "bytes": 72696,
+      "sha256": "ca41a71c8aa435e6059faf463d65c7810f3de41742eed9e975d791f9c990270a",
+      "zip_crc": "PASS"
+    },
+    {
+      "name": "WinterProbe.jar",
+      "bytes": 31190,
+      "sha256": "bdd795209d83448fa1393776044d3718e4c9b0faf5fb18839acee7baf0fe8cab",
+      "zip_crc": "PASS"
+    },
+    {
+      "name": "winter-datapack.zip",
+      "bytes": 25439,
+      "sha256": "ee826cce17153c0785314667491e4f77a283e942d2a6c2bc8180d0e82f3da9f7",
+      "zip_crc": "PASS"
+    }
+  ]
+}

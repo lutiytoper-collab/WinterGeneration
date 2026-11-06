@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/tmp/midgard_integration_run.py", line 28, in <module>
+    send('winterprobe natural');wait('NATURALLUNA_READY',360);natural=json.loads((folder/'plugins/WinterProbe/natural-luna.json').read_text())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/midgard_integration_run.py", line 20, in wait
+    if 'NATURALLUNA_FAILED' in line or 'WINTERAUDIT_FAILED' in line:raise RuntimeError(line.strip())
+                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: [31;1m[21:08:04 ERROR]: [WinterProbe] NATURALLUNA_FAILED java.lang.IllegalStateException: Natural search timed out

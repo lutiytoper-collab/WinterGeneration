@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/WinterGeneration/scripts/server-matrix.py", line 79, in <module>
+    assert before.get(key)==after.get(key),(mode,seed,'restart mismatch',key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('winter', 42, 'restart mismatch', 'belowSurfaceGeometry')

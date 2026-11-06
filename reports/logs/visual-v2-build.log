@@ -1,0 +1,34 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :core:compileJava UP-TO-DATE
+> Task :core:processResources NO-SOURCE
+> Task :core:classes UP-TO-DATE
+> Task :core:jar UP-TO-DATE
+> Task :core:compileTestJava
+> Task :core:processTestResources NO-SOURCE
+> Task :core:testClasses
+
+> Task :core:test FAILED
+
+ForestPlacementTest > allVariantSizesAndHeightAreBounded() FAILED
+    org.opentest4j.AssertionFailedError at ForestPlacementTest.java:39
+
+ForestPlacementTest > treesUseNaturalHillsWithoutFlattening() FAILED
+    org.opentest4j.AssertionFailedError at ForestPlacementTest.java:16
+
+ForestPlacementTest > originalMatchingLeavesAreNeverWritten() FAILED
+    org.opentest4j.AssertionFailedError at ForestPlacementTest.java:22
+
+127 tests completed, 3 failed
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':core:test'.
+> There were failing tests. See the report at: file:///workspace/WinterGeneration/core/build/reports/tests/test/index.html
+
+* Try:
+> Run with --scan to get full insights.
+
+BUILD FAILED in 7s
+4 actionable tasks: 2 executed, 2 up-to-date

@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/tmp/midgard_integration_run.py", line 16, in wait
+    try:line=q.get(timeout=1)
+             ^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/queue.py", line 179, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/tmp/midgard_integration_run.py", line 26, in <module>
+    assert all(c['status']=='PASS' for c in json.loads((folder/'plugins/WinterProbe/runtime-audit.json').read_text())['checks'])
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/midgard_integration_run.py", line 18, in wait
+    if proc.poll() is not None:raise RuntimeError('Server exited '+str(proc.returncode))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Server exited 143

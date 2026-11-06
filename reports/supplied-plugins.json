@@ -1,0 +1,14 @@
+[
+  {
+    "filename": "MidgardWorldGuardRU(1).jar",
+    "sha256": "5597b520c37d74c675a66a0e99b7756f8b642bb32f2e326bf2f7df8d31fdddf0",
+    "bytes": 1228257,
+    "plugin_yml": "name: WorldGuard\nmain: com.sk89q.worldguard.bukkit.WorldGuardPlugin\nversion: \"7.0.16+2355-f7fded2\"\ndepend: [WorldEdit]\napi-version: \"1.21.11\"\nfolia-supported: true"
+  },
+  {
+    "filename": "LunaAirDrop-1.0.3-MidgardFix-Paper1.21.11(1).jar",
+    "sha256": "26593e0f3134dac98eede9bc99b6c0d25925993fa7408b67fd3d103fd6252fdb",
+    "bytes": 1875429,
+    "plugin_yml": "name: LunaAirDrop\nversion: '1.0.3-MidgardFix'\nmain: org.by1337.bairdrop.BAirDrop\napi-version: '1.21.4'\nauthors: [ By1337 ]\ndepend: [WorldGuard, WorldEdit]\nsoftdepend:\n  - PlaceholderAPI\nload: POSTWORLD\ndescription: event airdrop\ncommands:\n  bairdrop:\n    description: Standart Command\n    aliases: [bair]\n    usage: Usage /bair help\npermissions:\n  bair.*:\n    description: All cmd\n    default: op\n    children:\n      bair.tp: true\n      bair.reload: true\n      bair.create: true\n      bair.edit: true\n      bair.menu: true\n      bair.chance: true\n      bair.start: true\n      bair.stop: true\n      bair.listeners: true\n      bair.get: true\n      bair.delete: true\n      bair.clone: true\n      bair.compass: true\n      bair.js: true\n  bair.js:\n    description: /bair js\n    default: op\n  bair.tp:\n    description: /bair tp <id>\n    default: op\n  bair.reload:\n    description: /bair reload\n    default: op\n  bair.create:\n    description: /bair create <id>\n    default: op\n  bair.edit:\n    description: /bair edit <id>\n    default: op\n  bair.menu:\n    description: /bair menu <id>\n    default: op\n  bair.chance:\n    description: /bair chance <id>\n    default: op\n  bair.start:\n    description: /bair start <id>\n    default: op\n  bair.stop:\n    description: /bair stop <id>\n    default: op\n  bair.listeners:\n    description: /bair listeners <id>\n    default: op\n  bair.get:\n    description: /bair get <item>\n    default: op\n  bair.delete:\n    description: /bair delete <id>\n    default: op\n  bair.clone:\n    description: /bair clone <id> <new id>\n    default: op\n  bair.compass:\n    description: /bair compass <player> <amount>\n    default: op\n  bair.delay:\n    description: /bair delay\n    default: true\n  bair.gps:\n    description: /bair gps\n    default: true\n"
+  }
+]

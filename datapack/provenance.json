@@ -1,0 +1,136 @@
+{
+  "minecraft": "1.21.11",
+  "source": "misode/mcmeta vanilla extraction (third party); official server validation outstanding",
+  "sources": [
+    {
+      "path": "vendor/vanilla/version.json",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/c976eb3b2cfcb9f205171527dec46b266afa3ac9/version.json",
+      "sha256": "be02c05f3cce0e39a4ae855c01b3dda2f572078d575f4b6b2fd824cc8a137d62"
+    },
+    {
+      "path": "vendor/vanilla/registries.json",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/c976eb3b2cfcb9f205171527dec46b266afa3ac9/registries/data.json",
+      "sha256": "088bd152aafd5e57f19f53ad8402e8fabaa8c4c5bbe5a6cae9141885aa4801c3"
+    },
+    {
+      "path": "vendor/vanilla/pack.mcmeta",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/3458455b4b4537db37d6251a6ace1eed98d025a9/pack.mcmeta",
+      "sha256": "d1d5ad8f9a9fa38f9e367950773dd88b75635a51fc8c1d161707810867805425"
+    },
+    {
+      "path": "vendor/vanilla/biome/plains.json",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/3458455b4b4537db37d6251a6ace1eed98d025a9/data/minecraft/worldgen/biome/plains.json",
+      "sha256": "4378ecdd277dc5155e6c005da20828b09e386212b34239f224767b53cc1e0bc0"
+    },
+    {
+      "path": "vendor/vanilla/biome/sunflower_plains.json",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/3458455b4b4537db37d6251a6ace1eed98d025a9/data/minecraft/worldgen/biome/sunflower_plains.json",
+      "sha256": "23dd004bb8b148ebf0a275d9ba48d213b21f8bd80f4ee09c3f4124a2cd84b604"
+    },
+    {
+      "path": "vendor/vanilla/biome/forest.json",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/3458455b4b4537db37d6251a6ace1eed98d025a9/data/minecraft/worldgen/biome/forest.json",
+      "sha256": "8f8f19068985a639c25df050d47af90daddee2eeb460d4e56c0c71afae128e21"
+    },
+    {
+      "path": "vendor/vanilla/biome/flower_forest.json",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/3458455b4b4537db37d6251a6ace1eed98d025a9/data/minecraft/worldgen/biome/flower_forest.json",
+      "sha256": "7eae53836c27b03151cf373d34782813c0048dcffdc1df3f69185f50972d8499"
+    },
+    {
+      "path": "vendor/vanilla/biome/birch_forest.json",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/3458455b4b4537db37d6251a6ace1eed98d025a9/data/minecraft/worldgen/biome/birch_forest.json",
+      "sha256": "155ee92826bd398809fb776ef31d427ea2ff1f2295bb6a5d06024f760705940f"
+    },
+    {
+      "path": "vendor/vanilla/biome/old_growth_birch_forest.json",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/3458455b4b4537db37d6251a6ace1eed98d025a9/data/minecraft/worldgen/biome/old_growth_birch_forest.json",
+      "sha256": "6456d18edfa9126b38dfdec7fbc6d4a485998989c404e1c37a9a6611cbd97d0e"
+    },
+    {
+      "path": "vendor/vanilla/biome/dark_forest.json",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/3458455b4b4537db37d6251a6ace1eed98d025a9/data/minecraft/worldgen/biome/dark_forest.json",
+      "sha256": "3f1060431a69da3a097c0d9563a84838bd6bac8f1e508daf8a2607e584dcc5ef"
+    },
+    {
+      "path": "vendor/vanilla/biome/taiga.json",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/3458455b4b4537db37d6251a6ace1eed98d025a9/data/minecraft/worldgen/biome/taiga.json",
+      "sha256": "ee464ee7476caf6ad6ea4749a0e0c6bbcf86eec8aa72b9651af05d498aa033a0"
+    },
+    {
+      "path": "vendor/vanilla/biome/old_growth_pine_taiga.json",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/3458455b4b4537db37d6251a6ace1eed98d025a9/data/minecraft/worldgen/biome/old_growth_pine_taiga.json",
+      "sha256": "001dffe481fdc0875f4288741d8a6f75a9b30a23e6480fb9122cc95eeb7f09bd"
+    },
+    {
+      "path": "vendor/vanilla/biome/old_growth_spruce_taiga.json",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/3458455b4b4537db37d6251a6ace1eed98d025a9/data/minecraft/worldgen/biome/old_growth_spruce_taiga.json",
+      "sha256": "3960a79a2cf0a5f5f202f2a5e23df08f1055896750547908480e7f529d8107e1"
+    },
+    {
+      "path": "vendor/vanilla/biome/snowy_taiga.json",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/3458455b4b4537db37d6251a6ace1eed98d025a9/data/minecraft/worldgen/biome/snowy_taiga.json",
+      "sha256": "69af150e28831f166d671452bd6d138e8dd6120d7f4b353331c7fb04146b08d4"
+    },
+    {
+      "path": "vendor/vanilla/biome/snowy_plains.json",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/3458455b4b4537db37d6251a6ace1eed98d025a9/data/minecraft/worldgen/biome/snowy_plains.json",
+      "sha256": "16aa6e00430080c7fcfa4fbc42ade004adde1ebb3cc73ed8669d9f23466ffe69"
+    },
+    {
+      "path": "vendor/vanilla/biome/meadow.json",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/3458455b4b4537db37d6251a6ace1eed98d025a9/data/minecraft/worldgen/biome/meadow.json",
+      "sha256": "72e73704adab7417f2c7bf7aa96a42cf709a7a55c2d167b6ff5015ed14a2afc7"
+    },
+    {
+      "path": "vendor/vanilla/biome/grove.json",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/3458455b4b4537db37d6251a6ace1eed98d025a9/data/minecraft/worldgen/biome/grove.json",
+      "sha256": "51e76634b49ae246a707e9519c9a4ed516b72fd099a3ea4c868036ffa787a0ef"
+    },
+    {
+      "path": "vendor/vanilla/biome/snowy_slopes.json",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/3458455b4b4537db37d6251a6ace1eed98d025a9/data/minecraft/worldgen/biome/snowy_slopes.json",
+      "sha256": "ab88bd9d1b419724ed26f0961d1ea449d79c337def76832404106b2210dd01ee"
+    },
+    {
+      "path": "vendor/vanilla/biome/frozen_peaks.json",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/3458455b4b4537db37d6251a6ace1eed98d025a9/data/minecraft/worldgen/biome/frozen_peaks.json",
+      "sha256": "c976a41f3e4f1539e934f0875e257f95ecad47f526bbb5e2a1ececa50586f6b2"
+    },
+    {
+      "path": "vendor/vanilla/biome/jagged_peaks.json",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/3458455b4b4537db37d6251a6ace1eed98d025a9/data/minecraft/worldgen/biome/jagged_peaks.json",
+      "sha256": "39dae05ebafed27006d06f684d4d7010790b409ed5c63569a906452e7b87975e"
+    },
+    {
+      "path": "vendor/vanilla/biome/stony_peaks.json",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/3458455b4b4537db37d6251a6ace1eed98d025a9/data/minecraft/worldgen/biome/stony_peaks.json",
+      "sha256": "78e7a5462d76b6f73d9619a637feb25b31354721c91bb0554ae01ff96a7da1d4"
+    },
+    {
+      "path": "vendor/vanilla/biome/windswept_hills.json",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/3458455b4b4537db37d6251a6ace1eed98d025a9/data/minecraft/worldgen/biome/windswept_hills.json",
+      "sha256": "8324a5e7f68a98611416a932c388a683a7933387fc7d61bfbcdf312760828d37"
+    },
+    {
+      "path": "vendor/vanilla/biome/windswept_forest.json",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/3458455b4b4537db37d6251a6ace1eed98d025a9/data/minecraft/worldgen/biome/windswept_forest.json",
+      "sha256": "d77b1bc554ef90f4b3ca2fcb3362fc6166d3e791047f0be6591c20fd581b8465"
+    },
+    {
+      "path": "vendor/vanilla/biome/windswept_gravelly_hills.json",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/3458455b4b4537db37d6251a6ace1eed98d025a9/data/minecraft/worldgen/biome/windswept_gravelly_hills.json",
+      "sha256": "8324a5e7f68a98611416a932c388a683a7933387fc7d61bfbcdf312760828d37"
+    },
+    {
+      "path": "vendor/vanilla/biome/river.json",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/3458455b4b4537db37d6251a6ace1eed98d025a9/data/minecraft/worldgen/biome/river.json",
+      "sha256": "be9ea37deb1bcad5884a0d82ac48687d3703c19eba9948dc7079dedd544bac0f"
+    },
+    {
+      "path": "vendor/vanilla/biome/frozen_river.json",
+      "url": "https://raw.githubusercontent.com/misode/mcmeta/3458455b4b4537db37d6251a6ace1eed98d025a9/data/minecraft/worldgen/biome/frozen_river.json",
+      "sha256": "f447523bb2e6568790eee1c183d73373c2304bd6cbe072de7fec9c1bc66156ac"
+    }
+  ]
+}

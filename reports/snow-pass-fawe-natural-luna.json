@@ -1,0 +1,17 @@
+{
+  "platformRadius": 1,
+  "generator": "jdk.proxy4.$Proxy94",
+  "mode": "real native random Generator over natural winter_test, not a built fixture",
+  "status": "PASS",
+  "elapsedSeconds": 19.079798405,
+  "world": "winter_test",
+  "x": 299,
+  "y": 66,
+  "z": -894,
+  "biome": "minecraft:plains",
+  "belowBefore": "minecraft:snow[layers\u003d1]",
+  "belowAfter": "minecraft:snow[layers\u003d1]",
+  "ticketCountAfterEnd": 0,
+  "surfacePreservedAfterEnd": true,
+  "blockAfterEnd": "AIR"
+}

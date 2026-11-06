@@ -1,0 +1,53 @@
+{
+  "version": {
+    "game_versions": [
+      "1.21.1",
+      "1.21.10",
+      "1.21.11",
+      "1.21.4",
+      "1.21.5",
+      "1.21.6",
+      "1.21.7",
+      "1.21.8",
+      "1.21.9",
+      "26.1",
+      "26.1.1",
+      "26.1.2",
+      "26.2",
+      "26.3"
+    ],
+    "loaders": [
+      "paper"
+    ],
+    "environment": "unknown",
+    "id": "JOyEqKdC",
+    "project_id": "z4HZZnLr",
+    "author_id": "zDySmDNf",
+    "featured": false,
+    "name": "2.16.2",
+    "version_number": "2.16.2",
+    "changelog": "The changelog is available on GitHub: https://github.com/IntellectualSites/FastAsyncWorldEdit/releases/tag/2.16.2",
+    "changelog_url": null,
+    "date_published": "2026-11-01T18:26:48.590196Z",
+    "downloads": 5029,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "42z90Kao",
+        "hashes": {
+          "sha1": "63cc04d8769e1366a29df02e5d512f6393e8d863",
+          "sha512": "319f6c961b01206dc7d9cf03e8105d87d4bb7698fe82c4405afd346689b948541c05355dca62bbd9cc45ff3de6ae9b481082c9fc5f4e02e2b1fbc33a9e56e404"
+        },
+        "url": "https://cdn.modrinth.com/data/z4HZZnLr/versions/JOyEqKdC/FastAsyncWorldEdit-Paper-2.16.2.jar",
+        "filename": "FastAsyncWorldEdit-Paper-2.16.2.jar",
+        "primary": true,
+        "size": 15278048,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  "sha256": "a74219fa660c782c9779e6740867cde395a24d1381dcba6c4f8022e4e9c3f87d"
+}

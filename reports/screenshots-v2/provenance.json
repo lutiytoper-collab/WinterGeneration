@@ -1,0 +1,111 @@
+{
+  "version": "0.2.0",
+  "minecraft": "1.21.11",
+  "server": "Paper 1.21.11 build132",
+  "seed": 825180311,
+  "world": "winter_test",
+  "plugin_sha256": "fad4c8771ef124ca97c1ec18a8e7af7b98924362ad23219586c8a1a9b468dad8",
+  "climate_datapack_sha256": "2472606d5dcaeb46720b36bc10b01c5b4630d415886aef9789a5a6b2cead07e8",
+  "client_sha1": "ba2df812c2d12e0219c489c4cd9a5e1f0760f5bd",
+  "capture": "Native F2; originals copied byte-for-byte; no editing, image generation, shaders, resource packs or manually placed scene blocks",
+  "render": "1600x900; Xvfb; Mesa llvmpipe OpenGL4.5; render distance10; vanilla gamma0.6",
+  "auth": "Isolated offline-auth loopback QA, not a public Microsoft-authentication test",
+  "notes": "Fresh world, datapack installed before generation, FAIRYTALE default0.2.0. Chunky1089 visited chunks plus native halo/spawn. Screenshot views are selected samples, not an exhaustive visual acceptance. Camera spectator and clear weather/time set by console commands.",
+  "screenshots": [
+    {
+      "file": "01-snow-conifers.png",
+      "native_F2_file": "2026-11-06_03.43.00.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "906eb17cab4f3e719de6c1fce1c71210e9533fe30189809bc99ba6048ba2f6d6",
+      "captured_utc": "2026-11-06T03:43:00.687423+00:00",
+      "camera_xyz_yaw_pitch": [
+        10.0,
+        104.0,
+        86.0,
+        -36.87,
+        28.0
+      ],
+      "note": "Procedural 0.2.0 forest; custom conifer at 25,78,106; no manual block placement, no shaders.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "02-lantern-clearing.png",
+      "native_F2_file": "2026-11-06_03.43.18.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "d7346f6e1c064e085c759f357e46865ce4f4ba444f02fac795b74b03f1a40d13",
+      "captured_utc": "2026-11-06T03:43:19.207827+00:00",
+      "camera_xyz_yaw_pitch": [
+        285.0,
+        90.0,
+        282.0,
+        -33.0,
+        8.0
+      ],
+      "note": "Procedural arch, hanging lantern, slope-fitted bench and boulders; twilight, vanilla lighting.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "03-mixed-forest.png",
+      "native_F2_file": "2026-11-06_03.43.43.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "038515117ccf573f830a2ea6252d0c21a4765ce121513ef28e060c3009a4b01b",
+      "captured_utc": "2026-11-06T03:43:44.112307+00:00",
+      "camera_xyz_yaw_pitch": [
+        8.0,
+        78.0,
+        276.0,
+        -40.0,
+        20.0
+      ],
+      "note": "Procedural mixed snowy forest, additional deciduous crowns and conifers; original terrain retained.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "04-forest-lantern.png",
+      "native_F2_file": "2026-11-06_03.44.22.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "b2032b31a24125df27bfb4b37d6640a86d54d743976a5143da6ba718270b03b8",
+      "captured_utc": "2026-11-06T03:44:22.948996+00:00",
+      "camera_xyz_yaw_pitch": [
+        -28.0,
+        69.0,
+        159.0,
+        0.0,
+        10.0
+      ],
+      "note": "Automatically placed woodland lantern arch and local-soil bench; vanilla twilight, original natural trees preserved.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "05-f3-proof.png",
+      "native_F2_file": "2026-11-06_03.45.24.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "1a3a67b0102c6f46b2f77969fb4004f739389a2b374ae6f282baa02161b74029",
+      "captured_utc": "2026-11-06T03:45:24.378145+00:00",
+      "camera_xyz_yaw_pitch": [
+        10.0,
+        104.0,
+        86.0,
+        -36.87,
+        28.0
+      ],
+      "note": "Native F3 overlay: official vanilla 1.21.11 client, Java21, Paper server, coordinates and llvmpipe renderer.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    }
+  ]
+}

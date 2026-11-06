@@ -1,0 +1,38 @@
+[
+  {
+    "folder": ".runtime/integration-story03",
+    "current_jar_sha256": "e51b768d9e6f13fa9e9124a9ec1320db8801b4208fd96f284604af18d3fb74fd",
+    "current_storybook_sha256": "caec2a1f62a65f7052615dbc228b7377ad0217bbbe6d8f12158b3f4bdff697da",
+    "identical": true
+  },
+  {
+    "folder": ".runtime/fawe-integration-story03",
+    "current_jar_sha256": "e51b768d9e6f13fa9e9124a9ec1320db8801b4208fd96f284604af18d3fb74fd",
+    "current_storybook_sha256": "caec2a1f62a65f7052615dbc228b7377ad0217bbbe6d8f12158b3f4bdff697da",
+    "identical": true
+  },
+  {
+    "folder": ".runtime/story03-purpur-smoke",
+    "current_jar_sha256": "e51b768d9e6f13fa9e9124a9ec1320db8801b4208fd96f284604af18d3fb74fd",
+    "current_storybook_sha256": "caec2a1f62a65f7052615dbc228b7377ad0217bbbe6d8f12158b3f4bdff697da",
+    "identical": true
+  },
+  {
+    "folder": ".runtime/story03-preview2",
+    "current_jar_sha256": "e51b768d9e6f13fa9e9124a9ec1320db8801b4208fd96f284604af18d3fb74fd",
+    "current_storybook_sha256": "caec2a1f62a65f7052615dbc228b7377ad0217bbbe6d8f12158b3f4bdff697da",
+    "identical": true
+  },
+  {
+    "folder": ".runtime/story03-matrix/825180311/winter",
+    "current_jar_sha256": "e51b768d9e6f13fa9e9124a9ec1320db8801b4208fd96f284604af18d3fb74fd",
+    "current_storybook_sha256": "caec2a1f62a65f7052615dbc228b7377ad0217bbbe6d8f12158b3f4bdff697da",
+    "identical": true
+  },
+  {
+    "folder": ".runtime/story03-boundary/42/winter",
+    "current_jar_sha256": "e51b768d9e6f13fa9e9124a9ec1320db8801b4208fd96f284604af18d3fb74fd",
+    "current_storybook_sha256": "caec2a1f62a65f7052615dbc228b7377ad0217bbbe6d8f12158b3f4bdff697da",
+    "identical": true
+  }
+]

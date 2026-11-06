@@ -1,0 +1,23 @@
+{
+  "finalJarSha256": "ca41a71c8aa435e6059faf463d65c7810f3de41742eed9e975d791f9c990270a",
+  "matrix": [
+    {
+      "run": "frozen",
+      "seed": 825180311,
+      "jarSha256": "20198d4ba3231d73bb3d4fc0243d2d8f2c5e4f787ae8dd9212d36a6a64c23f36",
+      "datapackEntriesEqualToFinal": true
+    },
+    {
+      "run": "boundary",
+      "seed": 42,
+      "jarSha256": "50464f9ad969498fa30fb0b6b58f0615c629cad7acedcdcec380d8e015bf05f3",
+      "datapackEntriesEqualToFinal": true
+    },
+    {
+      "run": "boundary-final",
+      "seed": -892041,
+      "jarSha256": "50464f9ad969498fa30fb0b6b58f0615c629cad7acedcdcec380d8e015bf05f3",
+      "datapackEntriesEqualToFinal": true
+    }
+  ]
+}

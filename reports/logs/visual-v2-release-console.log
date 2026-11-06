@@ -1,0 +1,295 @@
+Starting org.bukkit.craftbukkit.Main
+[02:59:35 INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.9+10-LTS; Eclipse Adoptium Temurin-21.0.9+10) on Linux 6.18.57 (amd64)
+[02:59:35 INFO]: [bootstrap] Loading Paper 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) for Minecraft 1.21.11
+[02:59:35 INFO]: [PluginInitializerManager] Initializing plugins...
+[02:59:36 INFO]: [ReobfServer] Remapping server...
+[02:59:43 INFO]: [ReobfServer] Done remapping server in 7061ms.
+[02:59:43 INFO]: [PluginRemapper] Remapping plugin 'plugins/MidgardWinterWorld.jar'...
+[02:59:43 INFO]: [PluginRemapper] Remapping plugin 'plugins/WinterProbe.jar'...
+[02:59:43 INFO]: [PluginRemapper] Done remapping plugin 'plugins/WinterProbe.jar' in 146ms.
+[02:59:43 INFO]: [PluginRemapper] Done remapping plugin 'plugins/MidgardWinterWorld.jar' in 209ms.
+[02:59:43 INFO]: [PluginInitializerManager] Initialized 3 plugins
+[02:59:43 INFO]: [PluginInitializerManager] Bukkit plugins (3):
+ - Chunky (1.4.40), MidgardWinterWorld (0.2.0), WinterProbe (0.2.0)
+[02:59:50 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[02:59:50 INFO]: Found new data pack file/bukkit, loading it automatically
+[02:59:50 INFO]: Found new data pack file/winter-datapack.zip, loading it automatically
+[02:59:50 INFO]: Found new data pack paper, loading it automatically
+[02:59:50 INFO]: No existing world data, creating new world
+[02:59:51 INFO]: Loaded 1470 recipes
+[02:59:51 INFO]: Loaded 1584 advancements
+[02:59:51 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[02:59:52 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 423.8ms
+[02:59:52 INFO]: Starting minecraft server version 1.21.11
+[02:59:52 INFO]: Loading properties
+[02:59:52 INFO]: This server is running Paper version 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[02:59:52 INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[02:59:52 INFO]: Server Ping Player Sample Count: 12
+[02:59:52 INFO]: Using 4 threads for Netty based IO
+[02:59:53 INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[02:59:53 INFO]: Default game type: SURVIVAL
+[02:59:53 INFO]: Generating keypair
+[02:59:53 INFO]: Starting Minecraft server on 127.0.0.1:25578
+>   [02:59:54 INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+>   [02:59:54 INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+>   [02:59:54 INFO]: [Chunky] Loading server plugin Chunky v1.4.40
+>   [02:59:54 INFO]: [MidgardWinterWorld] Loading server plugin MidgardWinterWorld v0.2.0
+>   [02:59:54 INFO]: [WinterProbe] Loading server plugin WinterProbe v0.2.0
+>   [02:59:54 INFO]: [MidgardWinterWorld] Enabling MidgardWinterWorld v0.2.0
+>   [02:59:54 INFO]: [MidgardWinterWorld] Development build 0.2.0; late decoration only; no retrogen. LunaAirDrop adapter requires validation.
+>   [33;1m[02:59:54 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[m>   [33;1m[02:59:54 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[m>   [33;1m[02:59:54 WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[m>   [33;1m[02:59:54 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[m>   [02:59:54 INFO]: Preparing level "winter_test"
+>   [31;1m[02:59:55 ERROR]: Failed to request yggdrasil public key
+com.mojang.authlib.exceptions.MinecraftClientException: Failed to read from https://api.minecraftservices.com/publickeys due to Connection refused
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:111) ~[authlib-7.0.61.jar:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:56) ~[authlib-7.0.61.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.fetch(YggdrasilServicesKeyInfo.java:114) ~[authlib-7.0.61.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo$1.run(YggdrasilServicesKeyInfo.java:89) ~[authlib-7.0.61.jar:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1302) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1143) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1705) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1629) ~[?:?]
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307) ~[?:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:82) ~[authlib-7.0.61.jar:?]
+	... 9 more
+[m>   [02:59:55 INFO]: Selecting spawn point for world 'minecraft:overworld'...
+>   [03:00:09 INFO]: Selecting spawn point for world 'minecraft:the_nether'...
+>   [03:00:10 INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
+>   [03:00:10 INFO]: Preparing spawn area: 100%
+>   [03:00:10 INFO]: Prepared spawn area in 14849 ms
+>   [03:00:10 INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+>   [03:00:10 INFO]: Preparing spawn area: 100%
+>   [03:00:10 INFO]: Prepared spawn area in 1199 ms
+>   [03:00:10 INFO]: Done preparing level "winter_test" (15.697s)
+>   [03:00:10 INFO]: [Chunky] Enabling Chunky v1.4.40
+>   [03:00:10 INFO]: [WinterProbe] Enabling WinterProbe v0.2.0
+>   [03:00:10 INFO]: [spark] Starting background profiler...
+>   [03:00:10 INFO]: Running delayed init tasks
+>   [03:00:11 INFO]: Done (36.399s)! For help, type "help"
+>   [03:00:11 INFO]: *************************************************************************************
+>   [03:00:11 INFO]: This is the first time you're starting this server.
+>   [03:00:11 INFO]: It's recommended you read our 'Getting Started' documentation for guidance.
+>   [03:00:11 INFO]: View this and more helpful information here: https://docs.papermc.io/paper/next-steps
+>   [03:00:11 INFO]: *************************************************************************************
+>   [33;1m[03:00:12 WARN]: *************************************************************************************
+[m>   [33;1m[03:00:12 WARN]: You are running the latest build for your Minecraft version (1.21.11)
+[m>   [33;1m[03:00:12 WARN]: However, you are 6 release(s) behind the latest stable release (26.3)!
+[m>   [33;1m[03:00:12 WARN]: It is recommended that you update as soon as possible
+[m>   [33;1m[03:00:12 WARN]: https://papermc.io/downloads/paper
+[m>   [33;1m[03:00:12 WARN]: *************************************************************************************
+[m> > > > > > > >   [03:00:40 INFO]: Set the time to 6000
+>   [03:00:40 INFO]: Set the weather to clear
+>   [03:00:40 INFO]: [Chunky] World changed to winter_test.
+>   [03:00:40 INFO]: [Chunky] Shape changed to square.
+>   [03:00:40 INFO]: [Chunky] Center changed to 128, 128.
+>   [03:00:40 INFO]: [Chunky] Radius changed to 384.
+>   [03:00:40 INFO]: [Chunky] Task started in winter_test for the square region centered at 128, 128 with radius 384.
+>   [03:00:44 INFO]: [Chunky] Task running for winter_test. Processed: 2 chunks (0.08%), ETA: 1:07:47, Rate: 0.6 cps, Current: 1, 1
+>   [03:00:46 INFO]: [Chunky] Task running for winter_test. Processed: 5 chunks (0.21%), ETA: 0:42:48, Rate: 0.9 cps, Current: 3, 5
+>   [03:00:47 INFO]: [Chunky] Task running for winter_test. Processed: 13 chunks (0.54%), ETA: 0:19:29, Rate: 2.0 cps, Current: 2, 1
+>   [03:00:48 INFO]: [Chunky] Task running for winter_test. Processed: 20 chunks (0.83%), ETA: 0:14:38, Rate: 2.7 cps, Current: 3, 3
+>   [03:00:49 INFO]: [Chunky] Task running for winter_test. Processed: 34 chunks (1.42%), ETA: 0:10:06, Rate: 3.9 cps, Current: 0, 3
+>   [03:00:51 INFO]: [Chunky] Task running for winter_test. Processed: 38 chunks (1.58%), ETA: 0:10:23, Rate: 3.8 cps, Current: 0, 4
+>   [03:00:52 INFO]: [Chunky] Task running for winter_test. Processed: 42 chunks (1.75%), ETA: 0:10:19, Rate: 3.8 cps, Current: 5, 7
+>   [03:00:53 INFO]: [Chunky] Task running for winter_test. Processed: 59 chunks (2.46%), ETA: 0:08:01, Rate: 4.9 cps, Current: 5, 1
+>   [03:00:55 INFO]: [Chunky] Task running for winter_test. Processed: 64 chunks (2.67%), ETA: 0:08:27, Rate: 4.6 cps, Current: 8, 3
+>   [03:00:56 INFO]: [Chunky] Task running for winter_test. Processed: 76 chunks (3.17%), ETA: 0:07:36, Rate: 5.1 cps, Current: 10, 3
+>   [03:00:57 INFO]: [Chunky] Task running for winter_test. Processed: 98 chunks (4.08%), ETA: 0:06:17, Rate: 6.1 cps, Current: 14, 1
+>   [03:00:58 INFO]: [Chunky] Task running for winter_test. Processed: 115 chunks (4.79%), ETA: 0:05:40, Rate: 6.7 cps, Current: 14, 0
+>   [03:00:59 INFO]: [Chunky] Task running for winter_test. Processed: 126 chunks (5.25%), ETA: 0:05:27, Rate: 6.9 cps, Current: 14, 7
+>   [03:01:00 INFO]: [Chunky] Task running for winter_test. Processed: 137 chunks (5.71%), ETA: 0:05:17, Rate: 7.1 cps, Current: 10, 9
+>   [03:01:01 INFO]: [Chunky] Task running for winter_test. Processed: 147 chunks (6.12%), ETA: 0:05:17, Rate: 7.1 cps, Current: 13, 10
+>   [03:01:02 INFO]: [Chunky] Task running for winter_test. Processed: 162 chunks (6.75%), ETA: 0:05:01, Rate: 7.4 cps, Current: 14, 11
+>   [03:01:04 INFO]: [Chunky] Task running for winter_test. Processed: 191 chunks (7.96%), ETA: 0:04:24, Rate: 8.3 cps, Current: 6, 12
+>   [03:01:05 INFO]: [Chunky] Task running for winter_test. Processed: 214 chunks (8.91%), ETA: 0:04:06, Rate: 8.9 cps, Current: 11, 15
+>   [03:01:06 INFO]: [Chunky] Task running for winter_test. Processed: 230 chunks (9.58%), ETA: 0:03:57, Rate: 9.2 cps, Current: 6, 15
+>   [03:01:07 INFO]: [Chunky] Task running for winter_test. Processed: 247 chunks (10.29%), ETA: 0:03:48, Rate: 9.4 cps, Current: 3, 16
+>   [03:01:08 INFO]: [Chunky] Task running for winter_test. Processed: 263 chunks (10.95%), ETA: 0:03:41, Rate: 9.7 cps, Current: 1, 16
+>   [03:01:09 INFO]: [Chunky] Task running for winter_test. Processed: 273 chunks (11.37%), ETA: 0:03:40, Rate: 9.7 cps, Current: 7, 17
+>   [03:01:10 INFO]: [Chunky] Task running for winter_test. Processed: 287 chunks (11.95%), ETA: 0:03:35, Rate: 9.8 cps, Current: 6, 19
+>   [03:01:11 INFO]: [Chunky] Task running for winter_test. Processed: 302 chunks (12.58%), ETA: 0:03:07, Rate: 11.2 cps, Current: 1, 20
+>   [03:01:12 INFO]: [Chunky] Task running for winter_test. Processed: 307 chunks (12.79%), ETA: 0:03:11, Rate: 10.9 cps, Current: 1, 21
+>   [03:01:13 INFO]: [Chunky] Task running for winter_test. Processed: 310 chunks (12.91%), ETA: 0:03:17, Rate: 10.6 cps, Current: 1, 22
+>   [03:01:14 INFO]: [Chunky] Task running for winter_test. Processed: 321 chunks (13.37%), ETA: 0:03:06, Rate: 11.2 cps, Current: 2, 25
+>   [03:01:15 INFO]: [Chunky] Task running for winter_test. Processed: 327 chunks (13.62%), ETA: 0:03:09, Rate: 11.0 cps, Current: 2, 27
+>   [03:01:16 INFO]: [Chunky] Task running for winter_test. Processed: 351 chunks (14.62%), ETA: 0:02:58, Rate: 11.5 cps, Current: 7, 24
+>   [03:01:17 INFO]: [Chunky] Task running for winter_test. Processed: 367 chunks (15.29%), ETA: 0:02:52, Rate: 11.8 cps, Current: 6, 26
+>   [03:01:19 INFO]: [Chunky] Task running for winter_test. Processed: 380 chunks (15.83%), ETA: 0:02:51, Rate: 11.8 cps, Current: 4, 31
+>   [03:01:20 INFO]: [Chunky] Task running for winter_test. Processed: 394 chunks (16.41%), ETA: 0:02:44, Rate: 12.2 cps, Current: 9, 27
+>   [03:01:21 INFO]: [Chunky] Task running for winter_test. Processed: 403 chunks (16.78%), ETA: 0:02:43, Rate: 12.2 cps, Current: 10, 29
+>   [03:01:22 INFO]: [Chunky] Task running for winter_test. Processed: 414 chunks (17.24%), ETA: 0:02:45, Rate: 12.0 cps, Current: 12, 28
+>   [03:01:23 INFO]: [Chunky] Task running for winter_test. Processed: 432 chunks (17.99%), ETA: 0:02:34, Rate: 12.8 cps, Current: 14, 30
+>   [03:01:24 INFO]: [Chunky] Task running for winter_test. Processed: 445 chunks (18.53%), ETA: 0:02:33, Rate: 12.8 cps, Current: 13, 22
+>   [03:01:26 INFO]: [Chunky] Task running for winter_test. Processed: 483 chunks (20.12%), ETA: 0:02:20, Rate: 13.6 cps, Current: 12, 16
+>   [03:01:27 INFO]: [Chunky] Task running for winter_test. Processed: 514 chunks (21.41%), ETA: 0:02:17, Rate: 13.7 cps, Current: 16, 17
+>   [03:01:28 INFO]: [Chunky] Task running for winter_test. Processed: 519 chunks (21.62%), ETA: 0:02:19, Rate: 13.4 cps, Current: 17, 18
+>   [03:01:29 INFO]: [Chunky] Task running for winter_test. Processed: 546 chunks (22.74%), ETA: 0:02:12, Rate: 14.0 cps, Current: 19, 21
+>   [03:01:30 INFO]: [Chunky] Task running for winter_test. Processed: 567 chunks (23.62%), ETA: 0:02:05, Rate: 14.6 cps, Current: 20, 22
+>   [03:01:31 INFO]: [Chunky] Task running for winter_test. Processed: 588 chunks (24.49%), ETA: 0:02:02, Rate: 14.8 cps, Current: 23, 22
+>   [03:01:32 INFO]: [Chunky] Task running for winter_test. Processed: 605 chunks (25.20%), ETA: 0:02:00, Rate: 14.9 cps, Current: 20, 25
+>   [03:01:34 INFO]: [Chunky] Task running for winter_test. Processed: 625 chunks (26.03%), ETA: 0:02:05, Rate: 14.2 cps, Current: 21, 30
+>   [03:01:35 INFO]: [Chunky] Task running for winter_test. Processed: 644 chunks (26.82%), ETA: 0:02:03, Rate: 14.2 cps, Current: 21, 31
+>   [03:01:36 INFO]: [Chunky] Task running for winter_test. Processed: 655 chunks (27.28%), ETA: 0:02:05, Rate: 13.9 cps, Current: 24, 30
+>   [03:01:38 INFO]: [Chunky] Task running for winter_test. Processed: 670 chunks (27.91%), ETA: 0:02:06, Rate: 13.7 cps, Current: 29, 29
+>   [03:01:39 INFO]: [Chunky] Task running for winter_test. Processed: 695 chunks (28.95%), ETA: 0:02:00, Rate: 14.1 cps, Current: 28, 23
+>   [03:01:40 INFO]: [Chunky] Task running for winter_test. Processed: 709 chunks (29.53%), ETA: 0:01:59, Rate: 14.1 cps, Current: 25, 19
+>   [03:01:41 INFO]: [Chunky] Task running for winter_test. Processed: 738 chunks (30.74%), ETA: 0:01:51, Rate: 14.9 cps, Current: 31, 25
+>   [03:01:42 INFO]: [Chunky] Task running for winter_test. Processed: 748 chunks (31.15%), ETA: 0:01:48, Rate: 15.2 cps, Current: 28, 19
+>   [03:01:43 INFO]: [Chunky] Task running for winter_test. Processed: 763 chunks (31.78%), ETA: 0:01:46, Rate: 15.3 cps, Current: 31, 19
+>   [03:01:44 INFO]: [Chunky] Task running for winter_test. Processed: 771 chunks (32.11%), ETA: 0:01:48, Rate: 15.1 cps, Current: 28, 14
+>   [03:01:45 INFO]: [Chunky] Task running for winter_test. Processed: 795 chunks (33.11%), ETA: 0:01:44, Rate: 15.3 cps, Current: 28, 10
+>   [03:01:47 INFO]: [Chunky] Task running for winter_test. Processed: 811 chunks (33.78%), ETA: 0:01:43, Rate: 15.3 cps, Current: 25, 13
+>   [03:01:48 INFO]: [Chunky] Task running for winter_test. Processed: 851 chunks (35.44%), ETA: 0:01:34, Rate: 16.3 cps, Current: 17, 12
+>   [03:01:49 INFO]: [Chunky] Task running for winter_test. Processed: 906 chunks (37.73%), ETA: 0:01:24, Rate: 17.6 cps, Current: 17, 6
+>   [03:01:50 INFO]: [Chunky] Task running for winter_test. Processed: 927 chunks (38.61%), ETA: 0:01:21, Rate: 18.1 cps, Current: 18, 1
+>   [03:01:51 INFO]: [Chunky] Task running for winter_test. Processed: 940 chunks (39.15%), ETA: 0:01:20, Rate: 18.3 cps, Current: 20, 3
+>   [03:01:53 INFO]: [Chunky] Task running for winter_test. Processed: 966 chunks (40.23%), ETA: 0:01:18, Rate: 18.3 cps, Current: 21, 1
+>   [03:01:54 INFO]: [Chunky] Task running for winter_test. Processed: 987 chunks (41.11%), ETA: 0:01:16, Rate: 18.6 cps, Current: 27, 5
+>   [03:01:55 INFO]: [Chunky] Task running for winter_test. Processed: 1004 chunks (41.82%), ETA: 0:01:18, Rate: 17.9 cps, Current: 25, 0
+>   [03:01:57 INFO]: [Chunky] Task running for winter_test. Processed: 1012 chunks (42.15%), ETA: 0:01:21, Rate: 17.1 cps, Current: 31, 6
+>   [03:01:59 INFO]: [Chunky] Task running for winter_test. Processed: 1029 chunks (42.86%), ETA: 0:01:23, Rate: 16.5 cps, Current: 28, 0
+>   [03:02:00 INFO]: [Chunky] Task running for winter_test. Processed: 1036 chunks (43.15%), ETA: 0:01:25, Rate: 15.9 cps, Current: 32, 22
+>   [03:02:01 INFO]: [Chunky] Task running for winter_test. Processed: 1051 chunks (43.77%), ETA: 0:01:26, Rate: 15.6 cps, Current: 30, 0
+>   [03:02:03 INFO]: [Chunky] Task running for winter_test. Processed: 1052 chunks (43.82%), ETA: 0:01:31, Rate: 14.8 cps, Current: 32, 3
+>   [03:02:04 INFO]: [Chunky] Task running for winter_test. Processed: 1057 chunks (44.02%), ETA: 0:01:34, Rate: 14.3 cps, Current: 32, 0
+>   [03:02:06 INFO]: [Chunky] Task running for winter_test. Processed: 1058 chunks (44.06%), ETA: 0:01:38, Rate: 13.6 cps, Current: 1, -1
+>   [03:02:07 INFO]: [Chunky] Task running for winter_test. Processed: 1059 chunks (44.11%), ETA: 0:01:41, Rate: 13.3 cps, Current: 0, -2
+>   [03:02:09 INFO]: [Chunky] Task running for winter_test. Processed: 1063 chunks (44.27%), ETA: 0:01:48, Rate: 12.3 cps, Current: 32, -3
+>   [03:02:10 INFO]: [Chunky] Task running for winter_test. Processed: 1091 chunks (45.44%), ETA: 0:01:42, Rate: 12.8 cps, Current: 0, -16
+>   [03:02:11 INFO]: [Chunky] Task running for winter_test. Processed: 1104 chunks (45.98%), ETA: 0:01:45, Rate: 12.3 cps, Current: 1, -16
+>   [03:02:13 INFO]: [Chunky] Task running for winter_test. Processed: 1106 chunks (46.06%), ETA: 0:01:50, Rate: 11.7 cps, Current: 2, -2
+>   [03:02:14 INFO]: [Chunky] Task running for winter_test. Processed: 1122 chunks (46.73%), ETA: 0:01:47, Rate: 11.9 cps, Current: 4, -1
+>   [03:02:15 INFO]: [Chunky] Task running for winter_test. Processed: 1136 chunks (47.31%), ETA: 0:01:50, Rate: 11.5 cps, Current: 3, -15
+>   [03:02:17 INFO]: [Chunky] Task running for winter_test. Processed: 1155 chunks (48.10%), ETA: 0:01:48, Rate: 11.5 cps, Current: 4, -16
+>   [03:02:18 INFO]: [Chunky] Task running for winter_test. Processed: 1174 chunks (48.90%), ETA: 0:02:12, Rate: 9.3 cps, Current: 6, -4
+>   [03:02:19 INFO]: [Chunky] Task running for winter_test. Processed: 1204 chunks (50.15%), ETA: 0:02:02, Rate: 9.7 cps, Current: 7, -16
+>   [03:02:20 INFO]: [Chunky] Task running for winter_test. Processed: 1234 chunks (51.40%), ETA: 0:01:52, Rate: 10.4 cps, Current: 10, -3
+>   [03:02:21 INFO]: [Chunky] Task running for winter_test. Processed: 1270 chunks (52.89%), ETA: 0:01:42, Rate: 11.1 cps, Current: 11, -15
+>   [03:02:22 INFO]: [Chunky] Task running for winter_test. Processed: 1302 chunks (54.23%), ETA: 0:01:36, Rate: 11.3 cps, Current: 13, -15
+>   [03:02:23 INFO]: [Chunky] Task running for winter_test. Processed: 1320 chunks (54.98%), ETA: 0:01:36, Rate: 11.2 cps, Current: 15, -5
+>   [03:02:24 INFO]: [Chunky] Task running for winter_test. Processed: 1337 chunks (55.69%), ETA: 0:01:34, Rate: 11.2 cps, Current: 15, -16
+>   [03:02:25 INFO]: [Chunky] Task running for winter_test. Processed: 1367 chunks (56.93%), ETA: 0:01:22, Rate: 12.5 cps, Current: 18, -4
+>   [03:02:27 INFO]: [Chunky] Task running for winter_test. Processed: 1397 chunks (58.18%), ETA: 0:01:17, Rate: 13.0 cps, Current: 19, -15
+>   [03:02:28 INFO]: [Chunky] Task running for winter_test. Processed: 1428 chunks (59.48%), ETA: 0:01:10, Rate: 13.7 cps, Current: 20, -16
+>   [03:02:29 INFO]: [Chunky] Task running for winter_test. Processed: 1448 chunks (60.31%), ETA: 0:01:07, Rate: 14.1 cps, Current: 23, -5
+>   [03:02:30 INFO]: [Chunky] Task running for winter_test. Processed: 1480 chunks (61.64%), ETA: 0:01:02, Rate: 14.8 cps, Current: 25, -5
+>   [03:02:36 INFO]: [Chunky] Task running for winter_test. Processed: 1585 chunks (66.01%), ETA: 0:00:45, Rate: 18.0 cps, Current: -15, -15
+>   [03:02:39 INFO]: [Chunky] Task running for winter_test. Processed: 1599 chunks (66.60%), ETA: 0:00:44, Rate: 18.0 cps, Current: -16, -13
+>   [03:02:40 INFO]: [Chunky] Task running for winter_test. Processed: 1635 chunks (68.10%), ETA: 0:00:41, Rate: 18.5 cps, Current: -13, -14
+>   [03:02:41 INFO]: [Chunky] Task running for winter_test. Processed: 1652 chunks (68.80%), ETA: 0:00:39, Rate: 19.1 cps, Current: -12, -13
+>   [03:02:42 INFO]: [Chunky] Task running for winter_test. Processed: 1674 chunks (69.72%), ETA: 0:00:37, Rate: 19.2 cps, Current: -11, -7
+>   [03:02:43 INFO]: [Chunky] Task running for winter_test. Processed: 1685 chunks (70.18%), ETA: 0:00:37, Rate: 19.1 cps, Current: -10, -12
+>   [03:02:44 INFO]: [Chunky] Task running for winter_test. Processed: 1701 chunks (70.85%), ETA: 0:00:36, Rate: 19.3 cps, Current: -9, -16
+>   [03:02:45 INFO]: [Chunky] Task running for winter_test. Processed: 1717 chunks (71.51%), ETA: 0:00:35, Rate: 19.4 cps, Current: -8, -16
+>   [03:02:46 INFO]: [Chunky] Task running for winter_test. Processed: 1737 chunks (72.34%), ETA: 0:00:34, Rate: 19.4 cps, Current: -6, -15
+>   [03:02:49 INFO]: [Chunky] Task running for winter_test. Processed: 1841 chunks (76.68%), ETA: 0:00:26, Rate: 21.5 cps, Current: -15, 0
+>   [03:02:52 INFO]: [Chunky] Task running for winter_test. Processed: 1844 chunks (76.80%), ETA: 0:00:30, Rate: 18.6 cps, Current: -16, 1
+>   [03:02:53 INFO]: [Chunky] Task running for winter_test. Processed: 1846 chunks (76.88%), ETA: 0:00:31, Rate: 17.8 cps, Current: -15, 2
+>   [03:02:55 INFO]: [Chunky] Task running for winter_test. Processed: 1849 chunks (77.01%), ETA: 0:00:33, Rate: 16.4 cps, Current: -16, 4
+> > >   [03:02:56 INFO]: MidgardWinterWorld 0.2.0 DEVELOPMENT; enabled=true; worlds=[winter_test]; processed=1984 decorated=591 skipped=1246 boundary-restored=226 pending=84; leased-chunks=1; features={new-chunk-loads=1984, skip-block entities in chunk=359, canopy-snow=38966, drift-blocks=76400, snow-conifers=152, trail-blocks=1679, denied-clearings-terrain=62, understory=52, skip-never-loaded=861, denied-ice-terrain=31, denied-ice-obstructed=4, snow-deciduous=58, skip-expired=26, denied-clearings-obstructed=2, denied-clearings-unsupported=7, denied-clearings-protected=4}; WorldGuard=absent; LunaAirDrop=UNVERIFIED
+>   [03:02:56 INFO]: [WinterProbe] WINTERVISUAL_METRICS {"seed":825180311,"version":"0.2.0","metrics":{"denied-ice-terrain":31,"new-chunk-loads":1984,"understory":52,"denied-ice-obstructed":4,"skip-expired":26,"denied-clearings-unsupported":7,"skip-never-loaded":861,"denied-clearings-terrain":62,"snow-conifers":152,"skip-block entities in chunk":359,"denied-clearings-protected":4,"trail-blocks":1679,"snow-deciduous":58,"drift-blocks":76400,"denied-clearings-obstructed":2,"canopy-snow":38966},"samples":{"snow-deciduous":["202,70,216","229,76,229","22,66,293","69,95,342","57,92,343","57,94,359","90,92,359","102,89,360","42,115,406","38,123,442","69,102,391","69,110,405","121,90,390","138,93,410","136,117,439","136,125,456","89,138,502","170,100,409","166,102,422","182,118,437","201,117,394","183,104,393","166,89,373","133,78,310","169,93,346","181,94,346","151,66,265","168,67,297","170,63,281","215,114,346","231,105,345","185,65,261"],"snow-conifers":["55,77,87","90,85,56","25,78,106","8,78,90","138,102,39","229,102,87","150,85,149","186,80,168","202,78,166","167,81,166","150,83,168","149,70,197","133,64,214","121,80,154","106,80,182","57,71,134","182,70,217","73,71,200","86,72,202","86,69,234","73,69,233","25,68,165","8,69,150","56,69,245","40,69,200","55,69,265","87,67,250","86,21,266","55,73,298","69,72,295","86,77,309","53,132,486"]}}
+>   [03:02:56 INFO]: [Chunky] Task running for winter_test. Processed: 1855 chunks (77.26%), ETA: 0:00:34, Rate: 15.6 cps, Current: -16, 9
+>   [03:02:58 INFO]: [Chunky] Task running for winter_test. Processed: 1897 chunks (79.01%), ETA: 0:00:32, Rate: 15.7 cps, Current: -15, 18
+>   [03:02:59 INFO]: [Chunky] Task running for winter_test. Processed: 1901 chunks (79.18%), ETA: 0:00:32, Rate: 15.3 cps, Current: -13, 1
+>   [03:03:00 INFO]: [Chunky] Task running for winter_test. Processed: 1923 chunks (80.09%), ETA: 0:00:32, Rate: 14.9 cps, Current: -14, 15
+>   [03:03:01 INFO]: [Chunky] Task running for winter_test. Processed: 1935 chunks (80.59%), ETA: 0:00:33, Rate: 14.0 cps, Current: -14, 22
+>   [03:03:03 INFO]: [Chunky] Task running for winter_test. Processed: 1970 chunks (82.05%), ETA: 0:00:29, Rate: 14.7 cps, Current: -13, 23
+>   [03:03:04 INFO]: [Chunky] Task running for winter_test. Processed: 2002 chunks (83.38%), ETA: 0:00:26, Rate: 15.2 cps, Current: -12, 23
+>   [03:03:05 INFO]: [Chunky] Task running for winter_test. Processed: 2028 chunks (84.46%), ETA: 0:00:24, Rate: 15.5 cps, Current: -10, 5
+>   [03:03:06 INFO]: [Chunky] Task running for winter_test. Processed: 2060 chunks (85.80%), ETA: 0:00:21, Rate: 16.0 cps, Current: -9, 2
+>   [03:03:07 INFO]: [Chunky] Task running for winter_test. Processed: 2093 chunks (87.17%), ETA: 0:00:17, Rate: 17.2 cps, Current: -9, 20
+>   [03:03:09 INFO]: [Chunky] Task running for winter_test. Processed: 2119 chunks (88.25%), ETA: 0:00:16, Rate: 17.4 cps, Current: -8, 21
+>   [03:03:10 INFO]: [Chunky] Task running for winter_test. Processed: 2183 chunks (90.92%), ETA: 0:00:11, Rate: 18.6 cps, Current: -8, 31
+>   [03:03:11 INFO]: [Chunky] Task running for winter_test. Processed: 2264 chunks (94.29%), ETA: 0:00:06, Rate: 21.0 cps, Current: -5, 22
+>   [03:03:12 INFO]: [Chunky] Task running for winter_test. Processed: 2387 chunks (99.42%), ETA: 0:00:00, Rate: 24.1 cps, Current: 10, 32
+>   [03:03:13 INFO]: [Chunky] Task running for winter_test. Processed: 2398 chunks (99.88%), ETA: 0:00:00, Rate: 24.1 cps, Current: 29, 32
+>   [03:03:13 INFO]: [Chunky] Task finished for winter_test. Processed: 2401 chunks (100.00%), Total time: 0:02:32
+>   [31;1m[03:04:55 ERROR]: Failed to request yggdrasil public key
+com.mojang.authlib.exceptions.MinecraftClientException: Failed to read from https://api.minecraftservices.com/publickeys due to Connection refused
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:111) ~[authlib-7.0.61.jar:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:56) ~[authlib-7.0.61.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.fetch(YggdrasilServicesKeyInfo.java:114) ~[authlib-7.0.61.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo$1.run(YggdrasilServicesKeyInfo.java:89) ~[authlib-7.0.61.jar:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1302) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1143) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1705) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1629) ~[?:?]
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307) ~[?:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:82) ~[authlib-7.0.61.jar:?]
+	... 9 more
+[m> >   [03:05:08 INFO]: Stopping the server
+>   [03:05:08 INFO]: Stopping server
+>   [03:05:08 INFO]: [WinterProbe] Disabling WinterProbe v0.2.0
+>   [03:05:08 INFO]: [MidgardWinterWorld] Disabling MidgardWinterWorld v0.2.0
+>   [03:05:08 INFO]: [Chunky] Disabling Chunky v1.4.40
+>   [03:05:08 INFO]: Saving players
+>   [03:05:08 INFO]: Saving worlds
+>   [03:05:08 INFO]: Saving chunks for level 'ServerLevel[winter_test]'/minecraft:overworld
+>   [03:05:08 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'winter_test'
+>   [03:05:08 INFO]: [ChunkHolderManager] Halted chunk system for world 'winter_test'
+>   [03:05:08 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'winter_test'
+>   [03:05:08 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'winter_test' in 0.02s
+>   [03:05:08 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'winter_test'
+>   [03:05:08 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'winter_test'
+>   [03:05:08 INFO]: Saving chunks for level 'ServerLevel[winter_test_nether]'/minecraft:the_nether
+>   [03:05:08 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'winter_test_nether'
+>   [03:05:08 INFO]: [ChunkHolderManager] Halted chunk system for world 'winter_test_nether'
+>   [03:05:08 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'winter_test_nether'
+>   [03:05:08 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'winter_test_nether' in 0.00s
+>   [03:05:08 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'winter_test_nether'
+>   [03:05:08 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'winter_test_nether'
+>   [03:05:08 INFO]: ThreadedAnvilChunkStorage (winter_test): All chunks are saved
+>   [03:05:08 INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+>   [03:05:08 INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+>   [03:05:08 INFO]: Waiting for all RegionFile I/O tasks to complete...
+>   [03:05:08 INFO]: All RegionFile I/O tasks to complete
+>   [03:05:08 INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+>   [03:05:08 INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
+> 

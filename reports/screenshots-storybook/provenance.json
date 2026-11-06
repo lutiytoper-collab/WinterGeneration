@@ -1,0 +1,131 @@
+{
+  "version": "0.3.0",
+  "minecraft": "1.21.11",
+  "server": "Paper1.21.11 build132",
+  "seed": 825180311,
+  "world": "winter_test",
+  "profile": "config-storybook.yml (unchanged from plugin source)",
+  "plugin_sha256": "e51b768d9e6f13fa9e9124a9ec1320db8801b4208fd96f284604af18d3fb74fd",
+  "storybook_datapack_sha256": "caec2a1f62a65f7052615dbc228b7377ad0217bbbe6d8f12158b3f4bdff697da",
+  "client_sha1": "ba2df812c2d12e0219c489c4cd9a5e1f0760f5bd",
+  "capture": "Native F2; byte-identical PNGs; no shaders/resource packs, manual scene construction, image generation or editing.",
+  "renderer": "1600x900, render10, gamma0.6, Xvfb/Mesa llvmpipe OpenGL4.5",
+  "auth": "Isolated loopback offline-auth QA, not Microsoft public login",
+  "world_generation": "Fresh seed825180311 with native Storybook pack before first generation. Chunky625visited chunks then extra native halo/player-loaded chunks.",
+  "screenshots": [
+    {
+      "file": "01-frost-cathedral.png",
+      "native_F2_file": "2026-11-06_04.40.32.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "be7f5ecef323556129b3d2965366edf2ee0c04bb2c3036125f35262fe128ccdf",
+      "captured_utc": "2026-11-06T04:40:32.474175+00:00",
+      "camera_xyz_yaw_pitch": [
+        10.0,
+        112.0,
+        86.0,
+        -36.87,
+        24.0
+      ],
+      "note": "Native Storybook frost firs replacing old taiga vegetation, blue-white biome foliage and snow; no manually placed scene blocks or shaders.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "02-lantern-under-giants.png",
+      "native_F2_file": "2026-11-06_04.42.11.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "d5b6f9eb984b8815dccf0ff051168fe1ae204d7e16b2d68f434af99555890d38",
+      "captured_utc": "2026-11-06T04:42:11.868108+00:00",
+      "camera_xyz_yaw_pitch": [
+        34.0,
+        79.0,
+        96.0,
+        -38.0,
+        8.0
+      ],
+      "note": "Procedural frost shelter beneath native giant trees; natural hanging moss and warm lanterns in the canopy. No manually placed blocks.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "03-silver-grove.png",
+      "native_F2_file": "2026-11-06_04.44.18.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "f34ecc191abab958a753e6eee6ba77ad8af60da3c648463ffa5a07e4cbf9a191",
+      "captured_utc": "2026-11-06T04:44:19.526591+00:00",
+      "camera_xyz_yaw_pitch": [
+        8.0,
+        99.0,
+        276.0,
+        -40.0,
+        20.0
+      ],
+      "note": "Native frost grove with large branching birches and conifers; original F2 recovered after waiting for Minecraft to finish its PNG encoding.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "04-birch-walk.png",
+      "native_F2_file": "2026-11-06_04.44.48.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "cbbcf9d9da764248ab7dae60666ddf7df0b23e5ff2129ed7d6ac418d133b91c8",
+      "captured_utc": "2026-11-06T04:44:49.035155+00:00",
+      "camera_xyz_yaw_pitch": [
+        28.0,
+        70.0,
+        305.0,
+        -15.0,
+        0.0
+      ],
+      "note": "Walk-height view inside a frost birch grove; original birch bark, taller branching crowns, natural flowers and snow; no hand-built scene.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "05-blue-hour.png",
+      "native_F2_file": "2026-11-06_04.45.37.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "a6722c7caba6f6c559fc2f6002f181bcd28cc92cc837d151b3d3c95852d46443",
+      "captured_utc": "2026-11-06T04:45:37.992106+00:00",
+      "camera_xyz_yaw_pitch": [
+        10.0,
+        112.0,
+        86.0,
+        -36.87,
+        24.0
+      ],
+      "note": "Vanilla twilight over native frost firs; actual lantern block light under the trees, no shaders or postprocessing.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "06-f3-proof.png",
+      "native_F2_file": "2026-11-06_04.46.27.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "e2ceabbdf889e0e8cb8c390781c1e979f96432abc42027c2ba23f92f44a2d9c5",
+      "captured_utc": "2026-11-06T04:46:27.681054+00:00",
+      "camera_xyz_yaw_pitch": [
+        10.0,
+        112.0,
+        86.0,
+        -36.87,
+        24.0
+      ],
+      "note": "Native F3 screen in Storybook world: official vanilla1.21.11, Java21, Paper, exact camera and software OpenGL renderer.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    }
+  ]
+}

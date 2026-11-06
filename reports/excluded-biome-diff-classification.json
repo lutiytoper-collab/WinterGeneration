@@ -1,0 +1,686 @@
+{
+  "material_changes_by_biome": [
+    {
+      "biome": "minecraft:warm_ocean",
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "count": 50
+    },
+    {
+      "biome": "minecraft:river",
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "count": 563
+    },
+    {
+      "biome": "minecraft:river",
+      "before": "minecraft:seagrass",
+      "after": "minecraft:water",
+      "count": 16
+    },
+    {
+      "biome": "minecraft:desert",
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "count": 26
+    },
+    {
+      "biome": "minecraft:desert",
+      "before": "minecraft:seagrass",
+      "after": "minecraft:water",
+      "count": 1
+    },
+    {
+      "biome": "minecraft:desert",
+      "before": "minecraft:water",
+      "after": "minecraft:seagrass",
+      "count": 1
+    },
+    {
+      "biome": "minecraft:desert",
+      "before": "minecraft:water",
+      "after": "minecraft:tall_seagrass",
+      "count": 2
+    },
+    {
+      "biome": "minecraft:river",
+      "before": "minecraft:tall_seagrass",
+      "after": "minecraft:water",
+      "count": 16
+    },
+    {
+      "biome": "minecraft:river",
+      "before": "minecraft:water",
+      "after": "minecraft:tall_seagrass",
+      "count": 10
+    },
+    {
+      "biome": "minecraft:river",
+      "before": "minecraft:water",
+      "after": "minecraft:seagrass",
+      "count": 1
+    },
+    {
+      "biome": "minecraft:warm_ocean",
+      "before": "minecraft:water",
+      "after": "minecraft:tall_seagrass",
+      "count": 2
+    },
+    {
+      "biome": "minecraft:warm_ocean",
+      "before": "minecraft:water",
+      "after": "minecraft:seagrass",
+      "count": 2
+    }
+  ],
+  "winter_changes_outside_rivers": [
+    {
+      "x": 2219,
+      "y": 62,
+      "z": 2244,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2219,
+      "y": 62,
+      "z": 2253,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2224,
+      "y": 62,
+      "z": 2240,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2224,
+      "y": 62,
+      "z": 2241,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2228,
+      "y": 62,
+      "z": 2244,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2228,
+      "y": 62,
+      "z": 2245,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2228,
+      "y": 62,
+      "z": 2246,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2228,
+      "y": 62,
+      "z": 2247,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2228,
+      "y": 62,
+      "z": 2251,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2229,
+      "y": 62,
+      "z": 2245,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2229,
+      "y": 62,
+      "z": 2246,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2229,
+      "y": 62,
+      "z": 2251,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2230,
+      "y": 62,
+      "z": 2251,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2231,
+      "y": 62,
+      "z": 2251,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2232,
+      "y": 62,
+      "z": 2251,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2232,
+      "y": 62,
+      "z": 2252,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2232,
+      "y": 62,
+      "z": 2253,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2232,
+      "y": 62,
+      "z": 2254,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2233,
+      "y": 62,
+      "z": 2252,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2217,
+      "y": 62,
+      "z": 2263,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2218,
+      "y": 62,
+      "z": 2263,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2219,
+      "y": 62,
+      "z": 2262,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2219,
+      "y": 62,
+      "z": 2263,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2248,
+      "y": 62,
+      "z": 2262,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2248,
+      "y": 62,
+      "z": 2263,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2252,
+      "y": 62,
+      "z": 2265,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2252,
+      "y": 62,
+      "z": 2266,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2252,
+      "y": 62,
+      "z": 2267,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2252,
+      "y": 62,
+      "z": 2268,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2252,
+      "y": 62,
+      "z": 2270,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2252,
+      "y": 62,
+      "z": 2271,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2253,
+      "y": 62,
+      "z": 2265,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2253,
+      "y": 62,
+      "z": 2266,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2253,
+      "y": 62,
+      "z": 2271,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2215,
+      "y": 62,
+      "z": 2272,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2223,
+      "y": 62,
+      "z": 2280,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2244,
+      "y": 62,
+      "z": 2280,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2244,
+      "y": 62,
+      "z": 2281,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2244,
+      "y": 62,
+      "z": 2286,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2244,
+      "y": 62,
+      "z": 2287,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2245,
+      "y": 62,
+      "z": 2280,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2245,
+      "y": 62,
+      "z": 2281,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2246,
+      "y": 62,
+      "z": 2280,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2246,
+      "y": 62,
+      "z": 2281,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2247,
+      "y": 62,
+      "z": 2280,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2248,
+      "y": 62,
+      "z": 2276,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2248,
+      "y": 62,
+      "z": 2277,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2248,
+      "y": 62,
+      "z": 2278,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2248,
+      "y": 62,
+      "z": 2279,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2249,
+      "y": 62,
+      "z": 2276,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2249,
+      "y": 62,
+      "z": 2277,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2249,
+      "y": 62,
+      "z": 2278,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2251,
+      "y": 62,
+      "z": 2276,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2252,
+      "y": 62,
+      "z": 2272,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2252,
+      "y": 62,
+      "z": 2273,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2252,
+      "y": 62,
+      "z": 2274,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2252,
+      "y": 62,
+      "z": 2275,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2252,
+      "y": 62,
+      "z": 2276,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2253,
+      "y": 62,
+      "z": 2272,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2230,
+      "y": 62,
+      "z": 2292,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2231,
+      "y": 62,
+      "z": 2292,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2231,
+      "y": 62,
+      "z": 2293,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2232,
+      "y": 62,
+      "z": 2292,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2232,
+      "y": 62,
+      "z": 2293,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2233,
+      "y": 62,
+      "z": 2292,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2233,
+      "y": 62,
+      "z": 2293,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2234,
+      "y": 62,
+      "z": 2292,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2234,
+      "y": 62,
+      "z": 2293,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2235,
+      "y": 62,
+      "z": 2292,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:desert"
+    },
+    {
+      "x": 2240,
+      "y": 62,
+      "z": 2288,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2241,
+      "y": 62,
+      "z": 2288,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2242,
+      "y": 62,
+      "z": 2288,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2243,
+      "y": 62,
+      "z": 2288,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2243,
+      "y": 62,
+      "z": 2289,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2244,
+      "y": 62,
+      "z": 2288,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    },
+    {
+      "x": 2244,
+      "y": 62,
+      "z": 2289,
+      "before": "minecraft:water",
+      "after": "minecraft:ice",
+      "biome": "minecraft:warm_ocean"
+    }
+  ]
+}

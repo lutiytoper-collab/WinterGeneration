@@ -1,0 +1,6 @@
+{
+  "generator": "jdk.proxy4.$Proxy80",
+  "mode": "real native random Generator over natural winter_test, not a built fixture",
+  "status": "FAIL",
+  "error": "java.lang.IllegalStateException: Natural search timed out"
+}

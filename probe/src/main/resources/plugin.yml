@@ -1,0 +1,11 @@
+name: WinterProbe
+version: '0.3.0'
+main: ru.midgard.winter.probe.WorldgenProbe
+api-version: '1.21.11'
+commands:
+  winterprobe:
+    description: Isolated test-world measurements
+    permission: winterprobe.admin
+permissions:
+  winterprobe.admin:
+    default: op
