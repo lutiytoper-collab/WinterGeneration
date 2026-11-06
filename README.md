@@ -8,7 +8,7 @@
 
 ## Быстрый запуск
 
-Готовая раскладка файлов: **[Midgard-Storybook-0.3.0.zip](https://github.com/lutiytoper-collab/WinterGeneration/releases/download/v0.3.0/Midgard-Storybook-0.3.0.zip)**. Распакуйте её в отдельный новый тестовый сервер Paper/Purpur 1.21.11. Серверный JAR в комплект не входит.
+Готовая раскладка файлов: **[Midgard-Storybook-0.3.0.zip](https://raw.githubusercontent.com/lutiytoper-collab/WinterGeneration/main/dist/Midgard-Storybook-0.3.0.zip)**. Распакуйте её в отдельный новый тестовый сервер Paper/Purpur 1.21.11. Серверный JAR в комплект не входит.
 
 Если ставите отдельно:
 
@@ -31,7 +31,7 @@
 
 **149 Java +16 Python PASS; весь каталог:416 PASS /1 FAIL /11 NOT RUN.** Реальные Paper интеграции WorldGuard/Luna с WorldEdit и отдельно FAWE прошли, Purpur прошёл smoke. На двух seed совпали 7 864 241 одинаковая подземная позиция, все сравниваемые рудные позиции/состояния, структуры и block entities. Оригинальный тест с разными высотными окнами сохранил диагностический FAIL; объяснение — [TEST_RESULTS.md](reports/TEST_RESULTS.md).
 
-Получены 6 неизменённых F2 PNG официального vanilla-клиента 1.21.11, без шейдеров, обработки изображений и ручной постройки сцены. [Архив кадров](https://github.com/lutiytoper-collab/WinterGeneration/releases/download/v0.3.0/game-screenshots-storybook-0.3.0.zip).
+Получены 6 неизменённых F2 PNG официального vanilla-клиента 1.21.11, без шейдеров, обработки изображений и ручной постройки сцены. [Архив кадров](https://raw.githubusercontent.com/lutiytoper-collab/WinterGeneration/main/dist/game-screenshots-storybook-0.3.0.zip).
 
 Статус **TEST VERIFIED в указанном объёме, не RELEASE CANDIDATE**. Нагрузку 50–100 игроков не проверяли. Native-деревья значительно крупнее;512 записей ограничивает только поздний плагинный проход, не native-дерево. Предварительная генерация контролируемыми порциями предпочтительна. Листва постоянная, фонари добываемые; баланс выживания отдельно не проверен. [Ограничения](reports/KNOWN_ISSUES.md), [производительность](reports/PERFORMANCE_REPORT.md), [итог](reports/FINAL_REPORT.md).
 
@@ -54,4 +54,4 @@ WinterProbe.jar — только QA, в установочный комплек�
 
 Удаление плагина/датапака останавливает будущие изменения, но не удаляет готовые деревья, снег, тропы и PDC. Для полного отката восстановите согласованную резервную копию при остановленном сервере. Ретрогенерации и автоматической уборки декора нет. Прошлые артефакты: dist/previous/0.1.0 и 0.2.0; старые отчёты: reports/history/.
 
-Все готовые сборки, архивы исходников/отчётов, скриншоты и SHA256SUMS опубликованы в [GitHub Release v0.3.0](https://github.com/lutiytoper-collab/WinterGeneration/releases/tag/v0.3.0). Большие ZIP не дублируются в Git; отдельные JAR/датапаки и исходные PNG доступны в дереве проекта.
+Все готовые сборки, архивы исходников/отчётов, скриншоты и SHA256SUMS доступны в [dist/](dist/). [Страница версии v0.3.0](https://github.com/lutiytoper-collab/WinterGeneration/releases/tag/v0.3.0) содержит описание и ссылки на файлы. Архивы сохранены прямо в Git вместе с кодом, отчётами и исходными PNG.
