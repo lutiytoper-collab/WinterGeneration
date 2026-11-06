@@ -17,7 +17,7 @@ import java.util.*;
 /** All world access is synchronous and confined to newly populated, already loaded chunks. */
 public final class WinterPlugin extends JavaPlugin implements Listener, CommandExecutor {
     private record Runtime(Settings settings, BiomePolicy biomes, Set<String> worlds,
-                           Set<String> modules, boolean enabled, boolean freeze, boolean log,
+                           Set<String> modules, double schematicChance, boolean enabled, boolean freeze, boolean log,
                            int reservationRadius,int radius,int headroom,int support,int slope,int maxObjectSize,
                            int pendingLimit,int pendingTicks,int chunksPerTick,int millisPerTick,int shallowSnowLayers) {}
     private volatile Runtime runtime;
@@ -33,8 +33,10 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
     private void feature(String name,long n){if(n>0)features.merge(name,n,Long::sum);}
     private ClimateBoundaryGuard boundaryGuard;
     private final TimingStats timings=new TimingStats(4096);
+    private final TickWorkBudget actualTickBudget=new TickWorkBudget();
     private boolean debug;
     private LunaBridge lunaBridge;
+    private List<DecorationPlan> schematicTemplates=List.of();
     private record ChunkKey(UUID world,int x,int z){}
     private final LinkedHashMap<ChunkKey,Integer> pending=new LinkedHashMap<>();
     private final LeaseRegistry<Object> decorationLeases=new LeaseRegistry<>();
@@ -59,13 +61,17 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
             getLogger().severe("Only Minecraft 1.21.11 is supported");
             getServer().getPluginManager().disablePlugin(this); return;
         }
+        try{
+            schematicTemplates=SchematicCatalog.load(this::getResource);
+            for(var plan:schematicTemplates)for(var cell:plan.cells())Bukkit.createBlockData(Material.valueOf(cell.block()));
+        }catch(Exception e){getLogger().severe("Audited schematics disabled: "+e.getMessage());schematicTemplates=List.of();}
         Bukkit.getPluginManager().registerEvents(this,this);
         hookLuna();
         getLifecycleManager().registerEventHandler(io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents.COMMANDS,event->
             event.registrar().register("winterworld","Управление зимней генерацией",(io.papermc.paper.command.brigadier.BasicCommand)(source,args)->onCommand(source.getSender(),null,"winterworld",args)));
         Bukkit.getServicesManager().register(AirDropCompatibilityManager.class,airDrop,this,
             org.bukkit.plugin.ServicePriority.Normal);
-        getLogger().info("Fantasy build 0.4.0; embedded native pack; protected late decoration; no retrogen.");
+        getLogger().info("Fantasy build 0.5.0; embedded native pack; protected late decoration; no retrogen.");
     }
     @Override public void onDisable() {
         if(pendingTask!=null)pendingTask.cancel();pending.clear();loading.clear();for(Object item:decorationLeases.clear()){ChunkKey key=(ChunkKey)item;Chunk ch=leasedChunks.remove(key);if(ch!=null)ch.removePluginChunkTicket(this);}if(lunaBridge!=null)lunaBridge.close();
@@ -94,7 +100,7 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
             if(!c.isBoolean("modules."+m)) throw new IllegalArgumentException("Expected boolean modules."+m);
             if(c.getBoolean("modules."+m)) modules.add(m);
         }
-        for(String m:List.of("canopy","trails","wonders")){
+        for(String m:List.of("canopy","trails","wonders","schematics")){
             if(c.contains("modules."+m)&&!c.isBoolean("modules."+m))throw new IllegalArgumentException("Expected boolean modules."+m);
             if(c.getBoolean("modules."+m,true))modules.add(m);
         }
@@ -108,12 +114,17 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
         for(String id:exclude) if(Registry.BIOME.get(NamespacedKey.minecraft(id))==null)
             throw new IllegalArgumentException("Missing excluded biome "+id);
         return new Runtime(s,new BiomePolicy(allow,exclude),Set.copyOf(worlds),Set.copyOf(modules),
-            c.getBoolean("enabled"),modules.contains("frozen-water"),c.getBoolean("logging"),
+            schematicChance(c),c.getBoolean("enabled"),modules.contains("frozen-water"),c.getBoolean("logging"),
             boundedInt(c,"airdrop.minimum-reservation-radius",1,512),boundedInt(c,"airdrop.platform-radius",1,16),
             boundedInt(c,"airdrop.headroom",2,32),boundedInt(c,"airdrop.support-depth",1,16),
             boundedInt(c,"airdrop.max-slope",0,2),maxObjectSize,
             boundedInt(c,"max-pending-chunks",16,2048),boundedInt(c,"max-pending-ticks",1,200),
             boundedInt(c,"max-chunks-per-tick",1,16),boundedInt(c,"max-millis-per-tick",1,10),boundedInt(c,"airdrop.max-shallow-snow-layers",0,2));
+    }
+    private static double schematicChance(FileConfiguration c){
+        if(c.contains("schematics")&&!c.isConfigurationSection("schematics"))throw new IllegalArgumentException("schematics must be a map");
+        Object value=c.get("schematics.chance",.0125);if(!(value instanceof Number n))throw new IllegalArgumentException("schematics.chance must be numeric");
+        double p=n.doubleValue();if(!Double.isFinite(p)||p<0||p>1)throw new IllegalArgumentException("schematics.chance must be in [0,1]");return p;
     }
     private static int boundedInt(FileConfiguration c,String k,int min,int max) {
         if(!c.isInt(k)) throw new IllegalArgumentException("Expected integer: "+k);
@@ -162,7 +173,7 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
         for(var request:requests){
             ChunkKey key=request.getKey();int tick=request.getValue();World w=Bukkit.getWorld(key.world);
             if(issued>0&&System.nanoTime()-begin>r.millisPerTick*1_000_000L){pending.put(key,tick);continue;}
-            if(w==null||Bukkit.getCurrentTick()-tick>r.pendingTicks){skipped++;feature("skip-expired",1);continue;}
+            if(w==null||Bukkit.getCurrentTick()-tick>r.pendingTicks){markSkippedIfLoaded(key);skipped++;feature("skip-expired",1);continue;}
             loading.put(key,tick);issued++;
             w.getChunkAtAsync(key.x,key.z,false).whenComplete((chunk,error)->{
                 if(!isEnabled())return;
@@ -182,20 +193,34 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
         if(expired||!isWinterWorld(ch.getWorld())||nearPlayer(ch.getWorld(),key.x,key.z)){
             ch.getPersistentDataContainer().set(marker,PersistentDataType.BYTE,(byte)3);skipped++;feature(expired?"skip-expired":"skip-player",1);return;
         }
+        if(!actualTickBudget.tryStart(Bukkit.getCurrentTick(),r.chunksPerTick,r.millisPerTick*1_000_000L)){
+            pending.put(key,tick);feature("budget-deferred",1);return;
+        }
         long start=System.nanoTime(),before=writes;
         try{
             String reason=decorationGate(ch,r.settings.margin());
             if(reason!=null){skipped++;feature("skip-"+reason,1);ch.getPersistentDataContainer().set(marker,PersistentDataType.BYTE,(byte)3);return;}
             generate(ch,r);ch.getPersistentDataContainer().set(marker,PersistentDataType.BYTE,(byte)2);if(writes>before)decorated++;
         }catch(RuntimeException ex){skipped++;ch.getPersistentDataContainer().set(marker,PersistentDataType.BYTE,(byte)3);getLogger().log(java.util.logging.Level.SEVERE,"Decoration aborted; marker retained",ex);}
-        finally{timings.record(System.nanoTime()-start);}
+        finally{long elapsed=System.nanoTime()-start;timings.record(elapsed);actualTickBudget.record(elapsed);}
+    }
+    private void markSkippedIfLoaded(ChunkKey key){
+        World world=Bukkit.getWorld(key.world);if(world==null||!world.isChunkLoaded(key.x,key.z))return;
+        var pdc=world.getChunkAt(key.x,key.z).getPersistentDataContainer();
+        if(pdc.getOrDefault(marker,PersistentDataType.BYTE,(byte)3)==1)pdc.set(marker,PersistentDataType.BYTE,(byte)3);
+    }
+    @EventHandler(priority=EventPriority.MONITOR)
+    public void discardOrphanedMarker(org.bukkit.event.world.ChunkLoadEvent event){
+        Chunk chunk=event.getChunk();if(!isWinterWorld(chunk.getWorld()))return;
+        var key=new ChunkKey(chunk.getWorld().getUID(),chunk.getX(),chunk.getZ());
+        if(!pending.containsKey(key)&&!loading.containsKey(key)&&chunk.getPersistentDataContainer().getOrDefault(marker,PersistentDataType.BYTE,(byte)3)==1)chunk.getPersistentDataContainer().set(marker,PersistentDataType.BYTE,(byte)3);
     }
     private static boolean nearPlayer(World w,int cx,int cz){
         return w.getPlayers().stream().anyMatch(p->Math.abs(p.getLocation().getX()-(cx*16+8))<48&&Math.abs(p.getLocation().getZ()-(cz*16+8))<48);
     }
     private void dirty(Block block){
         ChunkKey key=new ChunkKey(block.getWorld().getUID(),Math.floorDiv(block.getX(),16),Math.floorDiv(block.getZ(),16));
-        Integer queued=pending.remove(key),active=loading.remove(key);if(queued!=null||active!=null){block.getChunk().getPersistentDataContainer().set(marker,PersistentDataType.BYTE,(byte)3);skipped++;}
+        Integer queued=pending.remove(key),active=loading.remove(key);if(queued!=null||active!=null){markSkippedIfLoaded(key);skipped++;}
     }
     @EventHandler(priority=EventPriority.MONITOR,ignoreCancelled=true) public void placed(org.bukkit.event.block.BlockPlaceEvent e){dirty(e.getBlock());}
     @EventHandler(priority=EventPriority.MONITOR,ignoreCancelled=true) public void broken(org.bukkit.event.block.BlockBreakEvent e){dirty(e.getBlock());}
@@ -204,6 +229,12 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
     @EventHandler(priority=EventPriority.MONITOR,ignoreCancelled=true) public void entityExplosion(org.bukkit.event.entity.EntityExplodeEvent e){e.blockList().forEach(this::dirty);}
     @EventHandler(priority=EventPriority.MONITOR,ignoreCancelled=true) public void blockExplosion(org.bukkit.event.block.BlockExplodeEvent e){e.blockList().forEach(this::dirty);}
     @EventHandler(priority=EventPriority.MONITOR,ignoreCancelled=true) public void piston(org.bukkit.event.block.BlockPistonExtendEvent e){e.getBlocks().forEach(this::dirty);e.getBlocks().forEach(b->dirty(b.getRelative(e.getDirection())));}
+    @EventHandler(priority=EventPriority.MONITOR,ignoreCancelled=true) public void pistonRetract(org.bukkit.event.block.BlockPistonRetractEvent e){
+        dirty(e.getBlock());
+        for(Block block:e.getBlocks()){
+            dirty(block);dirty(block.getRelative(e.getDirection()));dirty(block.getRelative(e.getDirection().getOppositeFace()));
+        }
+    }
     @EventHandler(priority=EventPriority.MONITOR,ignoreCancelled=true) public void grow(org.bukkit.event.world.StructureGrowEvent e){e.getBlocks().forEach(b->dirty(b.getBlock()));}
     /** Fail closed if any query chunk is unavailable; getChunkAt is called only after isChunkLoaded. */
     private String protection(Chunk ch,int margin) {
@@ -290,6 +321,11 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
         int x=ox+8,z=oz+8,y=site.surface(x,z);String biome=w.getBiome(x,y,z).getKey().getKey();
         boolean light=r.modules.contains("lights")&&Noise.unit(seed,ch.getX(),ch.getZ(),203)<settings.lightChance();
         List<DecorationPlan> candidates=new ArrayList<>();
+        if(r.modules.contains("schematics")&&!schematicTemplates.isEmpty()&&Candidates.rare(seed,ch.getX(),ch.getZ(),8,950,r.schematicChance)){
+            var pool=SchematicCatalog.forBiome(schematicTemplates,biome);
+            int variant=(int)(Noise.unit(seed,ch.getX(),ch.getZ(),951)*pool.size());int turn=(int)(Noise.unit(seed,ch.getX(),ch.getZ(),952)*4);
+            candidates.add(pool.get(variant).rotated(turn));
+        }
         if(r.modules.contains("cabins")&&Candidates.rare(seed,ch.getX(),ch.getZ(),8,201,settings.cabinChance()))candidates.add(DecorationPlan.cabin(light));
         if(r.modules.contains("clearings")&&Candidates.rare(seed,ch.getX(),ch.getZ(),4,202,settings.clearingChance()))candidates.add(DecorationPlan.clearing(light));
         // Offset the mineral grid: clearings must not consume every crystal candidate.
@@ -305,7 +341,7 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
                     if(valid.allowed()){used+=writePlan(w,special,special.cells(),px,py,pz);featureAt(special.module()+"-objects",px,py,pz);break objectLoop;}
                 }else{
                     DecorationPlan prop=special;
-                    if(prop.module().equals("clearings")||prop.module().equals("ice")||prop.module().equals("moonstones")){
+                    if(prop.module().equals("clearings")||prop.module().equals("ice")||prop.module().equals("moonstones")||prop.module().startsWith("moon-gate-")||prop.module().endsWith("-shrine")||prop.module().endsWith("-ruin")){
                         var fitted=prop.module().equals("clearings")?FoundationFitter.fit(prop,site,px,pz,2):FoundationFitter.fitMineral(prop,site,px,pz,2);
                         if(fitted==null){feature("denied-"+prop.module()+"-steep",1);continue;}prop=fitted.plan();py=fitted.ground();
                     }
@@ -373,10 +409,7 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
             if(plan.module().equals("fallen-logs")&&cell.block().endsWith("_LOG")){
                 var block=w.getBlockAt(x+cell.x(),ground+cell.y(),z+cell.z());var data=(org.bukkit.block.data.Orientable)block.getBlockData();data.setAxis(Axis.X);block.setBlockData(data,false);
             }
-            if(cell.block().equals("LANTERN")||cell.block().equals("SOUL_LANTERN")){
-                var block=w.getBlockAt(x+cell.x(),ground+cell.y(),z+cell.z());var data=(org.bukkit.block.data.type.Lantern)block.getBlockData();
-                data.setHanging(w.getBlockAt(block.getX(),block.getY()+1,block.getZ()).getType().isSolid());block.setBlockData(data,false);
-            }
+
         }
         return cells.size();
     }
@@ -439,7 +472,7 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
                 catch(RuntimeException ex) { runtime=previous; sender.sendMessage("Отклонено; прежние настройки сохранены: "+ex.getMessage()); }
             }
             case "debug" -> { debug=!debug; sender.sendMessage("Debug="+debug); }
-            case "status", "info" -> sender.sendMessage("MidgardWinterWorld 0.4.0 DEVELOPMENT; enabled="+runtime.enabled+
+            case "status", "info" -> sender.sendMessage("MidgardWinterWorld 0.5.0 DEVELOPMENT; enabled="+runtime.enabled+
                 "; worlds="+runtime.worlds+"; processed="+seen+" decorated="+decorated+" skipped="+skipped+" boundary-restored="+boundaryRestorations+" pending="+(pending.size()+loading.size())+
                 "; leased-chunks="+decorationLeases.size()+"; features="+features+"; WorldGuard="+(worldGuardPresent()?"public API bridge, fail closed on query failure":"absent")+"; LunaAirDrop=UNVERIFIED");
             case "inspect" -> {

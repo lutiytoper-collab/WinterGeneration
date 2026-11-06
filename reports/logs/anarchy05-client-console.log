@@ -1,0 +1,125 @@
+[08:51:24] [Datafixer Bootstrap/INFO]: 287 Datafixer optimizations took 456 milliseconds
+[08:51:28] [Render thread/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[08:51:28] [Render thread/INFO]: Setting user: WinterVisual
+[08:51:28] [Render thread/INFO]: Backend library: LWJGL version 3.3.3+5
+error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+[08:51:28] [Download-1/WARN]: Couldn't look up profile properties for c068a7d0-f477-37ce-8a4c-b6c4123ca542
+com.mojang.authlib.exceptions.MinecraftClientException: Failed to read from https://sessionserver.mojang.com/session/minecraft/profile/c068a7d0f47737ce8a4cb6c4123ca542?unsigned=false due to Connection refused
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:111)
+	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:56)
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fetchProfileUncached(YggdrasilMinecraftSessionService.java:197)
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fetchProfile(YggdrasilMinecraftSessionService.java:167)
+	at gfj.bV(SourceFile:453)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1302)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1143)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1705)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1629)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307)
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:82)
+	... 8 more
+[08:51:28] [Render thread/WARN]: Failed to get system info for Render Extensions
+java.lang.IllegalStateException: Can't getDevice() before it was initialized
+	at com.mojang.blaze3d.systems.RenderSystem.getDevice(SourceFile:299)
+	at gfj.bG(SourceFile:2527)
+	at y.a(SourceFile:78)
+	at gfj.a(SourceFile:2527)
+	at gfj.a(SourceFile:2497)
+	at net.minecraft.client.main.Main.main(SourceFile:243)
+---- Minecraft Crash Report ----
+// I'm sorry, Dave.
+
+Time: 2026-11-06 08:51:28
+Description: Initializing game
+
+java.lang.IllegalStateException: Failed to initialize GLFW, errors: GLFW error during init: [0x1000E]Failed to detect any supported platform
+	at com.mojang.blaze3d.platform.GLX._initGlfw(SourceFile:63)
+	at com.mojang.blaze3d.systems.RenderSystem.initBackendSystem(SourceFile:201)
+	at gfj.<init>(SourceFile:501)
+	at net.minecraft.client.main.Main.main(SourceFile:234)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at com.mojang.blaze3d.platform.GLX._initGlfw(SourceFile:63)
+	at com.mojang.blaze3d.systems.RenderSystem.initBackendSystem(SourceFile:201)
+	at gfj.<init>(SourceFile:501)
+
+-- Initialization --
+Details:
+	Modules: 
+Stacktrace:
+	at net.minecraft.client.main.Main.main(SourceFile:234)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.11
+	Minecraft Version ID: 1.21.11
+	Operating System: Linux (amd64) version 6.18.57
+	Java Version: 21.0.9, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 237111992 bytes (226 MiB) / 427819008 bytes (408 MiB) up to 3221225472 bytes (3072 MiB)
+	CPUs: 5
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD EPYC 9V74 80-Core Processor
+	Identifier: AuthenticAMD Family 25 Model 17 Stepping 1
+	Microarchitecture: Zen 3
+	Frequency (GHz): -0.00
+	Number of physical packages: 1
+	Number of physical CPUs: 5
+	Number of logical CPUs: 5
+	Graphics card #0 name: unknown
+	Graphics card #0 vendor: unknown
+	Graphics card #0 VRAM (MiB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MiB): 17043.95
+	Virtual memory used (MiB): 5609.62
+	Swap memory total (MiB): 0.00
+	Swap memory used (MiB): 0.00
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): available: 51703.66, total: 64455.54
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 51703.66, total: 64455.54
+	Space in storage for workdir (MiB): available: 51703.66, total: 64455.54
+	JVM Flags: 1 total; -Xmx3G
+	Debug Flags: 0 total; 
+	Launched Version: 1.21.11
+	Launcher name: MidgardVisualQA
+	Backend library: LWJGL version 3.3.3+5
+	Backend API: Unknown
+	Window size: <not initialized>
+	GFLW Platform: <error>
+	Render Extensions: ERR
+	GL debug messages: <no renderer available>
+	Is Modded: Probably not. Client jar signature and brand is untouched
+	Universe: 404
+	Type: Client (map_client.txt)
+	Locale: en
+	System encoding: UTF-8
+	File encoding: UTF-8
+	CPU: 5x AMD EPYC 9V74 80-Core Processor
+#@!@# Game crashed! Crash report saved to: #@!@# /workspace/WinterGeneration/.runtime/visual-client/game/crash-reports/crash-2026-11-06_08.51.28-client.txt

@@ -1,16 +1,14 @@
-# Производительность Fantasy 0.4
+# Производительность 0.5.0
 
-Paper 132, Java 21, view/simulation3 и Xms512M/Xmx2G в ROI matrix. Один текущий seed825180311:64ROI на вариант и restart. Vanilla baseline сохранённый, winter новый. Во время замеров работали другие QA/графические процессы; таблица не изолирует CPU и не доказывает процент overhead.
+Paper 132, Java 21, view/simulation 3, Xms512M/Xmx2G. Один seed 825180311, 64 ROI на вариант, initial/restart. Vanilla baseline повторно использован; winter новый. Во время замеров работали другие QA-процессы: таблица не изолирует CPU и не доказывает процент overhead.
 
 | Вариант | ROI | Mean request ms | Median | P95 | Max |
 |---|---:|---:|---:|---:|---:|
 | vanilla | 64 | 117.34 | 0.12 | 796.27 | 1706.83 |
-| winter | 64 | 419.94 | 0.13 | 2316.32 | 7010.95 |
+| winter | 64 | 467.99 | 0.12 | 2367.79 | 6740.89 |
 
-Request latency включает очередь/native подготовку и уже готовое halo, не равна CPU генерации одного чанка. Source raw-window diagnostic разобран отдельно;128 уникальных ROI,256 запросов с restart.
+Request latency включает очередь/native подготовку и уже готовый halo, это не CPU одного чанка. Raw height-window FAIL сохранён отдельно от сверки одинаковых координат.
 
-В визуальном мире Chunky 625visited завершился за 46 с, дополнительный flower_forest169visited за 16 с. После перемещений камеры callback-снимок n=1829:avg 2.847ms,median 1.297ms,p95 10.467ms,max 294.898ms,writes419906. Это только поздний проход, не вся native генерация и не boundary guard. Полный лог сохраняет позднейшие значения; данный snapshot относится к отмеченному этапу.
+TickWorkBudget теперь ограничивает фактические callbacks в одном тике, а не только выдачу async requests. Лимит 2 ms мягкий, один начатый preflight/объект может дольше; лимит 512 записей не распространяется на native деревья. Декор не удерживает постоянные plugin tickets и не загружает FULL halo. Только bounded Luna preparations используют refcount leases.
 
-Бюджет 2ms мягкий между чанками, начатый preflight/размещение может дольше.512 записей ограничивает поздний проход, не native гигантское дерево. Wonders используют блоки, без дополнительных сущностей/particle scheduler. Свет обновляется штатным Minecraft lighting.
-
-50–100 игроков,soak,стабильно 20TPS,peakRSS,боевой plugin stack и массовые дропы не проверены. Прегенерация порциями предпочтительна. FPS llvmpipe клиента не является serverTPS.
+Полный 50–100 player soak, стабильные 20 TPS, peak RSS и боевой plugin stack не измерены. Предварительная генерация порциями предпочтительна. Клиентский FPS llvmpipe не является server TPS. Подробные исходные логи сохранены; старые performance snapshots 0.4 находятся в history/v0.4.0/.

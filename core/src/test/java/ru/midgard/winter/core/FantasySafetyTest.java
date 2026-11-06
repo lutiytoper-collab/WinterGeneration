@@ -4,6 +4,10 @@ import java.util.*;
 import static org.junit.jupiter.api.Assertions.*;
 class FantasySafetyTest {
     static List<DecorationPlan> plans(int i){return List.of(FantasyPlan.mushrooms(42,i,-i),FantasyPlan.willow(false),FantasyPlan.willow(true),FantasyPlan.moonstones(42,i,-i));}
+    @Test void preciousBlocksAndRareLampsCannotEnterAnyBlueprint(){
+        for(String block:List.of("DIAMOND_BLOCK","EMERALD_BLOCK","GOLD_BLOCK","IRON_BLOCK","COPPER_BLOCK","NETHERITE_BLOCK","LAPIS_BLOCK","REDSTONE_BLOCK","AMETHYST_BLOCK","AMETHYST_CLUSTER","SEA_LANTERN","PEARLESCENT_FROGLIGHT","PACKED_ICE","BLUE_ICE","LANTERN","SOUL_LANTERN","END_ROD","CHEST","SPAWNER"))
+            assertThrows(IllegalArgumentException.class,()->new DecorationPlan.Cell(0,1,0,block,0),block);
+    }
     @Test void everyVariantIsBoundedAndPassesTheFullPreflight(){
         for(int i=-200;i<200;i++)for(var p:plans(i)){
             assertTrue(p.cells().size()<=512);assertTrue(p.bounds(8,64,8).inChunk(0,0));

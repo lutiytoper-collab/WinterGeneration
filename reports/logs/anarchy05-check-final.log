@@ -1,0 +1,62 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :core:compileJava
+> Task :core:processResources NO-SOURCE
+> Task :core:classes
+> Task :core:jar
+> Task :core:compileTestJava UP-TO-DATE
+> Task :core:processTestResources NO-SOURCE
+> Task :core:testClasses UP-TO-DATE
+> Task :core:test
+
+BUILD SUCCESSFUL in 8s
+4 actionable tasks: 3 executed, 1 up-to-date
+PASS: 23 biome definitions; climate-only diff; registry references; exact 94.1 metadata. Server load NOT RUN.
+test_excluded_biome_rejected (__main__.DatapackTests.test_excluded_biome_rejected) ... ok
+test_lost_features_rejected (__main__.DatapackTests.test_lost_features_rejected) ... ok
+test_original_tampering_rejected (__main__.DatapackTests.test_original_tampering_rejected) ... ok
+test_precipitation_loss_rejected (__main__.DatapackTests.test_precipitation_loss_rejected) ... ok
+test_valid_pack (__main__.DatapackTests.test_valid_pack) ... ok
+test_wrong_pack_version_rejected (__main__.DatapackTests.test_wrong_pack_version_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.062s
+
+OK
+PASS: 2 pinned CC0 gates +4 original landmarks; ordinary materials; no entities/block entities/air clearing
+test_both_native_templates_have_no_entities_or_block_entity_payloads (__main__.SchematicTests.test_both_native_templates_have_no_entities_or_block_entity_payloads) ... ok
+test_budget_and_single_chunk_geometry (__main__.SchematicTests.test_budget_and_single_chunk_geometry) ... ok
+test_duplicate_positions_are_not_emitted (__main__.SchematicTests.test_duplicate_positions_are_not_emitted) ... ok
+test_no_air_commands_jigsaws_containers_or_fluids_can_be_pasted (__main__.SchematicTests.test_no_air_commands_jigsaws_containers_or_fluids_can_be_pasted) ... ok
+test_original_negative_Z_regions_decode_to_expected_rings (__main__.SchematicTests.test_original_negative_Z_regions_decode_to_expected_rings) ... ok
+test_pinned_generated_outputs_validate (__main__.SchematicTests.test_pinned_generated_outputs_validate) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.026s
+
+OK
+PASS: Storybook23 biomes, 12 isolated native tree overrides; exact feature lists/order; pinned official resources. Codec/runtime separate.
+test_birch_identity_and_persistent_frost_crowns (__main__.StorybookTests.test_birch_identity_and_persistent_frost_crowns) ... ok
+test_native_feature_order_change_rejected (__main__.StorybookTests.test_native_feature_order_change_rejected) ... ok
+test_new_native_trees_do_not_generate_valuable_decor (__main__.StorybookTests.test_new_native_trees_do_not_generate_valuable_decor) ... FAIL
+test_no_dimension_or_ore_resources (__main__.StorybookTests.test_no_dimension_or_ore_resources) ... ok
+test_ore_feature_loss_rejected (__main__.StorybookTests.test_ore_feature_loss_rejected) ... ok
+test_reachable_excluded_biome_rejected (__main__.StorybookTests.test_reachable_excluded_biome_rejected) ... ok
+test_shared_ocean_tree_override_rejected (__main__.StorybookTests.test_shared_ocean_tree_override_rejected) ... ok
+test_unlisted_biome_override_rejected (__main__.StorybookTests.test_unlisted_biome_override_rejected) ... ok
+test_unpinned_reference_rejected (__main__.StorybookTests.test_unpinned_reference_rejected) ... ok
+test_valid_storybook (__main__.StorybookTests.test_valid_storybook) ... ok
+test_wrong_codec_version_rejected (__main__.StorybookTests.test_wrong_codec_version_rejected) ... ok
+
+======================================================================
+FAIL: test_new_native_trees_do_not_generate_valuable_decor (__main__.StorybookTests.test_new_native_trees_do_not_generate_valuable_decor)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/WinterGeneration/scripts/test_storybook.py", line 23, in test_new_native_trees_do_not_generate_valuable_decor
+    self.assertLessEqual(set(states(json.loads(p.read_text()))),allowed)
+AssertionError: {'minecraft:dirt', 'minecraft:oak_leaves', 'minecraft:spruce_log'} not less than or equal to {'minecraft:cherry_log', 'minecraft:cherry_leaves', 'minecraft:birch_log', 'minecraft:oak_log', 'minecraft:oak_leaves', 'minecraft:dark_oak_log', 'minecraft:spruce_log'}
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.180s
+
+FAILED (failures=1)

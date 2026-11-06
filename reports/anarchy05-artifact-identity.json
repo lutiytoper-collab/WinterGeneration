@@ -1,0 +1,32 @@
+[
+  {
+    "runtime": ".runtime/anarchy05-world",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true,
+    "sha256": "09e924340ef4a5b05eb67dbd1a457a2cb3577ef99a684959b4e5baac73060ae9"
+  },
+  {
+    "runtime": ".runtime/integration-anarchy05",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true,
+    "sha256": "09e924340ef4a5b05eb67dbd1a457a2cb3577ef99a684959b4e5baac73060ae9"
+  },
+  {
+    "runtime": ".runtime/fawe-integration-anarchy05",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true,
+    "sha256": "09e924340ef4a5b05eb67dbd1a457a2cb3577ef99a684959b4e5baac73060ae9"
+  },
+  {
+    "runtime": ".runtime/anarchy05-disable",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true,
+    "sha256": "09e924340ef4a5b05eb67dbd1a457a2cb3577ef99a684959b4e5baac73060ae9"
+  },
+  {
+    "runtime": ".runtime/anarchy05-matrix/825180311/winter",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true,
+    "sha256": "09e924340ef4a5b05eb67dbd1a457a2cb3577ef99a684959b4e5baac73060ae9"
+  }
+]

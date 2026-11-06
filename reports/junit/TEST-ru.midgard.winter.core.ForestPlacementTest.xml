@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.midgard.winter.core.ForestPlacementTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2026-11-06T07:29:39.874Z" hostname="0f051bf75645" time="0.6">
+<testsuite name="ru.midgard.winter.core.ForestPlacementTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2026-11-06T08:45:11.655Z" hostname="0f051bf75645" time="0.787">
   <properties/>
-  <testcase name="allVariantSizesAndHeightAreBounded()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.581"/>
-  <testcase name="existingTrunkInsideNewCrownStaysUnchanged()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.002"/>
+  <testcase name="allVariantSizesAndHeightAreBounded()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.75"/>
+  <testcase name="existingTrunkInsideNewCrownStaysUnchanged()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.007"/>
   <testcase name="chunkAndBudgetRemainHardLimits()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.001"/>
-  <testcase name="playerBlockDeniesWholeObject()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.0"/>
+  <testcase name="playerBlockDeniesWholeObject()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.001"/>
   <testcase name="newTrunkMayJoinMatchingNaturalCrownButNeverAnotherSpecies()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.002"/>
-  <testcase name="clearingLeavesUnusedPlantsInItsOpening()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.0"/>
+  <testcase name="clearingLeavesUnusedPlantsInItsOpening()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.001"/>
   <testcase name="originalTrunksCannotBeReplaced()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.0"/>
-  <testcase name="biomeBoundaryRejectsActualBranch()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.002"/>
-  <testcase name="clearingCannotFloatOverALowerPostFoot()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.0"/>
-  <testcase name="birchesRetainSpecies()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.001"/>
+  <testcase name="biomeBoundaryRejectsActualBranch()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.004"/>
+  <testcase name="clearingCannotFloatOverALowerPostFoot()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.001"/>
+  <testcase name="birchesRetainSpecies()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.0"/>
   <testcase name="treesUseNaturalHillsWithoutFlattening()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.002"/>
-  <testcase name="emptySupportRejectsTree()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.001"/>
-  <testcase name="protectedVolumeRejectsCanopyToo()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.0"/>
+  <testcase name="emptySupportRejectsTree()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.0"/>
+  <testcase name="protectedVolumeRejectsCanopyToo()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.001"/>
   <testcase name="otherTreeSpeciesAreNotOverwritten()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.001"/>
   <testcase name="unloadedChunkIsNeverRead()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.001"/>
-  <testcase name="originalMatchingLeavesAreNeverWritten()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.002"/>
+  <testcase name="originalMatchingLeavesAreNeverWritten()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.003"/>
   <testcase name="clearingChecksSupportUnderEveryFoot()" classname="ru.midgard.winter.core.ForestPlacementTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

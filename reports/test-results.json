@@ -1,14 +1,44 @@
 {
-  "version": "0.4.0 Fantasy",
+  "version": "0.5.0 Anarchy Fantasy",
   "project_status": "TEST VERIFIED (scoped); not RELEASE CANDIDATE",
   "counts": {
-    "PASS": 255,
+    "PASS": 301,
     "FAIL": 1,
     "BLOCKED": 0,
     "NOT RUN": 11
   },
-  "counting": "161 Java +16Python. Current one-JAR Paper integrations, Purpur initial/restart, one64ROI-per-variant matrix. Old37biome/two-seed coverage is historical, not counted here. Source raw variable-window diagnostic remains FAIL. Loop samples are not counted as extra tests.",
+  "counting": "177 Java +23 Python. Current final JAR Paper integrations, Purpur enabled→disabled restart, 64ROI per variant matrix, non-OP protocol grief client, native F2. Vanilla baseline reused. Earlier audit05 palette evidence is historical. Raw variable-window diagnostic retained.",
   "checks": [
+    {
+      "id": "ru.midgard.winter.BootstrapSettingsTest.globalDisableAlsoDisablesNativeRegistryChanges()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.BootstrapSettingsTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.BootstrapSettingsTest.malformedSwitchFailsBeforeWorldLoad()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.BootstrapSettingsTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.BootstrapSettingsTest.nativeSwitchStillWorksIndependently()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.BootstrapSettingsTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.BootstrapSettingsTest.emptyNewInstallEnablesNativePack()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.BootstrapSettingsTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.BootstrapSettingsTest.existingConfigWithoutNewKeyKeepsCompatibility()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.BootstrapSettingsTest.xml"
+    },
     {
       "id": "ru.midgard.winter.LunaContractTest.publicCancellableStartAndEndEvents()",
       "status": "PASS",
@@ -56,6 +86,30 @@
       "status": "PASS",
       "group": "Java unit/contract",
       "evidence": "junit/TEST-ru.midgard.winter.ResourcesTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.SchematicCatalogTest.truncatedOrMissingTemplatesFailClosed()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.SchematicCatalogTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.SchematicCatalogTest.biomePoolsKeepWoodlandAndColdLandmarksDistinct()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.SchematicCatalogTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.SchematicCatalogTest.unsafePaletteCannotBecomeRuntimeBlocks()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.SchematicCatalogTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.SchematicCatalogTest.everyAuditedGateAndRotationIsBoundedAndGroundSupported()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.SchematicCatalogTest.xml"
     },
     {
       "id": "ru.midgard.winter.core.BiomeZoomerTest.preserveOriginalColdClimate()",
@@ -346,6 +400,12 @@
       "evidence": "junit/TEST-ru.midgard.winter.core.FantasySafetyTest.xml"
     },
     {
+      "id": "ru.midgard.winter.core.FantasySafetyTest.preciousBlocksAndRareLampsCannotEnterAnyBlueprint()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.FantasySafetyTest.xml"
+    },
+    {
       "id": "ru.midgard.winter.core.FantasySafetyTest.luminousCrystalsContainNoMeltingIceOrFluids()",
       "status": "PASS",
       "group": "Java unit/contract",
@@ -550,7 +610,7 @@
       "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
     },
     {
-      "id": "ru.midgard.winter.core.PlacementTest.[7] DecorationPlan[module=ice, cells=[Cell[x=-1, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=-1, block=SEA_LANTERN, layers=0], Cell[x=0, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=1, block=PACKED_ICE, layers=0], Cell[x=1, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=-1, y=2, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=2, z=-1, block=PACKED_ICE, layers=0], Cell[x=0, y=2, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=2, z=1, block=PACKED_ICE, layers=0], Cell[x=1, y=2, z=0, block=PACKE…",
+      "id": "ru.midgard.winter.core.PlacementTest.[7] DecorationPlan[module=ice, cells=[Cell[x=-1, y=1, z=0, block=ANDESITE, layers=0], Cell[x=0, y=1, z=-1, block=JACK_O_LANTERN, layers=0], Cell[x=0, y=1, z=0, block=ANDESITE, layers=0], Cell[x=0, y=1, z=1, block=ANDESITE, layers=0], Cell[x=1, y=1, z=0, block=ANDESITE, layers=0], Cell[x=-1, y=2, z=0, block=ANDESITE, layers=0], Cell[x=0, y=2, z=-1, block=ANDESITE, layers=0], Cell[x=0, y=2, z=0, block=ANDESITE, layers=0], Cell[x=0, y=2, z=1, block=ANDESITE, layers=0], Cell[x=1, y=2, z=0, block=ANDESITE, layers=0…",
       "status": "PASS",
       "group": "Java unit/contract",
       "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
@@ -616,7 +676,7 @@
       "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
     },
     {
-      "id": "ru.midgard.winter.core.PlacementTest.[7] DecorationPlan[module=ice, cells=[Cell[x=-1, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=-1, block=SEA_LANTERN, layers=0], Cell[x=0, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=1, block=PACKED_ICE, layers=0], Cell[x=1, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=-1, y=2, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=2, z=-1, block=PACKED_ICE, layers=0], Cell[x=0, y=2, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=2, z=1, block=PACKED_ICE, layers=0], Cell[x=1, y=2, z=0, block=PACKE…",
+      "id": "ru.midgard.winter.core.PlacementTest.[7] DecorationPlan[module=ice, cells=[Cell[x=-1, y=1, z=0, block=ANDESITE, layers=0], Cell[x=0, y=1, z=-1, block=JACK_O_LANTERN, layers=0], Cell[x=0, y=1, z=0, block=ANDESITE, layers=0], Cell[x=0, y=1, z=1, block=ANDESITE, layers=0], Cell[x=1, y=1, z=0, block=ANDESITE, layers=0], Cell[x=-1, y=2, z=0, block=ANDESITE, layers=0], Cell[x=0, y=2, z=-1, block=ANDESITE, layers=0], Cell[x=0, y=2, z=0, block=ANDESITE, layers=0], Cell[x=0, y=2, z=1, block=ANDESITE, layers=0], Cell[x=1, y=2, z=0, block=ANDESITE, layers=0…",
       "status": "PASS",
       "group": "Java unit/contract",
       "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
@@ -682,7 +742,7 @@
       "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
     },
     {
-      "id": "ru.midgard.winter.core.PlacementTest.[7] DecorationPlan[module=ice, cells=[Cell[x=-1, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=-1, block=SEA_LANTERN, layers=0], Cell[x=0, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=1, block=PACKED_ICE, layers=0], Cell[x=1, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=-1, y=2, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=2, z=-1, block=PACKED_ICE, layers=0], Cell[x=0, y=2, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=2, z=1, block=PACKED_ICE, layers=0], Cell[x=1, y=2, z=0, block=PACKE…",
+      "id": "ru.midgard.winter.core.PlacementTest.[7] DecorationPlan[module=ice, cells=[Cell[x=-1, y=1, z=0, block=ANDESITE, layers=0], Cell[x=0, y=1, z=-1, block=JACK_O_LANTERN, layers=0], Cell[x=0, y=1, z=0, block=ANDESITE, layers=0], Cell[x=0, y=1, z=1, block=ANDESITE, layers=0], Cell[x=1, y=1, z=0, block=ANDESITE, layers=0], Cell[x=-1, y=2, z=0, block=ANDESITE, layers=0], Cell[x=0, y=2, z=-1, block=ANDESITE, layers=0], Cell[x=0, y=2, z=0, block=ANDESITE, layers=0], Cell[x=0, y=2, z=1, block=ANDESITE, layers=0], Cell[x=1, y=2, z=0, block=ANDESITE, layers=0…",
       "status": "PASS",
       "group": "Java unit/contract",
       "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
@@ -760,7 +820,7 @@
       "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
     },
     {
-      "id": "ru.midgard.winter.core.PlacementTest.[7] DecorationPlan[module=ice, cells=[Cell[x=-1, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=-1, block=SEA_LANTERN, layers=0], Cell[x=0, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=1, block=PACKED_ICE, layers=0], Cell[x=1, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=-1, y=2, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=2, z=-1, block=PACKED_ICE, layers=0], Cell[x=0, y=2, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=2, z=1, block=PACKED_ICE, layers=0], Cell[x=1, y=2, z=0, block=PACKE…",
+      "id": "ru.midgard.winter.core.PlacementTest.[7] DecorationPlan[module=ice, cells=[Cell[x=-1, y=1, z=0, block=ANDESITE, layers=0], Cell[x=0, y=1, z=-1, block=JACK_O_LANTERN, layers=0], Cell[x=0, y=1, z=0, block=ANDESITE, layers=0], Cell[x=0, y=1, z=1, block=ANDESITE, layers=0], Cell[x=1, y=1, z=0, block=ANDESITE, layers=0], Cell[x=-1, y=2, z=0, block=ANDESITE, layers=0], Cell[x=0, y=2, z=-1, block=ANDESITE, layers=0], Cell[x=0, y=2, z=0, block=ANDESITE, layers=0], Cell[x=0, y=2, z=1, block=ANDESITE, layers=0], Cell[x=1, y=2, z=0, block=ANDESITE, layers=0…",
       "status": "PASS",
       "group": "Java unit/contract",
       "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
@@ -874,7 +934,7 @@
       "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
     },
     {
-      "id": "ru.midgard.winter.core.PlacementTest.[7] DecorationPlan[module=ice, cells=[Cell[x=-1, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=-1, block=SEA_LANTERN, layers=0], Cell[x=0, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=1, z=1, block=PACKED_ICE, layers=0], Cell[x=1, y=1, z=0, block=PACKED_ICE, layers=0], Cell[x=-1, y=2, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=2, z=-1, block=PACKED_ICE, layers=0], Cell[x=0, y=2, z=0, block=PACKED_ICE, layers=0], Cell[x=0, y=2, z=1, block=PACKED_ICE, layers=0], Cell[x=1, y=2, z=0, block=PACKE…",
+      "id": "ru.midgard.winter.core.PlacementTest.[7] DecorationPlan[module=ice, cells=[Cell[x=-1, y=1, z=0, block=ANDESITE, layers=0], Cell[x=0, y=1, z=-1, block=JACK_O_LANTERN, layers=0], Cell[x=0, y=1, z=0, block=ANDESITE, layers=0], Cell[x=0, y=1, z=1, block=ANDESITE, layers=0], Cell[x=1, y=1, z=0, block=ANDESITE, layers=0], Cell[x=-1, y=2, z=0, block=ANDESITE, layers=0], Cell[x=0, y=2, z=-1, block=ANDESITE, layers=0], Cell[x=0, y=2, z=0, block=ANDESITE, layers=0], Cell[x=0, y=2, z=1, block=ANDESITE, layers=0], Cell[x=1, y=2, z=0, block=ANDESITE, layers=0…",
       "status": "PASS",
       "group": "Java unit/contract",
       "evidence": "junit/TEST-ru.midgard.winter.core.PlacementTest.xml"
@@ -938,6 +998,42 @@
       "status": "PASS",
       "group": "Java unit/contract",
       "evidence": "junit/TEST-ru.midgard.winter.core.StructureProtectionTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.TickWorkBudgetTest.equalityAtTheSoftLimitDefersFurtherWork()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.TickWorkBudgetTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.TickWorkBudgetTest.chunkCountCapsCheapAndSynchronouslyCompletedWork()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.TickWorkBudgetTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.TickWorkBudgetTest.aSingleSlowChunkDoesNotPreventNextTickProgress()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.TickWorkBudgetTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.TickWorkBudgetTest.invalidLimitsAreRejected()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.TickWorkBudgetTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.TickWorkBudgetTest.delayedCallbacksAreLimitedWhenTheyActuallyRun()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.TickWorkBudgetTest.xml"
+    },
+    {
+      "id": "ru.midgard.winter.core.TickWorkBudgetTest.budgetDoesNotOverflow()",
+      "status": "PASS",
+      "group": "Java unit/contract",
+      "evidence": "junit/TEST-ru.midgard.winter.core.TickWorkBudgetTest.xml"
     },
     {
       "id": "ru.midgard.winter.core.TimingStatsTest.actualStatistics()",
@@ -1024,6 +1120,12 @@
       "evidence": "logs/storybook-tests.log"
     },
     {
+      "id": "python.test_new_native_trees_do_not_generate_valuable_decor",
+      "status": "PASS",
+      "group": "Python unit",
+      "evidence": "logs/storybook-tests.log"
+    },
+    {
       "id": "python.test_no_dimension_or_ore_resources",
       "status": "PASS",
       "group": "Python unit",
@@ -1072,358 +1174,502 @@
       "evidence": "logs/storybook-tests.log"
     },
     {
+      "id": "python.test_both_native_templates_have_no_entities_or_block_entity_payloads",
+      "status": "PASS",
+      "group": "Python unit",
+      "evidence": "logs/schematic-tests.log"
+    },
+    {
+      "id": "python.test_budget_and_single_chunk_geometry",
+      "status": "PASS",
+      "group": "Python unit",
+      "evidence": "logs/schematic-tests.log"
+    },
+    {
+      "id": "python.test_duplicate_positions_are_not_emitted",
+      "status": "PASS",
+      "group": "Python unit",
+      "evidence": "logs/schematic-tests.log"
+    },
+    {
+      "id": "python.test_no_air_commands_jigsaws_containers_or_fluids_can_be_pasted",
+      "status": "PASS",
+      "group": "Python unit",
+      "evidence": "logs/schematic-tests.log"
+    },
+    {
+      "id": "python.test_original_negative_Z_regions_decode_to_expected_rings",
+      "status": "PASS",
+      "group": "Python unit",
+      "evidence": "logs/schematic-tests.log"
+    },
+    {
+      "id": "python.test_pinned_generated_outputs_validate",
+      "status": "PASS",
+      "group": "Python unit",
+      "evidence": "logs/schematic-tests.log"
+    },
+    {
       "id": "worldedit.safe_stone_platform",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-worldedit-runtime-audit.json"
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.reject_WATER",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-worldedit-runtime-audit.json"
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.reject_LAVA",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-worldedit-runtime-audit.json"
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.reject_POWDER_SNOW",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-worldedit-runtime-audit.json"
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.reject_PACKED_ICE",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-worldedit-runtime-audit.json"
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.cavity_under_surface",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-worldedit-runtime-audit.json"
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.obstruction_SPRUCE_LOG",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-worldedit-runtime-audit.json"
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.obstruction_PACKED_ICE",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-worldedit-runtime-audit.json"
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.obstruction_SPRUCE_PLANKS",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-worldedit-runtime-audit.json"
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.obstruction_SNOW",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-worldedit-runtime-audit.json"
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.thin_snow_preserved",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-worldedit-runtime-audit.json"
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.active_reservation_blocks_second_drop",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-worldedit-runtime-audit.json"
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.release_reservation_restores_safety",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-worldedit-runtime-audit.json"
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.native_moon_gate_7",
+      "status": "PASS",
+      "group": "real integration fixtures",
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.native_moon_gate_9",
+      "status": "PASS",
+      "group": "real integration fixtures",
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.native_frost_shrine",
+      "status": "PASS",
+      "group": "real integration fixtures",
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.native_woodland_shrine",
+      "status": "PASS",
+      "group": "real integration fixtures",
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.native_stone_ruin",
+      "status": "PASS",
+      "group": "real integration fixtures",
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.native_timber_ruin",
+      "status": "PASS",
+      "group": "real integration fixtures",
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.sticky_retract_invalidates_source_and_destination",
+      "status": "PASS",
+      "group": "real integration fixtures",
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.orphan_pending_marker_finalized",
+      "status": "PASS",
+      "group": "real integration fixtures",
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
+    },
+    {
+      "id": "worldedit.live_pending_marker_retained",
+      "status": "PASS",
+      "group": "real integration fixtures",
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.real_WorldGuard_region_rejected",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-worldedit-runtime-audit.json"
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.WorldGuard_region_removal_restores_safety",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-worldedit-runtime-audit.json"
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.real_Luna_unsafe_start_cancelled",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-worldedit-runtime-audit.json"
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.real_Luna_start",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-worldedit-runtime-audit.json"
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.real_Luna_unlock",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-worldedit-runtime-audit.json"
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.real_Luna_end",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-worldedit-runtime-audit.json"
+      "evidence": "anarchy05-worldedit-runtime-audit.json"
     },
     {
       "id": "worldedit.real_luna_block_appears",
       "status": "PASS",
       "group": "real protocol client",
-      "evidence": "fantasy04-worldedit-client-smoke.json"
+      "evidence": "anarchy05-worldedit-client-smoke.json"
     },
     {
       "id": "worldedit.real_client_opens_luna_inventory",
       "status": "PASS",
       "group": "real protocol client",
-      "evidence": "fantasy04-worldedit-client-smoke.json"
+      "evidence": "anarchy05-worldedit-client-smoke.json"
     },
     {
       "id": "worldedit.real_luna_cleanup",
       "status": "PASS",
       "group": "real protocol client",
-      "evidence": "fantasy04-worldedit-client-smoke.json"
+      "evidence": "anarchy05-worldedit-client-smoke.json"
     },
     {
       "id": "worldedit.snow_start",
       "status": "PASS",
       "group": "natural Luna",
-      "evidence": "fantasy04-worldedit-natural-luna.json"
+      "evidence": "anarchy05-worldedit-natural-luna.json"
     },
     {
       "id": "worldedit.End_cleanup",
       "status": "PASS",
       "group": "natural Luna",
-      "evidence": "fantasy04-worldedit-natural-luna.json"
+      "evidence": "anarchy05-worldedit-natural-luna.json"
     },
     {
       "id": "worldedit.chunky",
       "status": "PASS",
       "group": "lifecycle",
-      "evidence": "logs/fantasy04-worldedit-integration-console.log"
+      "evidence": "logs/anarchy05-worldedit-integration-console.log"
     },
     {
       "id": "worldedit.stop",
       "status": "PASS",
       "group": "lifecycle",
-      "evidence": "logs/fantasy04-worldedit-integration-console.log"
+      "evidence": "logs/anarchy05-worldedit-integration-console.log"
     },
     {
       "id": "worldedit.builtin_pack",
       "status": "PASS",
-      "group": "one-JAR bootstrap",
-      "evidence": "logs/fantasy04-worldedit-integration-console.log"
+      "group": "lifecycle",
+      "evidence": "logs/anarchy05-worldedit-integration-console.log"
     },
     {
       "id": "fawe.safe_stone_platform",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-fawe-runtime-audit.json"
+      "evidence": "anarchy05-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.reject_WATER",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-fawe-runtime-audit.json"
+      "evidence": "anarchy05-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.reject_LAVA",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-fawe-runtime-audit.json"
+      "evidence": "anarchy05-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.reject_POWDER_SNOW",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-fawe-runtime-audit.json"
+      "evidence": "anarchy05-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.reject_PACKED_ICE",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-fawe-runtime-audit.json"
+      "evidence": "anarchy05-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.cavity_under_surface",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-fawe-runtime-audit.json"
+      "evidence": "anarchy05-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.obstruction_SPRUCE_LOG",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-fawe-runtime-audit.json"
+      "evidence": "anarchy05-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.obstruction_PACKED_ICE",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-fawe-runtime-audit.json"
+      "evidence": "anarchy05-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.obstruction_SPRUCE_PLANKS",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-fawe-runtime-audit.json"
+      "evidence": "anarchy05-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.obstruction_SNOW",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-fawe-runtime-audit.json"
+      "evidence": "anarchy05-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.thin_snow_preserved",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-fawe-runtime-audit.json"
+      "evidence": "anarchy05-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.active_reservation_blocks_second_drop",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-fawe-runtime-audit.json"
+      "evidence": "anarchy05-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.release_reservation_restores_safety",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-fawe-runtime-audit.json"
+      "evidence": "anarchy05-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.native_moon_gate_7",
+      "status": "PASS",
+      "group": "real integration fixtures",
+      "evidence": "anarchy05-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.native_moon_gate_9",
+      "status": "PASS",
+      "group": "real integration fixtures",
+      "evidence": "anarchy05-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.native_frost_shrine",
+      "status": "PASS",
+      "group": "real integration fixtures",
+      "evidence": "anarchy05-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.native_woodland_shrine",
+      "status": "PASS",
+      "group": "real integration fixtures",
+      "evidence": "anarchy05-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.native_stone_ruin",
+      "status": "PASS",
+      "group": "real integration fixtures",
+      "evidence": "anarchy05-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.native_timber_ruin",
+      "status": "PASS",
+      "group": "real integration fixtures",
+      "evidence": "anarchy05-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.sticky_retract_invalidates_source_and_destination",
+      "status": "PASS",
+      "group": "real integration fixtures",
+      "evidence": "anarchy05-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.orphan_pending_marker_finalized",
+      "status": "PASS",
+      "group": "real integration fixtures",
+      "evidence": "anarchy05-fawe-runtime-audit.json"
+    },
+    {
+      "id": "fawe.live_pending_marker_retained",
+      "status": "PASS",
+      "group": "real integration fixtures",
+      "evidence": "anarchy05-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.real_WorldGuard_region_rejected",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-fawe-runtime-audit.json"
+      "evidence": "anarchy05-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.WorldGuard_region_removal_restores_safety",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-fawe-runtime-audit.json"
+      "evidence": "anarchy05-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.real_Luna_unsafe_start_cancelled",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-fawe-runtime-audit.json"
+      "evidence": "anarchy05-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.real_Luna_start",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-fawe-runtime-audit.json"
+      "evidence": "anarchy05-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.real_Luna_unlock",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-fawe-runtime-audit.json"
+      "evidence": "anarchy05-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.real_Luna_end",
       "status": "PASS",
       "group": "real integration fixtures",
-      "evidence": "fantasy04-fawe-runtime-audit.json"
+      "evidence": "anarchy05-fawe-runtime-audit.json"
     },
     {
       "id": "fawe.real_luna_block_appears",
       "status": "PASS",
       "group": "real protocol client",
-      "evidence": "fantasy04-fawe-client-smoke.json"
+      "evidence": "anarchy05-fawe-client-smoke.json"
     },
     {
       "id": "fawe.real_client_opens_luna_inventory",
       "status": "PASS",
       "group": "real protocol client",
-      "evidence": "fantasy04-fawe-client-smoke.json"
+      "evidence": "anarchy05-fawe-client-smoke.json"
     },
     {
       "id": "fawe.real_luna_cleanup",
       "status": "PASS",
       "group": "real protocol client",
-      "evidence": "fantasy04-fawe-client-smoke.json"
+      "evidence": "anarchy05-fawe-client-smoke.json"
     },
     {
       "id": "fawe.snow_start",
       "status": "PASS",
       "group": "natural Luna",
-      "evidence": "fantasy04-fawe-natural-luna.json"
+      "evidence": "anarchy05-fawe-natural-luna.json"
     },
     {
       "id": "fawe.End_cleanup",
       "status": "PASS",
       "group": "natural Luna",
-      "evidence": "fantasy04-fawe-natural-luna.json"
+      "evidence": "anarchy05-fawe-natural-luna.json"
     },
     {
       "id": "fawe.chunky",
       "status": "PASS",
       "group": "lifecycle",
-      "evidence": "logs/fantasy04-fawe-integration-console.log"
+      "evidence": "logs/anarchy05-fawe-integration-console.log"
     },
     {
       "id": "fawe.stop",
       "status": "PASS",
       "group": "lifecycle",
-      "evidence": "logs/fantasy04-fawe-integration-console.log"
+      "evidence": "logs/anarchy05-fawe-integration-console.log"
     },
     {
       "id": "fawe.builtin_pack",
       "status": "PASS",
-      "group": "one-JAR bootstrap",
-      "evidence": "logs/fantasy04-fawe-integration-console.log"
+      "group": "lifecycle",
+      "evidence": "logs/anarchy05-fawe-integration-console.log"
     },
     {
-      "id": "purpur.one_jar_no_external_pack",
+      "id": "purpur.one_jar",
       "status": "PASS",
       "group": "one-JAR bootstrap",
-      "evidence": "fantasy04-purpur-summary.json"
+      "evidence": "anarchy05-disable-summary.json"
     },
     {
-      "id": "purpur.rediscovery_and_restart",
+      "id": "purpur.global_disable_on_restart",
       "status": "PASS",
       "group": "restart persistence",
-      "evidence": "fantasy04-purpur-summary.json"
+      "evidence": "anarchy05-disable-summary.json"
     },
     {
       "id": "same_current_jar_in_all5_servers",
       "status": "PASS",
       "group": "artifacts",
-      "evidence": "fantasy04-artifact-identity.json"
+      "evidence": "anarchy05-artifact-identity.json"
     },
     {
       "id": "no_external_datapack_in_all5_servers",
       "status": "PASS",
       "group": "one-JAR bootstrap",
-      "evidence": "fantasy04-artifact-identity.json"
+      "evidence": "anarchy05-artifact-identity.json"
     },
     {
       "id": "825180311.common_raw_underground_equal",
       "status": "PASS",
       "group": "same-coordinate worldgen",
-      "evidence": "fantasy04-matrix-coordinate-invariants.json",
+      "evidence": "anarchy05-matrix-coordinate-invariants.json",
       "detail": {
         "roi": 64,
         "coordinates": 1572785
@@ -1433,7 +1679,7 @@
       "id": "825180311.all_height_ores_equal",
       "status": "PASS",
       "group": "same-coordinate worldgen",
-      "evidence": "fantasy04-matrix-coordinate-invariants.json",
+      "evidence": "anarchy05-matrix-coordinate-invariants.json",
       "detail": {
         "roi": 64,
         "coordinates": 1572785
@@ -1443,7 +1689,7 @@
       "id": "825180311.structure_boxes_equal",
       "status": "PASS",
       "group": "same-coordinate worldgen",
-      "evidence": "fantasy04-matrix-coordinate-invariants.json",
+      "evidence": "anarchy05-matrix-coordinate-invariants.json",
       "detail": {
         "roi": 64,
         "coordinates": 1572785
@@ -1453,7 +1699,7 @@
       "id": "825180311.block_entities_equal",
       "status": "PASS",
       "group": "same-coordinate worldgen",
-      "evidence": "fantasy04-matrix-coordinate-invariants.json",
+      "evidence": "anarchy05-matrix-coordinate-invariants.json",
       "detail": {
         "roi": 64,
         "coordinates": 1572785
@@ -1463,14 +1709,14 @@
       "id": "825180311.original_variable_window_probe",
       "status": "FAIL",
       "group": "raw variable-window diagnostic",
-      "evidence": "server-matrix-fantasy04-matrix.json",
+      "evidence": "server-matrix-anarchy05-matrix.json",
       "detail": "Original height-selected fingerprints retained; independent identical-coordinate result is separate."
     },
     {
       "id": "vanilla.restart",
       "status": "PASS",
       "group": "restart persistence",
-      "evidence": "runtime/v0.4.0/825180311/vanilla/measurement-restart.json",
+      "evidence": "runtime/v0.5.0/825180311/vanilla/measurement-restart.json",
       "detail": {
         "rawUndergroundBlockStateHash": [],
         "belowSurfaceGeometry": [],
@@ -1483,7 +1729,7 @@
       "id": "winter.restart",
       "status": "PASS",
       "group": "restart persistence",
-      "evidence": "runtime/v0.4.0/825180311/winter/measurement-restart.json",
+      "evidence": "runtime/v0.5.0/825180311/winter/measurement-restart.json",
       "detail": {
         "rawUndergroundBlockStateHash": [],
         "belowSurfaceGeometry": [],
@@ -1496,85 +1742,115 @@
       "id": "paper.initial.builtin_pack",
       "status": "PASS",
       "group": "one-JAR bootstrap",
-      "evidence": "runtime/v0.4.0/825180311/winter/measurement-initial.json"
+      "evidence": "runtime/v0.5.0/825180311/winter/measurement-initial.json"
     },
     {
       "id": "paper.restart.builtin_pack",
       "status": "PASS",
       "group": "one-JAR bootstrap",
-      "evidence": "runtime/v0.4.0/825180311/winter/measurement-restart.json"
+      "evidence": "runtime/v0.5.0/825180311/winter/measurement-restart.json"
     },
     {
-      "id": "artifact_structure",
+      "id": "artifact-check.json",
       "status": "PASS",
       "group": "artifacts",
       "evidence": "artifact-check.json"
     },
     {
-      "id": "native_static_allowlist_and_sources",
+      "id": "storybook-static-validation.json",
       "status": "PASS",
-      "group": "native static",
+      "group": "artifacts",
       "evidence": "storybook-static-validation.json"
     },
     {
-      "id": "natural_placement.lantern-willows-objects",
+      "id": "schematic-validation.json",
+      "status": "PASS",
+      "group": "artifacts",
+      "evidence": "schematic-validation.json"
+    },
+    {
+      "id": "anarchy.survival_mode",
+      "status": "PASS",
+      "group": "non-OP grief client",
+      "evidence": "anarchy05-grief-client.json"
+    },
+    {
+      "id": "anarchy.natural_decor_present",
+      "status": "PASS",
+      "group": "non-OP grief client",
+      "evidence": "anarchy05-grief-client.json"
+    },
+    {
+      "id": "anarchy.natural_decor_breakable",
+      "status": "PASS",
+      "group": "non-OP grief client",
+      "evidence": "anarchy05-grief-client.json"
+    },
+    {
+      "id": "anarchy.player_build_allowed",
+      "status": "PASS",
+      "group": "non-OP grief client",
+      "evidence": "anarchy05-grief-client.json"
+    },
+    {
+      "id": "anarchy.explosion_changes_decoration",
+      "status": "PASS",
+      "group": "non-OP grief client",
+      "evidence": "anarchy05-grief-client.json"
+    },
+    {
+      "id": "anarchy.non_operator_verified",
+      "status": "PASS",
+      "group": "non-OP grief client",
+      "evidence": "anarchy05-grief-client.json"
+    },
+    {
+      "id": "natural.moon-mushrooms-objects",
       "status": "PASS",
       "group": "natural fantasy objects",
-      "evidence": "fantasy04-visual-metrics.json"
+      "evidence": "anarchy05-visual-metrics.json"
     },
     {
-      "id": "natural_placement.moon-mushrooms-objects",
+      "id": "natural.moonstones-objects",
       "status": "PASS",
       "group": "natural fantasy objects",
-      "evidence": "fantasy04-visual-metrics.json"
+      "evidence": "anarchy05-visual-metrics.json"
     },
     {
-      "id": "natural_placement.moonstones-objects",
+      "id": "natural.lantern-willows-objects",
       "status": "PASS",
       "group": "natural fantasy objects",
-      "evidence": "fantasy04-visual-metrics.json"
+      "evidence": "anarchy05-visual-metrics.json"
     },
     {
-      "id": "natural_placement.ice-objects",
+      "id": "natural.new_landmarks",
       "status": "PASS",
       "group": "natural fantasy objects",
-      "evidence": "fantasy04-visual-metrics.json"
+      "evidence": "anarchy05-visual-metrics.json"
     },
     {
-      "id": "natural_placement.clearings-objects",
-      "status": "PASS",
-      "group": "natural fantasy objects",
-      "evidence": "fantasy04-visual-metrics.json"
-    },
-    {
-      "id": "native_F2.01-lantern-willow.png",
+      "id": "native_F2.01-moon-gate.png",
       "status": "PASS",
       "group": "real graphical samples",
-      "evidence": "screenshots-fantasy04/provenance.json"
+      "evidence": "screenshots-anarchy05/provenance.json"
     },
     {
-      "id": "native_F2.02-moon-mushroom.png",
+      "id": "native_F2.04-moon-gate-front.png",
       "status": "PASS",
       "group": "real graphical samples",
-      "evidence": "screenshots-fantasy04/provenance.json"
+      "evidence": "screenshots-anarchy05/provenance.json"
     },
     {
-      "id": "native_F2.03-crystal-grove.png",
+      "id": "native_F2.05-woodland-sanctuary.png",
       "status": "PASS",
       "group": "real graphical samples",
-      "evidence": "screenshots-fantasy04/provenance.json"
+      "evidence": "screenshots-anarchy05/provenance.json"
     },
     {
-      "id": "native_F2.04-winter-blossom-coast.png",
+      "id": "native_F2.08-f3-proof.png",
       "status": "PASS",
       "group": "real graphical samples",
-      "evidence": "screenshots-fantasy04/provenance.json"
-    },
-    {
-      "id": "native_F2.05-f3-proof.png",
-      "status": "PASS",
-      "group": "real graphical samples",
-      "evidence": "screenshots-fantasy04/provenance.json"
+      "evidence": "screenshots-anarchy05/provenance.json"
     },
     {
       "id": "50_to_100_player_soak",
@@ -1625,7 +1901,7 @@
       "evidence": "KNOWN_ISSUES.md"
     },
     {
-      "id": "large_schematics_custom_Y_offsets",
+      "id": "large_schematics_bridges_custom_Y_offsets",
       "status": "NOT RUN",
       "group": "remaining scope",
       "evidence": "KNOWN_ISSUES.md"

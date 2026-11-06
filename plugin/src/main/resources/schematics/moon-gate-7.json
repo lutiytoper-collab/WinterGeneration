@@ -1,0 +1,738 @@
+{
+  "format": 1,
+  "id": "moon-gate-7",
+  "source": "Greaby/minecraft-circles-schematics",
+  "source_commit": "1263463cffb59b08275e9ee9408848285c4cddff",
+  "license": "CC0-1.0",
+  "adaptation": "Original flat stone ring rotated upright; ordinary diorite/colored-glass palette, snow, low lights and a supported base. No original air is pasted.",
+  "cells": [
+    {
+      "x": -4,
+      "y": 1,
+      "z": -1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -4,
+      "y": 1,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -4,
+      "y": 1,
+      "z": 1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -3,
+      "y": 1,
+      "z": -1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -3,
+      "y": 1,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -3,
+      "y": 1,
+      "z": 1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": -1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": 1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": -1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": 1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": -1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": -1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": -1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "z": -1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "z": 1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "z": -1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "z": 1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": 1,
+      "block": "LIGHT_BLUE_STAINED_GLASS",
+      "layers": 0
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 0,
+      "block": "LIGHT_BLUE_STAINED_GLASS",
+      "layers": 0
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 1,
+      "block": "LIGHT_BLUE_STAINED_GLASS",
+      "layers": 0
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 1,
+      "block": "PURPLE_STAINED_GLASS",
+      "layers": 0
+    },
+    {
+      "x": -2,
+      "y": 3,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -2,
+      "y": 3,
+      "z": 1,
+      "block": "LIGHT_BLUE_STAINED_GLASS",
+      "layers": 0
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 0,
+      "block": "LIGHT_BLUE_STAINED_GLASS",
+      "layers": 0
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 1,
+      "block": "LIGHT_BLUE_STAINED_GLASS",
+      "layers": 0
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": 1,
+      "block": "LIGHT_BLUE_STAINED_GLASS",
+      "layers": 0
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": 1,
+      "block": "PURPLE_STAINED_GLASS",
+      "layers": 0
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": 0,
+      "block": "LIGHT_BLUE_STAINED_GLASS",
+      "layers": 0
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": 1,
+      "block": "LIGHT_BLUE_STAINED_GLASS",
+      "layers": 0
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 0,
+      "block": "LIGHT_BLUE_STAINED_GLASS",
+      "layers": 0
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 1,
+      "block": "LIGHT_BLUE_STAINED_GLASS",
+      "layers": 0
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": 1,
+      "block": "PURPLE_STAINED_GLASS",
+      "layers": 0
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 1,
+      "block": "LIGHT_BLUE_STAINED_GLASS",
+      "layers": 0
+    },
+    {
+      "x": -2,
+      "y": 7,
+      "z": 0,
+      "block": "LIGHT_BLUE_STAINED_GLASS",
+      "layers": 0
+    },
+    {
+      "x": -2,
+      "y": 7,
+      "z": 1,
+      "block": "LIGHT_BLUE_STAINED_GLASS",
+      "layers": 0
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 1,
+      "block": "LIGHT_BLUE_STAINED_GLASS",
+      "layers": 0
+    },
+    {
+      "x": -1,
+      "y": 8,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -1,
+      "y": 8,
+      "z": 1,
+      "block": "PURPLE_STAINED_GLASS",
+      "layers": 0
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "z": 0,
+      "block": "LIGHT_BLUE_STAINED_GLASS",
+      "layers": 0
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "z": 1,
+      "block": "LIGHT_BLUE_STAINED_GLASS",
+      "layers": 0
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 1,
+      "block": "LIGHT_BLUE_STAINED_GLASS",
+      "layers": 0
+    },
+    {
+      "x": -3,
+      "y": 2,
+      "z": -1,
+      "block": "JACK_O_LANTERN",
+      "layers": 0
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": -1,
+      "block": "JACK_O_LANTERN",
+      "layers": 0
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": 0,
+      "block": "WHITE_STAINED_GLASS",
+      "layers": 0
+    },
+    {
+      "x": -4,
+      "y": 2,
+      "z": -1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -4,
+      "y": 2,
+      "z": 0,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -4,
+      "y": 2,
+      "z": 1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -3,
+      "y": 2,
+      "z": 0,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -3,
+      "y": 2,
+      "z": 1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -2,
+      "y": 2,
+      "z": -1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -2,
+      "y": 2,
+      "z": 0,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -2,
+      "y": 2,
+      "z": 1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": -1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": -1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": -1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": -1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 0,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 0,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": -1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 0,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": 0,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": 1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 0,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 0,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -2,
+      "y": 4,
+      "z": 0,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -2,
+      "y": 4,
+      "z": 1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 0,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -3,
+      "y": 7,
+      "z": 0,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -3,
+      "y": 7,
+      "z": 1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 0,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -2,
+      "y": 8,
+      "z": 0,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -2,
+      "y": 8,
+      "z": 1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 0,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": 0,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": 1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": 1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 0,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 1,
+      "block": "SNOW",
+      "layers": 3
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :core:compileJava
+> Task :core:processResources NO-SOURCE
+> Task :core:classes
+> Task :core:jar
+> Task :core:compileTestJava
+> Task :core:processTestResources NO-SOURCE
+> Task :core:testClasses
+
+> Task :core:test FAILED
+
+ForestPlacementTest > clearingLeavesUnusedPlantsInItsOpening() FAILED
+    org.opentest4j.AssertionFailedError at ForestPlacementTest.java:55
+
+StorybookPropsTest > icyShelterCanopyKeepsSnowSupported() FAILED
+    org.opentest4j.AssertionFailedError at StorybookPropsTest.java:20
+
+160 tests completed, 2 failed
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':core:test'.
+> There were failing tests. See the report at: file:///workspace/WinterGeneration/core/build/reports/tests/test/index.html
+
+* Try:
+> Run with --scan to get full insights.
+
+BUILD FAILED in 8s
+4 actionable tasks: 4 executed

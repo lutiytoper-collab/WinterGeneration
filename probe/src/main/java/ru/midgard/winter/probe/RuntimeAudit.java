@@ -96,8 +96,42 @@ final class RuntimeAudit {
             Object token=winter.getClass().getMethod("reserveAirDrop",World.class,int.class,int.class,int.class).invoke(winter,world,X,Z,16);
             result=validate();check("active_reservation_blocks_second_drop",!safe(result),result.toString());winter.getClass().getMethod("releaseAirDrop",UUID.class).invoke(winter,token);
             result=validate();check("release_reservation_restores_safety",safe(result),result.toString());
-            worldGuard();luna();
+            generationRegressionFixtures();worldGuard();luna();
         }catch(Exception ex){check("fixture_execution",false,ex.toString());finish();}
+    }
+    @SuppressWarnings("unchecked") private void generationRegressionFixtures()throws Exception{
+        for(int size:new int[]{7,9}){
+            var structure=Bukkit.getStructureManager().loadStructure(new NamespacedKey("midgard","moon_gate_"+size),false);
+            check("native_moon_gate_"+size,structure!=null&&structure.getSize().getBlockX()==size+2&&structure.getSize().getBlockZ()==3&&structure.getEntities().isEmpty()&&!structure.getPalettes().isEmpty(),"Public StructureManager load from embedded datapack; no placement/entities");
+        }
+        for(String name:List.of("frost_shrine","woodland_shrine","stone_ruin","timber_ruin")){
+            var structure=Bukkit.getStructureManager().loadStructure(new NamespacedKey("midgard",name),false);
+            check("native_"+name,structure!=null&&structure.getEntities().isEmpty()&&!structure.getPalettes().isEmpty(),"Original landmark NBT loaded from embedded pack through public API");
+        }
+        Class<?> keyClass=Arrays.stream(winter.getClass().getDeclaredClasses()).filter(c->c.getSimpleName().equals("ChunkKey")).findFirst().orElseThrow();
+        var ctor=keyClass.getDeclaredConstructors()[0];ctor.setAccessible(true);
+        var pendingField=winter.getClass().getDeclaredField("pending");pendingField.setAccessible(true);Map<Object,Integer> pending=(Map<Object,Integer>)pendingField.get(winter);
+        var loadingField=winter.getClass().getDeclaredField("loading");loadingField.setAccessible(true);Map<Object,Integer> loading=(Map<Object,Integer>)loadingField.get(winter);
+        Block moved=world.getBlockAt((X&~15)+15,Y+1,Z),destination=moved.getRelative(org.bukkit.block.BlockFace.EAST),piston=moved.getRelative(org.bukkit.block.BlockFace.WEST);
+        var chunks=List.of(moved.getChunk(),destination.getChunk());var marker=new NamespacedKey("midgardwinterworld","processed_v1");
+        var old=new ArrayList<Byte>();var keys=new ArrayList<Object>();
+        for(Chunk chunk:chunks){Object key=ctor.newInstance(world.getUID(),chunk.getX(),chunk.getZ());if(pending.containsKey(key)||loading.containsKey(key))throw new IllegalStateException("Fixture chunk not idle");keys.add(key);old.add(chunk.getPersistentDataContainer().get(marker,org.bukkit.persistence.PersistentDataType.BYTE));}
+        var oldMoved=moved.getBlockData();var oldPiston=piston.getBlockData();
+        try{
+            for(int n=0;n<2;n++){pending.put(keys.get(n),Bukkit.getCurrentTick());chunks.get(n).getPersistentDataContainer().set(marker,org.bukkit.persistence.PersistentDataType.BYTE,(byte)1);}
+            piston.setType(Material.STICKY_PISTON,false);moved.setType(Material.STONE,false);
+            Bukkit.getPluginManager().callEvent(new org.bukkit.event.block.BlockPistonRetractEvent(piston,List.of(moved),org.bukkit.block.BlockFace.EAST));
+            check("sticky_retract_invalidates_source_and_destination",keys.stream().noneMatch(pending::containsKey)&&chunks.stream().allMatch(c->c.getPersistentDataContainer().getOrDefault(marker,org.bukkit.persistence.PersistentDataType.BYTE,(byte)0)==3),"Public event-dispatch fixture across chunk boundary; not a physical redstone simulation");
+            chunks.get(0).getPersistentDataContainer().set(marker,org.bukkit.persistence.PersistentDataType.BYTE,(byte)1);
+            Bukkit.getPluginManager().callEvent(new org.bukkit.event.world.ChunkLoadEvent(chunks.get(0),false));
+            check("orphan_pending_marker_finalized",chunks.get(0).getPersistentDataContainer().getOrDefault(marker,org.bukkit.persistence.PersistentDataType.BYTE,(byte)0)==3,"Existing pending marker without queued/inflight request becomes skipped; no world blocks changed");
+            chunks.get(0).getPersistentDataContainer().set(marker,org.bukkit.persistence.PersistentDataType.BYTE,(byte)1);pending.put(keys.get(0),Bukkit.getCurrentTick());
+            Bukkit.getPluginManager().callEvent(new org.bukkit.event.world.ChunkLoadEvent(chunks.get(0),false));
+            check("live_pending_marker_retained",chunks.get(0).getPersistentDataContainer().getOrDefault(marker,org.bukkit.persistence.PersistentDataType.BYTE,(byte)0)==1,"A genuinely queued request is not mistaken for an orphan");
+        }finally{
+            moved.setBlockData(oldMoved,false);piston.setBlockData(oldPiston,false);
+            for(int n=0;n<2;n++){pending.remove(keys.get(n));if(old.get(n)==null)chunks.get(n).getPersistentDataContainer().remove(marker);else chunks.get(n).getPersistentDataContainer().set(marker,org.bukkit.persistence.PersistentDataType.BYTE,old.get(n));}
+        }
     }
     private void worldGuard()throws Exception{
         Plugin wg=Bukkit.getPluginManager().getPlugin("WorldGuard");if(wg==null){check("WorldGuard_present",false,"not loaded");return;}

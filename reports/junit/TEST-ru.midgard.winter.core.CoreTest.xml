@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.midgard.winter.core.CoreTest" tests="39" skipped="0" failures="0" errors="0" timestamp="2026-11-06T07:29:39.492Z" hostname="0f051bf75645" time="0.084">
+<testsuite name="ru.midgard.winter.core.CoreTest" tests="39" skipped="0" failures="0" errors="0" timestamp="2026-11-06T08:45:12.486Z" hostname="0f051bf75645" time="0.075">
   <properties/>
-  <testcase name="noiseRangeAndNegativeContinuity()" classname="ru.midgard.winter.core.CoreTest" time="0.003"/>
+  <testcase name="noiseRangeAndNegativeContinuity()" classname="ru.midgard.winter.core.CoreTest" time="0.001"/>
   <testcase name="invalidConfigRejected()" classname="ru.midgard.winter.core.CoreTest" time="0.002"/>
   <testcase name="protectedRegionDenied()" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
   <testcase name="seedAndSaltMatter()" classname="ru.midgard.winter.core.CoreTest" time="0.001"/>
-  <testcase name="excludedWins()" classname="ru.midgard.winter.core.CoreTest" time="0.001"/>
-  <testcase name="caveUnderPlatform()" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
-  <testcase name="[1] LIGHT" classname="ru.midgard.winter.core.CoreTest" time="0.006"/>
-  <testcase name="[2] BALANCED" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
-  <testcase name="[3] FAIRYTALE" classname="ru.midgard.winter.core.CoreTest" time="0.001"/>
+  <testcase name="excludedWins()" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
+  <testcase name="caveUnderPlatform()" classname="ru.midgard.winter.core.CoreTest" time="0.001"/>
+  <testcase name="[1] LIGHT" classname="ru.midgard.winter.core.CoreTest" time="0.005"/>
+  <testcase name="[2] BALANCED" classname="ru.midgard.winter.core.CoreTest" time="0.001"/>
+  <testcase name="[3] FAIRYTALE" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
   <testcase name="treeCabinObstructionDenied()" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
   <testcase name="boxesAndMargins()" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
   <testcase name="slopeDenied()" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
   <testcase name="dimensionDenied()" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
   <testcase name="safePlatform()" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
-  <testcase name="[1] plains" classname="ru.midgard.winter.core.CoreTest" time="0.001"/>
+  <testcase name="[1] plains" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
   <testcase name="[2] forest" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
-  <testcase name="[3] birch_forest" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
+  <testcase name="[3] birch_forest" classname="ru.midgard.winter.core.CoreTest" time="0.001"/>
   <testcase name="[4] taiga" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
-  <testcase name="[5] meadow" classname="ru.midgard.winter.core.CoreTest" time="0.001"/>
+  <testcase name="[5] meadow" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
   <testcase name="[6] river" classname="ru.midgard.winter.core.CoreTest" time="0.001"/>
-  <testcase name="shallowCentralDipCannotLeaveFloatingChest()" classname="ru.midgard.winter.core.CoreTest" time="0.001"/>
-  <testcase name="[1] desert" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
+  <testcase name="shallowCentralDipCannotLeaveFloatingChest()" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
+  <testcase name="[1] desert" classname="ru.midgard.winter.core.CoreTest" time="0.001"/>
   <testcase name="[2] savanna" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
-  <testcase name="[3] jungle" classname="ru.midgard.winter.core.CoreTest" time="0.001"/>
+  <testcase name="[3] jungle" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
   <testcase name="[4] badlands" classname="ru.midgard.winter.core.CoreTest" time="0.001"/>
-  <testcase name="[5] warm_ocean" classname="ru.midgard.winter.core.CoreTest" time="0.001"/>
+  <testcase name="[5] warm_ocean" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
   <testcase name="[6] lukewarm_ocean" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
   <testcase name="[7] mangrove_swamp" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
   <testcase name="[8] lush_caves" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
-  <testcase name="[9] deep_dark" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
+  <testcase name="[9] deep_dark" classname="ru.midgard.winter.core.CoreTest" time="0.001"/>
   <testcase name="[10] unknown" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
-  <testcase name="boundariesAndNegativeCoordinates()" classname="ru.midgard.winter.core.CoreTest" time="0.001"/>
+  <testcase name="boundariesAndNegativeCoordinates()" classname="ru.midgard.winter.core.CoreTest" time="0.004"/>
   <testcase name="unsafeWaterIcePowderSnow()" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
   <testcase name="reservationAndRelease()" classname="ru.midgard.winter.core.CoreTest" time="0.002"/>
-  <testcase name="deterministicAcrossThreads()" classname="ru.midgard.winter.core.CoreTest" time="0.005"/>
-  <testcase name="emptyAllowlistDenies()" classname="ru.midgard.winter.core.CoreTest" time="0.001"/>
-  <testcase name="hotCannotBeEnabled()" classname="ru.midgard.winter.core.CoreTest" time="0.001"/>
-  <testcase name="unloadedNeverRead()" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
+  <testcase name="deterministicAcrossThreads()" classname="ru.midgard.winter.core.CoreTest" time="0.009"/>
+  <testcase name="emptyAllowlistDenies()" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
+  <testcase name="hotCannotBeEnabled()" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
+  <testcase name="unloadedNeverRead()" classname="ru.midgard.winter.core.CoreTest" time="0.001"/>
   <testcase name="invalidAirDropLimits()" classname="ru.midgard.winter.core.CoreTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

@@ -7,6 +7,8 @@ mkdir -p reports/logs dist
 gradle --no-daemon --max-workers=2 :core:test :core:jar | tee reports/logs/core-build.log
 python3 scripts/datapack.py | tee reports/logs/datapack-validation.log
 python3 scripts/test_datapack.py 2>&1 | tee reports/logs/datapack-tests.log
+python3 scripts/schematics.py | tee reports/logs/schematic-validation.log
+python3 scripts/test_schematics.py 2>&1 | tee reports/logs/schematic-tests.log
 python3 scripts/storybook.py | tee reports/logs/storybook-validation.log
 python3 scripts/test_storybook.py 2>&1 | tee reports/logs/storybook-tests.log
 if [[ "${1:-full}" == full ]]; then

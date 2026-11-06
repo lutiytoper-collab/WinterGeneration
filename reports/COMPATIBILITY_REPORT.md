@@ -1,18 +1,9 @@
-# Совместимость Fantasy 0.4
+# Совместимость 0.5.0
 
-**Paper/Purpur 1.21.11, Java 21.** Главный файл теперь Paper plugin с bootstrapper в paper-plugin.yml, DATAPACK_DISCOVERY и command lifecycle. Это публичные Paper API, production NMS/CraftBukkit нет. Bukkit plugin.yml сохранён как метаданные, native bootstrap требует Paper/Purpur.
+Java 21, официальный Paper API 1.21.11, Paper 132, Purpur 2568. Текущий финальный JAR одинаков на пяти QA-площадках, без внешних datapack ZIP; подробности anarchy05-artifact-identity.json.
 
-| Площадка | Фактический результат |
-|---|---|
-| Paper 132, чистая one-JAR установка | Pack обнаружен до создания мира, default config создан, native лес и новые wonders появились, Chunky 625+169visited завершён |
-| Paper 132 WG/Luna + WorldEdit 7.3.19 |19fixtures, реальный 54slot client, природный снег/End cleanup0tickets, Chunky/stop PASS |
-| Paper 132 WG/Luna + FAWE 2.16.2 | Отдельный полный повтор указанного набора PASS |
-| Purpur 2568 | Чистая one-JAR установка,4ROI initial/restart, pack rediscovered и поверхности/PDC стабильны |
-| Paper 132 matrix |64 пары ROI, initial/restart, same-coordinate states/ores/structures/block entities совпали; original window diagnostic1 FAIL |
-| Vanilla1.21.11 клиент |5 настоящих F2 PNG, без shaders/resource pack, локальный offline-auth |
+Paper: предоставленные LunaAirDrop 1.0.3 MidgardFix и WorldGuardRU, отдельно WorldEdit 7.3.19 и FAWE 2.16.2, Chunky 1.4.40. По 28 runtime fixtures, настоящий protocol-клиент Luna, естественный снег, cleanup, Chunky и stop PASS. Для шаблонов WorldEdit не нужен.
 
-Во всех 5 папках один текущий JAR и ноль внешних datapack ZIP. Хеши — fantasy04-artifact-identity.json. Сложные plugin classloader мосты WG/Luna проверены после перехода на Paper plugin; чужие JAR не патчились. Полный Purpur plugin stack не запускался.
+Purpur: standalone bootstrap и enabled→disabled restart, 4 ROI; полного WG/Luna stack на Purpur нет. NMS/CraftBukkit в production нет. Pack discovery через публичный Paper lifecycle; требуются точная версия сервера и полный restart при смене bootstrap-переключателей.
 
-Native pack глобален для серверного biome registry и не ограничивается plugin allowed-worlds. Старые внешние climate/Storybook ZIP не требуются; при обновлении их рекомендуется не смешивать со встроенным паком в новой тестовой установке. Все комбинации приоритетов старых паков и native hot reload не проверены.
-
-Luna natural QA:radius1/max-y128/snow-only blacklist, в поставке radius2. Активный restart,hot reload/dynamic drops,customY кроме 1 и большие схематики остаются NOT RUN. Проверки выполнены с конкретными пользовательскими Luna/WG JAR. Публичная Microsoft-аутентификация не проверена; loopback QA и сетевые ошибки Yggdrasil refresh отражены отдельно.
+Правила разрешений сторонних плагинов не переопределяются. Survival grief/build/TNT проверены не-OP клиентом в отдельном локальном visual QA-мире. Пользовательские/серверные JAR не распространяются.

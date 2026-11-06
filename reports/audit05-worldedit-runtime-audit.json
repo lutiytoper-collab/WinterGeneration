@@ -1,0 +1,131 @@
+{
+  "seed": 825180311,
+  "minecraft": "1.21.11",
+  "biomes": [],
+  "structures": [],
+  "checks": [
+    {
+      "name": "safe_stone_platform",
+      "status": "PASS",
+      "detail": "Result[safe\u003dtrue, reason\u003dsafe, y\u003d161]; protection\u003dnull"
+    },
+    {
+      "name": "reject_WATER",
+      "status": "PASS",
+      "detail": "Result[safe\u003dfalse, reason\u003dunsafe_support, y\u003d160]"
+    },
+    {
+      "name": "reject_LAVA",
+      "status": "PASS",
+      "detail": "Result[safe\u003dfalse, reason\u003dunsafe_support, y\u003d160]"
+    },
+    {
+      "name": "reject_POWDER_SNOW",
+      "status": "PASS",
+      "detail": "Result[safe\u003dfalse, reason\u003dobstructed, y\u003d159]"
+    },
+    {
+      "name": "reject_PACKED_ICE",
+      "status": "PASS",
+      "detail": "Result[safe\u003dfalse, reason\u003dunsafe_support, y\u003d160]"
+    },
+    {
+      "name": "cavity_under_surface",
+      "status": "PASS",
+      "detail": "Result[safe\u003dfalse, reason\u003dunsafe_support, y\u003d160]"
+    },
+    {
+      "name": "obstruction_SPRUCE_LOG",
+      "status": "PASS",
+      "detail": "Result[safe\u003dfalse, reason\u003dunsafe_support, y\u003d161]"
+    },
+    {
+      "name": "obstruction_PACKED_ICE",
+      "status": "PASS",
+      "detail": "Result[safe\u003dfalse, reason\u003dunsafe_support, y\u003d161]"
+    },
+    {
+      "name": "obstruction_SPRUCE_PLANKS",
+      "status": "PASS",
+      "detail": "Result[safe\u003dfalse, reason\u003dunsafe_support, y\u003d161]"
+    },
+    {
+      "name": "obstruction_SNOW",
+      "status": "PASS",
+      "detail": "Result[safe\u003dfalse, reason\u003dunsafe_support, y\u003d161]"
+    },
+    {
+      "name": "thin_snow_preserved",
+      "status": "PASS",
+      "detail": "Result[safe\u003dtrue, reason\u003dsafe, y\u003d162]"
+    },
+    {
+      "name": "active_reservation_blocks_second_drop",
+      "status": "PASS",
+      "detail": "Result[safe\u003dfalse, reason\u003dprotected, y\u003d160]"
+    },
+    {
+      "name": "release_reservation_restores_safety",
+      "status": "PASS",
+      "detail": "Result[safe\u003dtrue, reason\u003dsafe, y\u003d161]"
+    },
+    {
+      "name": "native_moon_gate_7",
+      "status": "PASS",
+      "detail": "Public StructureManager load from embedded datapack; no placement/entities"
+    },
+    {
+      "name": "native_moon_gate_9",
+      "status": "PASS",
+      "detail": "Public StructureManager load from embedded datapack; no placement/entities"
+    },
+    {
+      "name": "sticky_retract_invalidates_source_and_destination",
+      "status": "PASS",
+      "detail": "Public event-dispatch fixture across chunk boundary; not a physical redstone simulation"
+    },
+    {
+      "name": "orphan_pending_marker_finalized",
+      "status": "PASS",
+      "detail": "Existing pending marker without queued/inflight request becomes skipped; no world blocks changed"
+    },
+    {
+      "name": "live_pending_marker_retained",
+      "status": "PASS",
+      "detail": "A genuinely queued request is not mistaken for an orphan"
+    },
+    {
+      "name": "real_WorldGuard_region_rejected",
+      "status": "PASS",
+      "detail": "Result[safe\u003dfalse, reason\u003dprotected, y\u003d160]"
+    },
+    {
+      "name": "WorldGuard_region_removal_restores_safety",
+      "status": "PASS",
+      "detail": "Result[safe\u003dtrue, reason\u003dsafe, y\u003d161]"
+    },
+    {
+      "name": "real_Luna_unsafe_start_cancelled",
+      "status": "PASS",
+      "detail": "real public startCommand over WATER; no chest placed"
+    },
+    {
+      "name": "real_Luna_start",
+      "status": "PASS",
+      "detail": "block\u003dENDER_CHEST"
+    },
+    {
+      "name": "real_Luna_unlock",
+      "status": "PASS",
+      "detail": "public unlock on real event"
+    },
+    {
+      "name": "real_Luna_end",
+      "status": "PASS",
+      "detail": "public End on real event"
+    }
+  ],
+  "fixtureWorld": "winter_fixture",
+  "fixtureCoordinates": "200008,160,200008",
+  "client_inventory_click_tested": false
+}

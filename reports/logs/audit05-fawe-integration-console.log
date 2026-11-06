@@ -1,0 +1,902 @@
+Starting org.bukkit.craftbukkit.Main
+[08:30:16 INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.9+10-LTS; Eclipse Adoptium Temurin-21.0.9+10) on Linux 6.18.57 (amd64)
+[08:30:16 INFO]: [bootstrap] Loading Paper 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) for Minecraft 1.21.11
+[08:30:16 INFO]: [PluginInitializerManager] Initializing plugins...
+[08:30:17 INFO]: [ReobfServer] Remapping server...
+[08:30:21 INFO]: [ReobfServer] Done remapping server in 4967ms.
+[08:30:21 INFO]: [PluginRemapper] Remapping plugin 'plugins/LunaAirDrop.jar'...
+[08:30:21 INFO]: [PluginRemapper] Remapping plugin 'plugins/WorldGuard.jar'...
+[08:30:22 INFO]: [PluginRemapper] Done remapping plugin 'plugins/WorldGuard.jar' in 269ms.
+[08:30:22 INFO]: [PluginRemapper] Remapping plugin 'plugins/WinterProbe.jar'...
+[08:30:22 INFO]: [PluginRemapper] Done remapping plugin 'plugins/WinterProbe.jar' in 43ms.
+[08:30:22 INFO]: [PluginRemapper] Done remapping plugin 'plugins/LunaAirDrop.jar' in 374ms.
+[08:30:22 INFO]: [PluginInitializerManager] Initialized 6 plugins
+[08:30:22 INFO]: [PluginInitializerManager] Paper plugins (1):
+ - MidgardWinterWorld (0.5.0)
+[08:30:22 INFO]: [PluginInitializerManager] Bukkit plugins (5):
+ - Chunky (1.4.40), FastAsyncWorldEdit (2.16.2+eef5a6f), LunaAirDrop (1.0.3-MidgardFix), WinterProbe (0.5.0), WorldGuard (7.0.16+2355-f7fded2)
+[08:30:27 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[08:30:27 INFO]: [MidgardWinterWorld] FANTASY_PACK_DISCOVERED MidgardWinterWorld/fantasy
+[08:30:27 INFO]: Found new data pack MidgardWinterWorld/fantasy, loading it automatically
+[08:30:27 INFO]: Found new data pack file/bukkit, loading it automatically
+[08:30:27 INFO]: Found new data pack paper, loading it automatically
+[08:30:28 INFO]: No existing world data, creating new world
+[08:30:28 INFO]: Loaded 1470 recipes
+[08:30:28 INFO]: Loaded 1584 advancements
+[08:30:28 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[08:30:29 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 276.7ms
+[08:30:29 INFO]: Starting minecraft server version 1.21.11
+[08:30:29 INFO]: Loading properties
+[08:30:29 INFO]: This server is running Paper version 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[08:30:29 INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[08:30:29 INFO]: Server Ping Player Sample Count: 12
+[08:30:29 INFO]: Using 4 threads for Netty based IO
+[08:30:29 INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[08:30:29 INFO]: Default game type: SURVIVAL
+[08:30:29 INFO]: Generating keypair
+> 
+  
+[08:30:29 INFO]: Starting Minecraft server on 127.0.0.1:25577
+> 
+  
+[08:30:29 INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+> 
+  
+[08:30:29 INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+> 
+  
+[08:30:30 INFO]: [FastAsyncWorldEdit] Loading server plugin FastAsyncWorldEdit v2.16.2+eef5a6f
+> 
+  
+[08:30:30 INFO]: Default configuration file written: worldedit-config.yml
+> 
+  
+[08:30:31 INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@73fb60fc]
+> 
+  
+[08:30:31 INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.16+2355-f7fded2
+> 
+  
+[08:30:31 INFO]: [Chunky] Loading server plugin Chunky v1.4.40
+> 
+  
+[08:30:31 INFO]: [MidgardWinterWorld] Loading server plugin MidgardWinterWorld v0.5.0
+> 
+  
+[08:30:31 INFO]: [LunaAirDrop] Loading server plugin LunaAirDrop v1.0.3-MidgardFix
+> 
+  
+[08:30:31 INFO]: [WinterProbe] Loading server plugin WinterProbe v0.5.0
+> 
+  
+[08:30:31 INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v2.16.2+eef5a6f
+> 
+  
+[08:30:31 INFO]: [com.fastasyncworldedit.core.Fawe] LZ4 Compression Binding loaded successfully
+> 
+  
+[08:30:31 INFO]: [com.fastasyncworldedit.core.Fawe] ZSTD Compression Binding loaded successfully
+> 
+  
+[08:30:31 INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+> 
+  
+[08:30:31 INFO]: WEPIF: Updated config file
+> 
+  
+[08:30:31 INFO]: WEPIF: Using the Bukkit Permissions API.
+> 
+  
+[08:30:31 INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_21_11.PaperweightFaweAdapter as the Bukkit adapter
+> 
+  
+[08:30:32 INFO]: [MidgardWinterWorld] Enabling MidgardWinterWorld v0.5.0
+> 
+  
+[08:30:32 INFO]: [MidgardWinterWorld] Fantasy build 0.5.0; embedded native pack; protected late decoration; no retrogen.
+> 
+  
+[33;1m[08:30:32 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[m> 
+  
+[33;1m[08:30:32 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[m> 
+  
+[33;1m[08:30:32 WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[m> 
+  
+[33;1m[08:30:32 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[m> 
+  
+[08:30:32 INFO]: Preparing level "winter_test"
+> 
+  
+[08:30:32 INFO]: Selecting spawn point for world 'minecraft:overworld'...
+> 
+  
+[31;1m[08:30:32 ERROR]: Failed to request yggdrasil public key
+com.mojang.authlib.exceptions.MinecraftClientException: Failed to read from https://api.minecraftservices.com/publickeys due to Connection refused
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:111) ~[authlib-7.0.61.jar:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:56) ~[authlib-7.0.61.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.fetch(YggdrasilServicesKeyInfo.java:114) ~[authlib-7.0.61.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo$1.run(YggdrasilServicesKeyInfo.java:89) ~[authlib-7.0.61.jar:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1302) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1143) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1705) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1629) ~[?:?]
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307) ~[?:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:82) ~[authlib-7.0.61.jar:?]
+	... 9 more
+[m> 
+  
+[08:30:40 INFO]: Selecting spawn point for world 'minecraft:the_nether'...
+> 
+  
+[08:30:41 INFO]: Selecting spawn point for world 'minecraft:the_end'...
+> 
+  
+[08:30:41 INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
+> 
+  
+[08:30:41 INFO]: Preparing spawn area: 100%
+> 
+  
+[08:30:41 INFO]: Prepared spawn area in 8798 ms
+> 
+  
+[08:30:41 INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+> 
+  
+[08:30:41 INFO]: Preparing spawn area: 100%
+> 
+  
+[08:30:41 INFO]: Prepared spawn area in 763 ms
+> 
+  
+[08:30:41 INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+> 
+  
+[08:30:41 INFO]: Preparing spawn area: 100%
+> 
+  
+[08:30:41 INFO]: Prepared spawn area in 219 ms
+> 
+  
+[08:30:41 INFO]: Done preparing level "winter_test" (9.120s)
+> 
+  
+[08:30:41 INFO]: [WorldGuard] Enabling WorldGuard v7.0.16+2355-f7fded2
+> 
+  
+[08:30:41 INFO]: [WorldGuard] Конфигурация по умолчанию обновлена: config.yml
+> 
+  
+[08:30:41 INFO]: [WorldGuard] Конфигурация по умолчанию обновлена: config_world.yml
+> 
+  
+[08:30:41 INFO]: [WorldGuard] Конфигурация по умолчанию обновлена: blacklist.txt
+> 
+  
+[08:30:41 INFO]: [WorldGuard] (winter_test) Поджигание динамита РАЗРЕШЕНО.
+> 
+  
+[08:30:41 INFO]: [WorldGuard] (winter_test) Огниво РАЗРЕШЕНО.
+> 
+  
+[08:30:41 INFO]: [WorldGuard] (winter_test) Распространение огня от лавы РАЗРЕШЕНО
+> 
+  
+[08:30:41 INFO]: [WorldGuard] (winter_test) Распространения огоня НЕОГРАНИЧЕНО.
+> 
+  
+[08:30:41 INFO]: [WorldGuard] Конфигурация загружена для мира 'winter_test'
+> 
+  
+[08:30:41 INFO]: [WorldGuard] Конфигурация по умолчанию обновлена: config_world.yml
+> 
+  
+[08:30:41 INFO]: [WorldGuard] Конфигурация по умолчанию обновлена: blacklist.txt
+> 
+  
+[08:30:41 INFO]: [WorldGuard] (winter_test_nether) Поджигание динамита РАЗРЕШЕНО.
+> 
+  
+[08:30:41 INFO]: [WorldGuard] (winter_test_nether) Огниво РАЗРЕШЕНО.
+> 
+  
+[08:30:41 INFO]: [WorldGuard] (winter_test_nether) Распространение огня от лавы РАЗРЕШЕНО
+> 
+  
+[08:30:41 INFO]: [WorldGuard] (winter_test_nether) Распространения огоня НЕОГРАНИЧЕНО.
+> 
+  
+[08:30:41 INFO]: [WorldGuard] Конфигурация загружена для мира 'winter_test_nether'
+> 
+  
+[08:30:41 INFO]: [WorldGuard] Конфигурация по умолчанию обновлена: config_world.yml
+> 
+  
+[08:30:41 INFO]: [WorldGuard] Конфигурация по умолчанию обновлена: blacklist.txt
+> 
+  
+[08:30:41 INFO]: [WorldGuard] (winter_test_the_end) Поджигание динамита РАЗРЕШЕНО.
+> 
+  
+[08:30:41 INFO]: [WorldGuard] (winter_test_the_end) Огниво РАЗРЕШЕНО.
+> 
+  
+[08:30:41 INFO]: [WorldGuard] (winter_test_the_end) Распространение огня от лавы РАЗРЕШЕНО
+> 
+  
+[08:30:41 INFO]: [WorldGuard] (winter_test_the_end) Распространения огоня НЕОГРАНИЧЕНО.
+> 
+  
+[08:30:41 INFO]: [WorldGuard] Конфигурация загружена для мира 'winter_test_the_end'
+> 
+  
+[08:30:41 INFO]: [WorldGuard] Загрузка данных регионов...
+> 
+  
+[08:30:41 INFO]: [WorldGuard] Выгрузка и сохранение данных регионов, которые в настоящее время загружены...
+> 
+  
+[08:30:41 INFO]: [WorldGuard] Загрузка данных регионов для загруженных миров...
+> 
+  
+[08:30:41 INFO]: [WorldGuard] Загрузка данных регионов...
+> 
+  
+[08:30:41 INFO]: [WorldGuard] Регионы сохранены после миграции UUID! Это не повторится, если изменить соответствующий параметр конфигурации WorldGuard.
+> 
+  
+[08:30:41 INFO]: [Chunky] Enabling Chunky v1.4.40
+> 
+  
+[08:30:41 INFO]: [LunaAirDrop] Enabling LunaAirDrop v1.0.3-MidgardFix
+> 
+  
+[08:30:41 INFO]: [LunaAirDrop] Language: ru
+> 
+  
+[08:30:42 INFO]: [92mАирдроп default загружен![0m
+> 
+  
+[08:30:42 INFO]: [92mПлагин успешно включён за 183ms[0m
+> 
+  
+[08:30:42 INFO]: [MidgardWinterWorld] LunaAirDrop public event gate registered; runtime compatibility still UNVERIFIED
+> 
+  
+[08:30:42 INFO]: [WinterProbe] Enabling WinterProbe v0.5.0
+> 
+  
+[08:30:42 INFO]: [spark] Starting background profiler...
+> 
+  
+[08:30:42 INFO]: Running delayed init tasks
+> 
+  
+[08:30:42 INFO]: [com.fastasyncworldedit.bukkit.regions.WorldGuardFeature] Plugin 'WorldGuard' found. Using it now.
+> 
+  
+[08:30:42 INFO]: [com.fastasyncworldedit.bukkit.FaweBukkit] Attempting to use plugin 'WorldGuard'
+> 
+  
+[08:30:42 INFO]: Done (26.789s)! For help, type "help"
+> 
+  
+[08:30:42 INFO]: *************************************************************************************
+> 
+  
+[08:30:42 INFO]: This is the first time you're starting this server.
+> 
+  
+[08:30:42 INFO]: It's recommended you read our 'Getting Started' documentation for guidance.
+> 
+  
+[08:30:42 INFO]: View this and more helpful information here: https://docs.papermc.io/paper/next-steps
+> 
+  
+[08:30:42 INFO]: *************************************************************************************
+> > > > 
+  
+[08:30:42 INFO]: MidgardWinterWorld 0.5.0 DEVELOPMENT; enabled=true; worlds=[winter_test, world]; processed=1 decorated=0 skipped=1 boundary-restored=0 pending=0; leased-chunks=0; features={skip-block entities in chunk=1}; WorldGuard=public API bridge, fail closed on query failure; LunaAirDrop=UNVERIFIED
+> 
+  
+[08:30:42 INFO]: [MidgardWinterWorld] FANTASY_PACK_DISCOVERED MidgardWinterWorld/fantasy
+> 
+  
+[08:30:42 INFO]: There are 4 data pack(s) enabled: [92m[[37mvanilla (built-in)[92m][37m, [92m[[37mMidgardWinterWorld/fantasy (plugin)[92m][37m, [92m[[37mfile/bukkit (world)[92m][37m, [92m[[37mpaper (built-in)[92m][0m
+> 
+  
+[31;1m[08:30:42 ERROR]: No key layers in MapLike[{}]
+[m> 
+  
+[08:30:42 INFO]: Selecting spawn point for world 'minecraft:winter_fixture'...
+> 
+  
+[08:30:42 INFO]: Loading 0 persistent chunks for world 'minecraft:winter_fixture'...
+> 
+  
+[08:30:42 INFO]: Preparing spawn area: 100%
+> 
+  
+[08:30:42 INFO]: Prepared spawn area in 82 ms
+> 
+  
+[08:30:42 INFO]: [WorldGuard] Конфигурация по умолчанию обновлена: config_world.yml
+> 
+  
+[08:30:42 INFO]: [WorldGuard] Конфигурация по умолчанию обновлена: blacklist.txt
+> 
+  
+[08:30:42 INFO]: [WorldGuard] (winter_fixture) Поджигание динамита РАЗРЕШЕНО.
+> 
+  
+[08:30:42 INFO]: [WorldGuard] (winter_fixture) Огниво РАЗРЕШЕНО.
+> 
+  
+[08:30:42 INFO]: [WorldGuard] (winter_fixture) Распространение огня от лавы РАЗРЕШЕНО
+> 
+  
+[08:30:42 INFO]: [WorldGuard] (winter_fixture) Распространения огоня НЕОГРАНИЧЕНО.
+> 
+  
+[08:30:42 INFO]: [WorldGuard] Конфигурация загружена для мира 'winter_fixture'
+> 
+  
+[08:30:42 INFO]: Настройки применены атомарно; только новые чанки
+> 
+  
+[33;1m[08:30:43 WARN]: *************************************************************************************
+[m> 
+  
+[33;1m[08:30:43 WARN]: You are running the latest build for your Minecraft version (1.21.11)
+[m> 
+  
+[33;1m[08:30:43 WARN]: However, you are 6 release(s) behind the latest stable release (26.3)!
+[m> 
+  
+[33;1m[08:30:43 WARN]: It is recommended that you update as soon as possible
+[m> 
+  
+[33;1m[08:30:43 WARN]: https://papermc.io/downloads/paper
+[m> 
+  
+[33;1m[08:30:43 WARN]: *************************************************************************************
+[m> 
+  
+[08:30:57 INFO]: [92mStarted[0m
+> 
+  
+[08:30:57 INFO]: [MidgardWinterWorld] LunaAirDrop denied: unsafe_support; expected y=160
+> 
+  
+[08:30:58 INFO]: [92mStarted[0m
+> 
+  
+[08:31:01 INFO]: [WinterProbe] WINTERAUDIT_DONE biomes=0 checks=24
+> > 
+  
+[08:31:01 INFO]: [WinterProbe] NATURALLUNA_BEGIN
+> 
+  
+[08:31:01 INFO]: [91mFail start: 0[0m
+> 
+  
+[08:31:01 INFO]: [91mFail start: 1[0m
+> 
+  
+[08:31:02 INFO]: [91mFail start: 2[0m
+> 
+  
+[08:31:02 INFO]: [91mFail start: 3[0m
+> 
+  
+[08:31:03 INFO]: [91mFail start: 4[0m
+> 
+  
+[08:31:03 INFO]: [91mFail start: 5[0m
+> 
+  
+[08:31:04 INFO]: [91mFail start: 6[0m
+> 
+  
+[08:31:04 INFO]: [91mFail start: 7[0m
+> 
+  
+[08:31:05 INFO]: [91mFail start: 8[0m
+> 
+  
+[08:31:05 INFO]: [91mFail start: 9[0m
+> 
+  
+[08:31:06 INFO]: [91mFail start: 10[0m
+> 
+  
+[08:31:06 INFO]: [91mFail start: 11[0m
+> 
+  
+[08:31:07 INFO]: [91mFail start: 12[0m
+> 
+  
+[08:31:07 INFO]: [91mFail start: 13[0m
+> 
+  
+[08:31:08 INFO]: [91mFail start: 14[0m
+> 
+  
+[08:31:08 INFO]: [91mFail start: 15[0m
+> 
+  
+[08:31:09 INFO]: [91mFail start: 16[0m
+> 
+  
+[08:31:09 INFO]: [91mFail start: 17[0m
+> 
+  
+[08:31:10 INFO]: [91mFail start: 18[0m
+> 
+  
+[08:31:10 INFO]: [91mFail start: 19[0m
+> 
+  
+[08:31:11 INFO]: [91mFail start: 20[0m
+> 
+  
+[08:31:11 INFO]: [91mFail start: 21[0m
+> 
+  
+[08:31:11 INFO]: [WorldGuard] Изменения в данных региона, выполненные в 'winter_fixture' были сохранены в фоновом режиме
+> 
+  
+[08:31:12 INFO]: [91mFail start: 22[0m
+> 
+  
+[08:31:12 INFO]: [91mFail start: 23[0m
+> 
+  
+[08:31:13 INFO]: [91mFail start: 24[0m
+> 
+  
+[08:31:13 INFO]: [91mFail start: 25[0m
+> 
+  
+[08:31:14 INFO]: [91mFail start: 26[0m
+> 
+  
+[08:31:14 INFO]: [91mFail start: 27[0m
+> 
+  
+[08:31:15 INFO]: [91mFail start: 28[0m
+> 
+  
+[08:31:15 INFO]: [91mFail start: 29[0m
+> 
+  
+[08:31:16 INFO]: [91mFail start: 30[0m
+> 
+  
+[08:31:16 INFO]: [91mFail start: 31[0m
+> 
+  
+[08:31:17 INFO]: [91mFail start: 32[0m
+> 
+  
+[08:31:17 INFO]: [91mFail start: 33[0m
+> 
+  
+[08:31:18 INFO]: [91mFail start: 34[0m
+> 
+  
+[08:31:18 INFO]: [91mFail start: 35[0m
+> 
+  
+[08:31:19 INFO]: [91mFail start: 36[0m
+> 
+  
+[08:31:19 INFO]: [91mFail start: 37[0m
+> 
+  
+[08:31:20 INFO]: [91mFail start: 38[0m
+> 
+  
+[08:31:20 INFO]: [91mFail start: 39[0m
+> 
+  
+[08:31:21 INFO]: [91mFail start: 40[0m
+> 
+  
+[08:31:21 INFO]: [91mFail start: 41[0m
+> 
+  
+[08:31:22 INFO]: [91mFail start: 42[0m
+> 
+  
+[08:31:22 INFO]: [91mFail start: 43[0m
+> 
+  
+[08:31:23 INFO]: [91mFail start: 44[0m
+> 
+  
+[08:31:23 INFO]: [91mFail start: 45[0m
+> 
+  
+[08:31:24 INFO]: [91mFail start: 46[0m
+> 
+  
+[08:31:24 INFO]: [91mFail start: 47[0m
+> 
+  
+[08:31:25 INFO]: [91mFail start: 48[0m
+> 
+  
+[08:31:25 INFO]: [91mFail start: 49[0m
+> 
+  
+[08:31:26 INFO]: [91mFail start: 50[0m
+> 
+  
+[08:31:26 INFO]: [91mFail start: 51[0m
+> 
+  
+[08:31:27 INFO]: [91mFail start: 52[0m
+> 
+  
+[08:31:27 INFO]: [91mFail start: 53[0m
+> 
+  
+[08:31:28 INFO]: [91mFail start: 54[0m
+> 
+  
+[08:31:28 INFO]: [91mFail start: 55[0m
+> 
+  
+[08:31:29 INFO]: [91mFail start: 56[0m
+> 
+  
+[08:31:29 INFO]: [91mFail start: 57[0m
+> 
+  
+[08:31:30 INFO]: [91mFail start: 58[0m
+> 
+  
+[08:31:30 INFO]: [91mFail start: 59[0m
+> 
+  
+[08:31:31 INFO]: [91mFail start: 60[0m
+> 
+  
+[08:31:31 INFO]: [91mFail start: 61[0m
+> 
+  
+[08:31:32 INFO]: [91mFail start: 62[0m
+> 
+  
+[08:31:32 INFO]: [91mFail start: 63[0m
+> 
+  
+[08:31:33 INFO]: [91mFail start: 64[0m
+> 
+  
+[08:31:33 INFO]: [91mFail start: 65[0m
+> 
+  
+[08:31:34 INFO]: [91mFail start: 66[0m
+> 
+  
+[08:31:34 INFO]: [91mFail start: 67[0m
+> 
+  
+[08:31:35 INFO]: [91mFail start: 68[0m
+> 
+  
+[08:31:35 INFO]: [91mFail start: 69[0m
+> 
+  
+[08:31:36 INFO]: [91mFail start: 70[0m
+> 
+  
+[08:31:36 INFO]: [91mFail start: 71[0m
+> 
+  
+[08:31:37 INFO]: [91mFail start: 72[0m
+> 
+  
+[08:31:37 INFO]: [91mFail start: 73[0m
+> 
+  
+[08:31:38 INFO]: [91mFail start: 74[0m
+> 
+  
+[08:31:38 INFO]: [91mFail start: 75[0m
+> 
+  
+[08:31:39 INFO]: [91mFail start: 76[0m
+> 
+  
+[08:31:39 INFO]: [91mFail start: 77[0m
+> 
+  
+[08:31:40 INFO]: [91mFail start: 78[0m
+> 
+  
+[08:31:40 INFO]: [91mFail start: 79[0m
+> 
+  
+[08:31:41 INFO]: [91mFail start: 80[0m
+> 
+  
+[08:31:41 INFO]: [91mFail start: 81[0m
+> 
+  
+[08:31:42 INFO]: [91mFail start: 82[0m
+> 
+  
+[08:31:42 INFO]: [91mFail start: 83[0m
+> 
+  
+[08:31:43 INFO]: [91mFail start: 84[0m
+> 
+  
+[08:31:43 INFO]: [91mFail start: 85[0m
+> 
+  
+[08:31:44 INFO]: [92mStarted[0m
+> 
+  
+[08:31:45 INFO]: [WinterProbe] NATURALLUNA_READY
+> 
+  
+[08:31:45 INFO]: UUID of player WinterQA is a9b60c29-8744-3d74-b1d0-2a7c0259a5b8
+> 
+  
+[08:31:45 INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [WorldGuard]
+> 
+  
+[08:31:50 INFO]: [93mWinterQA joined the game[0m
+> 
+  
+[08:31:50 INFO]: WinterQA[/127.0.0.1:52086] logged in with entity id 79 at ([winter_test]7.5, 129.0, -8.5)
+> > > > 
+  
+[08:31:50 INFO]: Made WinterQA a server operator
+> 
+  
+[08:31:50 INFO]: [3m[37mYou whisper to WinterQA: QA_GO[0m
+> 
+  
+[08:32:00 INFO]: WinterQA issued server command: /bair stop default
+> 
+  
+[08:32:02 INFO]: WinterQA lost connection: Disconnected
+> 
+  
+[08:32:02 INFO]: [93mWinterQA left the game[0m
+> > 
+  
+[08:32:02 INFO]: [WinterProbe] NATURALLUNA_COMPLETE
+> > > > > 
+  
+[08:32:02 INFO]: [Chunky] World changed to winter_test.
+> 
+  
+[08:32:02 INFO]: [Chunky] Center changed to 4096, 4096.
+> 
+  
+[08:32:02 INFO]: [Chunky] Radius changed to 64.
+> 
+  
+[08:32:02 INFO]: [Chunky] Task started in winter_test for the square region centered at 4096, 4096 with radius 64.
+> 
+  
+[08:32:05 INFO]: [Chunky] Task running for winter_test. Processed: 4 chunks (4.94%), ETA: 0:00:02, Rate: 38.5 cps, Current: 258, 255
+> 
+  
+[08:32:06 INFO]: [Chunky] Task running for winter_test. Processed: 6 chunks (7.41%), ETA: 0:00:15, Rate: 4.7 cps, Current: 257, 254
+> 
+  
+[08:32:08 INFO]: [Chunky] Task running for winter_test. Processed: 30 chunks (37.04%), ETA: 0:00:05, Rate: 10.1 cps, Current: 256, 255
+> 
+  
+[08:32:08 INFO]: [Chunky] Task finished for winter_test. Processed: 81 chunks (100.00%), Total time: 0:00:06
+> > > > > 
+  
+[08:32:08 INFO]: MidgardWinterWorld 0.5.0 DEVELOPMENT; enabled=true; worlds=[winter_test, winter_fixture, world]; processed=398 decorated=282 skipped=30 boundary-restored=111 pending=27; leased-chunks=0; features={skip-block entities in chunk=27, drift-blocks=60163, ice-objects=9, canopy-snow=12629, denied-moon-mushrooms-obstructed=27, moon-mushrooms-objects=34, denied-lantern-willows-obstructed=133, denied-lantern-willows-terrain=19, moonstones-objects=10, trail-blocks=788, moon-gate-7-objects=1, denied-moonstones-obstructed=5, lantern-willows-objects=32, denied-moon-gate-9-steep=6, denied-moon-gate-9-terrain=4, clearings-objects=6, denied-ice-steep=42, denied-ice-obstructed=20, denied-clearings-steep=12, denied-moonstones-steep=11, denied-lantern-willows-unsupported=5, denied-ice-terrain=14, denied-clearings-obstructed=3, denied-moonstones-terrain=11, denied-ice-unsupported=2, denied-clearings-unsupported=1, skip-player=1, river-ice=9, denied-moonstones-unsupported=1}; WorldGuard=public API bridge, fail closed on query failure; LunaAirDrop=UNVERIFIED
+> 
+  
+[08:32:08 INFO]: Реальные callback-наблюдения: n=370 samples=370 avg-ms=3.128323445945946 median-ms=1.6644935 p95-ms=8.013553 max-ms=227.034708 writes=82206; полная генерация/vanilla baseline NOT MEASURED
+> 
+  
+[08:32:08 INFO]: Saving the game (this may take a moment!)
+> 
+  
+[08:32:09 INFO]: ThreadedAnvilChunkStorage (winter_test): All chunks are saved
+> 
+  
+[08:32:09 INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+> 
+  
+[08:32:09 INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+> 
+  
+[08:32:09 INFO]: ThreadedAnvilChunkStorage (winter_fixture): All chunks are saved
+> 
+  
+[08:32:09 INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+> 
+  
+[08:32:09 INFO]: Saved the game
+> 
+  
+[08:32:09 INFO]: Stopping the server
+> 
+  
+[08:32:09 INFO]: Stopping server
+> 
+  
+[08:32:09 INFO]: [WinterProbe] Disabling WinterProbe v0.5.0
+> 
+  
+[08:32:09 INFO]: [LunaAirDrop] Disabling LunaAirDrop v1.0.3-MidgardFix
+> 
+  
+[08:32:09 INFO]: [92mПлагин успешно выключен за 28ms[0m
+> 
+  
+[08:32:09 INFO]: [MidgardWinterWorld] Disabling MidgardWinterWorld v0.5.0
+> 
+  
+[08:32:09 INFO]: [Chunky] Disabling Chunky v1.4.40
+> 
+  
+[08:32:09 INFO]: [WorldGuard] Disabling WorldGuard v7.0.16+2355-f7fded2
+> 
+  
+[08:32:09 INFO]: [WorldGuard] ЗАвершение работы исполнителя и отмена любых отложенных задач...
+> 
+  
+[08:32:09 INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v2.16.2+eef5a6f
+> 
+  
+[08:32:09 INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+> 
+  
+[08:32:09 INFO]: Saving players
+> 
+  
+[08:32:09 INFO]: Saving worlds
+> 
+  
+[08:32:09 INFO]: Saving chunks for level 'ServerLevel[winter_test]'/minecraft:overworld
+> 
+  
+[08:32:09 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'winter_test'
+> 
+  
+[08:32:09 INFO]: [ChunkHolderManager] Halted chunk system for world 'winter_test'
+> 
+  
+[08:32:09 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'winter_test'
+> 
+  
+[08:32:10 INFO]: [ChunkHolderManager] Saved 1534 block chunks, 41 entity chunks, 0 poi chunks in world 'winter_test' in 0.63s
+> 
+  
+[08:32:10 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'winter_test'
+> 
+  
+[08:32:10 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'winter_test'
+> 
+  
+[08:32:10 INFO]: Saving chunks for level 'ServerLevel[winter_test_nether]'/minecraft:the_nether
+> 
+  
+[08:32:10 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'winter_test_nether'
+> 
+  
+[08:32:10 INFO]: [ChunkHolderManager] Halted chunk system for world 'winter_test_nether'
+> 
+  
+[08:32:10 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'winter_test_nether'
+> 
+  
+[08:32:10 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'winter_test_nether' in 0.00s
+> 
+  
+[08:32:10 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'winter_test_nether'
+> 
+  
+[08:32:10 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'winter_test_nether'
+> 
+  
+[08:32:10 INFO]: Saving chunks for level 'ServerLevel[winter_test_the_end]'/minecraft:the_end
+> 
+  
+[08:32:10 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'winter_test_the_end'
+> 
+  
+[08:32:10 INFO]: [ChunkHolderManager] Halted chunk system for world 'winter_test_the_end'
+> 
+  
+[08:32:10 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'winter_test_the_end'
+> 
+  
+[08:32:10 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'winter_test_the_end' in 0.00s
+> 
+  
+[08:32:10 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'winter_test_the_end'
+> 
+  
+[08:32:10 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'winter_test_the_end'
+> 
+  
+[08:32:10 INFO]: Saving chunks for level 'ServerLevel[winter_fixture]'/minecraft:winter_fixture
+> 
+  
+[08:32:10 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'winter_fixture'
+> 
+  
+[08:32:10 INFO]: [ChunkHolderManager] Halted chunk system for world 'winter_fixture'
+> 
+  
+[08:32:10 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'winter_fixture'
+> 
+  
+[08:32:10 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'winter_fixture' in 0.00s
+> 
+  
+[08:32:10 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'winter_fixture'
+> 
+  
+[08:32:10 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'winter_fixture'
+> 
+  
+[08:32:10 INFO]: ThreadedAnvilChunkStorage (winter_test): All chunks are saved
+> 
+  
+[08:32:10 INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+> 
+  
+[08:32:10 INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+> 
+  
+[08:32:10 INFO]: ThreadedAnvilChunkStorage (winter_fixture): All chunks are saved
+> 
+  
+[08:32:10 INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+> 
+  
+[08:32:10 INFO]: Waiting for all RegionFile I/O tasks to complete...
+> 
+  
+[08:32:10 INFO]: All RegionFile I/O tasks to complete
+> 
+  
+[08:32:10 INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+> 
+  
+[08:32:10 INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
+> 

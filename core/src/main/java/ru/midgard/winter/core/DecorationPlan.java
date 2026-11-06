@@ -12,10 +12,13 @@ public record DecorationPlan(String module,List<Cell> cells) {
             if(block.equals("SNOW")?(layers<1||layers>6):layers!=0) throw new IllegalArgumentException("Invalid layers");
         }
     }
+    // Ordinary survival materials only: no ore, metal/gem blocks or rare lamps/ice.
     private static final Set<String> BLOCKS=Set.of("SPRUCE_LOG","SPRUCE_LEAVES","OAK_LOG","OAK_LEAVES",
         "BIRCH_LOG","BIRCH_LEAVES","SPRUCE_PLANKS","SPRUCE_FENCE","SPRUCE_STAIRS","COBBLESTONE",
-        "MOSSY_COBBLESTONE","PACKED_ICE","BLUE_ICE","ICE","CALCITE","AMETHYST_BLOCK","AMETHYST_CLUSTER",
-        "SEA_LANTERN","END_ROD","PALE_OAK_LOG","PALE_OAK_LEAVES","CHERRY_LEAVES","MUSHROOM_STEM","WARPED_WART_BLOCK","PEARLESCENT_FROGLIGHT","LIGHT_BLUE_STAINED_GLASS","PURPLE_STAINED_GLASS","SNOW","SNOW_BLOCK","LANTERN","SOUL_LANTERN","GLASS_PANE");
+        "MOSSY_COBBLESTONE","STONE_BRICKS","MOSSY_STONE_BRICKS","ANDESITE","DIORITE","COBBLED_DEEPSLATE",
+        "TUFF","JACK_O_LANTERN","PALE_OAK_LOG","PALE_OAK_LEAVES","CHERRY_LEAVES","MUSHROOM_STEM",
+        "LIGHT_BLUE_STAINED_GLASS","PURPLE_STAINED_GLASS","WHITE_STAINED_GLASS","CYAN_STAINED_GLASS",
+        "SNOW","SNOW_BLOCK","GLASS_PANE");
     public DecorationPlan {
         Objects.requireNonNull(module); cells=List.copyOf(cells);
         if(cells.isEmpty()) throw new IllegalArgumentException("Empty template");
@@ -26,6 +29,12 @@ public record DecorationPlan(String module,List<Cell> cells) {
         return new Box(x+cells.stream().mapToInt(Cell::x).min().orElseThrow(),ground,
             z+cells.stream().mapToInt(Cell::z).min().orElseThrow(),x+cells.stream().mapToInt(Cell::x).max().orElseThrow(),
             ground+cells.stream().mapToInt(Cell::y).max().orElseThrow(),z+cells.stream().mapToInt(Cell::z).max().orElseThrow());
+    }
+    /** Quarter-turn rotation is safe for these cube-based sanitized templates (no directional stairs/doors). */
+    public DecorationPlan rotated(int quarterTurns){
+        int turns=Math.floorMod(quarterTurns,4);List<Cell> rotated=new ArrayList<>();
+        for(var c:cells){int x=c.x,z=c.z;for(int i=0;i<turns;i++){int next=-z;z=x;x=next;}rotated.add(new Cell(x,c.y,z,c.block,c.layers));}
+        return new DecorationPlan(module,rotated);
     }
     private static final class Builder {
         final LinkedHashMap<Position,Cell> blocks=new LinkedHashMap<>();
@@ -104,11 +113,11 @@ public record DecorationPlan(String module,List<Cell> cells) {
             for(int y=1;y<=spire[2];y++){
                 int radius=y<=spire[2]/2?1:0;
                 for(int x=-radius;x<=radius;x++)for(int z=-radius;z<=radius;z++)if(Math.abs(x)+Math.abs(z)<=radius)
-                    b.put(spire[0]+x,y,spire[1]+z,y<=2?"PACKED_ICE":(y%3==0?"PACKED_ICE":"BLUE_ICE"));
+                    b.put(spire[0]+x,y,spire[1]+z,y<=2?"ANDESITE":(y%3==0?"ANDESITE":"LIGHT_BLUE_STAINED_GLASS"));
             }
-            b.put(spire[0],spire[2]+1,spire[1],"AMETHYST_CLUSTER");
+            b.put(spire[0],spire[2]+1,spire[1],"WHITE_STAINED_GLASS");
         }
-        b.put(0,1,-1,"SEA_LANTERN");b.put(-3,1,0,"AMETHYST_BLOCK");b.put(3,1,-2,"END_ROD");
+        b.put(0,1,-1,"JACK_O_LANTERN");b.put(-3,1,0,"PURPLE_STAINED_GLASS");b.put(3,1,-2,"WHITE_STAINED_GLASS");
         b.snowTops();return b.finish("ice");
     }
     public static DecorationPlan clearing(boolean light) {
@@ -118,9 +127,9 @@ public record DecorationPlan(String module,List<Cell> cells) {
         for(int x=-3;x<=3;x++)for(int z=0;z<=2;z++){
             int y=5+(Math.abs(x)<=1?1:0);b.put(x,y,z,"PALE_OAK_LEAVES");b.put(x,y+1,z,"SNOW",4);
         }
-        if(light)b.put(0,3,1,"LANTERN");
+        if(light)b.put(0,1,1,"JACK_O_LANTERN");
         b.put(-2,1,-2,"SPRUCE_STAIRS");b.put(-1,1,-2,"SPRUCE_STAIRS");
-        b.put(2,1,-2,"CALCITE");b.put(2,2,-2,"SNOW",4);
+        b.put(2,1,-2,"DIORITE");b.put(2,2,-2,"SNOW",4);
         b.put(2,1,-1,"COBBLESTONE");b.put(2,2,-1,"SNOW",2);
         return b.finish("clearings");
     }
@@ -138,7 +147,7 @@ public record DecorationPlan(String module,List<Cell> cells) {
             int y=5+(3-Math.abs(x))/2; b.put(x,y,z,"SPRUCE_PLANKS");b.put(x,y+1,z,"SNOW");
         }
         b.put(0,1,-3,"SPRUCE_STAIRS");
-        if(light) b.put(1,2,1,"LANTERN");
+        if(light) b.put(1,2,1,"JACK_O_LANTERN");
         return b.finish("cabins");
     }
 }

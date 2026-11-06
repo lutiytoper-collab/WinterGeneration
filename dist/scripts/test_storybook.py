@@ -11,6 +11,16 @@ class StorybookTests(unittest.TestCase):
   p=self.root/rel;d=json.loads(p.read_text());fn(d);p.write_text(json.dumps(d))
  def reject(self):
   with self.assertRaises(AssertionError):pack.validate()
+ def test_new_native_trees_do_not_generate_valuable_decor(self):
+  allowed={'minecraft:dirt','minecraft:spruce_log','minecraft:birch_log','minecraft:cherry_log','minecraft:oak_log','minecraft:dark_oak_log','minecraft:oak_leaves','minecraft:cherry_leaves'}
+  def states(v):
+   if isinstance(v,dict):
+    if 'Name' in v:yield v['Name']
+    for item in v.values():yield from states(item)
+   elif isinstance(v,list):
+    for item in v:yield from states(item)
+  for p in (pack.OUT/'data/midgard/worldgen/configured_feature').glob('*.json'):
+   self.assertLessEqual(set(states(json.loads(p.read_text()))),allowed)
  def test_valid_storybook(self):
   with contextlib.redirect_stdout(io.StringIO()):pack.validate()
  def test_ore_feature_loss_rejected(self):

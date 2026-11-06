@@ -1,0 +1,50 @@
+{
+  "minecraft": "1.21.11",
+  "scope": "Non-OP survival player; naturally generated decoration in isolated loopback world. Console supplies stone, teleport and TNT only.",
+  "target": {
+    "block": [
+      196,
+      87,
+      326
+    ],
+    "player": [
+      196.5,
+      88,
+      324.5
+    ],
+    "material": "mossy_cobblestone",
+    "origin": "Naturally generated timber-ruin sample 196,84,327; saved region NBT confirms upper floor cell"
+  },
+  "checks": [
+    {
+      "name": "survival_mode",
+      "status": "PASS",
+      "detail": "survival"
+    },
+    {
+      "name": "natural_decor_present",
+      "status": "PASS",
+      "detail": "mossy_cobblestone"
+    },
+    {
+      "name": "natural_decor_breakable",
+      "status": "PASS",
+      "detail": "air"
+    },
+    {
+      "name": "player_build_allowed",
+      "status": "PASS",
+      "detail": "stone"
+    },
+    {
+      "name": "explosion_changes_decoration",
+      "status": "PASS",
+      "detail": "air"
+    },
+    {
+      "name": "non_operator_verified",
+      "status": "PASS",
+      "detail": "WinterGrief absent from actual server ops.json after deop"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "minecraft": "1.21.11",
+  "plugin_sha256": "09e924340ef4a5b05eb67dbd1a457a2cb3577ef99a684959b4e5baac73060ae9",
+  "official_client_sha1": "ba2df812c2d12e0219c489c4cd9a5e1f0760f5bd",
+  "world": "winter_test",
+  "seed": 825180311,
+  "profile": "Default embedded Fantasy 0.5.0, ordinary-material anarchy palette; world resumed after cloud execution interruptions.",
+  "capture": "Minecraft native F2; unmodified 1600x900 PNG, no shaders/resource pack or image editing. Native originals verified byte-for-byte and every PNG chunk CRC verified.",
+  "scene_changes": "Camera teleports, spectator, clear weather and time 9000. No construction for selected scenes. Separate survival/TNT QA took place near the timber ruin, which is not a selected gallery scene.",
+  "screenshots": [
+    {
+      "file": "01-moon-gate.png",
+      "native_F2_file": "2026-11-06_09.23.12.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "3794f15254079bf56f736604135d4f718043d7d89c5389818f62236ab9a93281",
+      "captured_utc": "2026-11-06T09:23:13.536251+00:00",
+      "camera_xyz_yaw_pitch": [
+        -55.5,
+        74.0,
+        184.5,
+        0.0,
+        0.0
+      ],
+      "note": "Natural moon-gate-9, ordinary diorite/glass palette. Default generation; camera only.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "04-moon-gate-front.png",
+      "native_F2_file": "2026-11-06_09.24.54.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "8758cf8b72ccaff1045c10f0015f608c5766033824c8cc31369c6d36b7ce2ee4",
+      "captured_utc": "2026-11-06T09:24:54.506127+00:00",
+      "camera_xyz_yaw_pitch": [
+        -165.5,
+        97.5,
+        201.5,
+        90.0,
+        0.0
+      ],
+      "note": "Front of naturally rotated moon-gate-7 on a forest hillside. Camera reposition only.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "05-woodland-sanctuary.png",
+      "native_F2_file": "2026-11-06_09.25.22.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "daed2b51e538f1ca95b384bc164533f54d0602bdc50d5b91d23ef7b36edc4216",
+      "captured_utc": "2026-11-06T09:25:23.162822+00:00",
+      "camera_xyz_yaw_pitch": [
+        459.5,
+        110.0,
+        443.5,
+        0.0,
+        6.0
+      ],
+      "note": "Natural woodland shrine with approach and side garden stones. Ordinary spruce/cobblestone/glass/snow, default profile.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "08-f3-proof.png",
+      "native_F2_file": "2026-11-06_09.26.33.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "d8f7a9eb7325f9fb08505ff5f3fe8ac627c3ca875eb8ce527200d0d9a08f37f2",
+      "captured_utc": "2026-11-06T09:26:33.196020+00:00",
+      "camera_xyz_yaw_pitch": [
+        30.5,
+        73.0,
+        187.5,
+        -35.0,
+        8.0
+      ],
+      "note": "Native F3 proof: official Minecraft 1.21.11 client, current local QA world. Software rendering; FPS is not server TPS.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    }
+  ]
+}

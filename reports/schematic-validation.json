@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "source_license": "CC0-1.0",
+  "source_commit": "1263463cffb59b08275e9ee9408848285c4cddff",
+  "source": "https://github.com/Greaby/minecraft-circles-schematics",
+  "scope": "Two pinned CC0 gate outlines and four original project landmarks. Ordinary-material palette. No generic runtime import/WorldEdit requirement.",
+  "assets": [
+    {
+      "id": "moon-gate-7",
+      "license": "CC0-1.0",
+      "blocks": 104,
+      "dimensions": [
+        9,
+        9,
+        3
+      ],
+      "structure_sha256": "d4041ac902fc75a4ffe39115df6f4339d48e743fd4a16e18382652148c46db08"
+    },
+    {
+      "id": "moon-gate-9",
+      "license": "CC0-1.0",
+      "blocks": 140,
+      "dimensions": [
+        11,
+        11,
+        3
+      ],
+      "structure_sha256": "21000a1b8fedc5c70b8e8971edd183fd74f15ffdc48cc29eb67f1bc7b7372967"
+    },
+    {
+      "id": "frost-shrine",
+      "license": "PROJECT",
+      "blocks": 104,
+      "dimensions": [
+        9,
+        7,
+        7
+      ],
+      "structure_sha256": "d53c8d73285e5272480bba0a83a692c100a7c0540d7cbf857185d1af90dae8fc"
+    },
+    {
+      "id": "woodland-shrine",
+      "license": "PROJECT",
+      "blocks": 104,
+      "dimensions": [
+        9,
+        7,
+        7
+      ],
+      "structure_sha256": "46f84de942bad3bc36682f58b85d312fabf5bc0921198c60adab254d545aff57"
+    },
+    {
+      "id": "stone-ruin",
+      "license": "PROJECT",
+      "blocks": 51,
+      "dimensions": [
+        9,
+        4,
+        7
+      ],
+      "structure_sha256": "4373fe58b2b4ad75c170ca72435c42a0ee7c88ac8dc30cfe1c1e8e3cc35e0f5c"
+    },
+    {
+      "id": "timber-ruin",
+      "license": "PROJECT",
+      "blocks": 51,
+      "dimensions": [
+        9,
+        4,
+        7
+      ],
+      "structure_sha256": "099bbe418827f4850ac77d26b815eb9314a40547562696253336abf70ed6caad"
+    }
+  ]
+}

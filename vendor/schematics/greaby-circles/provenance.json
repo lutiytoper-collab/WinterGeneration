@@ -1,0 +1,27 @@
+{
+  "source": "Greaby/minecraft-circles-schematics",
+  "commit": "1263463cffb59b08275e9ee9408848285c4cddff",
+  "license": "CC0-1.0",
+  "files": [
+    {
+      "path": "vendor/schematics/greaby-circles/LICENSE",
+      "url": "https://raw.githubusercontent.com/Greaby/minecraft-circles-schematics/1263463cffb59b08275e9ee9408848285c4cddff/LICENSE",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "vendor/schematics/greaby-circles/README.md",
+      "url": "https://raw.githubusercontent.com/Greaby/minecraft-circles-schematics/1263463cffb59b08275e9ee9408848285c4cddff/README.md",
+      "sha256": "ca7cb1b65fcce1e058c45c19e9d52407e804030f5cb30aae164b8cf7d00dd960"
+    },
+    {
+      "path": "vendor/schematics/greaby-circles/circle-7x7.litematic",
+      "url": "https://raw.githubusercontent.com/Greaby/minecraft-circles-schematics/1263463cffb59b08275e9ee9408848285c4cddff/schematics/circle-7x7.litematic",
+      "sha256": "dc7e453bc95662165b62bc5cec454c7bce2d2cf9d14238a5a721fad41e38390a"
+    },
+    {
+      "path": "vendor/schematics/greaby-circles/circle-9x9.litematic",
+      "url": "https://raw.githubusercontent.com/Greaby/minecraft-circles-schematics/1263463cffb59b08275e9ee9408848285c4cddff/schematics/circle-9x9.litematic",
+      "sha256": "6203412f773cafc5ac7db52654d9a4e2808effb897e1b963db4ee194c8de533a"
+    }
+  ]
+}

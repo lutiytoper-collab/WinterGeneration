@@ -1,5 +1,6 @@
 test_birch_identity_and_persistent_frost_crowns (__main__.StorybookTests.test_birch_identity_and_persistent_frost_crowns) ... ok
 test_native_feature_order_change_rejected (__main__.StorybookTests.test_native_feature_order_change_rejected) ... ok
+test_new_native_trees_do_not_generate_valuable_decor (__main__.StorybookTests.test_new_native_trees_do_not_generate_valuable_decor) ... ok
 test_no_dimension_or_ore_resources (__main__.StorybookTests.test_no_dimension_or_ore_resources) ... ok
 test_ore_feature_loss_rejected (__main__.StorybookTests.test_ore_feature_loss_rejected) ... ok
 test_reachable_excluded_biome_rejected (__main__.StorybookTests.test_reachable_excluded_biome_rejected) ... ok
@@ -10,6 +11,6 @@ test_valid_storybook (__main__.StorybookTests.test_valid_storybook) ... ok
 test_wrong_codec_version_rejected (__main__.StorybookTests.test_wrong_codec_version_rejected) ... ok
 
 ----------------------------------------------------------------------
-Ran 10 tests in 0.124s
+Ran 11 tests in 0.150s
 
 OK

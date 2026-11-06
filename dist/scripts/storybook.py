@@ -63,7 +63,6 @@ def tree(template,trunk,foliage,log,lanterns=True):
  d=copy.deepcopy(load(SOURCE/'configured_feature'/(template+'.json')));c=d['config'];c['trunk_placer']=trunk;c['foliage_placer']=foliage
  c['trunk_provider']=simple(state(log,axis='y'));c['foliage_provider']=simple(state('oak_leaves',distance='7',persistent='true',waterlogged='false'))
  c['decorators']=[{'type':'minecraft:pale_moss','ground_probability':0.0,'leaves_probability':.025,'trunk_probability':.12}]
- if lanterns:c['decorators'].append({'type':'minecraft:attached_to_leaves','probability':.003,'exclusion_radius_xz':4,'exclusion_radius_y':3,'block_provider':simple(state('lantern',hanging='true',waterlogged='false')),'required_empty_blocks':2,'directions':['down']})
  c['force_dirt']=False;c['ignore_vines']=True
  return d
 def uniform(a,b):return {'type':'minecraft:uniform','min_inclusive':a,'max_inclusive':b}
@@ -104,7 +103,7 @@ def build():
  for p in OUT.rglob('*.json'):
   if p.relative_to(OUT).as_posix() not in expected:p.unlink()
  for name,data in expected.items():write(OUT/name,data)
- write(OUT/'pack.mcmeta',{'pack':{'description':'Midgard Fantasy 0.4.0 — Minecraft 1.21.11; native frost forests + winter climate','min_format':[94,1],'max_format':[94,1]}})
+ write(OUT/'pack.mcmeta',{'pack':{'description':'Midgard Fantasy 0.5.0 — Minecraft 1.21.11; native frost forests + winter climate','min_format':[94,1],'max_format':[94,1]}})
  validate()
  with zipfile.ZipFile(ROOT/'dist/storybook-datapack.zip','w',zipfile.ZIP_DEFLATED) as z:
   for p in sorted(OUT.rglob('*')):

@@ -1,0 +1,1125 @@
+{
+  "seed": 825180311,
+  "scope": "Saved after-restart region NBT; complete raw states at identical coordinates in intersection of original probe underground windows. Separate all-height exact ore coordinate/state comparison. Original variable-window diagnostic retained.",
+  "baseline": ".runtime/fairy-v2-matrix/825180311/vanilla",
+  "winter": ".runtime/anarchy05-matrix/825180311/winter",
+  "chunks": 64,
+  "common_coordinates": 1572785,
+  "checks": {
+    "common_raw_underground_equal": true,
+    "all_height_ores_equal": true,
+    "structure_boxes_equal": true,
+    "block_entities_equal": true
+  },
+  "rows": [
+    {
+      "chunk": [
+        128,
+        128
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "90ea419a05491cf00ed3385d045ceedae97c6e59d0ea52fccf38d3a83a7cf116",
+        "90ea419a05491cf00ed3385d045ceedae97c6e59d0ea52fccf38d3a83a7cf116"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        129,
+        128
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "68da3c88c00fb58fd11e33a0fc36cff1ebb9df8cbf2e0f618618ce827d3b8985",
+        "68da3c88c00fb58fd11e33a0fc36cff1ebb9df8cbf2e0f618618ce827d3b8985"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        130,
+        128
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "263a3f6a04069c1ea18209051dd8c9fbb348329d60aa9ce42b7299b66c8de4da",
+        "263a3f6a04069c1ea18209051dd8c9fbb348329d60aa9ce42b7299b66c8de4da"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        131,
+        128
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "3ecc06715d057720e0fb4eead21c0309767b0d1ffe03125439ff091b93904c57",
+        "3ecc06715d057720e0fb4eead21c0309767b0d1ffe03125439ff091b93904c57"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        132,
+        128
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "9cc9d96032aa8056d51d27ad4d84605bf6a9a2520f581c8ea876080fe914a664",
+        "9cc9d96032aa8056d51d27ad4d84605bf6a9a2520f581c8ea876080fe914a664"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        133,
+        128
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "2f7e0c4eab92dc9d34a267b3f72938db56411d43cb28c4267408ea6a7457f88b",
+        "2f7e0c4eab92dc9d34a267b3f72938db56411d43cb28c4267408ea6a7457f88b"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        134,
+        128
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "0b7f6492b8f71809eab919b83c7ce716eefbbba2083a15a9c0d94b1dadf69ffa",
+        "0b7f6492b8f71809eab919b83c7ce716eefbbba2083a15a9c0d94b1dadf69ffa"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        135,
+        128
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "8274af236b89b77b0be95d30438dfefa93ae418e7b90614549860c9811b2f75e",
+        "8274af236b89b77b0be95d30438dfefa93ae418e7b90614549860c9811b2f75e"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        128,
+        129
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "0f4e698636e86d869a7f7e473e54cf0784c051ec3da09d82e06cc86d5fd1ecae",
+        "0f4e698636e86d869a7f7e473e54cf0784c051ec3da09d82e06cc86d5fd1ecae"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        129,
+        129
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "901b9ccca0e9621d315da4be9ddb320e541cedef0f6582a1d969c7e857ff3b15",
+        "901b9ccca0e9621d315da4be9ddb320e541cedef0f6582a1d969c7e857ff3b15"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        130,
+        129
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "dee93d0fc4727159a668075d41b5fe8848a94133bf558f9dc930963e58c4af4a",
+        "dee93d0fc4727159a668075d41b5fe8848a94133bf558f9dc930963e58c4af4a"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        131,
+        129
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "a3216917e4744070e07b1f4c630d266166e73d19cba89872e996e17d336e0415",
+        "a3216917e4744070e07b1f4c630d266166e73d19cba89872e996e17d336e0415"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        132,
+        129
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "20166cb3e784877ca4488f6423c97e5d5aa739e01a7bfc99491229aea0b78dce",
+        "20166cb3e784877ca4488f6423c97e5d5aa739e01a7bfc99491229aea0b78dce"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        133,
+        129
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "d47955cea5b5a90fb77f67fc9f146b6b31e78606b6d3d6d3743170cccb3110c9",
+        "d47955cea5b5a90fb77f67fc9f146b6b31e78606b6d3d6d3743170cccb3110c9"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        134,
+        129
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "fb0862900cefae6f51827dfa77db549ee61232c8c531dc32f4c6b37f724f625b",
+        "fb0862900cefae6f51827dfa77db549ee61232c8c531dc32f4c6b37f724f625b"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        135,
+        129
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "f3b6da0dd21ff5cc386f502e7212908fc5fc3a52a1bd63e50595abfd472fded3",
+        "f3b6da0dd21ff5cc386f502e7212908fc5fc3a52a1bd63e50595abfd472fded3"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        128,
+        130
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "f0b3208fe70bd1effa0909aaf826aec2d3ee125f27503186614281e28de5dfd7",
+        "f0b3208fe70bd1effa0909aaf826aec2d3ee125f27503186614281e28de5dfd7"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        129,
+        130
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "938fcb73fe2d3cc8dc61316eb0e039efeb963673630f16f1d513342bdc5d2746",
+        "938fcb73fe2d3cc8dc61316eb0e039efeb963673630f16f1d513342bdc5d2746"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        130,
+        130
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "706919f25b218e508b10e05fa131d57ab59f06b77a6267c019c4da687ffe46ae",
+        "706919f25b218e508b10e05fa131d57ab59f06b77a6267c019c4da687ffe46ae"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        131,
+        130
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "16a2e664e47da6a034dd89aebb9f99eae0b7829647dba8d09376c292e29057ba",
+        "16a2e664e47da6a034dd89aebb9f99eae0b7829647dba8d09376c292e29057ba"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        132,
+        130
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "b6842ac353b5bcbe171568de048b5e5b753e843dec02abe4a420e95ec7d9a3bd",
+        "b6842ac353b5bcbe171568de048b5e5b753e843dec02abe4a420e95ec7d9a3bd"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        133,
+        130
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "3bbea1a75387ff0079453a6c57d719e9e0401f22db47e5d1d10174626618fd57",
+        "3bbea1a75387ff0079453a6c57d719e9e0401f22db47e5d1d10174626618fd57"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        134,
+        130
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "ccb9b44d57a999d3d4b6e11080727f8f33d428267f1dcd7658f36b40a05d10b1",
+        "ccb9b44d57a999d3d4b6e11080727f8f33d428267f1dcd7658f36b40a05d10b1"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        135,
+        130
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "eb8cfd7fccb2348746c8be131b4750254856c7bafba499f091ea44df2ae20c11",
+        "eb8cfd7fccb2348746c8be131b4750254856c7bafba499f091ea44df2ae20c11"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        128,
+        131
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "8896c9fc6df2f3bd45c708168a23772ed4f0dc089792bcfd525f4d0d1d5e970a",
+        "8896c9fc6df2f3bd45c708168a23772ed4f0dc089792bcfd525f4d0d1d5e970a"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        129,
+        131
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "3ff8e9d29f9686633af2305868807e2ac546bba285c7a33b58ab35e1ef7ba8c3",
+        "3ff8e9d29f9686633af2305868807e2ac546bba285c7a33b58ab35e1ef7ba8c3"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        130,
+        131
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "3c70f85e37386db3f5d33d5cc9b7f9c5f807602da5b39af74de29622934ec841",
+        "3c70f85e37386db3f5d33d5cc9b7f9c5f807602da5b39af74de29622934ec841"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        131,
+        131
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "7f5e00dc7e48eee3a01d1b33b19a7f2abadfa970d909c3bfe8660d3c89cc23f3",
+        "7f5e00dc7e48eee3a01d1b33b19a7f2abadfa970d909c3bfe8660d3c89cc23f3"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        132,
+        131
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "4584bb0dc722fbf0c2d851fd4fafa2cbe42aaadbc5065cf5e1ec706eea3b988a",
+        "4584bb0dc722fbf0c2d851fd4fafa2cbe42aaadbc5065cf5e1ec706eea3b988a"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        133,
+        131
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "c189e8c715c41d9ac02b93a87fb871b2e5bbeb591108f2d2341aa5a0c4b4eea9",
+        "c189e8c715c41d9ac02b93a87fb871b2e5bbeb591108f2d2341aa5a0c4b4eea9"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        134,
+        131
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "0ea8c9a8277e2d081ff2275b61becf382c7a794c49dbb7abf5a6602bbe6e1292",
+        "0ea8c9a8277e2d081ff2275b61becf382c7a794c49dbb7abf5a6602bbe6e1292"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        135,
+        131
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "58ec08f53c0d043cdcc788bb75f9aee8a1b5da5aaf6ce3c93fb98589026e0841",
+        "58ec08f53c0d043cdcc788bb75f9aee8a1b5da5aaf6ce3c93fb98589026e0841"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        128,
+        132
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "34487f4296b9a6ea9dc64d63699e230a732e7e9c1f7fddd96757376081a74e76",
+        "34487f4296b9a6ea9dc64d63699e230a732e7e9c1f7fddd96757376081a74e76"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        129,
+        132
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "b49dd7c06e7540b2296873d8b7186bc121d2d12444094a5655395608f4b818eb",
+        "b49dd7c06e7540b2296873d8b7186bc121d2d12444094a5655395608f4b818eb"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        130,
+        132
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "9c609505ab985c07f8334ca4a8b836230febf895df0a8d8397c3d8ea254bfb51",
+        "9c609505ab985c07f8334ca4a8b836230febf895df0a8d8397c3d8ea254bfb51"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        131,
+        132
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "39a8e433f07d8314ec42b0e9075a89252b34a9e47462781e40caf63a853074dc",
+        "39a8e433f07d8314ec42b0e9075a89252b34a9e47462781e40caf63a853074dc"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        132,
+        132
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "1b04245cc5c2f513ef8f2df3de12c45e31d29867da8b5347d11377560a061266",
+        "1b04245cc5c2f513ef8f2df3de12c45e31d29867da8b5347d11377560a061266"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        133,
+        132
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "fd870d3d371b4980de3c3cf13552f5b9192004abdcfef919c733839eeeb6da67",
+        "fd870d3d371b4980de3c3cf13552f5b9192004abdcfef919c733839eeeb6da67"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        134,
+        132
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "98cead9db8780ce067351f690db3516a6114da3febcc5351cca13cfa3dd98099",
+        "98cead9db8780ce067351f690db3516a6114da3febcc5351cca13cfa3dd98099"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        135,
+        132
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "c30e57f04e383dc62ce84774c21b8945a3b90f7a6d68404518663b70e47c0195",
+        "c30e57f04e383dc62ce84774c21b8945a3b90f7a6d68404518663b70e47c0195"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        128,
+        133
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "67b1c8098652bbf5c90164ecec2b37eaa96606e41ed15cb56a2377c8e708f1af",
+        "67b1c8098652bbf5c90164ecec2b37eaa96606e41ed15cb56a2377c8e708f1af"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        129,
+        133
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "a6f49d835926efb58a5e6a32a8eec0dc4c2700d484a37133320dff0e5e97aecf",
+        "a6f49d835926efb58a5e6a32a8eec0dc4c2700d484a37133320dff0e5e97aecf"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        130,
+        133
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "489f70f71ff4fc0fa8d64ef30b69fafd2d5faa627bd291ebcf0f508b1ef7885f",
+        "489f70f71ff4fc0fa8d64ef30b69fafd2d5faa627bd291ebcf0f508b1ef7885f"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        131,
+        133
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "66409d3a42aa6915940aea58bfcf77dd5b57caac99e010a887c17ae466aeafe4",
+        "66409d3a42aa6915940aea58bfcf77dd5b57caac99e010a887c17ae466aeafe4"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        132,
+        133
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "cdfefd8b217f5928dfe24bffa01fabb3b220fdd6b675f507863965b891ddb791",
+        "cdfefd8b217f5928dfe24bffa01fabb3b220fdd6b675f507863965b891ddb791"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        133,
+        133
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "a47aa1c3eb0065a33e68ff79b025efc2d366bf51efd0ae905b3af22cf1118a93",
+        "a47aa1c3eb0065a33e68ff79b025efc2d366bf51efd0ae905b3af22cf1118a93"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        134,
+        133
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "3d2716b631518443b00777daf7020aec62b98f6c63baaa63e8647975c7d03428",
+        "3d2716b631518443b00777daf7020aec62b98f6c63baaa63e8647975c7d03428"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        135,
+        133
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "d8caeb9314933d5542bab198dcf0250b930453204d9412d95885053aca69bc1b",
+        "d8caeb9314933d5542bab198dcf0250b930453204d9412d95885053aca69bc1b"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        128,
+        134
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "7eaa965cfe2d9b63a4d5b5f2507680ca93ba6d37e8d8661fb3b7dc3a15ceff49",
+        "7eaa965cfe2d9b63a4d5b5f2507680ca93ba6d37e8d8661fb3b7dc3a15ceff49"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        129,
+        134
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "1cc634e3d8cb04047bcfbc775535e7e5ac9ba5de740c10f0b156e02515470c3c",
+        "1cc634e3d8cb04047bcfbc775535e7e5ac9ba5de740c10f0b156e02515470c3c"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        130,
+        134
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "8a16186e2cbb87c3b665aeea9e1179ee1bdebda1e3a1c6f074e9aa76ba168c36",
+        "8a16186e2cbb87c3b665aeea9e1179ee1bdebda1e3a1c6f074e9aa76ba168c36"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        131,
+        134
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "5f2d4d1d77ed9f0c77d01ea084c847a5daed116a631634a9fa4e31516494fea1",
+        "5f2d4d1d77ed9f0c77d01ea084c847a5daed116a631634a9fa4e31516494fea1"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        132,
+        134
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "3bb293c2f6b94305ccaa0d276c931215f74bd49f61a3190fc74a6e5337145241",
+        "3bb293c2f6b94305ccaa0d276c931215f74bd49f61a3190fc74a6e5337145241"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        133,
+        134
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "2e8d503e01d8e4b5f83ad0549076dacb7b88550c2a1232d5007939abf84213c3",
+        "2e8d503e01d8e4b5f83ad0549076dacb7b88550c2a1232d5007939abf84213c3"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        134,
+        134
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "89308075f39f9a30b186f64dc9fa7e836a441c93be8ebb62bf7c1e2a5cd3db90",
+        "89308075f39f9a30b186f64dc9fa7e836a441c93be8ebb62bf7c1e2a5cd3db90"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        135,
+        134
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "fb68955c039b05207b2039fd4bf07bf420725fe8831ce722dfd6c8b7b5cd448d",
+        "fb68955c039b05207b2039fd4bf07bf420725fe8831ce722dfd6c8b7b5cd448d"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        128,
+        135
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "b83b9a46176b33789211ebc7600a2cb492deb06f44609ed8659caa3a79edd18b",
+        "b83b9a46176b33789211ebc7600a2cb492deb06f44609ed8659caa3a79edd18b"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        129,
+        135
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "a3ad3747502109ab074d61c0d274461c4aba07b35f73186df562475f8ee4f00c",
+        "a3ad3747502109ab074d61c0d274461c4aba07b35f73186df562475f8ee4f00c"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        130,
+        135
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "abb13bc6a811e903b024370f14567678a754ba9a489bfddbb5ce544471a5d505",
+        "abb13bc6a811e903b024370f14567678a754ba9a489bfddbb5ce544471a5d505"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        131,
+        135
+      ],
+      "common_coordinates": 24497,
+      "raw_common_hashes": [
+        "6e2f4260bfef1243fc68d110579ebfe8a730f61aea658410791b42c9e77c59cb",
+        "6e2f4260bfef1243fc68d110579ebfe8a730f61aea658410791b42c9e77c59cb"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [
+        {
+          "column": [
+            2101,
+            2172
+          ],
+          "probe_y_max_before_after": [
+            25,
+            31
+          ]
+        },
+        {
+          "column": [
+            2102,
+            2171
+          ],
+          "probe_y_max_before_after": [
+            22,
+            31
+          ]
+        }
+      ],
+      "original_probe_geometry_equal": false,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        132,
+        135
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "0ba6e0c2f083d7bd43a65ae3bb5f24424e2420c711a6a5bd33128d13c11f01d5",
+        "0ba6e0c2f083d7bd43a65ae3bb5f24424e2420c711a6a5bd33128d13c11f01d5"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        133,
+        135
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "c5c292606a8a86d195da461e15cdb603306e4036f1980b83c83f8f8c1751b5be",
+        "c5c292606a8a86d195da461e15cdb603306e4036f1980b83c83f8f8c1751b5be"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        134,
+        135
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "9c34b3f98cf54396c3edd0428e6e6e4d4899d55239da13fe780ad3fc5ca4e534",
+        "9c34b3f98cf54396c3edd0428e6e6e4d4899d55239da13fe780ad3fc5ca4e534"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    },
+    {
+      "chunk": [
+        135,
+        135
+      ],
+      "common_coordinates": 24576,
+      "raw_common_hashes": [
+        "5edf7a4360f23e903ae8fe8fa2418d2db6399fac92bdbde85dbbfb3402dc9bad",
+        "5edf7a4360f23e903ae8fe8fa2418d2db6399fac92bdbde85dbbfb3402dc9bad"
+      ],
+      "common_raw_differences": [],
+      "ore_differences_all_heights": [],
+      "probe_original_window_changed_columns": [],
+      "original_probe_geometry_equal": true,
+      "structure_boxes_equal": true,
+      "block_entities_equal": true
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "source_license": "CC0-1.0",
+  "source_commit": "1263463cffb59b08275e9ee9408848285c4cddff",
+  "source": "https://github.com/Greaby/minecraft-circles-schematics",
+  "scope": "Pinned geometry only; two adapted sanitized moon gates. No generic schematic import/WorldEdit requirement.",
+  "assets": [
+    {
+      "id": "moon-gate-7",
+      "blocks": 104,
+      "dimensions": [
+        9,
+        9,
+        3
+      ],
+      "structure_sha256": "205e1511b6671c1f40c3d895c7d24bc8369a1daf9727984188966f99779072cb"
+    },
+    {
+      "id": "moon-gate-9",
+      "blocks": 140,
+      "dimensions": [
+        11,
+        11,
+        3
+      ],
+      "structure_sha256": "cb5ee8fe450ba02f86fd35dd0b0129e5552558cb050e4b966dbb9b3c6fdd1586"
+    }
+  ]
+}

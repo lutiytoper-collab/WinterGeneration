@@ -8,7 +8,7 @@ public final class FantasyPlan {
         void put(int x,int y,int z,String block){put(x,y,z,block,0);}
         void put(int x,int y,int z,String block,int layers){cells.put(new DecorationPlan.Position(x,y,z),new DecorationPlan.Cell(x,y,z,block,layers));}
         void cap(){
-            for(var c:List.copyOf(cells.values()))if((c.block().endsWith("LEAVES")||c.block().equals("WARPED_WART_BLOCK")||c.block().equals("CALCITE")||c.block().equals("BLUE_ICE"))&&!cells.containsKey(new DecorationPlan.Position(c.x(),c.y()+1,c.z())))put(c.x(),c.y()+1,c.z(),"SNOW",3);
+            for(var c:List.copyOf(cells.values()))if((c.block().endsWith("LEAVES")||c.block().equals("CYAN_STAINED_GLASS")||c.block().equals("DIORITE")||c.block().equals("LIGHT_BLUE_STAINED_GLASS"))&&!cells.containsKey(new DecorationPlan.Position(c.x(),c.y()+1,c.z())))put(c.x(),c.y()+1,c.z(),"SNOW",3);
         }
         DecorationPlan done(String name){return new DecorationPlan(name,List.copyOf(cells.values()));}
     }
@@ -16,10 +16,10 @@ public final class FantasyPlan {
         Sketch b=new Sketch();int h=4+(int)(Noise.unit(seed,x,z,940)*3);
         for(int y=1;y<=h;y++)b.put(0,y,0,"MUSHROOM_STEM");
         for(int dx=-2;dx<=2;dx++)for(int dz=-2;dz<=2;dz++)if(Math.abs(dx)+Math.abs(dz)<=3){
-            b.put(dx,h+1,dz,"WARPED_WART_BLOCK");
-            if(Math.abs(dx)+Math.abs(dz)<=1)b.put(dx,h+2,dz,"WARPED_WART_BLOCK");
+            b.put(dx,h+1,dz,"CYAN_STAINED_GLASS");
+            if(Math.abs(dx)+Math.abs(dz)<=1)b.put(dx,h+2,dz,"CYAN_STAINED_GLASS");
         }
-        b.put(0,h,0,"PEARLESCENT_FROGLIGHT");b.put(2,h,0,"LIGHT_BLUE_STAINED_GLASS");b.put(-2,h,0,"PURPLE_STAINED_GLASS");
+        b.put(0,h,0,"JACK_O_LANTERN");b.put(2,h,0,"LIGHT_BLUE_STAINED_GLASS");b.put(-2,h,0,"PURPLE_STAINED_GLASS");
         b.cap();return b.done("moon-mushrooms");
     }
     public static DecorationPlan willow(boolean birch){
@@ -36,15 +36,15 @@ public final class FantasyPlan {
                 if(!b.cells.containsKey(key))b.put(px,py,pz,"CHERRY_LEAVES");
             }
         }
-        b.put(2,6,1,"CHERRY_LEAVES");b.put(2,5,1,"LANTERN");
-        b.put(-2,5,-1,"CHERRY_LEAVES");b.put(-2,4,-1,"SOUL_LANTERN");
+        b.put(2,6,1,"CHERRY_LEAVES");b.put(2,5,1,"LIGHT_BLUE_STAINED_GLASS");
+        b.put(-2,5,-1,"CHERRY_LEAVES");b.put(-2,4,-1,"PURPLE_STAINED_GLASS");
         b.cap();return b.done("lantern-willows");
     }
     public static DecorationPlan moonstones(long seed,int x,int z){
         Sketch b=new Sketch();int h=3+(int)(Noise.unit(seed,x,z,941)*2);
         for(int[] p:new int[][]{{0,0,h},{-2,1,2},{2,-1,2}}){
-            for(int y=1;y<=p[2];y++)b.put(p[0],y,p[1],y==1?"PEARLESCENT_FROGLIGHT":y==2?"CALCITE":"BLUE_ICE");
-            b.put(p[0],p[2]+1,p[1],"AMETHYST_CLUSTER");
+            for(int y=1;y<=p[2];y++)b.put(p[0],y,p[1],y==1?"JACK_O_LANTERN":y==2?"DIORITE":"LIGHT_BLUE_STAINED_GLASS");
+            b.put(p[0],p[2]+1,p[1],"WHITE_STAINED_GLASS");
         }
         return b.done("moonstones");
     }

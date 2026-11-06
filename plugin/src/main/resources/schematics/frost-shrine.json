@@ -1,0 +1,736 @@
+{
+  "format": 1,
+  "id": "frost-shrine",
+  "source": "MidgardWinterWorld original composition",
+  "license": "PROJECT",
+  "cells": [
+    {
+      "x": -2,
+      "y": 1,
+      "z": -1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": 1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": 2,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": -1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": 1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": 2,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": -1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 2,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": -1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 2,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": -1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 2,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": -4,
+      "block": "ANDESITE",
+      "layers": 0
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": -3,
+      "block": "ANDESITE",
+      "layers": 0
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": -2,
+      "block": "ANDESITE",
+      "layers": 0
+    },
+    {
+      "x": -3,
+      "y": 1,
+      "z": -1,
+      "block": "STONE_BRICKS",
+      "layers": 0
+    },
+    {
+      "x": -3,
+      "y": 2,
+      "z": -1,
+      "block": "STONE_BRICKS",
+      "layers": 0
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": -1,
+      "block": "STONE_BRICKS",
+      "layers": 0
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": -1,
+      "block": "STONE_BRICKS",
+      "layers": 0
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": -1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -3,
+      "y": 1,
+      "z": 2,
+      "block": "STONE_BRICKS",
+      "layers": 0
+    },
+    {
+      "x": -3,
+      "y": 2,
+      "z": 2,
+      "block": "STONE_BRICKS",
+      "layers": 0
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": 2,
+      "block": "STONE_BRICKS",
+      "layers": 0
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": 2,
+      "block": "STONE_BRICKS",
+      "layers": 0
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": 2,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "z": -1,
+      "block": "STONE_BRICKS",
+      "layers": 0
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": -1,
+      "block": "STONE_BRICKS",
+      "layers": 0
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": -1,
+      "block": "STONE_BRICKS",
+      "layers": 0
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": -1,
+      "block": "STONE_BRICKS",
+      "layers": 0
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": -1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "z": 2,
+      "block": "STONE_BRICKS",
+      "layers": 0
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 2,
+      "block": "STONE_BRICKS",
+      "layers": 0
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 2,
+      "block": "STONE_BRICKS",
+      "layers": 0
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": 2,
+      "block": "STONE_BRICKS",
+      "layers": 0
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 2,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": -1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": 0,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": 1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": 1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": 2,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -2,
+      "y": 5,
+      "z": -1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -2,
+      "y": 6,
+      "z": -1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -2,
+      "y": 5,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -2,
+      "y": 6,
+      "z": 0,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -2,
+      "y": 5,
+      "z": 1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -2,
+      "y": 6,
+      "z": 1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -2,
+      "y": 5,
+      "z": 2,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -2,
+      "y": 6,
+      "z": 2,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -1,
+      "y": 6,
+      "z": -1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -1,
+      "y": 7,
+      "z": -1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -1,
+      "y": 6,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -1,
+      "y": 7,
+      "z": 0,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -1,
+      "y": 6,
+      "z": 1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -1,
+      "y": 7,
+      "z": 1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": -1,
+      "y": 6,
+      "z": 2,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": -1,
+      "y": 7,
+      "z": 2,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": -1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": -1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": 0,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": 1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 2,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": 2,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": -1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": -1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 0,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 2,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 2,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": -1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": -1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 0,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 2,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 2,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": -1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 0,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 0,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 1,
+      "block": "DIORITE",
+      "layers": 0
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 1,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 2,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 1,
+      "block": "JACK_O_LANTERN",
+      "layers": 0
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 1,
+      "block": "LIGHT_BLUE_STAINED_GLASS",
+      "layers": 0
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": 1,
+      "block": "WHITE_STAINED_GLASS",
+      "layers": 0
+    },
+    {
+      "x": -4,
+      "y": 1,
+      "z": -3,
+      "block": "COBBLESTONE",
+      "layers": 0
+    },
+    {
+      "x": -4,
+      "y": 2,
+      "z": -3,
+      "block": "SNOW_BLOCK",
+      "layers": 0
+    },
+    {
+      "x": -4,
+      "y": 3,
+      "z": -3,
+      "block": "SNOW",
+      "layers": 3
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "z": -2,
+      "block": "COBBLESTONE",
+      "layers": 0
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": -2,
+      "block": "SNOW_BLOCK",
+      "layers": 0
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": -2,
+      "block": "SNOW",
+      "layers": 3
+    }
+  ]
+}

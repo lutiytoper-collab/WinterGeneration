@@ -1,11 +1,12 @@
-# Fantasy0.4: native forest pack is embedded and registered before world generation.
+# Fantasy0.5 anarchy: native forest pack is embedded and registered before world generation.
 fantasy-pack-enabled: true
-# MidgardWinterWorld 0.4.0. Только НОВЫЙ тестовый мир, не основной сервер.
+# MidgardWinterWorld 0.5.0. Только НОВЫЙ тестовый мир, не основной сервер.
 enabled: true
 preset: FAIRYTALE
 allowed-worlds: [world, winter_test]
 new-chunks-only: true
 modify-existing-chunks: false
+# These checks stop generation from overwriting builds; they do not restrict players.
 protect-player-builds: true
 protect-worldguard-regions: true
 # WorldGuard: проверка bounding boxes всех регионов; ошибка API запрещает декор.
@@ -47,6 +48,7 @@ overrides:
 # Доступные overrides: snow-density [0..1], snow-layers [1..6], forest-density [0..1],
 # clearing-chance [0..1], cabin-chance [0..1], ice-chance [0..1], light-chance [0..1], max-changes [1..512].
 modules:
+  schematics: true
   wonders: true
   canopy: true
   trails: true
@@ -78,3 +80,7 @@ max-millis-per-tick: 2
 
 # Исправление нативного замерзания на границе незимних биомов, только в новых чанках.
 protect-biome-boundaries: true
+
+# Six bounded landmarks. Ordinary blocks, breakable, no regions/loot/valuable resources.
+schematics:
+  chance: 0.0125

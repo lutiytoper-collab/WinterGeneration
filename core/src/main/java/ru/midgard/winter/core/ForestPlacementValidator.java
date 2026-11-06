@@ -49,7 +49,7 @@ public final class ForestPlacementValidator {
         // Snow must rest on real/planned support even where an existing crown was preserved.
         for(var c:writes)if(c.block().equals("SNOW")||c.block().equals("SNOW_BLOCK")){
             String below=future.getOrDefault(new DecorationPlan.Position(c.x(),c.y()-1,c.z()),site.material(x+c.x(),ground+c.y()-1,z+c.z()));
-            if(!(below.endsWith("_LEAVES")||below.endsWith("_LOG")||Set.of("WARPED_WART_BLOCK","PEARLESCENT_FROGLIGHT","SNOW_BLOCK","COBBLESTONE","MOSSY_COBBLESTONE","CALCITE","AMETHYST_BLOCK","BLUE_ICE","SPRUCE_PLANKS","SPRUCE_STAIRS","ICE","PACKED_ICE").contains(below)))return deny("snow_support");
+            if(!(below.endsWith("_LEAVES")||below.endsWith("_LOG")||Set.of("CYAN_STAINED_GLASS","JACK_O_LANTERN","SNOW_BLOCK","COBBLESTONE","MOSSY_COBBLESTONE","DIORITE","ANDESITE","STONE_BRICKS","MOSSY_STONE_BRICKS","COBBLED_DEEPSLATE","TUFF","LIGHT_BLUE_STAINED_GLASS","PURPLE_STAINED_GLASS","WHITE_STAINED_GLASS","SPRUCE_PLANKS","SPRUCE_STAIRS").contains(below)))return deny("snow_support");
         }
         return new Result(true,"safe",writes);
     }

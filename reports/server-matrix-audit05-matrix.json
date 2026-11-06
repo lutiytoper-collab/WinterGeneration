@@ -1,0 +1,35 @@
+[
+  {
+    "seed": 825180311,
+    "diffs": [
+      {
+        "chunk": [
+          131,
+          135
+        ],
+        "field": "belowSurfaceGeometry"
+      }
+    ],
+    "timings": {
+      "vanilla": {
+        "chunks": 64,
+        "mean_ms": 117.340732546875,
+        "median_ms": 0.117417,
+        "p95_ms": 796.267915,
+        "max_ms": 1706.827674,
+        "heapStart": 417857536,
+        "heapEnd": 560988160
+      },
+      "winter": {
+        "chunks": 64,
+        "mean_ms": 267.734371078125,
+        "median_ms": 0.133947,
+        "p95_ms": 1835.377757,
+        "max_ms": 4647.436328,
+        "heapStart": 447741952,
+        "heapEnd": 586153984
+      }
+    },
+    "metadata_y_refreshes": []
+  }
+]

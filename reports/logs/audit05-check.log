@@ -1,0 +1,96 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :core:compileJava
+> Task :core:processResources NO-SOURCE
+> Task :core:classes
+> Task :core:jar
+> Task :core:compileTestJava
+> Task :core:processTestResources NO-SOURCE
+> Task :core:testClasses
+> Task :core:test
+
+BUILD SUCCESSFUL in 12s
+4 actionable tasks: 4 executed
+PASS: 23 biome definitions; climate-only diff; registry references; exact 94.1 metadata. Server load NOT RUN.
+test_excluded_biome_rejected (__main__.DatapackTests.test_excluded_biome_rejected) ... ok
+test_lost_features_rejected (__main__.DatapackTests.test_lost_features_rejected) ... ok
+test_original_tampering_rejected (__main__.DatapackTests.test_original_tampering_rejected) ... ok
+test_precipitation_loss_rejected (__main__.DatapackTests.test_precipitation_loss_rejected) ... ok
+test_valid_pack (__main__.DatapackTests.test_valid_pack) ... ok
+test_wrong_pack_version_rejected (__main__.DatapackTests.test_wrong_pack_version_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.067s
+
+OK
+PASS: 2 pinned CC0 gate adaptations; bounded palettes; no entities/block entities/air clearing
+test_both_native_templates_have_no_entities_or_block_entity_payloads (__main__.SchematicTests.test_both_native_templates_have_no_entities_or_block_entity_payloads) ... ok
+test_budget_and_single_chunk_geometry (__main__.SchematicTests.test_budget_and_single_chunk_geometry) ... ok
+test_duplicate_positions_are_not_emitted (__main__.SchematicTests.test_duplicate_positions_are_not_emitted) ... ok
+test_no_air_commands_jigsaws_containers_or_fluids_can_be_pasted (__main__.SchematicTests.test_no_air_commands_jigsaws_containers_or_fluids_can_be_pasted) ... ok
+test_original_negative_Z_regions_decode_to_expected_rings (__main__.SchematicTests.test_original_negative_Z_regions_decode_to_expected_rings) ... ok
+test_pinned_generated_outputs_validate (__main__.SchematicTests.test_pinned_generated_outputs_validate) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.013s
+
+OK
+PASS: Storybook23 biomes, 12 isolated native tree overrides; exact feature lists/order; pinned official resources. Codec/runtime separate.
+test_birch_identity_and_persistent_frost_crowns (__main__.StorybookTests.test_birch_identity_and_persistent_frost_crowns) ... ok
+test_native_feature_order_change_rejected (__main__.StorybookTests.test_native_feature_order_change_rejected) ... ok
+test_no_dimension_or_ore_resources (__main__.StorybookTests.test_no_dimension_or_ore_resources) ... ok
+test_ore_feature_loss_rejected (__main__.StorybookTests.test_ore_feature_loss_rejected) ... ok
+test_reachable_excluded_biome_rejected (__main__.StorybookTests.test_reachable_excluded_biome_rejected) ... ok
+test_shared_ocean_tree_override_rejected (__main__.StorybookTests.test_shared_ocean_tree_override_rejected) ... ok
+test_unlisted_biome_override_rejected (__main__.StorybookTests.test_unlisted_biome_override_rejected) ... ok
+test_unpinned_reference_rejected (__main__.StorybookTests.test_unpinned_reference_rejected) ... ok
+test_valid_storybook (__main__.StorybookTests.test_valid_storybook) ... ok
+test_wrong_codec_version_rejected (__main__.StorybookTests.test_wrong_codec_version_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.161s
+
+OK
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :core:compileJava UP-TO-DATE
+> Task :core:processResources NO-SOURCE
+> Task :core:classes UP-TO-DATE
+> Task :core:jar UP-TO-DATE
+
+> Task :plugin:compileJava
+/workspace/WinterGeneration/plugin/src/main/java/ru/midgard/winter/WinterPlugin.java:280: warning: [removal] getKey() in Structure has been deprecated and marked for removal
+            var b=structure.getBoundingBox();String id=structure.getStructure().getKey().getKey();
+                                                                               ^
+Note: /workspace/WinterGeneration/plugin/src/main/java/ru/midgard/winter/WinterPlugin.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 warning
+
+> Task :plugin:processResources
+> Task :plugin:classes
+> Task :plugin:jar
+> Task :plugin:assemble
+> Task :plugin:compileTestJava
+> Task :plugin:processTestResources NO-SOURCE
+> Task :plugin:testClasses
+
+> Task :plugin:test FAILED
+
+ResourcesTest > nativePackIsEmbeddedWithExactVersion() FAILED
+    org.opentest4j.AssertionFailedError at ResourcesTest.java:30
+
+16 tests completed, 1 failed
+
+[Incubating] Problems report is available at: file:///workspace/WinterGeneration/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':plugin:test'.
+> There were failing tests. See the report at: file:///workspace/WinterGeneration/plugin/build/reports/tests/test/index.html
+
+* Try:
+> Run with --scan to get full insights.
+
+BUILD FAILED in 8s
+7 actionable tasks: 5 executed, 2 up-to-date

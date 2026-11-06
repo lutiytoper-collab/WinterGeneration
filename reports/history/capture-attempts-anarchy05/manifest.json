@@ -1,0 +1,78 @@
+[
+  {
+    "file": "02-woodland-shrine.png",
+    "native_F2_file": "2026-11-06_09.23.44.png",
+    "resolution": [
+      1600,
+      900
+    ],
+    "sha256": "26c77efc55952bafe303567ea818a29465dc5b57fb5474108a5b6076baf954e0",
+    "captured_utc": "2026-11-06T09:23:44.208800+00:00",
+    "camera_xyz_yaw_pitch": [
+      459.5,
+      110.0,
+      443.5,
+      0.0,
+      6.0
+    ],
+    "note": "Naturally generated woodland shrine, original project composition. No manual construction.",
+    "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+  },
+  {
+    "file": "03-hill-gate.png",
+    "native_F2_file": "2026-11-06_09.24.00.png",
+    "resolution": [
+      1600,
+      900
+    ],
+    "sha256": "0c5412933c7e74181bb9e5ba9901e5d6816290c859f0f31217233144ab0ccdde",
+    "captured_utc": "2026-11-06T09:24:00.929093+00:00",
+    "camera_xyz_yaw_pitch": [
+      -179.5,
+      97.0,
+      188.5,
+      0.0,
+      3.0
+    ],
+    "note": "Naturally generated moon-gate-7 on a hillside, default profile. Ordinary materials.",
+    "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+  },
+  {
+    "file": "06-timber-ruins.png",
+    "native_F2_file": "2026-11-06_09.25.57.png",
+    "resolution": [
+      1600,
+      900
+    ],
+    "sha256": "ec64202200dfbf96bd1dc860295c8f370f400d790ea0ed1884f0b56850860a02",
+    "captured_utc": "2026-11-06T09:25:57.751156+00:00",
+    "camera_xyz_yaw_pitch": [
+      207.5,
+      93.0,
+      310.5,
+      35.0,
+      14.0
+    ],
+    "note": "Naturally generated timber ruins. This is also the separate survival grief QA area; console TNT was used during that test, not to construct the scene.",
+    "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+  },
+  {
+    "file": "07-fantasy-grove.png",
+    "native_F2_file": "2026-11-06_09.26.30.png",
+    "resolution": [
+      1600,
+      900
+    ],
+    "sha256": "d1798d81cdc340a2bf0fbcf8aa43ce3b63b43f02550c4dc6ac6e68c83ea1bce6",
+    "captured_utc": "2026-11-06T09:26:30.759969+00:00",
+    "camera_xyz_yaw_pitch": [
+      30.5,
+      73.0,
+      187.5,
+      -35.0,
+      8.0
+    ],
+    "note": "Natural pink willow, winter native forest and ordinary-material fantasy props. No shaders/resource pack.",
+    "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+  }
+]

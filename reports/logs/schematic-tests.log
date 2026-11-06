@@ -1,0 +1,11 @@
+test_both_native_templates_have_no_entities_or_block_entity_payloads (__main__.SchematicTests.test_both_native_templates_have_no_entities_or_block_entity_payloads) ... ok
+test_budget_and_single_chunk_geometry (__main__.SchematicTests.test_budget_and_single_chunk_geometry) ... ok
+test_duplicate_positions_are_not_emitted (__main__.SchematicTests.test_duplicate_positions_are_not_emitted) ... ok
+test_no_air_commands_jigsaws_containers_or_fluids_can_be_pasted (__main__.SchematicTests.test_no_air_commands_jigsaws_containers_or_fluids_can_be_pasted) ... ok
+test_original_negative_Z_regions_decode_to_expected_rings (__main__.SchematicTests.test_original_negative_Z_regions_decode_to_expected_rings) ... ok
+test_pinned_generated_outputs_validate (__main__.SchematicTests.test_pinned_generated_outputs_validate) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.024s
+
+OK

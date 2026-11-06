@@ -5,27 +5,52 @@
   "artifacts": [
     {
       "name": "MidgardWinterWorld.jar",
-      "bytes": 145464,
-      "sha256": "f2e019c2199b2a6cec58a66d71472b09844b3ddaf928853b72b883d7d3c733c6",
+      "bytes": 163528,
+      "sha256": "09e924340ef4a5b05eb67dbd1a457a2cb3577ef99a684959b4e5baac73060ae9",
       "zip_crc": "PASS"
     },
     {
       "name": "WinterProbe.jar",
-      "bytes": 32061,
-      "sha256": "ee7b824c2d9a76e9aa6be99252de7d4ac0dabc6ce4e3ae49d1a42c4d0a9be98c",
+      "bytes": 35047,
+      "sha256": "55ba1eade8740f68af9a222155c25237969516bbbeb54f4cdb670f48df0835e6",
       "zip_crc": "PASS"
     },
     {
       "name": "winter-datapack.zip",
       "bytes": 25439,
-      "sha256": "39f8f9fedc8385d1ee7e2ea4fc89ca91c8dff154f6ef9027a27a3d974093df81",
+      "sha256": "32fa10e14bb05571968a4a48cd0139af46adab53dcbb46dc38e9d177f959e586",
       "zip_crc": "PASS"
     },
     {
       "name": "storybook-datapack.zip",
-      "bytes": 40493,
-      "sha256": "c988f8d47333265bac6e0d623507728802ae7906fb3147cf53c99c7969e958ea",
+      "bytes": 43776,
+      "sha256": "8b7c25e1e80d2270da05c592ad766edb1df125e1f51ffa420b6babeeb0c48a8f",
       "zip_crc": "PASS"
     }
+  ],
+  "landmark_palette": [
+    "ANDESITE",
+    "COBBLESTONE",
+    "DIORITE",
+    "JACK_O_LANTERN",
+    "LIGHT_BLUE_STAINED_GLASS",
+    "MOSSY_COBBLESTONE",
+    "MOSSY_STONE_BRICKS",
+    "PURPLE_STAINED_GLASS",
+    "SNOW",
+    "SNOW_BLOCK",
+    "SPRUCE_LEAVES",
+    "SPRUCE_LOG",
+    "SPRUCE_PLANKS",
+    "STONE_BRICKS",
+    "WHITE_STAINED_GLASS"
+  ],
+  "landmark_templates": [
+    "moon-gate-7",
+    "moon-gate-9",
+    "frost-shrine",
+    "woodland-shrine",
+    "stone-ruin",
+    "timber-ruin"
   ]
 }
