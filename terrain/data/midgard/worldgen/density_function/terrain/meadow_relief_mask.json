@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:cache_2d",
+  "argument": {
+    "type": "minecraft:spline",
+    "spline": {
+      "coordinate": "midgard:terrain/target_offset",
+      "points": [
+        {
+          "location": -2,
+          "value": 0,
+          "derivative": 0.0
+        },
+        {
+          "location": -0.65,
+          "value": 0,
+          "derivative": 0.0
+        },
+        {
+          "location": -0.5,
+          "value": 1,
+          "derivative": 0.0
+        },
+        {
+          "location": -0.1,
+          "value": 1,
+          "derivative": 0.0
+        },
+        {
+          "location": 0.05,
+          "value": 0,
+          "derivative": 0.0
+        },
+        {
+          "location": 2,
+          "value": 0,
+          "derivative": 0.0
+        }
+      ]
+    }
+  }
+}

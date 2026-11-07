@@ -15,6 +15,7 @@ public final class WorldgenProbe extends JavaPlugin implements CommandExecutor {
     private boolean running;private JsonArray samples;private World world;private int side,startX,startZ,index;private long heapStart;
     private record Sample(Chunk chunk,long nanos,boolean existed){}
     private final List<Sample> loaded=new ArrayList<>();private int snapshotIndex;
+    private final List<Chunk> halo=new ArrayList<>();private final ArrayDeque<int[]> haloQueue=new ArrayDeque<>();
     @Override public void onEnable(){Objects.requireNonNull(getCommand("winterprobe")).setExecutor(this);}
     @Override public boolean onCommand(CommandSender sender,Command command,String label,String[] args){
         if(sender instanceof org.bukkit.command.ConsoleCommandSender&&args.length==1&&args[0].equals("visuals")){
@@ -29,6 +30,8 @@ public final class WorldgenProbe extends JavaPlugin implements CommandExecutor {
             catch(Exception ex){getLogger().log(java.util.logging.Level.SEVERE,"NATURALLUNA_FAILED",ex);}return true;
         }
         if(sender instanceof org.bukkit.command.ConsoleCommandSender&&args.length==1&&args[0].equals("terrain-audit")){new TerrainAudit(this).start();return true;}
+        if(sender instanceof org.bukkit.command.ConsoleCommandSender&&args.length==1&&args[0].equals("pvp-search")){new PvpAudit(this).search();return true;}
+        if(sender instanceof org.bukkit.command.ConsoleCommandSender&&args.length==1&&args[0].equals("pvp-audit")){new PvpAudit(this).audit();return true;}
         if(sender instanceof org.bukkit.command.ConsoleCommandSender&&args.length==1&&args[0].equals("fixtures")){
             new RuntimeAudit(this).startFixtures();return true;
         }
@@ -50,7 +53,12 @@ public final class WorldgenProbe extends JavaPlugin implements CommandExecutor {
         samples=new JsonArray();loaded.clear();index=0;snapshotIndex=0;running=true;heapStart=usedHeap();next();return true;
     }
     private void next(){
-        if(index>=side*side){quietTicks=0;idleWaitTicks=0;Bukkit.getScheduler().runTaskLater(this,this::awaitDecorationIdle,20);return;}
+        if(index>=side*side){
+            // QA-only FULL halo: settle native neighbour population before defining the initial golden snapshot.
+            // It is explicitly excluded from the measured ROI and latency samples; production adds no tickets/halo.
+            for(int x=startX-1;x<=startX+side;x++)for(int z=startZ-1;z<=startZ+side;z++)if(x<startX||x>=startX+side||z<startZ||z>=startZ+side)haloQueue.add(new int[]{x,z});
+            loadHalo();return;
+        }
         int x=startX+index%side,z=startZ+index/side;
         boolean existed=world.isChunkGenerated(x,z);long begin=System.nanoTime();
         world.getChunkAtAsync(x,z,true).whenComplete((chunk,error)->{
@@ -62,6 +70,12 @@ public final class WorldgenProbe extends JavaPlugin implements CommandExecutor {
             };
             if(Bukkit.isPrimaryThread())complete.run();else Bukkit.getScheduler().runTask(this,complete);
         });
+    }
+    private void loadHalo(){
+        if(haloQueue.isEmpty()){quietTicks=0;idleWaitTicks=0;getLogger().info("WINTERPROBE_NATIVE_HALO_DONE supportChunks="+halo.size());Bukkit.getScheduler().runTaskLater(this,this::awaitDecorationIdle,20);return;}
+        int[] p=haloQueue.removeFirst();world.getChunkAtAsync(p[0],p[1],true).whenComplete((chunk,error)->Bukkit.getScheduler().runTask(this,()->{
+            if(error!=null){running=false;release();getLogger().severe("WINTERPROBE_FAILED "+error);return;}chunk.addPluginChunkTicket(this);halo.add(chunk);Bukkit.getScheduler().runTask(this,this::loadHalo);
+        }));
     }
     private void awaitDecorationIdle(){
         try{
@@ -79,7 +93,7 @@ public final class WorldgenProbe extends JavaPlugin implements CommandExecutor {
         try{samples.add(snapshot(s.chunk,s.nanos,s.existed));Bukkit.getScheduler().runTask(this,this::collect);}
         catch(Exception ex){running=false;release();getLogger().log(java.util.logging.Level.SEVERE,"WINTERPROBE_FAILED",ex);}
     }
-    private void release(){loaded.forEach(s->s.chunk.removePluginChunkTicket(this));loaded.clear();}
+    private void release(){loaded.forEach(s->s.chunk.removePluginChunkTicket(this));loaded.clear();halo.forEach(c->c.removePluginChunkTicket(this));halo.clear();haloQueue.clear();}
     @Override public void onDisable(){release();}
     private JsonObject snapshot(Chunk chunk,long nanos,boolean existed)throws NoSuchAlgorithmException{
         JsonObject item=new JsonObject();item.addProperty("x",chunk.getX());item.addProperty("z",chunk.getZ());item.addProperty("existed",existed);item.addProperty("requestMillis",nanos/1e6);
@@ -113,6 +127,7 @@ public final class WorldgenProbe extends JavaPlugin implements CommandExecutor {
     private void finish(){
         JsonObject report=new JsonObject();report.addProperty("seed",world.getSeed());report.addProperty("minecraft",Bukkit.getMinecraftVersion());report.addProperty("server",Bukkit.getVersion());
         report.addProperty("winterPluginEnabled",Bukkit.getPluginManager().isPluginEnabled("MidgardWinterWorld"));
+        report.addProperty("qaFullHaloRadius",1);report.addProperty("qaUnmeasuredSupportChunks",halo.size());
         report.add("enabledDatapacks",new Gson().toJsonTree(Bukkit.getServer().getDatapackManager().getEnabledPacks().stream().map(p->p.getName()).sorted().toList()));
         report.addProperty("measurement","serial getChunkAtAsync request-to-completion latency; not isolated generation CPU time");report.addProperty("heapStart",heapStart);report.addProperty("heapEnd",usedHeap());report.add("chunks",samples);
         try{Files.createDirectories(getDataFolder().toPath());Files.writeString(getDataFolder().toPath().resolve("measurement.json"),new GsonBuilder().setPrettyPrinting().create().toJson(report));getLogger().info("WINTERPROBE_DONE chunks="+samples.size());}

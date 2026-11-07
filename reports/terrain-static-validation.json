@@ -7,9 +7,11 @@
   ],
   "native_caves_aquifers_ore_veins_preliminary_surface_kept": true,
   "biome_router_inputs_kept": true,
-  "surface_rules_kept": true,
-  "no_ore_carver_or_structure_definition_overrides": true,
+  "original_surface_sequence_kept_after_cold_field_prefix": true,
+  "no_ore_carver_tag_or_structure_definition_overrides": true,
   "deep_offset_contribution_zero_through_y": 48,
-  "resources": 16,
+  "pvp_core_surface": "gentle hills with ordinary rooted soil, native snow/grass, sparse trees and normal decorations; no player protection",
+  "dense_native_forest_placements_filtered_on_field_soil": 12,
+  "resources": 39,
   "runtime_geometry_deep_cave_structure_acceptance": "Separate real server tests required; static comparison does not prove equal generated blocks."
 }

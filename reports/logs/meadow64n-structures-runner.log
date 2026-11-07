@@ -1,0 +1,6 @@
+STRUCTURE_AUDIT 14 [{'name': 'village_desert_foundation_gap', 'status': 'FAIL', 'detail': 'Lowest masonry/plank in bottom nine piece layers; maximum consecutive air gap <=8; samples=1945, max=9. Not an all-building traversal proof.'}]
+Traceback (most recent call last):
+  File "/workspace/WinterGeneration/scripts/terrain-structure-server.py", line 28, in <module>
+    proc.stdin.write('save-all flush\nstop\n');proc.stdin.flush();proc.wait(timeout=120);assert proc.returncode==0;assert all(r['status']=='PASS' for r in data['checks'])
+                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

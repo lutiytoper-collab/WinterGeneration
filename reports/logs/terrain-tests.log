@@ -1,14 +1,18 @@
-test_cave_aquifer_ore_biome_and_surface_inputs_kept (__main__.TerrainTests.test_cave_aquifer_ore_biome_and_surface_inputs_kept) ... ok
+test_cave_aquifer_ore_biome_and_original_surface_inputs_kept (__main__.TerrainTests.test_cave_aquifer_ore_biome_and_original_surface_inputs_kept) ... ok
 test_changing_ore_veins_is_rejected (__main__.TerrainTests.test_changing_ore_veins_is_rejected) ... ok
 test_custom_depth_fades_only_above_48 (__main__.TerrainTests.test_custom_depth_fades_only_above_48) ... ok
 test_dangerous_resource_injection_is_rejected (__main__.TerrainTests.test_dangerous_resource_injection_is_rejected) ... ok
+test_field_prefix_tampering_is_rejected (__main__.TerrainTests.test_field_prefix_tampering_is_rejected) ... ok
+test_field_surface_prefix_is_cold_only_and_narrow_height_band (__main__.TerrainTests.test_field_surface_prefix_is_cold_only_and_narrow_height_band) ... ok
+test_field_weight_cannot_change_density_through_y48 (__main__.TerrainTests.test_field_weight_cannot_change_density_through_y48) ... ok
 test_no_nether_end_dimension_carver_ore_structure_or_biome_override (__main__.TerrainTests.test_no_nether_end_dimension_carver_ore_structure_or_biome_override) ... ok
+test_only_dense_forest_placements_filter_field_soil_and_no_carver_tag_changes (__main__.TerrainTests.test_only_dense_forest_placements_filter_field_soil_and_no_carver_tag_changes) ... ok
 test_only_final_density_router_branch_changes (__main__.TerrainTests.test_only_final_density_router_branch_changes) ... ok
 test_source_tampering_is_rejected (__main__.TerrainTests.test_source_tampering_is_rejected) ... ok
 test_terrain_disabling_does_not_modify_base_forest_pack (__main__.TerrainTests.test_terrain_disabling_does_not_modify_base_forest_pack) ... ok
 test_valid_native_density_graph (__main__.TerrainTests.test_valid_native_density_graph) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 0.037s
+Ran 13 tests in 0.150s
 
 OK

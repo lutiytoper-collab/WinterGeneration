@@ -2,7 +2,8 @@
 """Prepare isolated QA folders from user-supplied/verified JARs; never overwrite an existing run."""
 import argparse,pathlib,shutil,zipfile,re,json
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-p=argparse.ArgumentParser();p.add_argument('--paper',type=pathlib.Path,required=True);p.add_argument('--luna',type=pathlib.Path,required=True);p.add_argument('--worldguard',type=pathlib.Path,required=True);p.add_argument('--worldedit',type=pathlib.Path,required=True);p.add_argument('--fawe',type=pathlib.Path);p.add_argument('--chunky',type=pathlib.Path,required=True);p.add_argument('--natural-snow',action='store_true',help='Explicit single-chest QA profile: radius 1, max-y 128, native SNOW allowed, winter-biome search');p.add_argument('--accept-eula',action='store_true');p.add_argument('--suffix',default='');p.add_argument('--storybook',action='store_true');p.add_argument('--embedded',action='store_true');a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--paper',type=pathlib.Path,required=True);p.add_argument('--luna',type=pathlib.Path,required=True);p.add_argument('--worldguard',type=pathlib.Path,required=True);p.add_argument('--worldedit',type=pathlib.Path,required=True);p.add_argument('--fawe',type=pathlib.Path);p.add_argument('--chunky',type=pathlib.Path,required=True);p.add_argument('--natural-snow',action='store_true',help='Single-chest QA profile: default radius 2 (5x5), max-y 280, native SNOW allowed, winter-biome search');p.add_argument('--platform-radius',type=int,choices=[1,2],default=2);p.add_argument('--natural-field-center',nargs=2,type=int,metavar=('X','Z'),help='Optional native field QA window: radius 24 using public Luna X/Z offsets; no terrain edits');p.add_argument('--accept-eula',action='store_true');p.add_argument('--suffix',default='');p.add_argument('--storybook',action='store_true');p.add_argument('--embedded',action='store_true');a=p.parse_args()
+if a.natural_field_center and (not a.natural_snow or max(map(abs,a.natural_field_center))>100000):p.error('Field center requires --natural-snow and bounded coordinates')
 if a.suffix and not re.fullmatch(r'[a-z0-9-]+',a.suffix):p.error('Invalid suffix')
 if not a.accept_eula:p.error('Read https://aka.ms/MinecraftEULA and accept explicitly')
 for source in [a.paper,a.luna,a.worldguard,a.worldedit,a.chunky,*([a.fawe] if a.fawe else [])]:
@@ -26,14 +27,18 @@ for variant,port,editor in [('integration',25576,a.worldedit),*([('fawe-integrat
    if not section:raise SystemExit('Luna black-List section not found; refusing to guess')
    generator=generator[:section.start()]+re.sub(r'(?m)^\s*- SNOW\s*\n','',section.group())+generator[section.end():]
    generator=generator.replace('black-List:\n','black-List:\n'+''.join('  - '+material+'\n' for material in ['GRASS_BLOCK','DIRT','COARSE_DIRT','PODZOL','ROOTED_DIRT','STONE','ANDESITE','GRANITE','DIORITE','DEEPSLATE']),1)
-   generator=re.sub(r'max-y:\s*85', 'max-y: 128',generator,count=1)
+   generator=re.sub(r'max-y:\s*85', 'max-y: 280',generator,count=1)
+   if a.natural_field_center:
+    x,z=a.natural_field_center;generator,count=re.subn(r'(?m)(^      offsets:\n        x:) 0(\n        y: 1\n        z:) 0$',lambda m:m[1]+' '+str(x)+m[2]+' '+str(z),generator,count=1)
+    if count!=1:raise SystemExit('Expected first Luna NORMAL offsets not found')
+    (folder/'plugins/WinterProbe').mkdir(exist_ok=True);(folder/'plugins/WinterProbe/natural-luna-area.json').write_text(json.dumps({'spawnRadius':24,'centerX':x,'centerZ':z,'selection':'Public Luna random XZ bounds and generator offsets within a 64x64 natural meadow; unmodified native terrain'},indent=2)+'\n')
    all_biomes=json.loads((ROOT/'plugin/src/main/resources/original-temperatures.json').read_text())
    winter={f.stem for f in (ROOT/'datapack/data/minecraft/worldgen/biome').glob('*.json')}
    excluded=[str(key).removeprefix('minecraft:').upper() for key in all_biomes if str(key).removeprefix('minecraft:') not in winter]
    generator=re.sub(r'(?ms)^black-List-biome:\s*\n.*?(?=^[^ #\s]|\Z)','black-List-biome:\n'+''.join('  - '+key+'\n' for key in sorted(excluded)),generator,count=1)
    (folder/'plugins/LunaAirDrop/generators.yml').write_text(generator)
    (folder/'plugins/MidgardWinterWorld').mkdir()
-   winter_cfg=(ROOT/'plugin/src/main/resources'/('config-storybook.yml' if a.storybook else 'config.yml')).read_text().replace('platform-radius: 2','platform-radius: 1')
+   winter_cfg=(ROOT/'plugin/src/main/resources'/('config-storybook.yml' if a.storybook else 'config.yml')).read_text().replace('platform-radius: 2',f'platform-radius: {a.platform_radius}')
    (folder/'plugins/MidgardWinterWorld/config.yml').write_text(winter_cfg)
  if (a.storybook or a.embedded) and not a.natural_snow:
   (folder/'plugins/MidgardWinterWorld').mkdir(exist_ok=True);shutil.copyfile(ROOT/'plugin/src/main/resources/config-storybook.yml',folder/'plugins/MidgardWinterWorld/config.yml')

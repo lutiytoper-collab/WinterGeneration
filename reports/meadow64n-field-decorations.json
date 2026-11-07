@@ -1,0 +1,196 @@
+{
+  "seed": 825180311,
+  "pluginVersion": "0.7.0",
+  "scope": "Actual generated objects in the measured64x64 meadow and its64-block surroundings. No QA structures placed. Inside/outside status is explicit; samples capped32 per feature.",
+  "objects": [
+    {
+      "feature": "moonstones-objects",
+      "x": 203,
+      "y": 62,
+      "z": 233,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "moonstones-objects",
+      "x": 297,
+      "y": 134,
+      "z": 248,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "moonstones-objects",
+      "x": 315,
+      "y": 104,
+      "z": 267,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "moonstones-objects",
+      "x": 330,
+      "y": 124,
+      "z": 247,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "moonstones-objects",
+      "x": 185,
+      "y": 99,
+      "z": 360,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "moonstones-objects",
+      "x": 329,
+      "y": 103,
+      "z": 344,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "snow-deciduous",
+      "x": 312,
+      "y": 85,
+      "z": 298,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "clearings-objects",
+      "x": 228,
+      "y": 94,
+      "z": 360,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "moon-mushrooms-objects",
+      "x": 211,
+      "y": 82,
+      "z": 263,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "moon-mushrooms-objects",
+      "x": 259,
+      "y": 88,
+      "z": 253,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "moon-mushrooms-objects",
+      "x": 235,
+      "y": 86,
+      "z": 332,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "moon-mushrooms-objects",
+      "x": 309,
+      "y": 139,
+      "z": 227,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "moon-mushrooms-objects",
+      "x": 326,
+      "y": 134,
+      "z": 212,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "moon-mushrooms-objects",
+      "x": 323,
+      "y": 135,
+      "z": 236,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "moon-mushrooms-objects",
+      "x": 188,
+      "y": 68,
+      "z": 236,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "moon-mushrooms-objects",
+      "x": 173,
+      "y": 62,
+      "z": 244,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "moon-mushrooms-objects",
+      "x": 281,
+      "y": 101,
+      "z": 341,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "moon-mushrooms-objects",
+      "x": 280,
+      "y": 103,
+      "z": 361,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "moon-mushrooms-objects",
+      "x": 343,
+      "y": 147,
+      "z": 211,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "moon-mushrooms-objects",
+      "x": 347,
+      "y": 105,
+      "z": 348,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "moon-mushrooms-objects",
+      "x": 326,
+      "y": 127,
+      "z": 378,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "moon-mushrooms-objects",
+      "x": 346,
+      "y": 108,
+      "z": 374,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "lantern-willows-objects",
+      "x": 296,
+      "y": 166,
+      "z": 205,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "lantern-willows-objects",
+      "x": 182,
+      "y": 81,
+      "z": 301,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "lantern-willows-objects",
+      "x": 297,
+      "y": 101,
+      "z": 345,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "lantern-willows-objects",
+      "x": 313,
+      "y": 134,
+      "z": 362,
+      "insideMeasuredField": false
+    },
+    {
+      "feature": "timber-ruin-objects",
+      "x": 202,
+      "y": 85,
+      "z": 329,
+      "insideMeasuredField": false
+    }
+  ]
+}

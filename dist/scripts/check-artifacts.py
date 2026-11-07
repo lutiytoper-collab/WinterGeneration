@@ -14,12 +14,13 @@ for name in ['MidgardWinterWorld.jar','WinterProbe.jar','winter-datapack.zip','s
    for n in classes:
     data=z.read(n);assert data[:4]==b'\xca\xfe\xba\xbe' and struct.unpack('>H',data[6:8])[0]==65
     assert b'net/minecraft/' not in data and b'org/bukkit/craftbukkit/' not in data, 'Production NMS/CraftBukkit reference'
-   assert 'version: 0.6.0' in z.read('plugin.yml').decode() or "version: '0.6.0'" in z.read('plugin.yml').decode()
+   assert 'version: 0.7.0' in z.read('plugin.yml').decode() or "version: '0.7.0'" in z.read('plugin.yml').decode()
    if name=='MidgardWinterWorld.jar':
     assert 'bootstrapper: ru.midgard.winter.WinterBootstrap' in z.read('paper-plugin.yml').decode()
     assert 'fantasy-pack/pack.mcmeta' in names
     assert len([n for n in names if n.startswith('fantasy-pack/data/minecraft/worldgen/biome/') and n.endswith('.json')])==23
     assert 'fantasy-terrain-pack/data/minecraft/worldgen/noise_settings/overworld.json' in names
+    assert not any(n.startswith('fantasy-terrain-pack/data/minecraft/tags/') and n.endswith('.json') for n in names)
     assert not any(n.startswith('fantasy-pack/data/minecraft/worldgen/noise_settings/') for n in names)
     templates=['moon-gate-7','moon-gate-9','frost-shrine','woodland-shrine','stone-ruin','timber-ruin']
     palette=set()
@@ -35,7 +36,12 @@ for name in ['MidgardWinterWorld.jar','WinterProbe.jar','winter-datapack.zip','s
     result['landmark_palette']=sorted(palette);result['landmark_templates']=templates
   elif name=='fantasy-terrain-datapack.zip':
    assert 'data/minecraft/worldgen/noise_settings/overworld.json' in names
-   assert len([n for n in names if n.startswith('data/minecraft/')])==1
+   assert len([n for n in names if n.startswith('data/minecraft/')])==36
+   assert len([n for n in names if n.startswith('data/minecraft/worldgen/biome/')])==23
+   assert not any('/tags/' in n for n in names)
+   with zipfile.ZipFile(root/'dist/MidgardWinterWorld.jar') as main:
+    for n in names:
+     if n!='pack.mcmeta':assert z.read(n)==main.read('fantasy-terrain-pack/'+n),n
   else:
    assert len([n for n in names if '/worldgen/biome/' in n and n.endswith('.json')])==23
    assert not any('/dimension/' in n or '/noise_settings/' in n or '/worldgen/structure/' in n for n in names)

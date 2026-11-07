@@ -9,5 +9,5 @@ Daemon will be stopped at the end of the build
 > Task :core:testClasses UP-TO-DATE
 > Task :core:test UP-TO-DATE
 
-BUILD SUCCESSFUL in 10s
+BUILD SUCCESSFUL in 5s
 4 actionable tasks: 4 up-to-date

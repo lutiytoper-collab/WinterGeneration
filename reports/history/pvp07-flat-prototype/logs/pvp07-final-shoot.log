@@ -1,0 +1,10 @@
+CAMERA 01-pvp-ground [-1880.5, 82.2, 1950.5, -45, 1]
+/workspace/WinterGeneration/reports/screenshots-pvp07/01-pvp-ground.png
+SHOT_READY 01-pvp-ground
+CAMERA 02-pvp-whole-field [-1792.5, 280, 2048.5, 0, 90]
+/workspace/WinterGeneration/reports/screenshots-pvp07/02-pvp-whole-field.png
+SHOT_READY 02-pvp-whole-field
+CAMERA 03-fantasy-highlands [560.5, 154, 768.5, 90, 26.201]
+/workspace/WinterGeneration/reports/screenshots-pvp07/03-fantasy-highlands.png
+SHOT_READY 03-fantasy-highlands
+PVP07_GALLERY_DONE

@@ -27,7 +27,7 @@ class ResourcesTest {
     }
     @Test void nativePackIsEmbeddedWithExactVersion() throws Exception {
         try(var in=Objects.requireNonNull(getClass().getResourceAsStream("/fantasy-pack/pack.mcmeta"))){
-            String meta=new String(in.readAllBytes(),java.nio.charset.StandardCharsets.UTF_8);assertTrue(meta.contains("0.6.0"));assertTrue(meta.contains("94"));
+            String meta=new String(in.readAllBytes(),java.nio.charset.StandardCharsets.UTF_8);assertTrue(meta.contains("0.7.0"));assertTrue(meta.contains("94"));
         }
         assertNotNull(getClass().getResource("/fantasy-pack/data/midgard/worldgen/configured_feature/winter_blossom.json"));
     }
@@ -40,5 +40,13 @@ class ResourcesTest {
         assertNull(getClass().getResource("/fantasy-pack/"+path));
         assertNotNull(getClass().getResource("/fantasy-terrain-pack/"+path));
         assertNotNull(getClass().getResource("/fantasy-terrain-pack/data/midgard/structure/moon_gate_9.nbt"));
+    }
+    @Test void sparseFieldForestFilterOnlyBelongsToTerrainProfile()throws Exception{
+        assertNull(getClass().getResource("/fantasy-terrain-pack/data/minecraft/tags/block/overworld_carver_replaceables.json"));
+        String path="data/minecraft/worldgen/placed_feature/trees_taiga.json";
+        try(var classic=getClass().getResourceAsStream("/fantasy-pack/"+path);var terrain=getClass().getResourceAsStream("/fantasy-terrain-pack/"+path)){
+            assertFalse(new String(Objects.requireNonNull(classic).readAllBytes(),java.nio.charset.StandardCharsets.UTF_8).contains("minecraft:rooted_dirt"));
+            assertTrue(new String(Objects.requireNonNull(terrain).readAllBytes(),java.nio.charset.StandardCharsets.UTF_8).contains("minecraft:rooted_dirt"));
+        }
     }
 }

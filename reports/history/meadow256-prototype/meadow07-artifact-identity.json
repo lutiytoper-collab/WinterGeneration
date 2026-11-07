@@ -1,0 +1,50 @@
+[
+  {
+    "runtime": "meadow07-world",
+    "plugin_sha256": "913f2c969cdcc7c81d0479608389c8aa9884bd319d0d668ccc533328b3459c41",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true
+  },
+  {
+    "runtime": "integration-meadow07",
+    "plugin_sha256": "913f2c969cdcc7c81d0479608389c8aa9884bd319d0d668ccc533328b3459c41",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true
+  },
+  {
+    "runtime": "fawe-integration-meadow07",
+    "plugin_sha256": "913f2c969cdcc7c81d0479608389c8aa9884bd319d0d668ccc533328b3459c41",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true
+  },
+  {
+    "runtime": "meadow07-structures",
+    "plugin_sha256": "913f2c969cdcc7c81d0479608389c8aa9884bd319d0d668ccc533328b3459c41",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true
+  },
+  {
+    "runtime": "meadow07-purpur-disable",
+    "plugin_sha256": "913f2c969cdcc7c81d0479608389c8aa9884bd319d0d668ccc533328b3459c41",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true
+  },
+  {
+    "runtime": "meadow07-classic",
+    "plugin_sha256": "913f2c969cdcc7c81d0479608389c8aa9884bd319d0d668ccc533328b3459c41",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true
+  },
+  {
+    "runtime": "meadow07-seed42",
+    "plugin_sha256": "913f2c969cdcc7c81d0479608389c8aa9884bd319d0d668ccc533328b3459c41",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true
+  },
+  {
+    "runtime": "meadow07-matrix/825180311/winter",
+    "plugin_sha256": "913f2c969cdcc7c81d0479608389c8aa9884bd319d0d668ccc533328b3459c41",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true
+  }
+]

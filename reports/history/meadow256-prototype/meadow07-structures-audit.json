@@ -1,0 +1,155 @@
+{
+  "seed": 825180311,
+  "minecraft": "1.21.11",
+  "structures": [
+    {
+      "type": "village_plains",
+      "x": 864,
+      "z": 64,
+      "bbox": "BoundingBox [minX\u003d777.0, minY\u003d65.0, minZ\u003d-24.0, maxX\u003d960.0, maxY\u003d136.0, maxZ\u003d128.0]",
+      "pieces": 108,
+      "loadedChunks": 143,
+      "doors": 10,
+      "unsupportedDoors": 0,
+      "foundationSamplesNearPieceBase": 805,
+      "foundationSearchBandAbovePieceMinY": 8,
+      "maximumAirGapBelowSampledFoundation": 7
+    },
+    {
+      "type": "village_desert",
+      "x": -3728,
+      "z": -1328,
+      "bbox": "BoundingBox [minX\u003d-3806.0, minY\u003d71.0, minZ\u003d-1395.0, maxX\u003d-3694.0, maxY\u003d115.0, maxZ\u003d-1296.0]",
+      "pieces": 82,
+      "loadedChunks": 64,
+      "doors": 15,
+      "unsupportedDoors": 0,
+      "foundationSamplesNearPieceBase": 1555,
+      "foundationSearchBandAbovePieceMinY": 8,
+      "maximumAirGapBelowSampledFoundation": 3,
+      "surfaceY": 85,
+      "surfaceBiome": "minecraft:desert",
+      "temperature": 1.9888646602630615
+    },
+    {
+      "type": "stronghold",
+      "x": 1984,
+      "z": -224,
+      "bbox": "BoundingBox [minX\u003d1904.0, minY\u003d-11.0, minZ\u003d-260.0, maxX\u003d2030.0, maxY\u003d59.0, maxZ\u003d-113.0]",
+      "pieces": 149
+    },
+    {
+      "type": "mineshaft",
+      "x": -192,
+      "z": -160,
+      "bbox": "BoundingBox [minX\u003d-259.0, minY\u003d-33.0, minZ\u003d-239.0, maxX\u003d-108.0, maxY\u003d-11.0, maxZ\u003d-93.0]",
+      "pieces": 187
+    },
+    {
+      "type": "ancient_city",
+      "x": 144,
+      "z": 32,
+      "bbox": "BoundingBox [minX\u003d23.0, minY\u003d-64.0, minZ\u003d-89.0, maxX\u003d262.0, maxY\u003d-10.0, maxZ\u003d155.0]",
+      "pieces": 94
+    },
+    {
+      "type": "trial_chambers",
+      "x": 32,
+      "z": 16,
+      "bbox": "BoundingBox [minX\u003d-61.0, minY\u003d-59.0, minZ\u003d-44.0, maxX\u003d55.0, maxY\u003d25.0, maxZ\u003d86.0]",
+      "pieces": 215
+    }
+  ],
+  "checks": [
+    {
+      "name": "native_village_plains_retained",
+      "status": "PASS",
+      "detail": "Native structure start and pieces at generated FULL chunk; village blocks scanned separately"
+    },
+    {
+      "name": "village_plains_door_floors",
+      "status": "PASS",
+      "detail": "Actual bottom-half doors and solid floor immediately below; doors\u003d10, unsupported\u003d0"
+    },
+    {
+      "name": "village_plains_foundation_gap",
+      "status": "PASS",
+      "detail": "Lowest masonry/plank in bottom nine piece layers; maximum consecutive air gap \u003c\u003d8; samples\u003d805, max\u003d7. Not an all-building traversal proof."
+    },
+    {
+      "name": "native_village_desert_retained",
+      "status": "PASS",
+      "detail": "Native structure start and pieces at generated FULL chunk; village blocks scanned separately"
+    },
+    {
+      "name": "village_desert_door_floors",
+      "status": "PASS",
+      "detail": "Actual bottom-half doors and solid floor immediately below; doors\u003d15, unsupported\u003d0"
+    },
+    {
+      "name": "village_desert_foundation_gap",
+      "status": "PASS",
+      "detail": "Lowest masonry/plank in bottom nine piece layers; maximum consecutive air gap \u003c\u003d8; samples\u003d1555, max\u003d3. Not an all-building traversal proof."
+    },
+    {
+      "name": "desert_climate_kept",
+      "status": "PASS",
+      "detail": "Warm native temperature at actual generated village terrain"
+    },
+    {
+      "name": "native_stronghold_retained",
+      "status": "PASS",
+      "detail": "Native structure start and pieces at generated FULL chunk; village blocks scanned separately"
+    },
+    {
+      "name": "native_mineshaft_retained",
+      "status": "PASS",
+      "detail": "Native structure start and pieces at generated FULL chunk; village blocks scanned separately"
+    },
+    {
+      "name": "native_ancient_city_retained",
+      "status": "PASS",
+      "detail": "Native structure start and pieces at generated FULL chunk; village blocks scanned separately"
+    },
+    {
+      "name": "native_trial_chambers_retained",
+      "status": "PASS",
+      "detail": "Native structure start and pieces at generated FULL chunk; village blocks scanned separately"
+    },
+    {
+      "name": "cave_biome_dripstone_caves",
+      "status": "PASS",
+      "detail": "Bounded native 3D biome locate; exact cave void geometry checked independently in saved regions"
+    },
+    {
+      "name": "cave_biome_lush_caves",
+      "status": "PASS",
+      "detail": "Bounded native 3D biome locate; exact cave void geometry checked independently in saved regions"
+    },
+    {
+      "name": "cave_biome_deep_dark",
+      "status": "PASS",
+      "detail": "Bounded native 3D biome locate; exact cave void geometry checked independently in saved regions"
+    }
+  ],
+  "caveBiomes": [
+    {
+      "id": "dripstone_caves",
+      "x": -192,
+      "y": 44,
+      "z": -64
+    },
+    {
+      "id": "lush_caves",
+      "x": 0,
+      "y": 44,
+      "z": 0
+    },
+    {
+      "id": "deep_dark",
+      "x": 288,
+      "y": -20,
+      "z": 192
+    }
+  ]
+}

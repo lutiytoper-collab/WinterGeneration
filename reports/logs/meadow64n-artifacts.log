@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "minecraft": "1.21.11",
+  "java_class_major": 65,
+  "artifacts": [
+    {
+      "name": "MidgardWinterWorld.jar",
+      "bytes": 231671,
+      "sha256": "86407ce3f31fd7ae0e251b979ee5cb023b410a13b4e37af7d47d188bd4bd6ea5",
+      "zip_crc": "PASS"
+    },
+    {
+      "name": "WinterProbe.jar",
+      "bytes": 53872,
+      "sha256": "8cd817577d02937f4c8cd488b5b0649ddfbfaa341d87b9562f9c0e9c8e28bc40",
+      "zip_crc": "PASS"
+    },
+    {
+      "name": "winter-datapack.zip",
+      "bytes": 25439,
+      "sha256": "a9f72dbf9657261d79e17c70b1e22b5208ca629659db898a476b11d12ec20b60",
+      "zip_crc": "PASS"
+    },
+    {
+      "name": "storybook-datapack.zip",
+      "bytes": 43776,
+      "sha256": "22b70eb30e3d823d00ce6271c06f9464acf5d7bab41ae5153d52484799f75a3f",
+      "zip_crc": "PASS"
+    },
+    {
+      "name": "fantasy-terrain-datapack.zip",
+      "bytes": 60314,
+      "sha256": "88e039c35d219813a355c4d944a19bbb6c49bff943bfdb83cc1c61450d2c95cd",
+      "zip_crc": "PASS"
+    }
+  ],
+  "landmark_palette": [
+    "ANDESITE",
+    "COBBLESTONE",
+    "DIORITE",
+    "JACK_O_LANTERN",
+    "LIGHT_BLUE_STAINED_GLASS",
+    "MOSSY_COBBLESTONE",
+    "MOSSY_STONE_BRICKS",
+    "PURPLE_STAINED_GLASS",
+    "SNOW",
+    "SNOW_BLOCK",
+    "SPRUCE_LEAVES",
+    "SPRUCE_LOG",
+    "SPRUCE_PLANKS",
+    "STONE_BRICKS",
+    "WHITE_STAINED_GLASS"
+  ],
+  "landmark_templates": [
+    "moon-gate-7",
+    "moon-gate-9",
+    "frost-shrine",
+    "woodland-shrine",
+    "stone-ruin",
+    "timber-ruin"
+  ]
+}

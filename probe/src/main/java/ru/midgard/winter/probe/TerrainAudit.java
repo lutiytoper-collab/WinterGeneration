@@ -58,16 +58,20 @@ final class TerrainAudit {
                         doors++;if(!world.getBlockAt(x,y-1,z).getType().isSolid())unsupported++;
                     }
                 }
-                var base=world.getBlockAt(x,low,z);String material=base.getType().name();
-                if(material.endsWith("_PLANKS")||material.equals("COBBLESTONE")||material.equals("MOSSY_COBBLESTONE")||material.equals("SANDSTONE")){
-                    int gap=0;for(int y=low-1;y>=Math.max(world.getMinHeight(),low-16)&&world.getBlockAt(x,y,z).isEmpty();y--)gap++;
-                    footSamples++;maxGap=Math.max(maxGap,gap);
+                // A jigsaw piece's bounding minY can contain air below its first actual floor.
+                // Inspect the lowest masonry/plank block in its bottom nine layers instead of assuming minY is a block.
+                for(int by=low;by<=Math.min(high,low+8);by++){
+                    String material=world.getBlockAt(x,by,z).getType().name();
+                    if(material.endsWith("_PLANKS")||Set.of("COBBLESTONE","MOSSY_COBBLESTONE","SANDSTONE","SMOOTH_SANDSTONE","CUT_SANDSTONE").contains(material)){
+                        int gap=0;for(int y=by-1;y>=Math.max(world.getMinHeight(),by-16)&&world.getBlockAt(x,y,z).isEmpty();y--)gap++;
+                        footSamples++;maxGap=Math.max(maxGap,gap);break;
+                    }
                 }
             }
         }
-        row.addProperty("doors",doors);row.addProperty("unsupportedDoors",unsupported);row.addProperty("foundationSamplesAtPieceMinY",footSamples);row.addProperty("maximumAirGapBelowSampledFoundation",maxGap);
+        row.addProperty("doors",doors);row.addProperty("unsupportedDoors",unsupported);row.addProperty("foundationSamplesNearPieceBase",footSamples);row.addProperty("foundationSearchBandAbovePieceMinY",8);row.addProperty("maximumAirGapBelowSampledFoundation",maxGap);
         String id=row.get("type").getAsString();check(id+"_door_floors",doors>0&&unsupported==0,"Actual bottom-half doors and solid floor immediately below; doors="+doors+", unsupported="+unsupported);
-        check(id+"_foundation_gap",footSamples>0&&maxGap<=8,"Sampled structure base at piece minY, maximum consecutive air gap <=8; samples="+footSamples+", max="+maxGap+". Not an all-building traversal proof.");
+        check(id+"_foundation_gap",footSamples>0&&maxGap<=8,"Lowest masonry/plank in bottom nine piece layers; maximum consecutive air gap <=8; samples="+footSamples+", max="+maxGap+". Not an all-building traversal proof.");
         if(id.equals("village_desert")){
             int x=row.get("x").getAsInt(),z=row.get("z").getAsInt(),y=world.getHighestBlockYAt(x,z);row.addProperty("surfaceY",y);row.addProperty("surfaceBiome",world.getBiome(x,y,z).getKey().toString());row.addProperty("temperature",world.getTemperature(x,y,z));
             check("desert_climate_kept",world.getTemperature(x,y,z)>.5,"Warm native temperature at actual generated village terrain");

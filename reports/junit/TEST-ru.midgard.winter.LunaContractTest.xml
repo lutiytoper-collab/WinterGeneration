@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.midgard.winter.LunaContractTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-11-06T15:50:52.063Z" hostname="0f051bf75645" time="0.024">
+<testsuite name="ru.midgard.winter.LunaContractTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-11-07T03:12:16.091Z" hostname="0f051bf75645" time="0.018">
   <properties/>
-  <testcase name="publicCancellableStartAndEndEvents()" classname="ru.midgard.winter.LunaContractTest" time="0.012"/>
-  <testcase name="cancellationIsCheckedBeforeRegionOrBlockMutation()" classname="ru.midgard.winter.LunaContractTest" time="0.011"/>
+  <testcase name="publicCancellableStartAndEndEvents()" classname="ru.midgard.winter.LunaContractTest" time="0.01"/>
+  <testcase name="cancellationIsCheckedBeforeRegionOrBlockMutation()" classname="ru.midgard.winter.LunaContractTest" time="0.008"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

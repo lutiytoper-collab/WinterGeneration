@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.midgard.winter.ResourcesTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-11-06T15:50:52.089Z" hostname="0f051bf75645" time="0.05">
+<testsuite name="ru.midgard.winter.ResourcesTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-11-07T03:12:16.111Z" hostname="0f051bf75645" time="0.038">
   <properties/>
-  <testcase name="newInstallUsesEmbeddedFantasyAndWondersByDefault()" classname="ru.midgard.winter.ResourcesTest" time="0.013"/>
-  <testcase name="noMandatoryPluginDependency()" classname="ru.midgard.winter.ResourcesTest" time="0.006"/>
-  <testcase name="paperBootstrapAndOptionalBridgesAreDeclared()" classname="ru.midgard.winter.ResourcesTest" time="0.008"/>
-  <testcase name="terrainProfileAndDecorOnlyProfileAreSeparate()" classname="ru.midgard.winter.ResourcesTest" time="0.009"/>
-  <testcase name="nativePackIsEmbeddedWithExactVersion()" classname="ru.midgard.winter.ResourcesTest" time="0.002"/>
-  <testcase name="safeConfigDefaults()" classname="ru.midgard.winter.ResourcesTest" time="0.006"/>
-  <testcase name="everyAdminCommandHasOwnPermission()" classname="ru.midgard.winter.ResourcesTest" time="0.004"/>
+  <testcase name="newInstallUsesEmbeddedFantasyAndWondersByDefault()" classname="ru.midgard.winter.ResourcesTest" time="0.01"/>
+  <testcase name="noMandatoryPluginDependency()" classname="ru.midgard.winter.ResourcesTest" time="0.003"/>
+  <testcase name="paperBootstrapAndOptionalBridgesAreDeclared()" classname="ru.midgard.winter.ResourcesTest" time="0.007"/>
+  <testcase name="terrainProfileAndDecorOnlyProfileAreSeparate()" classname="ru.midgard.winter.ResourcesTest" time="0.007"/>
+  <testcase name="nativePackIsEmbeddedWithExactVersion()" classname="ru.midgard.winter.ResourcesTest" time="0.0"/>
+  <testcase name="sparseFieldForestFilterOnlyBelongsToTerrainProfile()" classname="ru.midgard.winter.ResourcesTest" time="0.001"/>
+  <testcase name="safeConfigDefaults()" classname="ru.midgard.winter.ResourcesTest" time="0.004"/>
+  <testcase name="everyAdminCommandHasOwnPermission()" classname="ru.midgard.winter.ResourcesTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

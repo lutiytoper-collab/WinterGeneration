@@ -1,0 +1,26 @@
+{
+  "naturalArea": {
+    "spawnRadius": 24,
+    "centerX": 256,
+    "centerZ": 296,
+    "selection": "Public Luna random XZ bounds and generator offsets within a 64x64 natural meadow; unmodified native terrain"
+  },
+  "platformRadius": 2,
+  "generator": "jdk.proxy4.$Proxy83",
+  "mode": "public Generator adapter: bounded random coordinates and async preparation over natural winter_test; real Luna lifecycle",
+  "status": "PASS",
+  "elapsedSeconds": 45.770226866,
+  "world": "winter_test",
+  "x": 253,
+  "y": 87,
+  "z": 297,
+  "biome": "minecraft:forest",
+  "belowBefore": "minecraft:snow[layers\u003d1]",
+  "belowAfter": "minecraft:snow[layers\u003d1]",
+  "ticketCountAfterEnd": 0,
+  "surfacePreservedAfterEnd": true,
+  "blockAfterEnd": "AIR",
+  "ticketCoordinates": "[]",
+  "activeAfterEnd": 0,
+  "preparationsAfterEnd": 0
+}

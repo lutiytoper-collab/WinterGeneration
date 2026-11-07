@@ -103,7 +103,7 @@ def build():
  for p in OUT.rglob('*.json'):
   if p.relative_to(OUT).as_posix() not in expected:p.unlink()
  for name,data in expected.items():write(OUT/name,data)
- write(OUT/'pack.mcmeta',{'pack':{'description':'Midgard Fantasy 0.6.0 — Minecraft 1.21.11; native frost forests + winter climate','min_format':[94,1],'max_format':[94,1]}})
+ write(OUT/'pack.mcmeta',{'pack':{'description':'Midgard Fantasy 0.7.0 — Minecraft 1.21.11; native frost forests + winter climate','min_format':[94,1],'max_format':[94,1]}})
  validate()
  with zipfile.ZipFile(ROOT/'dist/storybook-datapack.zip','w',zipfile.ZIP_DEFLATED) as z:
   for p in sorted(OUT.rglob('*')):

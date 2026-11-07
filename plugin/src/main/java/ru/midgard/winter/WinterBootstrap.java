@@ -23,7 +23,7 @@ public final class WinterBootstrap implements PluginBootstrap {
                 String profile=terrain?"/fantasy-terrain-pack":"/fantasy-pack";
                 var uri=Objects.requireNonNull(WinterBootstrap.class.getResource(profile),"Missing bundled Fantasy profile").toURI();
                 var pack=event.registrar().discoverPack(uri,"fantasy",options->options
-                    .title(Component.text("Midgard Fantasy 0.6.0"))
+                    .title(Component.text("Midgard Fantasy 0.7.0"))
                     .autoEnableOnServerStart(true).position(true,Datapack.Position.TOP));
                 if(pack==null)throw new IllegalStateException("Paper rejected embedded Fantasy worldgen");
                 context.getLogger().info("FANTASY_PACK_DISCOVERED "+pack.getName());

@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "seed": 42,
+  "one_jar_no_external_pack": true,
+  "rediscovered_on_restart": true,
+  "global_disable_verified": false,
+  "terrain_disabled_profile": false,
+  "minecraft": "1.21.11",
+  "server": "1.21.11-132-c5eb079 (MC: 1.21.11)",
+  "plugin_sha256": "75bd3d98bc3700b1f5489f798c03122eecd1a099a667e1cd5d6e06b16c0b390f",
+  "restart_differences": {
+    "surfaceByBiome": [],
+    "blockEntities": [],
+    "winterMarker": []
+  },
+  "roi": 4
+}

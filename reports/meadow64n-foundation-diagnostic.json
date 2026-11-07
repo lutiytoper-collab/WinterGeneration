@@ -1,0 +1,25 @@
+{
+  "scope": "Exact offending heuristic samples; preserved before any QA change.",
+  "samples": [
+    {
+      "piece": "minecraft:village/desert/streets/corner_01",
+      "bb": [
+        -3727,
+        89,
+        -1339,
+        -3721,
+        108,
+        -1325
+      ],
+      "block": [
+        -3727,
+        94,
+        -1339
+      ],
+      "material": "sandstone",
+      "airGap": 9,
+      "above": "sandstone",
+      "minDoorY": 102
+    }
+  ]
+}

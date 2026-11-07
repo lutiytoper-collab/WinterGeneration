@@ -2,20 +2,24 @@
   "type": "minecraft:add",
   "argument1": "minecraft:overworld/depth",
   "argument2": {
-    "type": "minecraft:mul",
+    "type": "minecraft:add",
     "argument1": {
-      "type": "minecraft:y_clamped_gradient",
-      "from_y": 48,
-      "to_y": 88,
-      "from_value": 0,
-      "to_value": 1
+      "type": "minecraft:mul",
+      "argument1": {
+        "type": "minecraft:add",
+        "argument1": 1,
+        "argument2": {
+          "type": "minecraft:mul",
+          "argument1": -1,
+          "argument2": "midgard:terrain/plains_weight"
+        }
+      },
+      "argument2": "midgard:terrain/base_depth_shift"
     },
     "argument2": {
       "type": "minecraft:mul",
-      "argument1": {
-        "type": "minecraft:blend_alpha"
-      },
-      "argument2": "midgard:terrain/displacement"
+      "argument1": "midgard:terrain/plains_weight",
+      "argument2": "midgard:terrain/meadow_depth_shift"
     }
   }
 }

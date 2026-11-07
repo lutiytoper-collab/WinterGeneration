@@ -6,6 +6,6 @@ test_original_negative_Z_regions_decode_to_expected_rings (__main__.SchematicTes
 test_pinned_generated_outputs_validate (__main__.SchematicTests.test_pinned_generated_outputs_validate) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.025s
+Ran 6 tests in 0.024s
 
 OK

@@ -1,10 +1,13 @@
 To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
 Daemon will be stopped at the end of the build 
+> Task :plugin:clean
 > Task :core:compileJava UP-TO-DATE
 > Task :core:processResources NO-SOURCE
 > Task :core:classes UP-TO-DATE
 > Task :core:jar UP-TO-DATE
+
 > Task :plugin:compileJava
+
 > Task :plugin:processResources
 > Task :plugin:classes
 > Task :plugin:jar
@@ -20,5 +23,7 @@ Daemon will be stopped at the end of the build
 > Task :probe:classes UP-TO-DATE
 > Task :probe:jar UP-TO-DATE
 
-BUILD SUCCESSFUL in 8s
-10 actionable tasks: 5 executed, 5 up-to-date
+[Incubating] Problems report is available at: file:///workspace/WinterGeneration/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 7s
+11 actionable tasks: 6 executed, 5 up-to-date

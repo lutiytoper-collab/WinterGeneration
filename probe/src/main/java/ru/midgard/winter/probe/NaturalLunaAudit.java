@@ -14,7 +14,9 @@ final class NaturalLunaAudit implements Listener {
         started=System.nanoTime();owner.getLogger().info("NATURALLUNA_BEGIN");
         Plugin luna=Objects.requireNonNull(Bukkit.getPluginManager().getPlugin("LunaAirDrop"));World world=Objects.requireNonNull(Bukkit.getWorld("winter_test"));world.setStorm(false);world.setThundering(false);world.setGameRule(GameRules.RANDOM_TICK_SPEED,0);world.setGameRule(GameRules.ADVANCE_WEATHER,false);
         drop=((Map<?,?>)luna.getClass().getField("airDrops").get(null)).get("default");Class<?> t=drop.getClass();
-        t.getMethod("setWorld",World.class).invoke(drop,world);t.getMethod("setUseStaticLoc",boolean.class).invoke(drop,false);t.getMethod("setUseOnlyStaticLoc",boolean.class).invoke(drop,false);t.getMethod("setFlatnessCheck",boolean.class).invoke(drop,false);t.getMethod("setMinPlayersToStart",int.class).invoke(drop,0);t.getMethod("setSpawnRadiusMin",int.class).invoke(drop,-1024);t.getMethod("setSpawnRadiusMax",int.class).invoke(drop,1024);
+        int radius=1024;Path areaFile=owner.getDataFolder().toPath().resolve("natural-luna-area.json");
+        if(Files.exists(areaFile)){var area=JsonParser.parseString(Files.readString(areaFile)).getAsJsonObject();radius=area.get("spawnRadius").getAsInt();if(radius<16||radius>4096)throw new IllegalArgumentException("Bounded QA radius required");report.add("naturalArea",area);}
+        t.getMethod("setWorld",World.class).invoke(drop,world);t.getMethod("setUseStaticLoc",boolean.class).invoke(drop,false);t.getMethod("setUseOnlyStaticLoc",boolean.class).invoke(drop,false);t.getMethod("setFlatnessCheck",boolean.class).invoke(drop,false);t.getMethod("setMinPlayersToStart",int.class).invoke(drop,0);t.getMethod("setSpawnRadiusMin",int.class).invoke(drop,-radius);t.getMethod("setSpawnRadiusMax",int.class).invoke(drop,radius);
         t.getMethod("setAirDropLocation",Location.class).invoke(drop,new Object[]{null});t.getMethod("setFutureLocation",Location.class).invoke(drop,new Object[]{null});
         report.addProperty("platformRadius",((JavaPlugin)Bukkit.getPluginManager().getPlugin("MidgardWinterWorld")).getConfig().getInt("airdrop.platform-radius"));
         report.addProperty("generator",t.getMethod("getGenerator").invoke(drop).getClass().getName());report.addProperty("mode","public Generator adapter: bounded random coordinates and async preparation over natural winter_test; real Luna lifecycle");
@@ -31,7 +33,7 @@ final class NaturalLunaAudit implements Listener {
             ticks++;
             if((boolean)drop.getClass().getMethod("isAirDropStarted").invoke(drop)){
                 timer.cancel();if(chosen==null)throw new IllegalStateException("No real StartEvent observed");
-                if(!belowBefore.startsWith("minecraft:snow["))throw new IllegalStateException("Snow-only scenario selected "+belowBefore);
+                if(!belowBefore.startsWith("minecraft:snow[")&&!belowBefore.equals("minecraft:snow_block"))throw new IllegalStateException("Snow-surface scenario selected "+belowBefore);
                 drop.getClass().getMethod("unlock").invoke(drop);
                 report.addProperty("status","PASS");report.addProperty("elapsedSeconds",(System.nanoTime()-started)/1e9);report.addProperty("world",chosen.getWorld().getName());report.addProperty("x",chosen.getBlockX());report.addProperty("y",chosen.getBlockY());report.addProperty("z",chosen.getBlockZ());report.addProperty("biome",chosen.getBlock().getBiome().getKey().toString());report.addProperty("belowBefore",belowBefore);report.addProperty("belowAfter",chosen.getBlock().getRelative(org.bukkit.block.BlockFace.DOWN).getBlockData().getAsString());
                 if(!Objects.equals(belowBefore,report.get("belowAfter").getAsString()))throw new IllegalStateException("Surface changed");save();owner.getLogger().info("NATURALLUNA_READY");HandlerList.unregisterAll(this);return;

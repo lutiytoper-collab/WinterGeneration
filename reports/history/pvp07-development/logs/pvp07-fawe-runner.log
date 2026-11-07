@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/WinterGeneration/scripts/integration-server.py", line 30, in <module>
+    send('winterprobe natural');wait('NATURALLUNA_READY',360);natural=json.loads((folder/'plugins/WinterProbe/natural-luna.json').read_text())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/WinterGeneration/scripts/integration-server.py", line 22, in wait
+    if 'NATURALLUNA_FAILED' in line or 'WINTERAUDIT_FAILED' in line:raise RuntimeError(line.strip())
+                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: [31;1m[17:52:46 ERROR]: [WinterProbe] NATURALLUNA_FAILED java.lang.IllegalStateException: Natural search timed out

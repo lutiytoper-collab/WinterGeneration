@@ -1,0 +1,107 @@
+{
+  "minecraft": "1.21.11",
+  "plugin_version": "0.7.0",
+  "plugin_sha256": "86407ce3f31fd7ae0e251b979ee5cb023b410a13b4e37af7d47d188bd4bd6ea5",
+  "official_client_sha256": "1473c9489ac50fda3c435049a76a70d61a10b8610db27f5ba9d8756b686cd3bd",
+  "seed": 825180311,
+  "measured_field": {
+    "xMin": 224,
+    "zMin": 264,
+    "size": 64
+  },
+  "resolution": [
+    1600,
+    900
+  ],
+  "weather": "clear",
+  "night_vision": false,
+  "client_resource_pack_or_shaders": "none; native biome appearance from embedded server pack",
+  "scene_edits": "none; spectator teleport, time/weather and spawn metadata only; no QA clearing/flattening or props",
+  "acceptance": "Every PNG chunk CRC verified, byte-identical to Minecraft F2 originals. No crop/resize/retouch/image generation.",
+  "screenshots": [
+    {
+      "file": "01-natural-meadow.png",
+      "native_F2_file": "2026-11-07_03.20.48.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "c5c738acb32145def257897e8a565bbc419c0090aa1c1ff8af1ac704cc8e4b56",
+      "captured_utc": "2026-11-07T03:20:48.666366+00:00",
+      "camera_xyz_yaw_pitch": [
+        228.5,
+        91.0,
+        312.5,
+        -125.0,
+        7.0
+      ],
+      "note": "Ground view inside the fully audited64x64 meadow; natural gentle relief and surrounding forest. Native F2 PNG, no editing.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG",
+      "time_set_before_render_wait": 9000,
+      "captured_client_time": "2026-11-07T08:20:48.666366+05:00"
+    },
+    {
+      "file": "02-meadow-overview.png",
+      "native_F2_file": "2026-11-07_03.21.53.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "5ffd41ab9aa81fffaf1a3b41508baeff8861037964fc1e209c925dffd96f2b89",
+      "captured_utc": "2026-11-07T03:21:54.423640+00:00",
+      "camera_xyz_yaw_pitch": [
+        292.5,
+        126.0,
+        334.5,
+        135.0,
+        34.0
+      ],
+      "note": "Overview of the64x64 playable meadow and its natural edges, retaining vanilla terrain detail. Native F2 PNG, no editing.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG",
+      "time_set_before_render_wait": 9000,
+      "captured_client_time": "2026-11-07T08:21:54.423640+05:00"
+    },
+    {
+      "file": "03-nearby-timber-ruin.png",
+      "native_F2_file": "2026-11-07_03.22.59.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "334d3739c147d19c265c64f2a0555fdc51d0807bfb64ca81d3068a640244ac4f",
+      "captured_utc": "2026-11-07T03:23:00.120936+00:00",
+      "camera_xyz_yaw_pitch": [
+        228.5,
+        91.0,
+        312.5,
+        57.0,
+        6.0
+      ],
+      "note": "Naturally generated timber ruin beside the meadow; no props placed by QA. Native F2 PNG, no editing.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG",
+      "time_set_before_render_wait": 11000,
+      "captured_client_time": "2026-11-07T08:23:00.120936+05:00"
+    },
+    {
+      "file": "04-fantasy-highlands.png",
+      "native_F2_file": "2026-11-07_03.24.40.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "18c7b68a75be7b368a2ad176103705296fcb41954b4fcb9564f52334a57aa2aa",
+      "captured_utc": "2026-11-07T03:24:40.694891+00:00",
+      "camera_xyz_yaw_pitch": [
+        560.5,
+        154.0,
+        768.5,
+        90.0,
+        26.201
+      ],
+      "note": "Fantasy slopes and forests outside the smaller meadows remain. Native F2 PNG, no editing.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG",
+      "time_set_before_render_wait": 9000,
+      "captured_client_time": "2026-11-07T08:24:40.694891+05:00"
+    }
+  ]
+}

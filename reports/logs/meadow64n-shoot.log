@@ -1,0 +1,13 @@
+CAMERA 01-natural-meadow [228.5, 91, 312.5, -125, 7]
+/workspace/WinterGeneration/reports/screenshots-meadow64n/01-natural-meadow.png
+SHOT_READY 01-natural-meadow
+CAMERA 02-meadow-overview [292.5, 126, 334.5, 135, 34]
+/workspace/WinterGeneration/reports/screenshots-meadow64n/02-meadow-overview.png
+SHOT_READY 02-meadow-overview
+CAMERA 03-nearby-timber-ruin [228.5, 91, 312.5, 57, 6]
+/workspace/WinterGeneration/reports/screenshots-meadow64n/03-nearby-timber-ruin.png
+SHOT_READY 03-nearby-timber-ruin
+CAMERA 04-fantasy-highlands [560.5, 154, 768.5, 90, 26.201]
+/workspace/WinterGeneration/reports/screenshots-meadow64n/04-fantasy-highlands.png
+SHOT_READY 04-fantasy-highlands
+MEADOW64_GALLERY_DONE

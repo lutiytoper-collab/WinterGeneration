@@ -1,0 +1,133 @@
+{
+  "seed": 825180311,
+  "pluginVersion": "0.7.0",
+  "scope": "Actual public generationSamples coordinates inside the exhaustively inspected 256x256 natural rolling field; no QA structures placed. Samples are capped at32 per feature globally.",
+  "objects": [
+    {
+      "feature": "ice-objects",
+      "x": -1833,
+      "y": 80,
+      "z": 2068
+    },
+    {
+      "feature": "ice-objects",
+      "x": -1836,
+      "y": 81,
+      "z": 2132
+    },
+    {
+      "feature": "ice-objects",
+      "x": -1704,
+      "y": 84,
+      "z": 2137
+    },
+    {
+      "feature": "woodland-shrine-objects",
+      "x": -1862,
+      "y": 84,
+      "z": 1977
+    },
+    {
+      "feature": "woodland-shrine-objects",
+      "x": -1765,
+      "y": 83,
+      "z": 2164
+    },
+    {
+      "feature": "snow-deciduous",
+      "x": -1850,
+      "y": 81,
+      "z": 2069
+    },
+    {
+      "feature": "snow-deciduous",
+      "x": -1835,
+      "y": 81,
+      "z": 2039
+    },
+    {
+      "feature": "snow-deciduous",
+      "x": -1835,
+      "y": 83,
+      "z": 2005
+    },
+    {
+      "feature": "moon-gate-9-objects",
+      "x": -1775,
+      "y": 81,
+      "z": 2069
+    },
+    {
+      "feature": "lantern-willows-objects",
+      "x": -1900,
+      "y": 84,
+      "z": 1965
+    },
+    {
+      "feature": "moon-gate-7-objects",
+      "x": -1870,
+      "y": 83,
+      "z": 2170
+    },
+    {
+      "feature": "moon-gate-7-objects",
+      "x": -1868,
+      "y": 81,
+      "z": 2067
+    },
+    {
+      "feature": "moon-gate-7-objects",
+      "x": -1766,
+      "y": 85,
+      "z": 1972
+    },
+    {
+      "feature": "moon-mushrooms-objects",
+      "x": -1918,
+      "y": 82,
+      "z": 1989
+    },
+    {
+      "feature": "moon-mushrooms-objects",
+      "x": -1914,
+      "y": 83,
+      "z": 2071
+    },
+    {
+      "feature": "clearings-objects",
+      "x": -1816,
+      "y": 82,
+      "z": 2020
+    },
+    {
+      "feature": "clearings-objects",
+      "x": -1817,
+      "y": 79,
+      "z": 2093
+    },
+    {
+      "feature": "clearings-objects",
+      "x": -1753,
+      "y": 86,
+      "z": 1955
+    },
+    {
+      "feature": "clearings-objects",
+      "x": -1752,
+      "y": 81,
+      "z": 2082
+    },
+    {
+      "feature": "clearings-objects",
+      "x": -1752,
+      "y": 84,
+      "z": 2149
+    },
+    {
+      "feature": "clearings-objects",
+      "x": -1690,
+      "y": 80,
+      "z": 2087
+    }
+  ]
+}

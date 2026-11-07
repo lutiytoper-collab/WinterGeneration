@@ -71,7 +71,7 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
             event.registrar().register("winterworld","Управление зимней генерацией",(io.papermc.paper.command.brigadier.BasicCommand)(source,args)->onCommand(source.getSender(),null,"winterworld",args)));
         Bukkit.getServicesManager().register(AirDropCompatibilityManager.class,airDrop,this,
             org.bukkit.plugin.ServicePriority.Normal);
-        getLogger().info("Fantasy build 0.6.0; embedded native pack; protected late decoration; no retrogen.");
+        getLogger().info("Fantasy build 0.7.0; embedded native pack; protected late decoration; no retrogen.");
     }
     @Override public void onDisable() {
         if(pendingTask!=null)pendingTask.cancel();pending.clear();loading.clear();for(Object item:decorationLeases.clear()){ChunkKey key=(ChunkKey)item;Chunk ch=leasedChunks.remove(key);if(ch!=null)ch.removePluginChunkTicket(this);}if(lunaBridge!=null)lunaBridge.close();
@@ -319,6 +319,12 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
         int columnOffset=(int)Noise.hash(seed,ch.getX(),ch.getZ(),700)&255;
         Settings settings=r.settings;DecorationSite site=new DecorationSite(w,r,decorationObstacles(ch,settings.margin()));int used=0;
         int x=ox+8,z=oz+8,y=site.surface(x,z);String biome=w.getBiome(x,y,z).getKey().getKey();
+        int fieldSamples=0;
+        for(int dx:new int[]{3,8,13})for(int dz:new int[]{3,8,13}){
+            int py=site.surface(ox+dx,oz+dz);
+            if(py>=72&&py<=96&&w.getBlockAt(ox+dx,py,oz+dz).getType()==Material.ROOTED_DIRT)fieldSamples++;
+        }
+        boolean field=fieldSamples>=3;if(field)feature("gentle-field-chunks",1);
         boolean light=r.modules.contains("lights")&&Noise.unit(seed,ch.getX(),ch.getZ(),203)<settings.lightChance();
         List<DecorationPlan> candidates=new ArrayList<>();
         if(r.modules.contains("schematics")&&!schematicTemplates.isEmpty()&&Candidates.rare(seed,ch.getX(),ch.getZ(),8,950,r.schematicChance)){
@@ -327,10 +333,10 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
             candidates.add(pool.get(variant).rotated(turn));
         }
         if(r.modules.contains("cabins")&&Candidates.rare(seed,ch.getX(),ch.getZ(),8,201,settings.cabinChance()))candidates.add(DecorationPlan.cabin(light));
-        if(r.modules.contains("clearings")&&Candidates.rare(seed,ch.getX(),ch.getZ(),4,202,settings.clearingChance()))candidates.add(DecorationPlan.clearing(light));
+        if(r.modules.contains("clearings")&&Candidates.rare(seed,ch.getX(),ch.getZ(),4,202,settings.clearingChance()*(field?.45:1)))candidates.add(DecorationPlan.clearing(light));
         // Offset the mineral grid: clearings must not consume every crystal candidate.
-        if(r.modules.contains("ice")&&Candidates.rare(seed,ch.getX()+1,ch.getZ()+1,4,204,settings.iceChance()))candidates.add(DecorationPlan.ice(seed,ch.getX(),ch.getZ()));
-        if(r.modules.contains("wonders")&&Noise.unit(seed,ch.getX(),ch.getZ(),884)<.38)candidates.add(FantasyPlan.choose(seed,ch.getX(),ch.getZ(),biome.contains("birch")));
+        if(r.modules.contains("ice")&&Candidates.rare(seed,ch.getX()+1,ch.getZ()+1,4,204,settings.iceChance()*(field?.3:1)))candidates.add(DecorationPlan.ice(seed,ch.getX(),ch.getZ()));
+        if(r.modules.contains("wonders")&&Noise.unit(seed,ch.getX(),ch.getZ(),884)<(field?.025:.38))candidates.add(FantasyPlan.choose(seed,ch.getX(),ch.getZ(),biome.contains("birch")));
         objectLoop:for(DecorationPlan special:candidates){
             Box shape=special.bounds(0,0,0);int minX=Math.max(1,-shape.minX()),maxX=Math.min(14,15-shape.maxX()),minZ=Math.max(1,-shape.minZ()),maxZ=Math.min(14,15-shape.maxZ());
             for(int attempt=0;attempt<10;attempt++){
@@ -350,18 +356,18 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
                 }
             }
         }
-        if(used==0&&r.modules.contains("forests")&&Noise.unit(seed,ch.getX(),ch.getZ(),205)<settings.forestDensity()){
+        if(used==0&&Noise.unit(seed,ch.getX(),ch.getZ(),205)<(field?(r.modules.contains("wonders")?.025:0):(r.modules.contains("forests")?settings.forestDensity():0))){
             for(int attempt=0;attempt<10;attempt++){
                 int px=ox+5+(int)(Noise.unit(seed,ch.getX(),ch.getZ(),450+attempt)*6),pz=oz+5+(int)(Noise.unit(seed,ch.getX(),ch.getZ(),470+attempt)*6),py=site.surface(px,pz);
                 String actual=w.getBiome(px,py,pz).getKey().getKey();
-                if(!isForest(actual)||!allowed(r,w,px,py,pz)||(r.modules.contains("trails")&&WinterLandscape.trailShoulder(seed,px,pz)))continue;
+                if((!field&&!isForest(actual))||!allowed(r,w,px,py,pz)||(r.modules.contains("trails")&&WinterLandscape.trailShoulder(seed,px,pz)))continue;
                 DecorationPlan tree=isConifer(actual)?DecorationPlan.conifer(seed,px,pz):DecorationPlan.deciduous(seed,px,pz,actual.contains("birch"));
                 var valid=ForestPlacementValidator.validate(tree,site,px,py,pz,ch.getX(),ch.getZ(),settings.maxChanges(),r.maxObjectSize);
                 if(valid.allowed()){used+=writePlan(w,tree,valid.writes(),px,py,pz);featureAt(isConifer(actual)?"snow-conifers":"snow-deciduous",px,py,pz);break;}
             }
         }
         // Small natural details occupy gaps without competing with a full tree's budget.
-        if(r.modules.contains("forests")&&settings.forestDensity()>.1&&used<settings.maxChanges()-40)for(int attempt=0;attempt<2;attempt++){
+        if(!field&&r.modules.contains("forests")&&settings.forestDensity()>.1&&used<settings.maxChanges()-40)for(int attempt=0;attempt<2;attempt++){
             int px=ox+3+(int)(Noise.unit(seed,ch.getX(),ch.getZ(),490+attempt)*10),pz=oz+3+(int)(Noise.unit(seed,ch.getX(),ch.getZ(),500+attempt)*10),py=site.surface(px,pz);
             String actual=w.getBiome(px,py,pz).getKey().getKey();if(!isForest(actual)||WinterLandscape.trailShoulder(seed,px,pz))continue;
             DecorationPlan small=Noise.unit(seed,px,pz,501)<.25?DecorationPlan.fallenLog(actual.contains("birch")):DecorationPlan.shrub(actual.contains("birch"));
@@ -372,7 +378,7 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
             int px=ox+dx,pz=oz+dz,py=site.surface(px,pz);
             if(!WinterLandscape.trail(seed,px,pz)||!landColumn(site,px,py,pz)||site.protectedBox(new Box(px,py,pz,px,py+2,pz)))continue;
             Material ground=w.getBlockAt(px,py,pz).getType();Block top=w.getBlockAt(px,py+1,pz);
-            if(!Set.of(Material.GRASS_BLOCK,Material.DIRT,Material.PODZOL,Material.COARSE_DIRT).contains(ground)||!(top.getType()==Material.AIR||thinSnow(top)||SMALL_PLANTS.contains(top.getType())))continue;
+            if(!Set.of(Material.GRASS_BLOCK,Material.DIRT,Material.PODZOL,Material.COARSE_DIRT,Material.ROOTED_DIRT).contains(ground)||!(top.getType()==Material.AIR||thinSnow(top)||SMALL_PLANTS.contains(top.getType())))continue;
             if((site.loaded(px-1,pz)&&Math.abs(site.surface(px-1,pz)-py)>1)||(site.loaded(px+1,pz)&&Math.abs(site.surface(px+1,pz)-py)>1)||(site.loaded(px,pz-1)&&Math.abs(site.surface(px,pz-1)-py)>1)||(site.loaded(px,pz+1)&&Math.abs(site.surface(px,pz+1)-py)>1))continue;
             if(top.getType()!=Material.AIR){top.setType(Material.AIR,false);used++;}
             w.getBlockAt(px,py,pz).setType(Noise.unit(seed,px,pz,512)<.25?Material.PODZOL:Material.COARSE_DIRT,false);used++;feature("trail-blocks",1);
@@ -394,7 +400,7 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
                     &&site.naturalSupport(px,py-1,pz)&&site.naturalSupport(px,py-2,pz)&&Noise.unit(seed,px,pz,210)<settings.snowDensity()
                     &&!(r.modules.contains("trails")&&WinterLandscape.trail(seed,px,pz))){
                 if(above.getType()==Material.TALL_GRASS||above.getType()==Material.LARGE_FERN)continue;
-                int layers=WinterLandscape.driftLayers(seed,px,pz,settings.snowLayers());
+                int layers=WinterLandscape.driftLayers(seed,px,pz,settings.snowLayers());if(field)layers=Math.min(2,layers);
                 if(thinSnow(above))layers=Math.max(layers,((Snow)above.getBlockData()).getLayers());
                 apply(w,px,py+1,pz,Material.SNOW,layers);used++;feature("drift-blocks",1);
             }else if(r.freeze&&ground.getType()==Material.WATER&&above.getType()==Material.AIR&&Set.of("river","frozen_river").contains(w.getBiome(px,py,pz).getKey().getKey())
@@ -429,6 +435,7 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
     }
 
     /** Validate and reserve atomically on the main thread; LunaAirDrop must call before choosing spawn. */
+    static boolean airDropSolidSupport(Material type){return SUPPORT.contains(type)||type==Material.SNOW_BLOCK;}
     public AirDropCompatibilityManager.Result checkAirDrop(World w,int x,int z) {
         if(!Bukkit.isPrimaryThread()) throw new IllegalStateException("Server thread required");
         Runtime r=runtime;
@@ -443,7 +450,7 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
             public boolean safeGround(int px,int py,int pz) {
                 if(py<w.getMinHeight()||py>=w.getMaxHeight())return false;
                 Block b=w.getBlockAt(px,py,pz);
-                return SUPPORT.contains(b.getType())||(py==height(px,pz)&&b.getType()==Material.SNOW&&((Snow)b.getBlockData()).getLayers()<=r.shallowSnowLayers);
+                return airDropSolidSupport(b.getType())||(py==height(px,pz)&&b.getType()==Material.SNOW&&((Snow)b.getBlockData()).getLayers()<=r.shallowSnowLayers);
             }
             public boolean air(int px,int py,int pz) { return py>=w.getMinHeight()&&py<w.getMaxHeight()&&w.getBlockAt(px,py,pz).getType()==Material.AIR; }
             public boolean protectedAt(int px,int py,int pz) {
@@ -472,7 +479,7 @@ public final class WinterPlugin extends JavaPlugin implements Listener, CommandE
                 catch(RuntimeException ex) { runtime=previous; sender.sendMessage("Отклонено; прежние настройки сохранены: "+ex.getMessage()); }
             }
             case "debug" -> { debug=!debug; sender.sendMessage("Debug="+debug); }
-            case "status", "info" -> sender.sendMessage("MidgardWinterWorld 0.6.0 DEVELOPMENT; enabled="+runtime.enabled+
+            case "status", "info" -> sender.sendMessage("MidgardWinterWorld 0.7.0 DEVELOPMENT; enabled="+runtime.enabled+
                 "; worlds="+runtime.worlds+"; processed="+seen+" decorated="+decorated+" skipped="+skipped+" boundary-restored="+boundaryRestorations+" pending="+(pending.size()+loading.size())+
                 "; leased-chunks="+decorationLeases.size()+"; features="+features+"; WorldGuard="+(worldGuardPresent()?"public API bridge, fail closed on query failure":"absent")+"; LunaAirDrop=UNVERIFIED");
             case "inspect" -> {

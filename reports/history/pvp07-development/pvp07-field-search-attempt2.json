@@ -1,0 +1,21 @@
+{
+  "seed": 825180311,
+  "minecraft": "1.21.11",
+  "pluginVersion": "0.7.0",
+  "xMin": 896,
+  "zMin": -1152,
+  "size": 256,
+  "columnsFullyScanned": 65536,
+  "snowCoreColumns": 30677,
+  "minY": 57,
+  "maxY": 125,
+  "heightRange": 68,
+  "maxAdjacentStep": 36,
+  "wetOrIceOrPowderColumns": 5786,
+  "obstructedColumns": 24626,
+  "unsupportedFirst3Blocks": 6403,
+  "maxSnowLayers": 6,
+  "structuresInLoadedChunks": 2,
+  "status": "FAIL",
+  "scope": "Read-only 256x256 actual FULL terrain after decoration idle; no placed, removed or flattened blocks; no claim about every world seed or every field."
+}

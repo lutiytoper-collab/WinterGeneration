@@ -1,0 +1,95 @@
+{
+  "minecraft": "1.21.11",
+  "plugin_version": "0.7.0",
+  "plugin_sha256": "913f2c969cdcc7c81d0479608389c8aa9884bd319d0d668ccc533328b3459c41",
+  "official_client_sha256": "1473c9489ac50fda3c435049a76a70d61a10b8610db27f5ba9d8756b686cd3bd",
+  "seed": 825180311,
+  "resolution": [
+    1600,
+    900
+  ],
+  "time_of_day": 9000,
+  "weather": "clear",
+  "night_vision": false,
+  "shaders_or_resource_pack": "none; native biome appearance from embedded pack",
+  "scene_edits": "none; spectator camera teleport/time/weather only, no terrain clearing or placed props",
+  "acceptance": "Four native F2 PNG; byte equality with original screenshots and every PNG chunk CRC verified. No crop, resize, retouch or image generation.",
+  "screenshots": [
+    {
+      "file": "01-rolling-meadow.png",
+      "native_F2_file": "2026-11-06_18.32.11.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "eb8fe6f599609d83c20c9dff6921eaa59b354c51e4355eae9bca9f8456743641",
+      "captured_utc": "2026-11-06T18:32:11.642447+00:00",
+      "camera_xyz_yaw_pitch": [
+        -1875.5,
+        88.5,
+        1945.5,
+        -35.0,
+        2.5
+      ],
+      "note": "Gentle natural meadow with a woodland shrine and scattered fantasy cover; no clearing or flattening. Native F2 PNG, no image editing.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "02-meadow-panorama.png",
+      "native_F2_file": "2026-11-06_18.33.16.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "3b889ef87f03e148c82c9f73923db5220f3666b25d8aa96f95a3f7afd8580ff3",
+      "captured_utc": "2026-11-06T18:33:17.247726+00:00",
+      "camera_xyz_yaw_pitch": [
+        -1840.5,
+        135.0,
+        1950.5,
+        -25.0,
+        24.0
+      ],
+      "note": "Wide view of the audited 256x256 rolling meadow with native plugin landmarks and room between them. Native F2 PNG, no image editing.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "03-moon-gate.png",
+      "native_F2_file": "2026-11-06_18.34.22.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "13e92e87f68e1360b8527bc047dc4b596f1ece3f36e53d8bfe92aad379571c80",
+      "captured_utc": "2026-11-06T18:34:22.684887+00:00",
+      "camera_xyz_yaw_pitch": [
+        -1785.5,
+        87.0,
+        2042.5,
+        -20.0,
+        5.0
+      ],
+      "note": "Naturally generated moon gate in the rolling meadow, normal breakable common materials. Native F2 PNG, no image editing.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    },
+    {
+      "file": "04-fantasy-highlands.png",
+      "native_F2_file": "2026-11-06_18.36.22.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "d4386ae11a3d80f7ea8d47cca7aff7e6ccaee6525c838222a2728c4ae0af622c",
+      "captured_utc": "2026-11-06T18:36:23.139403+00:00",
+      "camera_xyz_yaw_pitch": [
+        560.5,
+        154.0,
+        768.5,
+        90.0,
+        26.201
+      ],
+      "note": "Fantasy highlands away from the meadow: surrounding relief and forests are retained. Native F2 PNG, no image editing.",
+      "postprocessing": "none; byte-identical copy of Minecraft F2 PNG"
+    }
+  ]
+}

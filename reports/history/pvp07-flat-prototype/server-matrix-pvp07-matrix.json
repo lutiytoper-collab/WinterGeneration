@@ -1,0 +1,476 @@
+[
+  {
+    "seed": 825180311,
+    "diffs": [
+      {
+        "chunk": [
+          128,
+          128
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          129,
+          128
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          130,
+          128
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          131,
+          128
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          132,
+          128
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          133,
+          128
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          134,
+          128
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          135,
+          128
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          128,
+          129
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          129,
+          129
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          130,
+          129
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          131,
+          129
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          132,
+          129
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          133,
+          129
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          134,
+          129
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          135,
+          129
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          128,
+          130
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          129,
+          130
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          130,
+          130
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          131,
+          130
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          132,
+          130
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          133,
+          130
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          134,
+          130
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          135,
+          130
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          128,
+          131
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          129,
+          131
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          130,
+          131
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          131,
+          131
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          132,
+          131
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          133,
+          131
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          134,
+          131
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          135,
+          131
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          128,
+          132
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          129,
+          132
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          130,
+          132
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          131,
+          132
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          132,
+          132
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          133,
+          132
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          134,
+          132
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          135,
+          132
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          128,
+          133
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          129,
+          133
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          130,
+          133
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          131,
+          133
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          132,
+          133
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          133,
+          133
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          134,
+          133
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          135,
+          133
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          128,
+          134
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          129,
+          134
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          130,
+          134
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          131,
+          134
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          132,
+          134
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          133,
+          134
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          134,
+          134
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          135,
+          134
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          128,
+          135
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          129,
+          135
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          130,
+          135
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          131,
+          135
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          132,
+          135
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          133,
+          135
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          134,
+          135
+        ],
+        "field": "belowSurfaceGeometry"
+      },
+      {
+        "chunk": [
+          135,
+          135
+        ],
+        "field": "belowSurfaceGeometry"
+      }
+    ],
+    "timings": {
+      "vanilla": {
+        "chunks": 64,
+        "mean_ms": 117.340732546875,
+        "median_ms": 0.117417,
+        "p95_ms": 796.267915,
+        "max_ms": 1706.827674,
+        "heapStart": 417857536,
+        "heapEnd": 560988160
+      },
+      "winter": {
+        "chunks": 64,
+        "mean_ms": 561.225353953125,
+        "median_ms": 0.11511350000000001,
+        "p95_ms": 4123.430069,
+        "max_ms": 7697.037688,
+        "heapStart": 706136864,
+        "heapEnd": 475219392
+      }
+    },
+    "metadata_y_refreshes": []
+  }
+]

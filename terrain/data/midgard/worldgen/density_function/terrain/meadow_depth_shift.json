@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:mul",
+  "argument1": {
+    "type": "minecraft:blend_alpha"
+  },
+  "argument2": {
+    "type": "minecraft:add",
+    "argument1": "midgard:terrain/meadow_offset",
+    "argument2": {
+      "type": "minecraft:mul",
+      "argument1": -1,
+      "argument2": "minecraft:overworld/offset"
+    }
+  }
+}

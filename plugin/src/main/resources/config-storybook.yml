@@ -3,7 +3,7 @@ fantasy-pack-enabled: true
 # Native terrain for ALL Overworld biomes; warm biome climate stays vanilla.
 # Requires a full restart and a NEW world; disabling does not undo generated terrain.
 fantasy-terrain-enabled: true
-# MidgardWinterWorld 0.6.0. Только НОВЫЙ тестовый мир, не основной сервер.
+# MidgardWinterWorld 0.7.0. Только НОВЫЙ тестовый мир, не основной сервер.
 enabled: true
 preset: FAIRYTALE
 allowed-worlds: [world, winter_test]

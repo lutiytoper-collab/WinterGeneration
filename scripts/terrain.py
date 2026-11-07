@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Native landforms for 1.21.11. Only final terrain density changes; vanilla cave/ore/structure resources remain.
+"""Native landforms for 1.21.11. Final density + a bounded cold-field surface prefix.
 The named original functions are not overridden: biome climate and original deep density keep their inputs.
 """
 from pathlib import Path
-import argparse,copy,hashlib,json,zipfile
+import argparse,copy,hashlib,importlib.util,json,zipfile
 ROOT=Path(__file__).resolve().parents[1];SOURCE=ROOT/'vendor/terrain';OUT=ROOT/'terrain'
 def load(p):return json.loads(p.read_text())
 def write(p,d):p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
@@ -50,22 +50,57 @@ def content():
  f['depth']=add('minecraft:overworld/depth',mul(gradient(48,88,0,1),mul({'type':'minecraft:blend_alpha'},field('displacement'))))
  original=load(SOURCE/'density_function/overworld/sloped_cheese.json')
  f['sloped_cheese']=replace(original,'minecraft:overworld/depth',field('depth'))
- for name,d in f.items():resources['data/midgard/worldgen/density_function/terrain/'+name+'.json']=d
- for name,octave,amps in [('fantasy_massifs',-9,[1,1,.5,.25]),('fantasy_terraces',-8,[1,.3]),('fantasy_ravines',-8,[1,.6,.2])]:
-  resources['data/midgard/worldgen/noise/'+name+'.json']={'firstOctave':octave,'amplitudes':amps}
+ # Broad, organic lowland clearings. Blend BEFORE carvers/features/structures, never flatten saved chunks.
+ # Low, broad hills keep a walkable landscape with cover, not a flattened arena.
+ f['plains_noise']=noise('fantasy_plains')
+ f['plains_mask']=cached(spline(field('plains_noise'),[(-2,1),(-.05,1),(.20,0),(2,0)]))
+ f['lowland_mask']=cached(spline('minecraft:overworld/offset',[(-2,1),(-.22,1),(-.10,0),(2,0)]))
+ # Small meadows belong in existing fantasy lowlands; do not cut a flat pocket through a high massif.
+ f['meadow_relief_mask']=cached(spline(field('target_offset'),[(-2,0),(-.65,0),(-.50,1),(-.10,1),(.05,0),(2,0)]))
+ f['plains_weight']=mul(gradient(48,64,0,1),mul(field('land_mask'),mul(field('meadow_relief_mask'),mul(field('lowland_mask'),field('plains_mask')))))
+ f['meadow_offset']=cached(add(-.34375,mul(.025,noise('fantasy_plains_detail'))))
+ f['base_depth_shift']=mul(gradient(48,88,0,1),mul({'type':'minecraft:blend_alpha'},field('displacement')))
+ f['meadow_depth_shift']=mul({'type':'minecraft:blend_alpha'},add(field('meadow_offset'),mul(-1,'minecraft:overworld/offset')))
+ # Blend offsets before vanilla sloped_cheese, retaining its natural surface detail and cave branch.
+ # Blending a flat final-density plane made short transition bands too steep.
+ f['depth']=add('minecraft:overworld/depth',add(mul(add(1,mul(-1,field('plains_weight'))),field('base_depth_shift')),mul(field('plains_weight'),field('meadow_depth_shift'))))
  settings=load(SOURCE/'noise_settings/overworld.json')
- settings['noise_router']['final_density']=replace(settings['noise_router']['final_density'],'minecraft:overworld/sloped_cheese',field('sloped_cheese'))
+ f['base_density']=replace(settings['noise_router']['final_density'],'minecraft:overworld/sloped_cheese',field('sloped_cheese'))
+ settings['noise_router']['final_density']=field('base_density')
+ # Ordinary rooted soil marks gentle cold lowlands without changing caves or sealing their entrances.
+ # Sparse trees, ruins, trails and natural grass remain; only dense native forest planting is filtered here.
+ def condition(test,then):return {'type':'minecraft:condition','if_true':test,'then_run':then}
+ def above(y):return {'type':'minecraft:y_above','anchor':{'absolute':y},'surface_depth_multiplier':0,'add_stone_depth':False}
+ tests=[{'type':'minecraft:biome','biome_is':['minecraft:'+p.stem for p in sorted((ROOT/'vendor/vanilla/biome').glob('*.json'))]},
+        {'type':'minecraft:noise_threshold','noise':'midgard:fantasy_plains','min_threshold':-100,'max_threshold':-.08},
+        above(72),{'type':'minecraft:not','invert':above(97)},
+        {'type':'minecraft:stone_depth','offset':0,'add_surface_depth':False,'secondary_depth_range':0,'surface_type':'floor'}]
+ prefix={'type':'minecraft:block','result_state':{'Name':'minecraft:rooted_dirt'}}
+ for test in reversed(tests):prefix=condition(test,prefix)
+ settings['surface_rule']={'type':'minecraft:sequence','sequence':[prefix,settings['surface_rule']]}
+ for name,d in f.items():resources['data/midgard/worldgen/density_function/terrain/'+name+'.json']=d
+ for name,octave,amps in [('fantasy_massifs',-9,[1,1,.5,.25]),('fantasy_terraces',-8,[1,.3]),('fantasy_ravines',-8,[1,.6,.2]),('fantasy_plains',-7,[1,.15]),('fantasy_plains_detail',-6,[1,.5,.25])]:
+  resources['data/midgard/worldgen/noise/'+name+'.json']={'firstOctave':octave,'amplitudes':amps}
  # Keep the vanilla preliminary_surface_level: it feeds aquifers. Structures query native final density/heightmaps.
  # This also keeps every cave, aquifer and ore router input outside the final surface-shaping branch unchanged.
  resources['data/minecraft/worldgen/noise_settings/overworld.json']=settings
+ # Derive the same twelve isolated forest placements from their pinned Storybook sources.
+ # The terrain-off profile keeps its unfiltered copies. Native sparse plains trees are retained.
+ spec=importlib.util.spec_from_file_location('terrain_forest_source',Path(__file__).with_name('storybook.py'));forest=importlib.util.module_from_spec(spec);spec.loader.exec_module(forest)
+ forest.ROOT=ROOT;forest.SOURCE=ROOT/'vendor/storybook';forest.OUT=ROOT/'storybook';forest.source_check();base=forest.content()
+ for name in forest.TARGETS:
+  path='data/minecraft/worldgen/placed_feature/'+name+'.json';d=copy.deepcopy(base[path])
+  d['placement'].insert(-1,{'type':'minecraft:block_predicate_filter','predicate':{'type':'minecraft:not','predicate':{'type':'minecraft:matching_blocks','offset':[0,-1,0],'blocks':'minecraft:rooted_dirt'}}})
+  resources[path]=d
  return resources
 
 def validate():
  sources();expected=content();actual={p.relative_to(OUT).as_posix():load(p) for p in OUT.rglob('*.json')};assert actual==expected,'Terrain resources modified/missing/outside allowlist'
  old=load(SOURCE/'noise_settings/overworld.json');new=actual['data/minecraft/worldgen/noise_settings/overworld.json']
- assert {k for k in old if old[k]!=new[k]}=={'noise_router'}
+ assert {k for k in old if old[k]!=new[k]}=={'noise_router','surface_rule'}
  assert {k for k in old['noise_router'] if old['noise_router'][k]!=new['noise_router'][k]}=={'final_density'}
- for key in ['noise','surface_rule','sea_level','spawn_target','ore_veins_enabled','aquifers_enabled']:assert old[key]==new[key]
+ for key in ['noise','sea_level','spawn_target','ore_veins_enabled','aquifers_enabled']:assert old[key]==new[key]
+ assert new['surface_rule']['sequence'][1]==old['surface_rule']
  # Every custom density reference resolves and the graph is acyclic.
  funcs={p.removeprefix('data/midgard/worldgen/density_function/').removesuffix('.json'):v for p,v in actual.items() if '/density_function/' in p}
  def strings(v):
@@ -80,16 +115,22 @@ def validate():
   for ref in graph[k]:visit(ref,path|{k})
  for k in funcs:visit(k,set())
  assert load(OUT/'pack.mcmeta')['pack']['min_format']==[94,1]
- write(ROOT/'reports/terrain-static-validation.json',{'status':'PASS','minecraft':'1.21.11','noise_settings_override':'minecraft:overworld','changed_router_inputs':['final_density'],'native_caves_aquifers_ore_veins_preliminary_surface_kept':True,'biome_router_inputs_kept':True,'surface_rules_kept':True,'no_ore_carver_or_structure_definition_overrides':True,'deep_offset_contribution_zero_through_y':48,'resources':len(actual),'runtime_geometry_deep_cave_structure_acceptance':'Separate real server tests required; static comparison does not prove equal generated blocks.'})
- print('PASS: native terrain density, acyclic references, only final_density changed, cave/aquifer/ore/biome inputs kept')
+ write(ROOT/'reports/terrain-static-validation.json',{'status':'PASS','minecraft':'1.21.11','noise_settings_override':'minecraft:overworld','changed_router_inputs':['final_density'],'native_caves_aquifers_ore_veins_preliminary_surface_kept':True,'biome_router_inputs_kept':True,'original_surface_sequence_kept_after_cold_field_prefix':True,'no_ore_carver_tag_or_structure_definition_overrides':True,'deep_offset_contribution_zero_through_y':48,'pvp_core_surface':'gentle hills with ordinary rooted soil, native snow/grass, sparse trees and normal decorations; no player protection','dense_native_forest_placements_filtered_on_field_soil':12,'resources':len(actual),'runtime_geometry_deep_cave_structure_acceptance':'Separate real server tests required; static comparison does not prove equal generated blocks.'})
+ print('PASS: native terrain + broad lowland fields, acyclic references, cave/aquifer/ore/biome inputs kept; cold field surface prefix')
 def build():
  sources();expected=content();OUT.mkdir(exist_ok=True)
  for p in OUT.rglob('*.json'):
   if p.relative_to(OUT).as_posix() not in expected:p.unlink()
  for name,d in expected.items():write(OUT/name,d)
- write(OUT/'pack.mcmeta',{'pack':{'description':'Midgard Fantasy Terrain 0.6.0 — native ridges, terraced plateaus and ravines; new worlds only','min_format':[94,1],'max_format':[94,1]}})
+ write(OUT/'pack.mcmeta',{'pack':{'description':'Midgard Fantasy Terrain 0.7.0 — broad PvP lowlands, ridges, plateaus and ravines; new worlds only','min_format':[94,1],'max_format':[94,1]}})
  validate()
  with zipfile.ZipFile(ROOT/'dist/fantasy-terrain-datapack.zip','w',zipfile.ZIP_DEFLATED) as z:
+  # Manual datapack distribution is a complete profile, like the merged pack inside the JAR.
+  # Its forest placements must not reference configured trees missing from the standalone ZIP.
+  for p in sorted((ROOT/'storybook').rglob('*')):
+   if p.is_file():
+    name=p.relative_to(ROOT/'storybook').as_posix()
+    if name!='pack.mcmeta' and name not in expected:z.write(p,name)
   for p in sorted(OUT.rglob('*')):
    if p.is_file():z.write(p,p.relative_to(OUT))
 if __name__=='__main__':

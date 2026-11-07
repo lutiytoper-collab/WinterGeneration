@@ -1,0 +1,36 @@
+{
+  "checks": {
+    "cave_wall_and_fluid_classes_equal_through31": true,
+    "deep_raw_states_y_minus64_through_0_equal": false,
+    "deep_ores_y_minus64_through_0_equal": false,
+    "terrain_changed_at_least_half_sampled_columns": true,
+    "substantial_mean_absolute_height_change": true
+  },
+  "columns": 16384,
+  "deep_coordinates": 1064960,
+  "naturalGroundStats": {
+    "vanilla": {
+      "min": 30,
+      "max": 68,
+      "mean": 62.7080078125,
+      "p10": 62,
+      "p90": 65,
+      "heightRange": 38,
+      "meanAdjacentSlope": 0.11583415354330709,
+      "maxAdjacentSlope": 34
+    },
+    "terrain": {
+      "min": 56,
+      "max": 181,
+      "mean": 128.243408203125,
+      "p10": 95,
+      "p90": 164,
+      "heightRange": 125,
+      "meanAdjacentSlope": 1.0227915846456692,
+      "maxAdjacentSlope": 74
+    }
+  },
+  "meanAbsoluteHeightChange": 65.535400390625,
+  "changedByAtLeast8Blocks": 16363
+}
+/workspace/WinterGeneration/reports/meadow64n-matrix-terrain-invariants.json

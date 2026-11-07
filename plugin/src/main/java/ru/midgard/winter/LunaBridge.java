@@ -111,7 +111,10 @@ final class LunaBridge implements Listener {
                 var random=java.util.concurrent.ThreadLocalRandom.current();
                 int nextX=Math.floorDiv(loc.getBlockX(),16)*16+2+random.nextInt(12),nextZ=Math.floorDiv(loc.getBlockZ(),16)*16+2+random.nextInt(12);
                 int min=(int)requested.getClass().getMethod("getSpawnRadiusMin").invoke(requested),max=(int)requested.getClass().getMethod("getSpawnRadiusMax").invoke(requested);
-                if(nextX>=min&&nextX<max&&nextZ>=min&&nextZ<max){loc.setX(nextX);loc.setZ(nextZ);return null;}
+                var retrySettings=generatorSettings();String retryProfile=(String)requested.getClass().getMethod("getGeneratorSettings").invoke(requested);
+                String offsets="settings."+retryProfile+".world-NORMAL.offsets.";
+                long offsetX=retrySettings.getInt(offsets+"x"),offsetZ=retrySettings.getInt(offsets+"z");
+                if(nextX>=(long)min+offsetX&&nextX<(long)max+offsetX&&nextZ>=(long)min+offsetZ&&nextZ<(long)max+offsetZ){loc.setX(nextX);loc.setZ(nextZ);return null;}
             }
             releasePreparation(requested);return null;
         }

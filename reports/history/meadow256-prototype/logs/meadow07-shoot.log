@@ -1,0 +1,13 @@
+CAMERA 01-rolling-meadow [-1875.5, 88.5, 1945.5, -35, 2.5]
+/workspace/WinterGeneration/reports/screenshots-meadow07/01-rolling-meadow.png
+SHOT_READY 01-rolling-meadow
+CAMERA 02-meadow-panorama [-1840.5, 135, 1950.5, -25, 24]
+/workspace/WinterGeneration/reports/screenshots-meadow07/02-meadow-panorama.png
+SHOT_READY 02-meadow-panorama
+CAMERA 03-moon-gate [-1785.5, 87, 2042.5, -20, 5]
+/workspace/WinterGeneration/reports/screenshots-meadow07/03-moon-gate.png
+SHOT_READY 03-moon-gate
+CAMERA 04-fantasy-highlands [560.5, 154, 768.5, 90, 26.201]
+/workspace/WinterGeneration/reports/screenshots-meadow07/04-fantasy-highlands.png
+SHOT_READY 04-fantasy-highlands
+MEADOW07_GALLERY_DONE

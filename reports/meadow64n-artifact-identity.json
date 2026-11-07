@@ -1,0 +1,50 @@
+[
+  {
+    "runtime": "meadow64n-world",
+    "plugin_sha256": "86407ce3f31fd7ae0e251b979ee5cb023b410a13b4e37af7d47d188bd4bd6ea5",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true
+  },
+  {
+    "runtime": "integration-meadow64n",
+    "plugin_sha256": "86407ce3f31fd7ae0e251b979ee5cb023b410a13b4e37af7d47d188bd4bd6ea5",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true
+  },
+  {
+    "runtime": "fawe-integration-meadow64n",
+    "plugin_sha256": "86407ce3f31fd7ae0e251b979ee5cb023b410a13b4e37af7d47d188bd4bd6ea5",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true
+  },
+  {
+    "runtime": "meadow64n-structures",
+    "plugin_sha256": "86407ce3f31fd7ae0e251b979ee5cb023b410a13b4e37af7d47d188bd4bd6ea5",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true
+  },
+  {
+    "runtime": "meadow64n-purpur-disable",
+    "plugin_sha256": "86407ce3f31fd7ae0e251b979ee5cb023b410a13b4e37af7d47d188bd4bd6ea5",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true
+  },
+  {
+    "runtime": "meadow64n-classic",
+    "plugin_sha256": "86407ce3f31fd7ae0e251b979ee5cb023b410a13b4e37af7d47d188bd4bd6ea5",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true
+  },
+  {
+    "runtime": "meadow64n-seed42",
+    "plugin_sha256": "86407ce3f31fd7ae0e251b979ee5cb023b410a13b4e37af7d47d188bd4bd6ea5",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true
+  },
+  {
+    "runtime": "meadow64n-matrix/825180311/winter",
+    "plugin_sha256": "86407ce3f31fd7ae0e251b979ee5cb023b410a13b4e37af7d47d188bd4bd6ea5",
+    "identical_current_jar": true,
+    "no_external_datapack_zip": true
+  }
+]

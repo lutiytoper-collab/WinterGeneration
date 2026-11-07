@@ -1,1 +1,1 @@
-PASS: native terrain density, acyclic references, only final_density changed, cave/aquifer/ore/biome inputs kept
+PASS: native terrain + broad lowland fields, acyclic references, cave/aquifer/ore/biome inputs kept; cold field surface prefix

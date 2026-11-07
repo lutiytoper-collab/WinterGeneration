@@ -1,0 +1,41 @@
+{
+  "status": "FAIL",
+  "plugin_sha256": "75bd3d98bc3700b1f5489f798c03122eecd1a099a667e1cd5d6e06b16c0b390f",
+  "scope": "Original initial/restart 64 ROI probe without a FULL support halo. Two boundary surface hashes differed; no underground/state/entity/marker differences. Retained as a diagnostic. A separate fresh run explicitly loads an unmeasured QA halo before measuring; see pvp07-verified-matrix.",
+  "changedChunks": [
+    {
+      "chunk": [
+        128,
+        135
+      ],
+      "initialSurfaceHashes": {
+        "minecraft:taiga": "5cff1a735cdde16a9101bc1fc7c593e2c55b1ff84b269dd3e1469f59c4e5f339"
+      },
+      "restartSurfaceHashes": {
+        "minecraft:taiga": "13929d9b1dfb969ebfe2320814692cd9f691417782a6f1b8a5bd75901bf58cff"
+      },
+      "snowCounts": [
+        305,
+        305
+      ]
+    },
+    {
+      "chunk": [
+        130,
+        135
+      ],
+      "initialSurfaceHashes": {
+        "minecraft:forest": "55bb025b39c5a4e147e855535127bb8cee34e5e7d9c762660500a91ad5694765",
+        "minecraft:taiga": "d9cd6703e1b22535a9b8dc57c75c00951217f3d54ec86d63f26cb7c74215ea2f"
+      },
+      "restartSurfaceHashes": {
+        "minecraft:forest": "55bb025b39c5a4e147e855535127bb8cee34e5e7d9c762660500a91ad5694765",
+        "minecraft:taiga": "85778bed1228d016897c68de9e659886afe1a1271b0beca72dfaf145513f8ff8"
+      },
+      "snowCounts": [
+        250,
+        250
+      ]
+    }
+  ]
+}

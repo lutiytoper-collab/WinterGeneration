@@ -1,34 +1,37 @@
-# Проверки Fantasy Terrain 0.6.0
+# Проверки 0.7.0
 
-**PASS 336, FAIL 2, BLOCKED 0, NOT RUN 13. TEST VERIFIED в указанном объёме, не RC.**
+**PASS 356, FAIL 3, BLOCKED 0, NOT RUN 13. TEST VERIFIED в указанном объёме, не RC.**
 
-182 Java + 32 Python без skipped. Полный машинный каталог — test-results.json.
+185 Java +36 Python без skipped. Полный каталог — test-results.json.
 
 | Группа | PASS | FAIL | NOT RUN |
 |---|---:|---:|---:|
-| Java unit/contract | 182 | 0 | 0 |
-| Python unit | 32 | 0 | 0 |
+| Java unit/contract | 185 | 0 | 0 |
+| Python unit | 36 | 0 | 0 |
 | actual grief/build/TNT | 6 | 0 | 0 |
 | artifacts | 6 | 0 | 0 |
-| bootstrap/restart | 13 | 0 | 0 |
+| bootstrap/restart | 14 | 0 | 0 |
 | lifecycle | 8 | 0 | 0 |
-| native game samples | 5 | 0 | 0 |
-| native structures/cave biomes | 14 | 0 | 0 |
-| natural Luna | 4 | 0 | 0 |
+| native PvP meadow | 15 | 0 | 0 |
+| native game samples | 4 | 0 | 0 |
+| native structures/cave biomes | 13 | 1 | 0 |
+| natural Luna on field | 4 | 0 | 0 |
 | raw material diagnostic | 0 | 2 | 0 |
 | real WG/Luna fixtures | 56 | 0 | 0 |
 | real protocol client | 6 | 0 | 0 |
 | remaining scope | 0 | 0 | 13 |
-| terrain/cave geometry | 4 | 0 | 0 |
+| terrain/cave geometry | 3 | 0 | 0 |
 
-Два FAIL оставлены у исходных строгих сравнений материалов/руд под землёй. Меняется геометрия поверхности, а фактические размещения жил/пород/пещерной растительности местами отличаются. Настройки ore features и cave/structure definitions не меняются. Эти результаты не переименованы в PASS.
+Луг: seed825180311, X224..287, Z264..327, 64×64. Все4096 колонок проверены до и после restart. Основные80% высот: Y85..87; свободный проход 100.00%. Полный диапазон и редкие ступени/пещерные входы сохранены в JSON, а не исключены из измерений.
 
-Отдельная сверка класса полостей/жидкостей на 1 572 864 одинаковых координатах Y −64..31 прошла: открытое пространство, вода и лава совпали. Неплотные cave vines и сухой glow lichen отнесены к открытому пространству, waterlogged lichen — к воде; исходные raw block states сохранены. Это не утверждение полного поблочного совпадения мира или всех пещер на всех высотах/seed.
+В поляне и её64-блочном окружении записано 1 настоящих арок/святилищ/руин; расположение внутри или снаружи измеренного квадрата отмечено явно. Остальные деревья и детали перечислены в meadow64n-field-decorations.json. QA не ставит и не переносит объекты. Это не проверка баланса любого seed.
 
-Основная матрица — seed 825180311, 64 ROI на вариант с restart, vanilla baseline повторно использован. Второй seed 42 — отдельный Paper smoke 4 ROI с restart, без независимой полной сверки пещер. Широкая sparse map:4356 одинаковых XZ, четыре колонки на чанк, не сплошной heightmap.
+Два строгих raw material/ore FAIL сохранены. Дополнительный FAIL — один эвристический замер опоры поворота пустынной дороги:9 блоков воздуха при лимите8, координаты−3727,94,−1339. Все24 проверенные двери имеют пол. Этот диагностический результат не скрыт и требует отдельного осмотра дороги. Полости/вода/лава сверяются независимо на1572864 одинаковых координатах Y−64..31; cave vines и сухой glow lichen относятся к открытому пространству, waterlogged lichen — к воде. Определения и теги карверов не меняются.
 
-Две деревни:10+ 8 дверей с полом, sampled foundation max air gap1/5. Проверяется опора, не прохождение всех дорог. Stronghold/mineshaft/ancient_city/trial_chambers подтверждены нативными starts/pieces на FULL chunks; полные interiors не сканировались. Три cave biome найдены native locate.
+Основная матрица:64 ROI seed825180311 и36 дополнительных FULL чанков QA, не входящих в замеры. В production нет декорационных halo tickets. Сохранён pure vanilla baseline. Seed42 — отдельный smoke4ROI с restart, без полной сверки пещер.
 
-Luna на обоих стеках прошла с radius2(5×5), снег сохранён, End cleanup0 tickets. QA generator max-y поднят до 280; конфиг установленной отдельно Luna автоматически не меняется. Протокол открытия 54-слотового лута реальный. Поршневой regression — синтетическое публичное событие, не физическая redstone-схема.
+Две деревни проверены по настоящим дверям и опорам в нижних девяти слоях jigsaw pieces; это не обход всех домов/дорог. Ещё четыре структуры — native starts/pieces, три cave biome — native locate.
 
-Все выбранные PNG — native F2, без обработки/ручной постройки сцен. Полные источники, камеры, хеши и ограничения — screenshots-terrain06/provenance.json.
+Luna на WE/FAWE: radius2 (5×5), случайные координаты в естественном лугу через публичные X/Z offsets, native слой SNOW сохранён, End cleanup0tickets. QA max-y280; сторонний конфиг автоматически не меняется. Лут открывается настоящим клиентом. Поршневой regression — публичное синтетическое событие, не redstone-схема.
+
+Текущие PNG — native F2 без обработки или ручной постройки сцен. Предыдущие11 кадров разной местности относятся к0.6.0. Отклонённый плоский прототип и его диагностика сохранены в history/pvp07-flat-prototype.
